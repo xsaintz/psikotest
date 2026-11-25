@@ -1,0 +1,3451 @@
+{
+ "id": "paket-6",
+ "judul": "Paket 6 — TPA Verbal (sinonim, antonim, padanan hubungan, silogisme, bacaan)",
+ "durasi_total_menit": 75,
+ "catatan": "Soal dari web latihan-tpp-nikzone.pages.dev. Kuesioner kepribadian dan set PEEPL asli tidak diikutkan (sudah ada di Paket 1).",
+ "bagian": [
+  {
+   "id": "sinonim",
+   "nama": "Sinonim (buku TPA)",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Pilih kata yang paling dekat artinya dengan kata yang dicetak kapital.",
+   "soal": [
+    {
+     "id": "sinonim-1",
+     "teks": "RELATIF = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "NISBI",
+      "FLEKSIBEL",
+      "KAKU",
+      "PASTI",
+      "MUTLAK"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata RELATIF berasal dari kata RELATIVE yang berarti 'tidak mutlak; nisbi'. Jadi, kata yang bersinonim dengan RELATIF adalah NISBI.\nTips: Kata di atas merupakan kata serapan dari Bahasa Inggris. Jadi, perbanyak kosakata dalam Bahasa Inggris.",
+     "alasan": [
+      "",
+      "FLEKSIBEL artinya lentur, mudah menyesuaikan diri. Maknanya berbeda dengan RELATIF.",
+      "KAKU artinya tidak lentur, sukar dibengkokkan. Maknanya berbeda dengan RELATIF.",
+      "PASTI artinya sudah tentu, tidak berubah lagi. Maknanya berbeda dengan RELATIF.",
+      "MUTLAK artinya tanpa syarat, tidak bergantung pada hal lain. Maknanya berbeda dengan RELATIF."
+     ]
+    },
+    {
+     "id": "sinonim-2",
+     "teks": "AKSELERASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "TINGKATAN",
+      "PERGERAKAN",
+      "JALAN",
+      "LAJU",
+      "PERCEPATAN"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata AKSELERASI berasal dari kata ACCELERATION yang berarti 'peningkatan kecepatan; percepatan'. Jadi, kata yang bersinonim dengan AKSELERASI adalah PERCEPATAN.\nTips: Kata di atas merupakan kata serapan dari Bahasa Inggris. Jadi, perbanyak kosakata dalam Bahasa Inggris.",
+     "alasan": [
+      "TINGKATAN artinya jenjang atau susunan bertingkat. Maknanya berbeda dengan AKSELERASI.",
+      "PERGERAKAN artinya perpindahan, usaha bergerak. Maknanya berbeda dengan AKSELERASI.",
+      "JALAN artinya tempat lalu lintas, atau kegiatan berjalan. Maknanya berbeda dengan AKSELERASI.",
+      "LAJU artinya kecepatan gerak, bukan pertambahan kecepatan. Maknanya berbeda dengan AKSELERASI.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-3",
+     "teks": "ABSORB = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "MUNCUL",
+      "TIRIS",
+      "MENYERAP",
+      "MENGUAP",
+      "KELUAR"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kata ABSORB berasal dari kata ABSORB yang berarti 'menyerap'. Jadi, kata yang bersinonim dengan ABSORB adalah MENYERAP.\nTips: Kata di atas merupakan kata serapan dari Bahasa Inggris. Jadi, perbanyak kosakata dalam Bahasa Inggris.",
+     "alasan": [
+      "MUNCUL artinya timbul, kelihatan, sedangkan ABSORB artinya 'menyerap'.",
+      "TIRIS artinya bocor sedikit-sedikit, merembes, sedangkan ABSORB artinya 'menyerap'.",
+      "",
+      "MENGUAP artinya berubah menjadi uap, sedangkan ABSORB artinya 'menyerap'.",
+      "KELUAR artinya bergerak dari dalam ke luar, sedangkan ABSORB artinya 'menyerap'."
+     ]
+    },
+    {
+     "id": "sinonim-4",
+     "teks": "TAKSONOMI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "SINGKATAN",
+      "DEFINISI",
+      "KELAS",
+      "SIFAT",
+      "KLASIFIKASI"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata TAKSONOMI biasa digunakan dalam bidang ilmu Biologi dan Linguistik (Bahasa). Kata TAKSONOMI memiliki arti 'klasifikasi bidang ilmu; kaidah dan prinsip yang meliputi pengklasifikasian objek'. Jadi, kata yang bersinonim dengan TAKSONOMI adalah KLASIFIKASI.\nTips: Kenalijeniskatanyalalukatagorikan dalam bidang tertentu.",
+     "alasan": [
+      "SINGKATAN artinya bentuk pendek dari kata atau frasa, sedangkan TAKSONOMI artinya 'klasifikasi bidang ilmu'.",
+      "DEFINISI artinya rumusan makna suatu istilah, sedangkan TAKSONOMI artinya 'klasifikasi bidang ilmu'.",
+      "KELAS artinya golongan atau tingkatan, bukan sistem pengelompokannya, sedangkan TAKSONOMI artinya 'klasifikasi bidang ilmu'.",
+      "SIFAT artinya ciri atau watak, sedangkan TAKSONOMI artinya 'klasifikasi bidang ilmu'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-5",
+     "teks": "PINDAI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "MELIHAT SEKILAS",
+      "MENCERMATI",
+      "MELIRIK",
+      "MEMBUANG",
+      "MEMINDAHKAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata PINDAI memiliki arti 'melihat dengan cermat dan lama'. Jadi, kata yang bersinonim dengan PINDAI adalah MENCERMATI.\nTips: Perbanyak perbendaharaan Bahasa Indonesia dengan sering membaca Kamus Besar Bahasa Indonesia (KBBI) dan membaca buku/artikel.",
+     "alasan": [
+      "MELIHAT SEKILAS artinya melihat sebentar saja, justru kebalikan dari melihat dengan cermat, sedangkan PINDAI artinya 'melihat dengan cermat dan lama'.",
+      "",
+      "MELIRIK artinya melihat dengan sudut mata, sedangkan PINDAI artinya 'melihat dengan cermat dan lama'.",
+      "MEMBUANG artinya melempar barang yang tidak dipakai, sedangkan PINDAI artinya 'melihat dengan cermat dan lama'.",
+      "MEMINDAHKAN artinya menggeser ke tempat lain, sedangkan PINDAI artinya 'melihat dengan cermat dan lama'."
+     ]
+    },
+    {
+     "id": "sinonim-6",
+     "teks": "DIVESTASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KERAGAMAN",
+      "BAGIAN",
+      "PELEPASAN",
+      "DIVERGEN",
+      "SEKTOR"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kata DIVESTASI berasal dari kata DIVESTATION yang berarti 'pelepasan, pembebasan, dan pengurangan modal'. Jadi, kata yang bersinonim dengan DIVESTASI adalah PELEPASAN.\nTips: Kata di atas merupakan kata serapan dari Bahasa Inggris. Jadi, perbanyak kosakata dalam Bahasa Inggris.",
+     "alasan": [
+      "KERAGAMAN artinya keberagaman, banyak jenis. Maknanya berbeda dengan DIVESTASI.",
+      "BAGIAN artinya potongan dari keseluruhan. Maknanya berbeda dengan DIVESTASI.",
+      "",
+      "DIVERGEN artinya menyebar ke arah yang berbeda. Maknanya berbeda dengan DIVESTASI.",
+      "SEKTOR artinya bidang usaha atau lingkungan kegiatan. Maknanya berbeda dengan DIVESTASI."
+     ]
+    },
+    {
+     "id": "sinonim-7",
+     "teks": "GALAT = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "YAKIN",
+      "VALID",
+      "PASTI",
+      "MUTLAK",
+      "KELIRU"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata GALAT memiliki arti 'kekeliruan, cacat, atau kesalahan'. Jadi, kata yang bersinonim dengan GALAT adalah KELIRU.\nTips: Jika menemukan kata yang tidak biasa digunakan atau terasa asing, pilih jawaban yang berbeda dari semua pilihan jawaban yang ada. Pilihan A, B, D, dan E memiliki makna yang hampir sama, tetapi pilihan C memiliki makna yang berbeda. Karena berbeda, pilihan C dapat dipastikan maknanya sama atau tidak dengan melihat arti kata pada soal.",
+     "alasan": [
+      "YAKIN artinya percaya sungguh-sungguh, sedangkan GALAT artinya 'kekeliruan, cacat, atau kesalahan'.",
+      "VALID artinya sahih, berlaku, sedangkan GALAT artinya 'kekeliruan, cacat, atau kesalahan'.",
+      "PASTI artinya sudah tentu, tidak berubah lagi, sedangkan GALAT artinya 'kekeliruan, cacat, atau kesalahan'.",
+      "MUTLAK artinya tanpa syarat, tidak bergantung pada hal lain, sedangkan GALAT artinya 'kekeliruan, cacat, atau kesalahan'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-8",
+     "teks": "BABUT = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PERMADANI",
+      "MATRAS",
+      "SELENDANG",
+      "SPREI",
+      "SARUNG"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata BABUT memiliki arti 'permadani; karpet'. Jadi, kata yang bersinonim dengan BABUT adalah PERMADANI.\nTips: Perbanyak perbendaharaan Bahasa Indonesia dengan sering membuka Kamus Besar Bahasa Indonesia (KBBI) dan membaca buku/artikel.",
+     "alasan": [
+      "",
+      "MATRAS artinya kasur tipis untuk alas olahraga, sedangkan BABUT artinya 'permadani'.",
+      "SELENDANG artinya kain panjang yang diselempangkan di bahu, sedangkan BABUT artinya 'permadani'.",
+      "SPREI artinya kain penutup kasur, sedangkan BABUT artinya 'permadani'.",
+      "SARUNG artinya kain berjahit melingkar untuk dipakai, sedangkan BABUT artinya 'permadani'."
+     ]
+    },
+    {
+     "id": "sinonim-9",
+     "teks": "JENGGALA = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "HUTAN",
+      "BUKIT",
+      "GURUN",
+      "LEBAT",
+      "SABANA"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata JENGGALA memiliki arti 'hutan atau rimba'. Jadi, kata yang bersinonim dengan JENGGALA adalah HUTAN.\nTips: Perbanyak perbendaharaan Bahasa Indonesia dengan sering membuka Kamus Besar Bahasa Indonesia (KBBI) dan membaca buku/artikel.",
+     "alasan": [
+      "",
+      "BUKIT artinya tanah tinggi yang lebih rendah dari gunung, sedangkan JENGGALA artinya 'hutan atau rimba'.",
+      "GURUN artinya padang pasir, sedangkan JENGGALA artinya 'hutan atau rimba'.",
+      "LEBAT artinya rapat dan banyak (kata sifat, bukan tempat), sedangkan JENGGALA artinya 'hutan atau rimba'.",
+      "SABANA artinya padang rumput dengan pohon yang jarang, sedangkan JENGGALA artinya 'hutan atau rimba'."
+     ]
+    },
+    {
+     "id": "sinonim-10",
+     "teks": "INFRASTRUKTUR = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KEMUDAHAN",
+      "ALAT",
+      "BAHAN",
+      "PEMBELAJARAN",
+      "PRASARANA"
+     ],
+     "kunci": 4,
+     "pembahasan": "INFRA memiliki arti 'di bawah; penunjang', sedangkan STRUKTUR memiliki arti 'bangunan'. Jadi, kata INFRASTRUKTUR memiliki arti 'prasarana; segala sesuatu yang merupakan penunjang utama terselenggaranya suatu proses (usaha, pembangunan, proyek, dan sebagainya)'.\nTips: Kata yang berhimbuhan asing seperti pasca, ekstra, dan intra, dapat artikan kata per katanya.",
+     "alasan": [
+      "KEMUDAHAN artinya keadaan serba mudah, sedangkan INFRASTRUKTUR artinya 'prasarana'.",
+      "ALAT artinya benda untuk mengerjakan sesuatu, sedangkan INFRASTRUKTUR artinya 'prasarana'.",
+      "BAHAN artinya barang yang akan diolah, sedangkan INFRASTRUKTUR artinya 'prasarana'.",
+      "PEMBELAJARAN artinya proses belajar, sedangkan INFRASTRUKTUR artinya 'prasarana'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-11",
+     "teks": "UNIT = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "DEPARTEMEN",
+      "KEPALA",
+      "SEMUA",
+      "SATUAN",
+      "KESELURUHAN"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata UNIT memiliki arti 'bagian terkecil dari sesuatu yang dapat berdiri sendiri; satuan'.\nTips: Perbanyak perbendaharaan Bahasa Indonesia dengan sering membuka Kamus Besar Bahasa Indonesia (KBBI) dan membaca buku/artikel.",
+     "alasan": [
+      "DEPARTEMEN artinya bagian besar dalam organisasi, sedangkan UNIT artinya 'bagian terkecil dari sesuatu yang dapat...'.",
+      "KEPALA artinya pemimpin, atau bagian tubuh teratas, sedangkan UNIT artinya 'bagian terkecil dari sesuatu yang dapat...'.",
+      "SEMUA artinya seluruhnya, sedangkan UNIT artinya 'bagian terkecil dari sesuatu yang dapat...'.",
+      "",
+      "KESELURUHAN artinya semuanya, justru kebalikan dari satuan, sedangkan UNIT artinya 'bagian terkecil dari sesuatu yang dapat...'."
+     ]
+    },
+    {
+     "id": "sinonim-12",
+     "teks": "KOMPLEMEN = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "BIASA",
+      "MAKANAN SEHAT",
+      "BAHAN PENGGANTI",
+      "PELENGKAP",
+      "BAGIAN"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata KOMPLEMEN memiliki arti 'sesuatu yang melengkapi atau menyempurnakan'. Jadi, kata yang bersinonim dengan KOMPLEMEN adalah PELENGKAP.\nTips: Kata di atas merupakan kata serapan dari Bahasa Inggris. Jadi, perbanyak kosakata dalam Bahasa Inggris.",
+     "alasan": [
+      "BIASA artinya lazim, umum, sedangkan KOMPLEMEN artinya 'sesuatu yang melengkapi atau menyempurnakan'.",
+      "MAKANAN SEHAT artinya makanan bergizi, sedangkan KOMPLEMEN artinya 'sesuatu yang melengkapi atau menyempurnakan'.",
+      "BAHAN PENGGANTI artinya pengganti (substitusi), bukan pelengkap, sedangkan KOMPLEMEN artinya 'sesuatu yang melengkapi atau menyempurnakan'.",
+      "",
+      "BAGIAN artinya potongan dari keseluruhan, sedangkan KOMPLEMEN artinya 'sesuatu yang melengkapi atau menyempurnakan'."
+     ]
+    },
+    {
+     "id": "sinonim-13",
+     "teks": "SIMETRIS = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "SETANGKUP",
+      "POROS",
+      "ADIL",
+      "BEDA",
+      "GARIS"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata SIMETRIS biasa digunakan dalam bidang Grafika. Kata SIMETRIS memiliki arti 'sama kedua belah bagiannya; setangkup'. Jadi, kata yang bersinonim dengan SIMETRIS adalah SETANGKUP.\nTips: Kenali jenis katanya lalu kategorikan dalam bidang tertentu.",
+     "alasan": [
+      "",
+      "POROS artinya sumbu tempat berputar, sedangkan SIMETRIS artinya 'sama kedua belah bagiannya'.",
+      "ADIL artinya tidak berat sebelah, sedangkan SIMETRIS artinya 'sama kedua belah bagiannya'.",
+      "BEDA artinya tidak sama, sedangkan SIMETRIS artinya 'sama kedua belah bagiannya'.",
+      "GARIS artinya coretan panjang, sedangkan SIMETRIS artinya 'sama kedua belah bagiannya'."
+     ]
+    },
+    {
+     "id": "sinonim-14",
+     "teks": "LAZIM = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "GANJIL",
+      "BIASA",
+      "UNIK",
+      "AJAIB",
+      "ANEH"
+     ],
+     "kunci": 1,
+     "pembahasan": "Perbanyak perbendaharaan Bahasa Indonesia dengan sering membuka Kamus Besar Bahasa Indonesia (KBBI) dan membaca buku/artikel. Lazim memiliki arti'sudah biasa;sudah umum'. Jadi, kata yang bersinonim dengan LAZIM adalah BIASA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "GANJIL artinya aneh, tidak biasa. Maknanya berbeda dengan LAZIM.",
+      "",
+      "UNIK artinya khas, lain dari yang lain. Maknanya berbeda dengan LAZIM.",
+      "AJAIB artinya aneh dan mengherankan. Maknanya berbeda dengan LAZIM.",
+      "ANEH artinya tidak seperti biasa. Maknanya berbeda dengan LAZIM."
+     ]
+    },
+    {
+     "id": "sinonim-15",
+     "teks": "AGITATOR = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PEMBELA",
+      "PENGHASUT",
+      "ORATOR",
+      "PEMBERANI",
+      "AHLI PIDATO"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata AGITATOR memiliki arti 'orang yang melakukan agitasi; penghasut'. Jadi, kata yang bersinonim dengan AGITATOR adalah PENGHASUT.\nTips: Perbanyak perbendaharaan Bahasa Indonesia dengan sering membaca Kamus Besar Bahasa Indonesia (KBBI) dan membaca buku/artikel.",
+     "alasan": [
+      "PEMBELA artinya orang yang membela, sedangkan AGITATOR artinya 'orang yang melakukan agitasi'.",
+      "",
+      "ORATOR artinya ahli pidato, tidak harus menghasut, sedangkan AGITATOR artinya 'orang yang melakukan agitasi'.",
+      "PEMBERANI artinya orang yang berani, sedangkan AGITATOR artinya 'orang yang melakukan agitasi'.",
+      "AHLI PIDATO artinya orator, tidak harus menghasut, sedangkan AGITATOR artinya 'orang yang melakukan agitasi'."
+     ]
+    },
+    {
+     "id": "sinonim-16",
+     "teks": "DISLOKASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "TERLEPAS",
+      "BERSATU",
+      "BERGABUNG",
+      "TERSAMBUNG",
+      "MELEBUR"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata DISLOKASI memiliki arti 'perubahan atau pemindahan lokasi'. Jadi, kata yang bersinonim dengan DISLOKASI adalah TERLEPAS.\nTips: Jika menemukan kata yang tidak biasa digunakan atau terasa asing, pilih jawaban yang terlihat paling berbeda dari pilihan jawaban lainnya. Pilihan A, B, C, dan D memiliki makna arti yang hampir sama, tetapi pilihan E memiliki makna yang berbeda. Karena berbeda, pilihan E dapat dipastikan maknanya sama atau tidak dengan melihat arti kata pada soal.",
+     "alasan": [
+      "",
+      "BERSATU artinya menjadi satu, sedangkan DISLOKASI artinya 'perubahan atau pemindahan lokasi'.",
+      "BERGABUNG artinya berkumpul menjadi satu, sedangkan DISLOKASI artinya 'perubahan atau pemindahan lokasi'.",
+      "TERSAMBUNG artinya sudah dihubungkan, sedangkan DISLOKASI artinya 'perubahan atau pemindahan lokasi'.",
+      "MELEBUR artinya bercampur menjadi satu, sedangkan DISLOKASI artinya 'perubahan atau pemindahan lokasi'."
+     ]
+    },
+    {
+     "id": "sinonim-17",
+     "teks": "PASCASARJANA = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "SKRIPSI",
+      "SETELAH SARJANA",
+      "SEBELUM SARJANA",
+      "SARJANA",
+      "DISERTASI"
+     ],
+     "kunci": 1,
+     "pembahasan": "PASCA berarti 'setelah', sedangkan SARJANA berarti'gelar strata satu yang dicapai oleh seseorang yang telah menamatkan pendidikan tingkat terakhir di perguruan tinggi'. Jadi, PASCASARJANA merupakan tingkatan SETELAH SARJANA.\nTips: Kata yang berhimbuhan asing seperti pasca, ekstra, dan intra, dapat artikan kata per katanya.",
+     "alasan": [
+      "SKRIPSI artinya karya tulis tugas akhir sarjana. Maknanya berbeda dengan PASCASARJANA.",
+      "",
+      "SEBELUM SARJANA artinya jenjang sebelum lulus S1. Maknanya berbeda dengan PASCASARJANA.",
+      "SARJANA artinya lulusan S1. Maknanya berbeda dengan PASCASARJANA.",
+      "DISERTASI artinya karya tulis tugas akhir doktor. Maknanya berbeda dengan PASCASARJANA."
+     ]
+    },
+    {
+     "id": "sinonim-18",
+     "teks": "AKSIOMA = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KEBERANIAN",
+      "KEBENARAN",
+      "KESALAHAN",
+      "BUKTI",
+      "SIKAP"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata AKS/OMA berasal dari kata AXIOM yang berarti 'kebenaran'. Jadi, kata yang bersinonim dengan AKSIOMA adalah KEBENARAN.\nTips: Kata di atas merupakan kata serapan dari Bahasa Inggris. Jadi, perbanyak kosakata dalam Bahasa Inggris.",
+     "alasan": [
+      "KEBERANIAN artinya sifat berani. Maknanya berbeda dengan AKSIOMA.",
+      "",
+      "KESALAHAN artinya kekeliruan. Maknanya berbeda dengan AKSIOMA.",
+      "BUKTI artinya hal yang menunjukkan kebenaran, padahal aksioma diterima tanpa bukti. Maknanya berbeda dengan AKSIOMA.",
+      "SIKAP artinya pendirian atau perbuatan. Maknanya berbeda dengan AKSIOMA."
+     ]
+    },
+    {
+     "id": "sinonim-19",
+     "teks": "BIMBANG = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PASRAH",
+      "FLEKSIBEL",
+      "PERCAYA",
+      "YAKIN",
+      "RAGU-RAGU"
+     ],
+     "kunci": 4,
+     "pembahasan": "Cari tahu arti katanya karena bisa jadi sinonimnya terdapat pada arti kata. Kata bimbang memiliki arti 'tidak tetap hati (kurang percaya); ragu-ragu'. Jadi, kata yang bersinonim dengan BIMBANG adalah RAGU-RAGU\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "PASRAH artinya menyerahkan sepenuhnya. Maknanya berbeda dengan BIMBANG.",
+      "FLEKSIBEL artinya lentur, mudah menyesuaikan diri. Maknanya berbeda dengan BIMBANG.",
+      "PERCAYA artinya yakin akan sesuatu. Maknanya berbeda dengan BIMBANG.",
+      "YAKIN artinya percaya sungguh-sungguh. Maknanya berbeda dengan BIMBANG.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-20",
+     "teks": "FARIK = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "SAMA",
+      "BERBEDA",
+      "YAKIN",
+      "PASTI",
+      "TARIK"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata FARIK memiliki arti 'berbeda'. Jadi, kata yang bersinonim dengan FARIK adalah BERBEDA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "SAMA artinya tidak berbeda, justru kebalikan dari farik, sedangkan FARIK artinya 'berbeda'.",
+      "",
+      "YAKIN artinya percaya sungguh-sungguh, sedangkan FARIK artinya 'berbeda'.",
+      "PASTI artinya sudah tentu, tidak berubah lagi, sedangkan FARIK artinya 'berbeda'.",
+      "TARIK artinya menghela ke arah diri, sedangkan FARIK artinya 'berbeda'."
+     ]
+    },
+    {
+     "id": "sinonim-21",
+     "teks": "KUNYUK = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KERA KECIL",
+      "GORILLA",
+      "MACAN",
+      "SIAL",
+      "KUDA"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata KUNYUK memiliki arti 'kera kecil; monyet'. Jadi, kata yang bersinonim dengan KUNYUK adalah KERA KECIL.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "GORILLA artinya kera besar dari Afrika, sedangkan KUNYUK artinya 'kera kecil'.",
+      "MACAN artinya harimau, sedangkan KUNYUK artinya 'kera kecil'.",
+      "SIAL artinya malang, celaka, sedangkan KUNYUK artinya 'kera kecil'.",
+      "KUDA artinya hewan tunggangan, sedangkan KUNYUK artinya 'kera kecil'."
+     ]
+    },
+    {
+     "id": "sinonim-22",
+     "teks": "ARTIFISIAL = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "CAMPURAN",
+      "AROMATIK",
+      "MURNI",
+      "ALAMI",
+      "BUATAN"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata ARTIFISIAL memiliki arti 'tidak alami; buatan'. Jadi, kata yang bersinonim dengan ARTIFISIAL adalah BUATAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "CAMPURAN artinya hasil mencampur, sedangkan ARTIFISIAL artinya 'tidak alami'.",
+      "AROMATIK artinya harum, berbau sedap, sedangkan ARTIFISIAL artinya 'tidak alami'.",
+      "MURNI artinya asli, tidak bercampur, justru kebalikan dari artifisial, sedangkan ARTIFISIAL artinya 'tidak alami'.",
+      "ALAMI artinya bersifat alam, justru kebalikan dari artifisial, sedangkan ARTIFISIAL artinya 'tidak alami'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-23",
+     "teks": "KOMPLEKSITAS = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KETERATURAN",
+      "KERUMITAN",
+      "BANYAK",
+      "SUSUNAN",
+      "SEDERHANA"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata KOMPLEKSITAS memiliki arti 'keruwetan; kerumitan'. Jadi, kata yang bersinonim dengan KOMPLEKSITAS adalah KERUMITAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "KETERATURAN artinya keadaan teratur, justru kebalikan dari kerumitan, sedangkan KOMPLEKSITAS artinya 'keruwetan'.",
+      "",
+      "BANYAK artinya besar jumlahnya, sedangkan KOMPLEKSITAS artinya 'keruwetan'.",
+      "SUSUNAN artinya cara menyusun, sedangkan KOMPLEKSITAS artinya 'keruwetan'.",
+      "SEDERHANA artinya tidak rumit, justru kebalikan dari kompleksitas, sedangkan KOMPLEKSITAS artinya 'keruwetan'."
+     ]
+    },
+    {
+     "id": "sinonim-24",
+     "teks": "HAYATI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "HIDUP",
+      "BOTANI",
+      "MENJIWA",
+      "MERESAPI",
+      "BIOLOGI"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata HAYATI memiliki arti 'berhubungan dengan hidup'. Jadi, kata yang bersinonim dengan HAYATI adalah HIDUP.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "BOTANI artinya ilmu tentang tumbuhan, sedangkan HAYATI artinya 'berhubungan dengan hidup'.",
+      "MENJIWA artinya menyatu dengan jiwa, dekat dengan arti menghayati, bukan hayati, sedangkan HAYATI artinya 'berhubungan dengan hidup'.",
+      "MERESAPI artinya memahami sampai ke dalam, arti dari menghayati, bukan hayati, sedangkan HAYATI artinya 'berhubungan dengan hidup'.",
+      "BIOLOGI artinya ilmu tentang makhluk hidup, nama bidang ilmunya, sedangkan HAYATI artinya 'berhubungan dengan hidup'."
+     ]
+    },
+    {
+     "id": "sinonim-25",
+     "teks": "SPESIFIK = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "BIASA",
+      "UMUM",
+      "DETAIL",
+      "KHAS",
+      "RAPI"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata SPESIFIK memiliki arti 'khusus; khas'. Jadi, kata yang bersinonim dengan SPESIFlKadalah KHAS.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "BIASA artinya lazim, umum, sedangkan SPESIFIK artinya 'khusus'.",
+      "UMUM artinya berlaku untuk semua, justru kebalikan dari spesifik, sedangkan SPESIFIK artinya 'khusus'.",
+      "DETAIL artinya rinci, sedangkan SPESIFIK artinya 'khusus'.",
+      "",
+      "RAPI artinya teratur dan bersih, sedangkan SPESIFIK artinya 'khusus'."
+     ]
+    },
+    {
+     "id": "sinonim-26",
+     "teks": "ARGUMENTASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "GAGASAN",
+      "SARAN",
+      "PEMAPARAN",
+      "CERITA",
+      "KRITIK"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata ARGUMENTASI memiliki arti 'alasan untuk memperkuat atau menolak suatu pendapat, pendirian, atau gagasan'. Jadi, kata yang bersinonim dengan ARGUMENTASI adalah GAGASAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "SARAN artinya usul, sedangkan ARGUMENTASI artinya 'alasan untuk memperkuat atau menolak suatu...'.",
+      "PEMAPARAN artinya penjelasan panjang, sedangkan ARGUMENTASI artinya 'alasan untuk memperkuat atau menolak suatu...'.",
+      "CERITA artinya tuturan tentang kejadian, sedangkan ARGUMENTASI artinya 'alasan untuk memperkuat atau menolak suatu...'.",
+      "KRITIK artinya kecaman atau tanggapan, sedangkan ARGUMENTASI artinya 'alasan untuk memperkuat atau menolak suatu...'."
+     ]
+    },
+    {
+     "id": "sinonim-27",
+     "teks": "JAZIRAH = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "SELAT",
+      "SEMENANJUNG",
+      "DARATAN",
+      "PUCUK BENUA",
+      "PULAU"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata JAZIRAH memiliki arti 'tanah yang menganjur ke laut seakan-akan pulau; semenanjung'. Jadi, kata yang bersinonim dengan JAZIRAH adalah SEMENANJUNG.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "SELAT artinya laut sempit di antara dua pulau, sedangkan JAZIRAH artinya 'tanah yang menganjur ke laut seakan-akan pulau'.",
+      "",
+      "DARATAN artinya tanah yang tidak tertutup air, sedangkan JAZIRAH artinya 'tanah yang menganjur ke laut seakan-akan pulau'.",
+      "PUCUK BENUA artinya ujung benua, sedangkan JAZIRAH artinya 'tanah yang menganjur ke laut seakan-akan pulau'.",
+      "PULAU artinya daratan yang dikelilingi air, sedangkan JAZIRAH artinya 'tanah yang menganjur ke laut seakan-akan pulau'."
+     ]
+    },
+    {
+     "id": "sinonim-28",
+     "teks": "DISTORSI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PENJELASAN",
+      "PENGURANGAN",
+      "NONDESKRIPSI",
+      "PENYIMPANGAN",
+      "PENYALAHGUNAAN"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata DISTORSI memiliki arti 'pemutarbalikan suatu fakta, aturan, dan sebagainya; penyimpangan'. Jadi, kata yang bersinonim dengan DISTORSI adalah PEWIMPANGAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "PENJELASAN artinya keterangan, sedangkan DISTORSI artinya 'pemutarbalikan suatu fakta, aturan, dan...'.",
+      "PENGURANGAN artinya proses mengurangi, sedangkan DISTORSI artinya 'pemutarbalikan suatu fakta, aturan, dan...'.",
+      "NONDESKRIPSI artinya bukan uraian, sedangkan DISTORSI artinya 'pemutarbalikan suatu fakta, aturan, dan...'.",
+      "",
+      "PENYALAHGUNAAN artinya pemakaian yang tidak semestinya, sedangkan DISTORSI artinya 'pemutarbalikan suatu fakta, aturan, dan...'."
+     ]
+    },
+    {
+     "id": "sinonim-29",
+     "teks": "KAPITAL = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "TENTARA",
+      "MENARA",
+      "RESTORAN",
+      "KAPTEN",
+      "MODAL"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata KAPITAL memiliki arti 'modal pokok dalam perniagaan'. Jadi, kata yang bersinonim dengan KAPITAL adalah MODAL.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "TENTARA artinya anggota militer, sedangkan KAPITAL artinya 'modal pokok dalam perniagaan'.",
+      "MENARA artinya bangunan tinggi, sedangkan KAPITAL artinya 'modal pokok dalam perniagaan'.",
+      "RESTORAN artinya rumah makan, sedangkan KAPITAL artinya 'modal pokok dalam perniagaan'.",
+      "KAPTEN artinya pangkat perwira, sedangkan KAPITAL artinya 'modal pokok dalam perniagaan'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-30",
+     "teks": "AGRESI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PENYERANGAN",
+      "PERTIKAIAN",
+      "PERMINTAAN",
+      "PEMASUKAN",
+      "PENGELUARAN"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata AGRES/memilikiarti'penyerangan suatu negara terhadap negara lain'. Jadi, kata yang bersinonim dengan AGRESI adalah PENYERANGAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "PERTIKAIAN artinya perselisihan. Maknanya berbeda dengan AGRESI.",
+      "PERMINTAAN artinya hal meminta. Maknanya berbeda dengan AGRESI.",
+      "PEMASUKAN artinya pendapatan. Maknanya berbeda dengan AGRESI.",
+      "PENGELUARAN artinya biaya yang dikeluarkan. Maknanya berbeda dengan AGRESI."
+     ]
+    },
+    {
+     "id": "sinonim-31",
+     "teks": "LUNYAH = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KERAS",
+      "PADAT",
+      "LUMPUR",
+      "GEMBUR",
+      "KUNYAH"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata LUNYAH memiliki arti'menginjak-injak tanah agar gembur dan lunak untuk siap ditanami'. Jadi, kata yang bersinonim dengan LUNYAH adalah GEMBUR.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "KERAS artinya padat dan tidak lunak, sedangkan LUNYAH artinya 'menginjak-injak tanah agar gembur dan lunak...'.",
+      "PADAT artinya rapat isinya, sedangkan LUNYAH artinya 'menginjak-injak tanah agar gembur dan lunak...'.",
+      "LUMPUR artinya tanah basah yang lembek, sedangkan LUNYAH artinya 'menginjak-injak tanah agar gembur dan lunak...'.",
+      "",
+      "KUNYAH artinya melumat dengan gigi; bunyinya mirip, artinya lain, sedangkan LUNYAH artinya 'menginjak-injak tanah agar gembur dan lunak...'."
+     ]
+    },
+    {
+     "id": "sinonim-32",
+     "teks": "ABSOLUT = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "NYATA",
+      "MUTLAK",
+      "PASTI",
+      "BENAR",
+      "HARUS"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata ABSOLUT memiliki arti 'tidak terbatas; mutlak'. Jadi, kata yang bersinonim dengan ABSOLUT adalah MUTLAK.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "NYATA artinya benar-benar ada, sedangkan ABSOLUT artinya 'tidak terbatas'.",
+      "",
+      "PASTI artinya sudah tentu, tidak berubah lagi, sedangkan ABSOLUT artinya 'tidak terbatas'.",
+      "BENAR artinya sesuai kenyataan, sedangkan ABSOLUT artinya 'tidak terbatas'.",
+      "HARUS artinya wajib, sedangkan ABSOLUT artinya 'tidak terbatas'."
+     ]
+    },
+    {
+     "id": "sinonim-33",
+     "teks": "GENERIK = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "MURAH",
+      "OBAT",
+      "JENIS",
+      "UMUM",
+      "SPESIAL"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata GENERIK memiliki arti 'umum; lazim'. Jadi, kata yang bersinonim dengan GENERIKadaIah UMUM.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "MURAH artinya rendah harganya; obat generik memang murah, tapi itu bukan arti kata generik, sedangkan GENERIK artinya 'umum'.",
+      "OBAT artinya bahan penyembuh, sedangkan GENERIK artinya 'umum'.",
+      "JENIS artinya macam, sedangkan GENERIK artinya 'umum'.",
+      "",
+      "SPESIAL artinya khusus, justru kebalikan dari generik, sedangkan GENERIK artinya 'umum'."
+     ]
+    },
+    {
+     "id": "sinonim-34",
+     "teks": "INJEKSI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "TARIK",
+      "SEDOT",
+      "TEMBUS",
+      "TERAPI",
+      "SUNTIK"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata INJEKSI memiliki arti 'suntikan'. Jadi, kata yang bersinonim dengan INJEKSI adalah SUNTIK.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "TARIK artinya menghela ke arah diri, sedangkan INJEKSI artinya 'suntikan'.",
+      "SEDOT artinya mengisap, sedangkan INJEKSI artinya 'suntikan'.",
+      "TEMBUS artinya berlubang dari sisi ke sisi, sedangkan INJEKSI artinya 'suntikan'.",
+      "TERAPI artinya usaha pengobatan, sedangkan INJEKSI artinya 'suntikan'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-35",
+     "teks": "VIRTUAL = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "RIIL",
+      "MAYA",
+      "IMPIAN",
+      "NYATA",
+      "VIRGIN"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata VIRTUAL memiliki arti 'nyata'. Jadi, kata yang bersinonim dengan VIRTUAL adalah NYATA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "RIIL artinya nyata, sungguh ada, sedangkan VIRTUAL artinya 'nyata'.",
+      "MAYA artinya hanya tampaknya ada, sedangkan VIRTUAL artinya 'nyata'.",
+      "IMPIAN artinya mimpi atau cita-cita, sedangkan VIRTUAL artinya 'nyata'.",
+      "",
+      "VIRGIN artinya perawan, belum tersentuh, sedangkan VIRTUAL artinya 'nyata'."
+     ]
+    },
+    {
+     "id": "sinonim-36",
+     "teks": "ABANGAN = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KAKAK",
+      "MERAH",
+      "KAUM",
+      "ADAT",
+      "KEPERCAYAAN"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata ABANGAN memiliki arti'golongan masyarakat yang menganut agama Islam, tetapi tidak melaksanakan ajaran secara keseluruhan'. Jadi, kata yang bersinonim dengan ABANGAN adalah KEPERCAYAAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "KAKAK artinya saudara yang lebih tua, sedangkan ABANGAN artinya 'golongan masyarakat yang menganut agama...'.",
+      "MERAH artinya nama warna (abang dalam bahasa Jawa), sedangkan ABANGAN artinya 'golongan masyarakat yang menganut agama...'.",
+      "KAUM artinya golongan, sedangkan ABANGAN artinya 'golongan masyarakat yang menganut agama...'.",
+      "ADAT artinya kebiasaan turun-temurun, sedangkan ABANGAN artinya 'golongan masyarakat yang menganut agama...'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-37",
+     "teks": "PARTIKELIR = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "ENTREPRENEUR",
+      "ENTERTAINMENT",
+      "PARTISI",
+      "SWASTA",
+      "NEGERI"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata PARTIKELIR memiliki arti 'bukan untuk umum; bukan kepunyaan pemerintah; bukan (milik) dinas; swasta'. Jadi, kata yang bersinonim dengan PARTIKELIR adalah SWASTA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "ENTREPRENEUR artinya wirausahawan, sedangkan PARTIKELIR artinya 'bukan untuk umum'.",
+      "ENTERTAINMENT artinya hiburan, sedangkan PARTIKELIR artinya 'bukan untuk umum'.",
+      "PARTISI artinya sekat, sedangkan PARTIKELIR artinya 'bukan untuk umum'.",
+      "",
+      "NEGERI artinya milik pemerintah, justru kebalikan dari partikelir, sedangkan PARTIKELIR artinya 'bukan untuk umum'."
+     ]
+    },
+    {
+     "id": "sinonim-38",
+     "teks": "LEGITIMASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PENGATURAN",
+      "PENGIKAT",
+      "PENGHUBUNG",
+      "PENGESAHAN",
+      "PENGENDALIAN"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kata LEGITIMASI memiliki arti 'keterangan yang mengesahkan atau membenarkan bahwa pemegang keterangan adalah betul-betul orang yang dimaksud; pernyataan yang sah'. Jadi, kata yang bersinonim dengan LEGITIMASI adalah PENGESAHAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "PENGATURAN artinya penataan, sedangkan LEGITIMASI artinya 'keterangan yang mengesahkan atau membenarkan...'.",
+      "PENGIKAT artinya alat untuk mengikat, sedangkan LEGITIMASI artinya 'keterangan yang mengesahkan atau membenarkan...'.",
+      "PENGHUBUNG artinya penyambung, sedangkan LEGITIMASI artinya 'keterangan yang mengesahkan atau membenarkan...'.",
+      "",
+      "PENGENDALIAN artinya pengawasan atau pengekangan, sedangkan LEGITIMASI artinya 'keterangan yang mengesahkan atau membenarkan...'."
+     ]
+    },
+    {
+     "id": "sinonim-39",
+     "teks": "AFIRMASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PENENTUAN",
+      "PENEGASAN",
+      "PENEKANAN",
+      "PERLAKUAN",
+      "PENERBITAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "KataAF/RMAS/memilikiarti'penetapan yang positif; penegasan; peneguhan'. Jadi, kata yang bersinonim dengan AFIRMASI adalah PENEGASAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "PENENTUAN artinya penetapan. Maknanya berbeda dengan AFIRMASI.",
+      "",
+      "PENEKANAN artinya pemberian tekanan. Maknanya berbeda dengan AFIRMASI.",
+      "PERLAKUAN artinya perbuatan terhadap sesuatu. Maknanya berbeda dengan AFIRMASI.",
+      "PENERBITAN artinya proses menerbitkan. Maknanya berbeda dengan AFIRMASI."
+     ]
+    },
+    {
+     "id": "sinonim-40",
+     "teks": "KONVENSI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KESEPAKATAN",
+      "KEBENARAN",
+      "PERKIRAAN",
+      "PERJANJIAN",
+      "KONVERSI"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata KONVENSI memiliki arti 'permufakatan atau kesepakatan (terutama mengenai adat, tradisi, dan sebagainya)'. Jadi, kata yang bersinonim dengan KONVENSI adalah KESEPAKATAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "KEBENARAN artinya hal yang benar, sedangkan KONVENSI artinya 'permufakatan atau kesepakatan'.",
+      "PERKIRAAN artinya dugaan, sedangkan KONVENSI artinya 'permufakatan atau kesepakatan'.",
+      "PERJANJIAN artinya persetujuan resmi antara pihak-pihak, sedangkan KONVENSI artinya 'permufakatan atau kesepakatan'.",
+      "KONVERSI artinya perubahan bentuk; bunyinya mirip, artinya lain, sedangkan KONVENSI artinya 'permufakatan atau kesepakatan'."
+     ]
+    },
+    {
+     "id": "sinonim-41",
+     "teks": "INFLASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KENAIKAN",
+      "KEMEROSOTAN",
+      "KEJENUHAN",
+      "PENINGKATAN",
+      "RUPIAH"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata INFLASI memiliki arti 'kemerosotan nilai uang (kertas) karena banyaknya dan cepatnya uang (kertas) beredar sehingga menyebabkan naiknya harga barang-barang'. Jadi, kata yang bersinonim dengan INFLASI adalah\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "KENAIKAN artinya hal naik; inflasi memang disertai kenaikan harga, tapi arti katanya kemerosotan nilai uang, sedangkan INFLASI artinya 'kemerosotan nilai uang'.",
+      "",
+      "KEJENUHAN artinya keadaan jenuh, sedangkan INFLASI artinya 'kemerosotan nilai uang'.",
+      "PENINGKATAN artinya proses naik, sedangkan INFLASI artinya 'kemerosotan nilai uang'.",
+      "RUPIAH artinya mata uang Indonesia, sedangkan INFLASI artinya 'kemerosotan nilai uang'."
+     ]
+    },
+    {
+     "id": "sinonim-42",
+     "teks": "EPILOG = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PEMBUKAAN",
+      "PROLOG",
+      "MONOLOG",
+      "PERCAKAPAN",
+      "PENUTUP"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata EPILOG memiliki arti 'bagian penutup pada karya sastra yang fungsinya menyampaikan intisari cerita'. Jadi, kata yang bersinonim dengan EPILOG adalah PENUTUR\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "PEMBUKAAN artinya bagian awal, justru kebalikan dari epilog, sedangkan EPILOG artinya 'bagian penutup pada karya sastra yang...'.",
+      "PROLOG artinya bagian pembuka, justru kebalikan dari epilog, sedangkan EPILOG artinya 'bagian penutup pada karya sastra yang...'.",
+      "MONOLOG artinya pembicaraan seorang diri, sedangkan EPILOG artinya 'bagian penutup pada karya sastra yang...'.",
+      "PERCAKAPAN artinya dialog, sedangkan EPILOG artinya 'bagian penutup pada karya sastra yang...'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-43",
+     "teks": "EKSTENSI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PERLUASAN",
+      "PENYEMPITAN",
+      "TEPAT GUNA",
+      "PENGGABUNGAN",
+      "KEBERADAAN"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata EKSTENSI memiliki arti 'perpanjangan waktu; perluasan'. Jadi, kata yang bersinonim dengan EKSTENSI adalah PERUASAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "PENYEMPITAN artinya proses menyempit, justru kebalikan dari ekstensi, sedangkan EKSTENSI artinya 'perpanjangan waktu'.",
+      "TEPAT GUNA artinya sesuai kebutuhan, sedangkan EKSTENSI artinya 'perpanjangan waktu'.",
+      "PENGGABUNGAN artinya penyatuan, sedangkan EKSTENSI artinya 'perpanjangan waktu'.",
+      "KEBERADAAN artinya hal adanya, sedangkan EKSTENSI artinya 'perpanjangan waktu'."
+     ]
+    },
+    {
+     "id": "sinonim-44",
+     "teks": "PIALANG = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "MAKELAR",
+      "HADIAH",
+      "PENGEMBARA",
+      "AHLI",
+      "JUARA"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata PIALANG memiliki arti 'perantara dalam jual beli; makelar'. Jadi, kata yang bersinonim dengan PIALANG adalah MAKELAR.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "HADIAH artinya pemberian sebagai penghargaan, sedangkan PIALANG artinya 'perantara dalam jual beli'.",
+      "PENGEMBARA artinya orang yang mengembara, sedangkan PIALANG artinya 'perantara dalam jual beli'.",
+      "AHLI artinya orang yang mahir, sedangkan PIALANG artinya 'perantara dalam jual beli'.",
+      "JUARA artinya pemenang, sedangkan PIALANG artinya 'perantara dalam jual beli'."
+     ]
+    },
+    {
+     "id": "sinonim-45",
+     "teks": "MISTIK = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "ANEH",
+      "UDIK",
+      "GAIB",
+      "KOTOR",
+      "KOPER"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kata MISTIK memiliki arti 'hal gaib yang tidak terjangkau dengan akal manusia yang biasa'. Jadi, kata yang bersinonim dengan MISTIK adalah GAIB.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "ANEH artinya tidak seperti biasa, sedangkan MISTIK artinya 'hal gaib yang tidak terjangkau dengan akal...'.",
+      "UDIK artinya dusun, kampungan, sedangkan MISTIK artinya 'hal gaib yang tidak terjangkau dengan akal...'.",
+      "",
+      "KOTOR artinya tidak bersih, sedangkan MISTIK artinya 'hal gaib yang tidak terjangkau dengan akal...'.",
+      "KOPER artinya tas besar untuk bepergian, sedangkan MISTIK artinya 'hal gaib yang tidak terjangkau dengan akal...'."
+     ]
+    },
+    {
+     "id": "sinonim-46",
+     "teks": "EMPIRIS = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "SETARA",
+      "BIOGRAFI",
+      "POTONGAN",
+      "FIKTIF",
+      "PENGALAMAN"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata EMPIRIS memiliki arti 'berdasarkan pengalaman (terutama yang diperoleh dari penemuan, percobaan, pengamatan yang telah dilakukan)'. Jadi, kata yang bersinonim dengan EMPIRIS adalah PENGALAMAN.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "SETARA artinya sama tingkatnya, sedangkan EMPIRIS artinya 'berdasarkan pengalaman'.",
+      "BIOGRAFI artinya riwayat hidup, sedangkan EMPIRIS artinya 'berdasarkan pengalaman'.",
+      "POTONGAN artinya bagian yang dipotong, sedangkan EMPIRIS artinya 'berdasarkan pengalaman'.",
+      "FIKTIF artinya rekaan, justru kebalikan dari empiris, sedangkan EMPIRIS artinya 'berdasarkan pengalaman'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-47",
+     "teks": "SANITASI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "KOTOR",
+      "KOPER",
+      "IRIGASI",
+      "IRITASI",
+      "SEHAT"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata SANITASI memiliki arti 'usaha untuk membina dan menciptakan suatu keadaan yang baik di bidang kesehatan, terutama kesehatan masyarakat'. Jadi, kata yang bersinonim dengan SANITASI adalah SEHAT.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "KOTOR artinya tidak bersih, sedangkan SANITASI artinya 'usaha untuk membina dan menciptakan suatu...'.",
+      "KOPER artinya tas besar untuk bepergian, sedangkan SANITASI artinya 'usaha untuk membina dan menciptakan suatu...'.",
+      "IRIGASI artinya pengairan sawah, sedangkan SANITASI artinya 'usaha untuk membina dan menciptakan suatu...'.",
+      "IRITASI artinya peradangan pada kulit, sedangkan SANITASI artinya 'usaha untuk membina dan menciptakan suatu...'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-48",
+     "teks": "ANONIM = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "NAMA KECIL",
+      "NAMA SINGKAT",
+      "TANPA NAMA",
+      "NAMA BESAR",
+      "KEPANJANGAN NAMA"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kata ANONIM memiliki arti 'tanpa nama; tanpa beridentitas'. Jadi, kata yang bersinonim dengan ANONIM adalah TANPA NAMA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "NAMA KECIL artinya nama semasa kecil, sedangkan ANONIM artinya 'tanpa nama'.",
+      "NAMA SINGKAT artinya singkatan nama, sedangkan ANONIM artinya 'tanpa nama'.",
+      "",
+      "NAMA BESAR artinya nama yang terkenal, sedangkan ANONIM artinya 'tanpa nama'.",
+      "KEPANJANGAN NAMA artinya nama lengkap, sedangkan ANONIM artinya 'tanpa nama'."
+     ]
+    },
+    {
+     "id": "sinonim-49",
+     "teks": "HOSTES = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PRAMURIA",
+      "PRAMUGARI",
+      "PRAMUNIAGA",
+      "PRAMUSAJI",
+      "PRAMUSYAHWAT"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata HOSTES memiliki arti'perempuan yang pekerjaannya menerima, menjamu, dan menghibur tamu; pramuria'. Jadi, kata yang bersinonim dengan HOSTES adalah PRAMURIA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "PRAMUGARI artinya pelayan penumpang pesawat, sedangkan HOSTES artinya 'perempuan yang pekerjaannya menerima,...'.",
+      "PRAMUNIAGA artinya pelayan toko, sedangkan HOSTES artinya 'perempuan yang pekerjaannya menerima,...'.",
+      "PRAMUSAJI artinya pelayan rumah makan, sedangkan HOSTES artinya 'perempuan yang pekerjaannya menerima,...'.",
+      "PRAMUSYAHWAT artinya pekerja seks, sedangkan HOSTES artinya 'perempuan yang pekerjaannya menerima,...'."
+     ]
+    },
+    {
+     "id": "sinonim-50",
+     "teks": "EGALITER = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "LEGAL",
+      "SEDERAJAT",
+      "OTORITER",
+      "MILITER",
+      "ILEGAL"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata EGALITER memiliki arti 'bersifat sama atau sederajat'. Jadi, kata yang bersinonim dengan EGALITER adalah SEDERAJAT.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "LEGAL artinya sah menurut hukum, sedangkan EGALITER artinya 'bersifat sama atau sederajat'.",
+      "",
+      "OTORITER artinya berkuasa sendiri, sedangkan EGALITER artinya 'bersifat sama atau sederajat'.",
+      "MILITER artinya berkaitan dengan tentara, sedangkan EGALITER artinya 'bersifat sama atau sederajat'.",
+      "ILEGAL artinya tidak sah, sedangkan EGALITER artinya 'bersifat sama atau sederajat'."
+     ]
+    },
+    {
+     "id": "sinonim-51",
+     "teks": "DIKOTOMI = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "DIBAGI DUA",
+      "KEMBAR DUA",
+      "BANYAK CARA",
+      "DUA KEKUATAN",
+      "DWIFUNGSI"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kata DIKOTOMI memiliki arti 'pembagian atas dua kelompok yang saling bertentangan'. Jadi, kata yang bersinonim dengan DIKOTOMI adalah DIBAGI DUA.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "",
+      "KEMBAR DUA artinya dua yang sama persis, sedangkan DIKOTOMI artinya 'pembagian atas dua kelompok yang saling...'.",
+      "BANYAK CARA artinya beragam cara, sedangkan DIKOTOMI artinya 'pembagian atas dua kelompok yang saling...'.",
+      "DUA KEKUATAN artinya dua kuasa, sedangkan DIKOTOMI artinya 'pembagian atas dua kelompok yang saling...'.",
+      "DWIFUNGSI artinya dua fungsi, sedangkan DIKOTOMI artinya 'pembagian atas dua kelompok yang saling...'."
+     ]
+    },
+    {
+     "id": "sinonim-52",
+     "teks": "NANAR = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "BERANI",
+      "TAJAM",
+      "MALU",
+      "KOSONG",
+      "BINGUNG"
+     ],
+     "kunci": 4,
+     "pembahasan": "Kata NANAR memiliki arti 'berasa pusing, agak kehilangan akal, atau bingung'. Jadi, kata yang bersinonim dengan NANAR adalah BINGUNG.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "BERANI artinya tidak takut, sedangkan NANAR artinya 'berasa pusing, agak kehilangan akal, atau...'.",
+      "TAJAM artinya runcing, sedangkan NANAR artinya 'berasa pusing, agak kehilangan akal, atau...'.",
+      "MALU artinya merasa segan atau hina, sedangkan NANAR artinya 'berasa pusing, agak kehilangan akal, atau...'.",
+      "KOSONG artinya tidak berisi, sedangkan NANAR artinya 'berasa pusing, agak kehilangan akal, atau...'.",
+      ""
+     ]
+    },
+    {
+     "id": "sinonim-53",
+     "teks": "MOBILITAS = ...\nKata yang paling dekat artinya adalah ...",
+     "opsi": [
+      "PUKULAN",
+      "GERAK",
+      "SEBANGSA HEWAN",
+      "ANGKA KELAHIRAN",
+      "ANGKA KEMATIAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata MOBILITAS memiliki arti 'kesiapsiagaan untuk bergerak'. Jadi, kata yang bersinonim dengan MOBILITAS adalah GERAK.\nTips: Tentukan jenis kata soal (benda, kerja, sifat). Sinonim harus sejenis dan bisa saling menggantikan dalam kalimat.",
+     "alasan": [
+      "PUKULAN artinya hasil memukul, sedangkan MOBILITAS artinya 'kesiapsiagaan untuk bergerak'.",
+      "",
+      "SEBANGSA HEWAN artinya termasuk golongan hewan, sedangkan MOBILITAS artinya 'kesiapsiagaan untuk bergerak'.",
+      "ANGKA KELAHIRAN artinya natalitas, sedangkan MOBILITAS artinya 'kesiapsiagaan untuk bergerak'.",
+      "ANGKA KEMATIAN artinya mortalitas, sedangkan MOBILITAS artinya 'kesiapsiagaan untuk bergerak'."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "antonim",
+   "nama": "Antonim (buku TPA)",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Pilih kata yang paling berlawanan artinya dengan kata yang dicetak kapital. Hati-hati, pengecohnya sering sinonim.",
+   "soal": [
+    {
+     "id": "antonim-1",
+     "teks": "AKIL = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "BERAKAL",
+      "PANDAI",
+      "LEMAH",
+      "BODOH",
+      "CERDIK"
+     ],
+     "kunci": 3,
+     "pembahasan": "AKIL memiliki arti 'berakal; cerdik; pandai'. Kata BERAKAL, CERDIK, dan PANDAI memiliki arti yang sama dengan AKIL, sedangkan kata LEMAH memiliki arti yang tidak sesuai dengan kata AKIL. Jadi, lawan kata AKIL adalah BODOH.\nTips: Untuk kata yang tidak biasa digunakan kehidupan sehari-hari, cermati pilihan jawabannya. Pilihlah kata yang BERBEDA dari semua pilihan yang ada.",
+     "alasan": [
+      "BERAKAL justru searti dengan AKIL (punya akal), jadi bukan lawan katanya.",
+      "PANDAI justru searti dengan AKIL (cerdas), jadi bukan lawan katanya.",
+      "LEMAH artinya tidak kuat. Bukan lawan kata AKIL.",
+      "",
+      "CERDIK justru searti dengan AKIL (pintar dan banyak akal), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-2",
+     "teks": "EKSPOR = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PENGIRIMAN",
+      "PEMBELIAN",
+      "LUAR NEGERI",
+      "BARANG",
+      "IMPOR"
+     ],
+     "kunci": 4,
+     "pembahasan": "Lawan kata EKS (KELUAR) adalah 1M (DALAM). EKSPOR memiliki arti 'pengiriman barang dagangan ke luar negeri'. Jadi, lawan kata EKSPOR adalah IMPOR yang memiliki arti 'pemasukan barang dari luar negeri'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "PENGIRIMAN justru searti dengan EKSPOR (bagian dari arti ekspor sendiri), jadi bukan lawan katanya.",
+      "PEMBELIAN artinya kegiatan membeli. Bukan lawan kata EKSPOR.",
+      "LUAR NEGERI artinya negara lain. Bukan lawan kata EKSPOR.",
+      "BARANG artinya benda. Bukan lawan kata EKSPOR.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-3",
+     "teks": "RAPUH = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "TEGAR",
+      "KUKUH",
+      "KOYAK",
+      "RENTAN",
+      "KUAT"
+     ],
+     "kunci": 1,
+     "pembahasan": "RAPUH memiliki arti 'sudah rusak (patah, pecah, sobek putus)'. TEGAR memiliki arti 'keras dan kering; keras kaku'. KUAT memiliki arti 'tahan; tidak mudah goyah; ketat; erat'. KUKUH memiliki arti 'kuat terpancang pada tempatnya; tidak mudah roboh atau rusak; teguh'. Jadi, lawan kata yang tepat dari RAPUH adalah KUKUH.\nTips: Jika ada dua atau lebih pilihan jawaban yang memungkinkan, pilih salah satu setelah menelaah arti kata pada soal.",
+     "alasan": [
+      "TEGAR artinya keras dan kaku. Bukan lawan kata RAPUH.",
+      "",
+      "KOYAK justru searti dengan RAPUH (sobek, mirip arti rapuh), jadi bukan lawan katanya.",
+      "RENTAN justru searti dengan RAPUH (mudah rusak), jadi bukan lawan katanya.",
+      "KUAT artinya tahan, tidak mudah goyah. Bukan lawan kata RAPUH."
+     ]
+    },
+    {
+     "id": "antonim-4",
+     "teks": "LAYU = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LEMAH",
+      "MEKAR",
+      "PUCAT",
+      "LOYO",
+      "LUSUH"
+     ],
+     "kunci": 1,
+     "pembahasan": "LAYU memiliki arti 'tidak segar lagi; lusuh; loyo; pucat dan lemah karena sudah tua; tidak sehat'. Jadi, lawan kata LAW adalah MEKAR.\nTips: Artikan katanya lalu cari lawan katanya.",
+     "alasan": [
+      "LEMAH artinya tidak kuat. Bukan lawan kata LAYU.",
+      "",
+      "PUCAT artinya tidak berwarna segar. Bukan lawan kata LAYU.",
+      "LOYO justru searti dengan LAYU (lemah dan lesu), jadi bukan lawan katanya.",
+      "LUSUH artinya kusut dan kotor. Bukan lawan kata LAYU."
+     ]
+    },
+    {
+     "id": "antonim-5",
+     "teks": "TERAWANG = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "RAPAT",
+      "TENUNAN",
+      "LUBANG KECIL",
+      "KERAWANG",
+      "SULAMAN"
+     ],
+     "kunci": 0,
+     "pembahasan": "TERAWANG memiliki arti 'lubang-lubang kecil dan halus (tentang tenunan, sulaman, sujian); kain tenun yang berlubang-lubang kecil'. Jadi, lawan kata TERAWANG adalah RAPAT.\nTips: Artikan katanya lalu cari lawan katanya.",
+     "alasan": [
+      "",
+      "TENUNAN artinya hasil menenun. Bukan lawan kata TERAWANG.",
+      "LUBANG KECIL justru searti dengan TERAWANG (bagian dari arti terawang), jadi bukan lawan katanya.",
+      "KERAWANG justru searti dengan TERAWANG (hiasan berlubang-lubang), jadi bukan lawan katanya.",
+      "SULAMAN artinya hiasan dari jahitan benang. Bukan lawan kata TERAWANG."
+     ]
+    },
+    {
+     "id": "antonim-6",
+     "teks": "ANGGARA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "JINAK",
+      "LIAR",
+      "HALUS",
+      "MALU",
+      "BUAS"
+     ],
+     "kunci": 0,
+     "pembahasan": "ANGGARA memiliki arti 'buas; liar'. Kata BUAS dan LIAR memiliki arti yang sama dengan ANGGARA, sedangkan MALU dan HALUS memiliki arti kata yang tidak berhubungan dengan ANGGARA. Jadi, lawan kata ANGGARA adalah JINAK.\nTips: Untuk kata yang tidak biasa digunakan kehidupan sehari-hari, ARTIKAN KATANYA terlebih dahulu lalu cari lawan katanya.",
+     "alasan": [
+      "",
+      "LIAR justru searti dengan ANGGARA (tidak jinak), jadi bukan lawan katanya.",
+      "HALUS artinya lembut. Bukan lawan kata ANGGARA.",
+      "MALU artinya merasa segan atau hina. Bukan lawan kata ANGGARA.",
+      "BUAS justru searti dengan ANGGARA (ganas), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-7",
+     "teks": "TEKUN = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "MALAS",
+      "LEMAS",
+      "SUNGGUH-SUNGGUH",
+      "LESU",
+      "KERAS HATI"
+     ],
+     "kunci": 0,
+     "pembahasan": "TEKUN memiliki arti 'rajin, keras hati, dan bersungguh-sungguh'. LESU, LEMAS, dan MALAS memiliki arti yang hampir sama dengan TEKUN. Jadi, cermati arti kata TEKUN. Lawan kata yang tepat untuk TEKUN adalah MALAS yang memiliki arti 'tidak mau bekerja atau mengerjakan sesuatu'.\nTips: Jika ada dua atau lebih pilihan jawaban yang memungkinkan, pilih salah satu setelah menelaah arti kata pada soal.",
+     "alasan": [
+      "",
+      "LEMAS justru searti dengan TEKUN (lemah tak bertenaga), jadi bukan lawan katanya.",
+      "SUNGGUH-SUNGGUH justru searti dengan TEKUN (rajin dan bersungguh hati), jadi bukan lawan katanya.",
+      "LESU justru searti dengan TEKUN (lelah tak bergairah), jadi bukan lawan katanya.",
+      "KERAS HATI artinya teguh pendirian. Bukan lawan kata TEKUN."
+     ]
+    },
+    {
+     "id": "antonim-8",
+     "teks": "ASIMILASI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "SELARAS",
+      "DAMAI",
+      "TENANG",
+      "HARMONI",
+      "PERTENGKARAN"
+     ],
+     "kunci": 4,
+     "pembahasan": "ASIMILASI memiliki arti 'penyesuaian (peleburan) sifat asli yang dimiliki dengan sifat lingkungan sekitar'. Dari semua pilihan jawaban, pilihan jawaban PERTENGKARAN memiliki arti kata yang paling berbeda dibandingkan pilihan jawaban lainnya. Selain itu, arti kata PERTENGKARANjuga berbeda dengan arti kata ASIMILASI. Jadi, lawan kata ASIMILASI adalah PERTENGKARAN.\nTips: Cermati pilihan jawaban, carilah pilihan jawaban yang arti katanya PALING BERBEDA dari pilihan lain.",
+     "alasan": [
+      "SELARAS artinya serasi. Bukan lawan kata ASIMILASI.",
+      "DAMAI artinya tenteram. Bukan lawan kata ASIMILASI.",
+      "TENANG artinya tidak gelisah. Bukan lawan kata ASIMILASI.",
+      "HARMONI artinya keselarasan. Bukan lawan kata ASIMILASI.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-9",
+     "teks": "LEKAT = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "CAIR",
+      "PEKAT",
+      "KUAT",
+      "KANJI",
+      "LENDIR"
+     ],
+     "kunci": 0,
+     "pembahasan": "LEKAT memiliki arti 'sangat erat menempel jika diraba'. Kata PEKAT, LENDIR, KANJI, dan KUAT memiliki arti kata yang sama. Jadi, lawan kata LEKAT adalah CAR.\nTips: Cermati pilihan jawaban, carilah pilihan jawaban yang arti katanya PALING BERBEDA dari pilihan lain.",
+     "alasan": [
+      "",
+      "PEKAT justru searti dengan LEKAT (kental), jadi bukan lawan katanya.",
+      "KUAT artinya tahan, tidak mudah goyah. Bukan lawan kata LEKAT.",
+      "KANJI artinya tepung perekat. Bukan lawan kata LEKAT.",
+      "LENDIR artinya cairan kental dan licin. Bukan lawan kata LEKAT."
+     ]
+    },
+    {
+     "id": "antonim-10",
+     "teks": "SETIA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "KHIANAT",
+      "PERCAYA",
+      "MARAH",
+      "SEDIH",
+      "DERMAWAN"
+     ],
+     "kunci": 0,
+     "pembahasan": "SETIA memiliki arti 'berpegang teguh (pada janji, pendirian); patuh; taat'. Kata PERCAYA termasuk sinonim SETIA, sedangkan ketiga kata lainnya (DERMAWAN, MARAH, dan SEDIH) bukan sinonim maupun antonim dari SETIA. Jadi, lawan kata SETIA adalah KHIANAT memiliki arti 'perbuatan tidak setia; tipu daya'.\nTips: Artlkan katanya lalu cari lawan katanya.",
+     "alasan": [
+      "",
+      "PERCAYA artinya yakin akan sesuatu. Bukan lawan kata SETIA.",
+      "MARAH artinya berang. Bukan lawan kata SETIA.",
+      "SEDIH artinya susah hati. Bukan lawan kata SETIA.",
+      "DERMAWAN artinya suka memberi. Bukan lawan kata SETIA."
+     ]
+    },
+    {
+     "id": "antonim-11",
+     "teks": "ABUN-ABUN = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "ANGAN-ANGAN",
+      "SIKAP",
+      "CITA-CITA",
+      "BELAJAR",
+      "USAHA"
+     ],
+     "kunci": 4,
+     "pembahasan": "ABUN-ABUN memiliki arti 'angan-angan'. Jadi, lawan kata ABUN-ABUN adalah USAHA.\nTips: Untuk kata yang tidak biasa digunakan di kehidupan sehari-hari, perbanyak kosakata dengan membuka kamus dan membaca buku.",
+     "alasan": [
+      "ANGAN-ANGAN justru searti dengan ABUN-ABUN (khayalan), jadi bukan lawan katanya.",
+      "SIKAP artinya pendirian atau perbuatan. Bukan lawan kata ABUN-ABUN.",
+      "CITA-CITA artinya keinginan yang ingin dicapai. Bukan lawan kata ABUN-ABUN.",
+      "BELAJAR artinya berusaha memperoleh ilmu. Bukan lawan kata ABUN-ABUN.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-12",
+     "teks": "HIPERAKTIF = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PESIMIS",
+      "TERMENUNG",
+      "TIDAK BISA DIAM",
+      "LEMAS",
+      "PASIF"
+     ],
+     "kunci": 4,
+     "pembahasan": "HIPERAKTIF memiliki arti 'Sifat yang sangat aktif'. Ada tiga pilihan yang memungkinkan, yaitu LEMAS, PASIF, dan PESIMIS. LEMAS memiliki arti 'lentur; lemah'. PESIMIS memiliki arti 'orang yang bersikap atau berpandangan tidak mempunyai harapan baik'. PASIF memiliki arti 'bersifat menerima saja; tidak giat; tidak aktif'. Jadi, lawan kata HIPERAKTIF adalah PASIF.\nTips: Jika ada dua atau lebih pilihan jawaban yang memungkinkan, pilih salah satu setelah menelaah arti kata pada soal.",
+     "alasan": [
+      "PESIMIS artinya berpandangan buruk. Bukan lawan kata HIPERAKTIF.",
+      "TERMENUNG artinya diam karena berpikir. Bukan lawan kata HIPERAKTIF.",
+      "TIDAK BISA DIAM justru searti dengan HIPERAKTIF (arti hiperaktif sendiri), jadi bukan lawan katanya.",
+      "LEMAS artinya lemah tak bertenaga. Bukan lawan kata HIPERAKTIF.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-13",
+     "teks": "EKSTERNAL = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PERMUKAAN",
+      "INTERNAL",
+      "MASUK",
+      "DALAM",
+      "DASAR"
+     ],
+     "kunci": 1,
+     "pembahasan": "Lawan kata EKS (KELUAR) adalah IN (DALAM). EKSTERNAL memiliki arti 'menyangkut bagian luar; luar (negeri)'. Jadi, lawan kata EKSTERNAL adalah INTERNAL yang memiliki arti 'menyangkut bagian dalam'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "PERMUKAAN artinya bagian luar atau atas. Bukan lawan kata EKSTERNAL.",
+      "",
+      "MASUK artinya bergerak ke dalam. Bukan lawan kata EKSTERNAL.",
+      "DALAM artinya bagian sebelah dalam; dekat, tapi pasangan lawan yang setara adalah internal. Bukan lawan kata EKSTERNAL.",
+      "DASAR artinya bagian paling bawah. Bukan lawan kata EKSTERNAL."
+     ]
+    },
+    {
+     "id": "antonim-14",
+     "teks": "CANDA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "SERIUS",
+      "OLOK-OLOKAN",
+      "GUYONAN",
+      "SEDIH",
+      "EJEKAN"
+     ],
+     "kunci": 0,
+     "pembahasan": "CANDA memiliki arti'tingkah; kelakar; senda gurau; seloroh'. Jadi, lawan kata CANDA adalah SERIUS.\nTips: Artikan katanya lalu cari lawan katanya.",
+     "alasan": [
+      "",
+      "OLOK-OLOKAN justru searti dengan CANDA (ejekan untuk bercanda), jadi bukan lawan katanya.",
+      "GUYONAN justru searti dengan CANDA (lelucon), jadi bukan lawan katanya.",
+      "SEDIH artinya susah hati. Bukan lawan kata CANDA.",
+      "EJEKAN justru searti dengan CANDA (olok-olok), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-15",
+     "teks": "MURUNG = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "DURJANA",
+      "BAHAGIA",
+      "SEDIH",
+      "CERAH",
+      "MASYGUL"
+     ],
+     "kunci": 1,
+     "pembahasan": "MURUNG memiliki arti'(mudah) sedih; masygul'. Jadi, lawan kata MURUNG adalah BAHAGIA.\nTips: Artlkan katanya lalu cari lawan katanya.",
+     "alasan": [
+      "DURJANA artinya jahat. Bukan lawan kata MURUNG.",
+      "",
+      "SEDIH artinya susah hati. Bukan lawan kata MURUNG.",
+      "CERAH artinya terang, biasanya untuk cuaca atau wajah. Bukan lawan kata MURUNG.",
+      "MASYGUL justru searti dengan MURUNG (sedih dan murung), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-16",
+     "teks": "INSTAN = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PROSES",
+      "CEPAT",
+      "KILAT",
+      "BERJALAN",
+      "LANGSUNG"
+     ],
+     "kunci": 0,
+     "pembahasan": "INSTAN memiliki arti'langsung (tanpa dimasak lama) dapat diminum atau dimakan)'. Jadi, lawan kata INSTAN adalah PROSES.\nTips: Artikan katanya lalu cari lawan katanya.",
+     "alasan": [
+      "",
+      "CEPAT justru searti dengan INSTAN (dalam waktu singkat), jadi bukan lawan katanya.",
+      "KILAT justru searti dengan INSTAN (sangat cepat), jadi bukan lawan katanya.",
+      "BERJALAN artinya bergerak. Bukan lawan kata INSTAN.",
+      "LANGSUNG justru searti dengan INSTAN (seketika), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-17",
+     "teks": "LEGISLATIF = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "EKSEKUTIF",
+      "MA",
+      "MPR",
+      "KPK",
+      "YUDIKATIF"
+     ],
+     "kunci": 0,
+     "pembahasan": "LEGISLATIF memiliki arti 'berwenang membuat undang-undang'. Lawan kata LEGISLATIF adalah EKSEKUTIF yang berarti 'kekuasaan menjalankan undang-undang'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "MA artinya Mahkamah Agung, lembaga yudikatif. Bukan lawan kata LEGISLATIF.",
+      "MPR artinya lembaga legislatif. Bukan lawan kata LEGISLATIF.",
+      "KPK artinya lembaga pemberantas korupsi. Bukan lawan kata LEGISLATIF.",
+      "YUDIKATIF artinya kekuasaan kehakiman. Bukan lawan kata LEGISLATIF."
+     ]
+    },
+    {
+     "id": "antonim-18",
+     "teks": "ELASTIS = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "FLEKSIBEL",
+      "PRAKTIS",
+      "KAKU",
+      "LENTUR",
+      "LUWES"
+     ],
+     "kunci": 2,
+     "pembahasan": "ELASTIS memiliki arti'mudah berubah bentuknya'. Lawan kata ELASTIS adalah KAKU.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "FLEKSIBEL artinya lentur, mudah menyesuaikan diri. Bukan lawan kata ELASTIS.",
+      "PRAKTIS artinya mudah dipakai. Bukan lawan kata ELASTIS.",
+      "",
+      "LENTUR justru searti dengan ELASTIS (mudah dibengkokkan), jadi bukan lawan katanya.",
+      "LUWES justru searti dengan ELASTIS (tidak kaku), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-19",
+     "teks": "MAKAR = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "KEBOHONGAN",
+      "TIPUAN",
+      "ANCAMAN",
+      "JUJUR",
+      "SEDERHANA"
+     ],
+     "kunci": 3,
+     "pembahasan": "MAKAR memiliki arti 'tipu muslihat'. Lawan kata MAKAR adalah JUJUR.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "KEBOHONGAN justru searti dengan MAKAR (dusta), jadi bukan lawan katanya.",
+      "TIPUAN justru searti dengan MAKAR (muslihat), jadi bukan lawan katanya.",
+      "ANCAMAN artinya niat mencelakakan. Bukan lawan kata MAKAR.",
+      "",
+      "SEDERHANA artinya tidak rumit, justru kebalikan dari kompleksitas. Bukan lawan kata MAKAR."
+     ]
+    },
+    {
+     "id": "antonim-20",
+     "teks": "MAHIR = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "AWAM",
+      "TERLATIH",
+      "CAKAP",
+      "PANDAI",
+      "TERAMPIL"
+     ],
+     "kunci": 0,
+     "pembahasan": "MAHIR memiliki arti 'sangat terlatih, cakap (pandai), dan terampil'. Lawan kata MAHIR adalah AWAM.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "TERLATIH justru searti dengan MAHIR (sudah dilatih), jadi bukan lawan katanya.",
+      "CAKAP justru searti dengan MAHIR (mampu), jadi bukan lawan katanya.",
+      "PANDAI justru searti dengan MAHIR (cerdas), jadi bukan lawan katanya.",
+      "TERAMPIL justru searti dengan MAHIR (cekatan), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-21",
+     "teks": "PROMINEN = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "TERKEMUKA",
+      "PENDUKUNG",
+      "BIASA",
+      "PELOPOR",
+      "PROVOKASI"
+     ],
+     "kunci": 2,
+     "pembahasan": "PROMINEN memiliki arti 'terkemuka'. Lawan kata PROMINEM adalah BIASA.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "TERKEMUKA justru searti dengan PROMINEN (termasyhur), jadi bukan lawan katanya.",
+      "PENDUKUNG artinya penyokong. Bukan lawan kata PROMINEN.",
+      "",
+      "PELOPOR artinya perintis. Bukan lawan kata PROMINEN.",
+      "PROVOKASI artinya hasutan. Bukan lawan kata PROMINEN."
+     ]
+    },
+    {
+     "id": "antonim-22",
+     "teks": "TAKZIM = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "APATIS",
+      "TAKJUB",
+      "ACUH",
+      "TERKESAN",
+      "MANDIRI"
+     ],
+     "kunci": 0,
+     "pembahasan": "TAKZIM memiliki arti 'amat hormat dan sopan'. Lawan kata TAKZIM adalah APATIS yang berarti 'masa bodoh, tidak peduli'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "TAKJUB artinya kagum. Bukan lawan kata TAKZIM.",
+      "ACUH artinya peduli (sering salah kaprah dianggap tidak peduli). Bukan lawan kata TAKZIM.",
+      "TERKESAN artinya tersentuh. Bukan lawan kata TAKZIM.",
+      "MANDIRI artinya berdiri sendiri. Bukan lawan kata TAKZIM."
+     ]
+    },
+    {
+     "id": "antonim-23",
+     "teks": "SUMBANG = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "TEPAT",
+      "MIRIP",
+      "LARAS",
+      "IMBANG",
+      "KOKOH"
+     ],
+     "kunci": 0,
+     "pembahasan": "SUMBANG memiliki arti 'salah; keliru'. Lawan kata SUMBANG adalah TEPAT.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "MIRIP artinya hampir sama. Bukan lawan kata SUMBANG.",
+      "LARAS artinya serasi nadanya. Bukan lawan kata SUMBANG.",
+      "IMBANG artinya seimbang. Bukan lawan kata SUMBANG.",
+      "KOKOH artinya kuat. Bukan lawan kata SUMBANG."
+     ]
+    },
+    {
+     "id": "antonim-24",
+     "teks": "BUNCAH = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "JERNIH",
+      "KERUH",
+      "BUNCIS",
+      "PAYAU",
+      "TAWAR"
+     ],
+     "kunci": 0,
+     "pembahasan": "BUNCAH memiliki arti 'keruh'. Lawan kata BUNCAH adalah JERNIH.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "KERUH justru searti dengan BUNCAH (tidak jernih, kacau), jadi bukan lawan katanya.",
+      "BUNCIS artinya nama sayuran; bunyinya mirip. Bukan lawan kata BUNCAH.",
+      "PAYAU artinya agak asin. Bukan lawan kata BUNCAH.",
+      "TAWAR artinya tidak berasa. Bukan lawan kata BUNCAH."
+     ]
+    },
+    {
+     "id": "antonim-25",
+     "teks": "SPORADIS = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "JARANG",
+      "SERING",
+      "MENINGKAT",
+      "TERHENTI",
+      "BERGANTIAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "SPORADIS memiliki arti 'tidak tentu; kadang kala; kadang-kadang'. Lawan kata SPORADIS adalah SERING.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "JARANG justru searti dengan SPORADIS (tidak sering), jadi bukan lawan katanya.",
+      "",
+      "MENINGKAT artinya bertambah. Bukan lawan kata SPORADIS.",
+      "TERHENTI artinya berhenti. Bukan lawan kata SPORADIS.",
+      "BERGANTIAN artinya silih berganti. Bukan lawan kata SPORADIS."
+     ]
+    },
+    {
+     "id": "antonim-26",
+     "teks": "YUWANA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "MUDA",
+      "REMAJA",
+      "TUA",
+      "BALITA",
+      "MANUSIA"
+     ],
+     "kunci": 2,
+     "pembahasan": "YUWANA artinya muda. Maka lawan katanya adalah TUA.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "MUDA justru searti dengan YUWANA (belum tua), jadi bukan lawan katanya.",
+      "REMAJA justru searti dengan YUWANA (anak muda), jadi bukan lawan katanya.",
+      "",
+      "BALITA artinya anak di bawah lima tahun. Bukan lawan kata YUWANA.",
+      "MANUSIA artinya makhluk berakal. Bukan lawan kata YUWANA."
+     ]
+    },
+    {
+     "id": "antonim-27",
+     "teks": "ULTIMA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "KESAN",
+      "AKHIR",
+      "AWAL",
+      "BIASA",
+      "FINAL"
+     ],
+     "kunci": 2,
+     "pembahasan": "ULTIMA memiliki arti 'akhir atau final'. Lawan kata ULTIMA adalah AWAL.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "KESAN artinya pengaruh yang tertinggal. Bukan lawan kata ULTIMA.",
+      "AKHIR justru searti dengan ULTIMA (penghabisan), jadi bukan lawan katanya.",
+      "",
+      "BIASA artinya lazim, umum. Bukan lawan kata ULTIMA.",
+      "FINAL justru searti dengan ULTIMA (terakhir), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-28",
+     "teks": "RANCA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "MUDAH",
+      "GAMPANG",
+      "RAGU",
+      "SULIT",
+      "YAKIN"
+     ],
+     "kunci": 3,
+     "pembahasan": "RANCA memiliki arti 'menganggap mudah (gampang, ringan)'. Lawan kata RANCA adalah SULIT.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "MUDAH justru searti dengan RANCA (tidak sukar), jadi bukan lawan katanya.",
+      "GAMPANG justru searti dengan RANCA (mudah), jadi bukan lawan katanya.",
+      "RAGU artinya bimbang. Bukan lawan kata RANCA.",
+      "",
+      "YAKIN artinya percaya sungguh-sungguh. Bukan lawan kata RANCA."
+     ]
+    },
+    {
+     "id": "antonim-29",
+     "teks": "PERLOP = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "ABSEN",
+      "DATANG",
+      "PULANG",
+      "MASUK",
+      "KERJA"
+     ],
+     "kunci": 4,
+     "pembahasan": "PERLOP artinya cuti (izin tidak bekerja dalam beberapa hari untukberistirahat karena sakit atau lainnya)''. Lawan kata PERLOP adalah KERJA.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "ABSEN artinya tidak hadir. Bukan lawan kata PERLOP.",
+      "DATANG artinya tiba. Bukan lawan kata PERLOP.",
+      "PULANG artinya kembali ke rumah. Bukan lawan kata PERLOP.",
+      "MASUK artinya bergerak ke dalam. Bukan lawan kata PERLOP.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-30",
+     "teks": "DEFLASI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "INFLASI",
+      "PENGUATAN",
+      "PENAMBAHAN",
+      "KORELASI",
+      "INDUKSI"
+     ],
+     "kunci": 0,
+     "pembahasan": "DEFLASI memiliki arti 'penambahan nilai mata uang'. Lawan kata DEFLASI adalah INFLASI yang berarti 'kemerosotan nilai uang'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "PENGUATAN artinya hal menguat. Bukan lawan kata DEFLASI.",
+      "PENAMBAHAN artinya hal menambah. Bukan lawan kata DEFLASI.",
+      "KORELASI artinya hubungan timbal balik. Bukan lawan kata DEFLASI.",
+      "INDUKSI artinya penalaran dari khusus ke umum. Bukan lawan kata DEFLASI."
+     ]
+    },
+    {
+     "id": "antonim-31",
+     "teks": "HIRAU = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LUPA",
+      "INGAT",
+      "LALAI",
+      "KOLASE",
+      "TAK ACUH"
+     ],
+     "kunci": 4,
+     "pembahasan": "HIRAU memiliki arti 'memedulikan; mengacuhkan; mengindahkan; memperhatikan'. Lawan kata HIRAU adalah TAK ACUH.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "LUPA artinya tidak ingat. Bukan lawan kata HIRAU.",
+      "INGAT artinya masih dalam pikiran. Bukan lawan kata HIRAU.",
+      "LALAI artinya lengah. Bukan lawan kata HIRAU.",
+      "KOLASE artinya karya seni tempelan. Bukan lawan kata HIRAU.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-32",
+     "teks": "LAPANG = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LUAS",
+      "BESAR",
+      "SEMPIT",
+      "PANJANG",
+      "REPOT"
+     ],
+     "kunci": 2,
+     "pembahasan": "LAPANG memiliki arti'lega; luas; lebar'. Lawan kata LAPANG adalah SEMPIT.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "LUAS justru searti dengan LAPANG (lapang), jadi bukan lawan katanya.",
+      "BESAR artinya tidak kecil. Bukan lawan kata LAPANG.",
+      "",
+      "PANJANG artinya jauh antara ujung. Bukan lawan kata LAPANG.",
+      "REPOT artinya sibuk. Bukan lawan kata LAPANG."
+     ]
+    },
+    {
+     "id": "antonim-33",
+     "teks": "KENTARA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "FATAMORGANA",
+      "REAL",
+      "MIMPI",
+      "AKTUAL",
+      "OTENTIK"
+     ],
+     "kunci": 0,
+     "pembahasan": "KENTARA memiliki arti 'nyata; terang kelihatan; tampak'. Lawan kata KENTARA adalah FATAMORGANA yang berarti 'hal yang bersifat khayal dan tidak mungkin dicapai'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "REAL justru searti dengan KENTARA (nyata), jadi bukan lawan katanya.",
+      "MIMPI artinya bunga tidur. Bukan lawan kata KENTARA.",
+      "AKTUAL artinya sedang hangat dibicarakan. Bukan lawan kata KENTARA.",
+      "OTENTIK justru searti dengan KENTARA (asli), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-34",
+     "teks": "OTORITER = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "KUASA",
+      "DEMOKRASI",
+      "BEBAS",
+      "SEKULER",
+      "HAMBATAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "OTORITER memiliki arti 'berkuasa sendiri; sewenang-wenang'. Lawan kata OTORITER adalah DEMOKRASI yang berarti'gagasan atau pandangan hidup yang mengutamakan persamaan hak dan kewajiban serta perlakuan yang sama bagi semua warga negara'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "KUASA artinya wewenang. Bukan lawan kata OTORITER.",
+      "",
+      "BEBAS artinya lepas. Bukan lawan kata OTORITER.",
+      "SEKULER artinya bersifat duniawi. Bukan lawan kata OTORITER.",
+      "HAMBATAN artinya halangan. Bukan lawan kata OTORITER."
+     ]
+    },
+    {
+     "id": "antonim-35",
+     "teks": "ELUSIF = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "GAMPANG",
+      "SULIT",
+      "MUDAH DIPAHAMI",
+      "KHUSUS",
+      "DIMENGERTI"
+     ],
+     "kunci": 2,
+     "pembahasan": "ELUSIF memiliki arti 'sukar dipahami atau diartikan'. Lawan kata ELUSIF adalah MUDAH DIPAHAMI.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "GAMPANG justru searti dengan ELUSIF (mudah), jadi bukan lawan katanya.",
+      "SULIT justru searti dengan ELUSIF (sukar), jadi bukan lawan katanya.",
+      "",
+      "KHUSUS artinya tertentu. Bukan lawan kata ELUSIF.",
+      "DIMENGERTI artinya dipahami. Bukan lawan kata ELUSIF."
+     ]
+    },
+    {
+     "id": "antonim-36",
+     "teks": "NEKAT = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "BERANI",
+      "TAKUT",
+      "SABAR",
+      "JAGOAN",
+      "KERAS HATI"
+     ],
+     "kunci": 1,
+     "pembahasan": "NEKAT artinya berkeras hati; dengan keras atau kuat kemauan. Maka kata yang berlawanan makna adalah TAKUT.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "BERANI artinya tidak takut. Bukan lawan kata NEKAT.",
+      "",
+      "SABAR artinya tahan menghadapi cobaan. Bukan lawan kata NEKAT.",
+      "JAGOAN artinya jago. Bukan lawan kata NEKAT.",
+      "KERAS HATI artinya teguh pendirian. Bukan lawan kata NEKAT."
+     ]
+    },
+    {
+     "id": "antonim-37",
+     "teks": "INOVASI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "MODIFIKASI",
+      "STAGNAN",
+      "PEMBAHARUAN",
+      "SUBSTITUSI",
+      "IMITASI"
+     ],
+     "kunci": 1,
+     "pembahasan": "INOVASI memiliki arti 'pemasukan atau pengenalan hal-hal yang baru; pembaharuan'. Lawan kata INOVASI adalah STAGNAN.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "MODIFIKASI justru searti dengan INOVASI (perubahan), jadi bukan lawan katanya.",
+      "",
+      "PEMBAHARUAN justru searti dengan INOVASI (pembaruan), jadi bukan lawan katanya.",
+      "SUBSTITUSI artinya penggantian. Bukan lawan kata INOVASI.",
+      "IMITASI artinya tiruan. Bukan lawan kata INOVASI."
+     ]
+    },
+    {
+     "id": "antonim-38",
+     "teks": "RIVALITAS = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PERSAINGAN",
+      "PERTENGAHAN",
+      "PERSENGKETAAN",
+      "PERSESUAIAN",
+      "PERSEKONGKOLAN"
+     ],
+     "kunci": 3,
+     "pembahasan": "RIVALITASmemilikiarti'pertentangan; permusuhan; persaingan'. Lawan kata RIVALITAS adalah PERSESUAIAN.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "PERSAINGAN justru searti dengan RIVALITAS (rivalitas), jadi bukan lawan katanya.",
+      "PERTENGAHAN artinya bagian tengah. Bukan lawan kata RIVALITAS.",
+      "PERSENGKETAAN justru searti dengan RIVALITAS (perselisihan), jadi bukan lawan katanya.",
+      "",
+      "PERSEKONGKOLAN artinya komplotan. Bukan lawan kata RIVALITAS."
+     ]
+    },
+    {
+     "id": "antonim-39",
+     "teks": "GEGAI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LEMAH",
+      "SANTAI",
+      "KUAT",
+      "KASAR",
+      "LEMBUT"
+     ],
+     "kunci": 2,
+     "pembahasan": "GEGAI memiliki arti 'mudah lepas; tidak kukuh'. Lawan kata GEGAI adalah KUAT.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "LEMAH artinya tidak kuat. Bukan lawan kata GEGAI.",
+      "SANTAI artinya tidak tegang. Bukan lawan kata GEGAI.",
+      "",
+      "KASAR artinya tidak halus. Bukan lawan kata GEGAI.",
+      "LEMBUT artinya halus. Bukan lawan kata GEGAI."
+     ]
+    },
+    {
+     "id": "antonim-40",
+     "teks": "PEJAL = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LUNAK",
+      "KAKU",
+      "KUAT",
+      "JINAK",
+      "JANGGAL"
+     ],
+     "kunci": 0,
+     "pembahasan": "PEJAL memiliki arti 'padat keras; tidak geronggang'. Lawan kata PEJAL adalah LUNAK.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "KAKU artinya tidak lentur, sukar dibengkokkan. Bukan lawan kata PEJAL.",
+      "KUAT artinya tahan, tidak mudah goyah. Bukan lawan kata PEJAL.",
+      "JINAK artinya tidak liar. Bukan lawan kata PEJAL.",
+      "JANGGAL artinya kurang pantas. Bukan lawan kata PEJAL."
+     ]
+    },
+    {
+     "id": "antonim-41",
+     "teks": "PRIVAT = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "SENDIRI",
+      "MANDIRI",
+      "PUBLIK",
+      "SEKTOR",
+      "PARTIKELIR"
+     ],
+     "kunci": 2,
+     "pembahasan": "PRIVAT memiliki arti 'pribadi; partikelir; swasta'. Lawan kata PRIVAT adalah PUBLIK.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "SENDIRI justru searti dengan PRIVAT (pribadi), jadi bukan lawan katanya.",
+      "MANDIRI artinya berdiri sendiri. Bukan lawan kata PRIVAT.",
+      "",
+      "SEKTOR artinya bidang usaha atau lingkungan kegiatan. Bukan lawan kata PRIVAT.",
+      "PARTIKELIR justru searti dengan PRIVAT (swasta), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-42",
+     "teks": "INTERIOR = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "DESAIN",
+      "EKSTERIOR",
+      "RUANGAN",
+      "ARSITEKTUR",
+      "TATANAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "INTERIOR memiliki arti 'bagian dalam gedung atau ruangan'. Lawan kata INTERIOR adalah EKSTERIOR yang berarti 'bagian luar gedung atau ruangan'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "DESAIN artinya rancangan. Bukan lawan kata INTERIOR.",
+      "",
+      "RUANGAN justru searti dengan INTERIOR (bagian dalam), jadi bukan lawan katanya.",
+      "ARSITEKTUR artinya seni merancang bangunan. Bukan lawan kata INTERIOR.",
+      "TATANAN artinya susunan. Bukan lawan kata INTERIOR."
+     ]
+    },
+    {
+     "id": "antonim-43",
+     "teks": "FLORA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "FAUNA",
+      "TUMBUHAN",
+      "POHON",
+      "HABITAT",
+      "KORAL"
+     ],
+     "kunci": 0,
+     "pembahasan": "FLORA memiliki arti 'dunia tumbuhan'. Lawan kata FLORA adalah FAUNA yang berarti 'dunia hewan'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "TUMBUHAN justru searti dengan FLORA (arti flora sendiri), jadi bukan lawan katanya.",
+      "POHON justru searti dengan FLORA (bagian dari flora), jadi bukan lawan katanya.",
+      "HABITAT artinya tempat hidup. Bukan lawan kata FLORA.",
+      "KORAL artinya karang laut, atau kandang kuda. Bukan lawan kata FLORA."
+     ]
+    },
+    {
+     "id": "antonim-44",
+     "teks": "APRIORI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "HIPOTESIS",
+      "PENGANTAR",
+      "SINTESIS",
+      "ANGGAPAN",
+      "APOSTERIORI"
+     ],
+     "kunci": 4,
+     "pembahasan": "Apriori memiliki arti 'beranggapan sebelum mengetahui keadaan yang sebenarnya'. Lawan kata APRIORI adalah APOSTERIORI yang berarti 'keadaan setelah diketahui'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "HIPOTESIS artinya dugaan sementara. Bukan lawan kata APRIORI.",
+      "PENGANTAR artinya pendahuluan. Bukan lawan kata APRIORI.",
+      "SINTESIS artinya paduan berbagai unsur. Bukan lawan kata APRIORI.",
+      "ANGGAPAN justru searti dengan APRIORI (dugaan sebelum mengetahui), jadi bukan lawan katanya.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-45",
+     "teks": "KONKLUSIF = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PERSUASIF",
+      "PROPOSISI",
+      "PERSEPSI",
+      "PENGANTAR",
+      "ANTITESIS"
+     ],
+     "kunci": 1,
+     "pembahasan": "KONKLUSIF memiliki arti 'simpulan'. Lawan kata KONKLUSIF adalah PROPOSISI yang berarti rancangan.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "PERSUASIF artinya bersifat membujuk. Bukan lawan kata KONKLUSIF.",
+      "",
+      "PERSEPSI artinya tanggapan. Bukan lawan kata KONKLUSIF.",
+      "PENGANTAR artinya pendahuluan. Bukan lawan kata KONKLUSIF.",
+      "ANTITESIS artinya pertentangan. Bukan lawan kata KONKLUSIF."
+     ]
+    },
+    {
+     "id": "antonim-46",
+     "teks": "DEDUKSI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "INTUISI",
+      "CAMPURAN",
+      "INDUKSI",
+      "ARGUMENTASI",
+      "EKSPOSISI"
+     ],
+     "kunci": 2,
+     "pembahasan": "DEDUKSI memiliki arti 'penarikan kesimpulan dari keadaan yang umum'. Lawan kata DEDUKSI adalah INDUKSI yang berarti 'penarikan kesimpulan berdasarkan keadaan yang khusus untuk diperlakukan secara umum; penentuan kaidah umum berdasarkan kaidah khusus'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "INTUISI artinya bisikan hati. Bukan lawan kata DEDUKSI.",
+      "CAMPURAN artinya hasil mencampur. Bukan lawan kata DEDUKSI.",
+      "",
+      "ARGUMENTASI artinya pemberian alasan. Bukan lawan kata DEDUKSI.",
+      "EKSPOSISI artinya paparan. Bukan lawan kata DEDUKSI."
+     ]
+    },
+    {
+     "id": "antonim-47",
+     "teks": "MANDIRI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "BERDIKARI",
+      "INTERAKSI",
+      "KORELASI",
+      "INDEPENDEN",
+      "DEPENDEN"
+     ],
+     "kunci": 4,
+     "pembahasan": "MANDIRI adalah keadaan dapat berdiri sendiri; tidak bergantung pada orang lain. MANDIRI memiliki persamaan dengan BERDIKARI dan INDEPENDEN. Lawan kata MANDIRI adalah DEPENDEN yang berarti 'bergantung kepada orang lain'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "BERDIKARI justru searti dengan MANDIRI (berdiri di atas kaki sendiri), jadi bukan lawan katanya.",
+      "INTERAKSI artinya hubungan saling memengaruhi. Bukan lawan kata MANDIRI.",
+      "KORELASI artinya hubungan timbal balik. Bukan lawan kata MANDIRI.",
+      "INDEPENDEN justru searti dengan MANDIRI (tidak bergantung), jadi bukan lawan katanya.",
+      ""
+     ]
+    },
+    {
+     "id": "antonim-48",
+     "teks": "GOYAH = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LABIL",
+      "GOYANG",
+      "BIMBANG",
+      "KONSISTEN",
+      "RAGU"
+     ],
+     "kunci": 3,
+     "pembahasan": "GOYAH memiliki arti 'tidak teguh; tidak tetap'. Lawan kata GOYAH adalah KONSISTEN.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "LABIL justru searti dengan GOYAH (tidak stabil), jadi bukan lawan katanya.",
+      "GOYANG justru searti dengan GOYAH (bergerak tidak tetap), jadi bukan lawan katanya.",
+      "BIMBANG justru searti dengan GOYAH (ragu), jadi bukan lawan katanya.",
+      "",
+      "RAGU artinya bimbang. Bukan lawan kata GOYAH."
+     ]
+    },
+    {
+     "id": "antonim-49",
+     "teks": "MUDA = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "LAJANG",
+      "PILIHAN",
+      "WREDA",
+      "PINTAR",
+      "MUJUR"
+     ],
+     "kunci": 2,
+     "pembahasan": "MUDA merupakan kata yang lazim terdengar. Lawan katanya adalah TUA. Kata TUA memiliki arti yang sama dengan kata WREDA.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "LAJANG artinya belum menikah. Bukan lawan kata MUDA.",
+      "PILIHAN artinya hasil memilih. Bukan lawan kata MUDA.",
+      "",
+      "PINTAR artinya cerdas. Bukan lawan kata MUDA.",
+      "MUJUR artinya beruntung. Bukan lawan kata MUDA."
+     ]
+    },
+    {
+     "id": "antonim-50",
+     "teks": "LECO = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "KERDIL",
+      "RAKSASA",
+      "MUNGIL",
+      "KATE",
+      "CEBOL"
+     ],
+     "kunci": 1,
+     "pembahasan": "LECO memiliki arti 'kerdil'. Lawan kata LECO adalah RAKSASA.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "KERDIL justru searti dengan LECO (kecil), jadi bukan lawan katanya.",
+      "",
+      "MUNGIL justru searti dengan LECO (kecil dan manis), jadi bukan lawan katanya.",
+      "KATE justru searti dengan LECO (pendek), jadi bukan lawan katanya.",
+      "CEBOL justru searti dengan LECO (pendek sekali), jadi bukan lawan katanya."
+     ]
+    },
+    {
+     "id": "antonim-51",
+     "teks": "GRATIFIKASI = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "DENDA",
+      "HADIAH",
+      "BONUS",
+      "REVISI",
+      "POTONGAN"
+     ],
+     "kunci": 0,
+     "pembahasan": "GRATIFIKASI memiliki arti 'uang hadiah kepada pegawai di luar gaji yang telah ditentukan'. Lawan kata GRATIFIKASI adalah DENDA.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "",
+      "HADIAH artinya pemberian sebagai penghargaan. Bukan lawan kata GRATIFIKASI.",
+      "BONUS justru searti dengan GRATIFIKASI (tambahan pemberian), jadi bukan lawan katanya.",
+      "REVISI artinya perbaikan. Bukan lawan kata GRATIFIKASI.",
+      "POTONGAN artinya bagian yang dipotong. Bukan lawan kata GRATIFIKASI."
+     ]
+    },
+    {
+     "id": "antonim-52",
+     "teks": "OPAS = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "PORTER",
+      "HANSIP",
+      "PESURUH",
+      "PEMIMPIN",
+      "PRAJURIT"
+     ],
+     "kunci": 3,
+     "pembahasan": "OPAS memiliki arti 'penjaga kantor'. Lawan kata OPAS adalah PEMIMPIN.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "PORTER artinya pengangkut barang. Bukan lawan kata OPAS.",
+      "HANSIP artinya pertahanan sipil. Bukan lawan kata OPAS.",
+      "PESURUH justru searti dengan OPAS (orang suruhan), jadi bukan lawan katanya.",
+      "",
+      "PRAJURIT artinya tentara. Bukan lawan kata OPAS."
+     ]
+    },
+    {
+     "id": "antonim-53",
+     "teks": "MONOTON = ...\nKata yang berlawanan artinya adalah ...",
+     "opsi": [
+      "TETAP",
+      "KONSISTEN",
+      "SEJALAN",
+      "FLEKSIBEL",
+      "DINAMIS"
+     ],
+     "kunci": 4,
+     "pembahasan": "MONOTON memiliki arti 'berulang-ulang selalu sama dengan yang dulu'. Lawan kata MONOTON adalah DINAMIS yang berarti 'bergerak'.\nTips: Cari kata yang artinya berlawanan. Hati-hati dengan opsi yang justru searti dengan kata soal, karena itu pengecoh paling sering.",
+     "alasan": [
+      "TETAP justru searti dengan MONOTON (tidak berubah), jadi bukan lawan katanya.",
+      "KONSISTEN justru searti dengan MONOTON (ajek), jadi bukan lawan katanya.",
+      "SEJALAN artinya searah. Bukan lawan kata MONOTON.",
+      "FLEKSIBEL artinya lentur, mudah menyesuaikan diri. Bukan lawan kata MONOTON.",
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "id": "analogi-kata",
+   "nama": "Padanan Hubungan (buku TPA)",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "A : B = C : ?. Buat kalimat penghubung untuk pasangan soal, lalu uji pada tiap opsi.",
+   "soal": [
+    {
+     "id": "analogi-kata-1",
+     "teks": "MANIS : LIDAH = JALAN : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "KAKI",
+      "JEMBATAN PENYEBERANGAN",
+      "SEPATU",
+      "JARING",
+      "TROTOAR"
+     ],
+     "kunci": 0,
+     "pembahasan": "MANIS dapat dirasakan oleh LIDAH dan JALAN dapat dilakukan oleh KAKI.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "",
+      "Jembatan adalah tempat orang menyeberang, bukan anggota tubuh yang melakukan kegiatan berjalan.",
+      "Sepatu dipakai saat berjalan, tapi bukan anggota tubuh pelakunya. Polanya: manis dirasakan lidah, berjalan dilakukan kaki.",
+      "Jaring alat menangkap ikan, tidak berhubungan dengan berjalan.",
+      "Trotoar tempat berjalan, bukan anggota tubuh yang melakukannya."
+     ]
+    },
+    {
+     "id": "analogi-kata-2",
+     "teks": "GREENLAND : DUNIA = PAPUA : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "PULAU",
+      "CENDRAWASIH",
+      "JAYA WIJAYA",
+      "HUTAN",
+      "INDONESIA"
+     ],
+     "kunci": 4,
+     "pembahasan": "GREENLAND merupakan pulau terbesar di DUNIA dan PAPUA merupakan pulau terbesar di INDONESIA.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Papua memang pulau, tapi pasangannya harus wilayah tempat Papua menjadi pulau terbesar.",
+      "Cendrawasih burung khas Papua, bukan wilayah.",
+      "Jaya Wijaya pegunungan di Papua. Arah hubungannya terbalik: bagian dari Papua, bukan wilayah yang lebih besar.",
+      "Hutan ciri alam Papua, bukan wilayah.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-kata-3",
+     "teks": "PATOLOGI : PENYAKIT = ANATOMI : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "TUMBUHAN",
+      "TUBUH MANUSIA",
+      "MAKHLUK HIDUP",
+      "KESEHATAN",
+      "HUBUNGAN MANUSIA"
+     ],
+     "kunci": 1,
+     "pembahasan": "PATOLOGI merupakan ilmu yang mempelajari masalah PENYAKIT dan ANATOMI merupakan cabang ilmu yang mempelajari masalah TUBUH MANUSIA.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Tumbuhan objek kajian botani.",
+      "",
+      "Makhluk hidup objek kajian biologi secara umum, terlalu luas untuk anatomi.",
+      "Kesehatan bidang yang luas, bukan objek kajian khusus anatomi.",
+      "Hubungan manusia objek kajian sosiologi."
+     ]
+    },
+    {
+     "id": "analogi-kata-4",
+     "teks": "MATAHARI : TERIK = MENDUNG : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "HUJAN",
+      "GELAP",
+      "CUACA",
+      "BANJIR",
+      "KELABU"
+     ],
+     "kunci": 0,
+     "pembahasan": "MATAHARI terjadi sebelum TERIK dan MENDUNG terjadi sebelum HUJAN.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "",
+      "Mendung memang membuat langit gelap, tapi pola soalnya akibat cuaca: matahari membuat terik, mendung mendatangkan hujan.",
+      "Cuaca istilah umum, bukan akibat dari mendung.",
+      "Banjir akibat hujan, bukan akibat langsung dari mendung.",
+      "Kelabu warna langit saat mendung (sifatnya), bukan akibat yang ditimbulkan."
+     ]
+    },
+    {
+     "id": "analogi-kata-5",
+     "teks": "SAMBAL : COBEK= BUKU : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "PENERBIT",
+      "PASAR",
+      "TOKO BUKU",
+      "TULIS",
+      "BACA"
+     ],
+     "kunci": 0,
+     "pembahasan": "SAMBAL dibuat di COBEK dan BUKU dibuat di PENERBIT.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "",
+      "Pasar tempat menjual, bukan tempat membuat.",
+      "Toko buku tempat menjual buku, bukan pembuatnya.",
+      "Menulis kegiatan, bukan tempat atau pihak pembuat.",
+      "Membaca kegiatan memakai buku, bukan pembuatnya."
+     ]
+    },
+    {
+     "id": "analogi-kata-6",
+     "teks": "MELIHAT : MELIRIK= MEMBAWA : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "MENEMPEL",
+      "MEMBUANG",
+      "MENJINJING",
+      "MEMANGGIL",
+      "MENOLEH"
+     ],
+     "kunci": 2,
+     "pembahasan": "MELIRIK adalah cara khusus untuk MELIHAT (dengan sudut mata). MENJINJING adalah cara khusus untuk MEMBAWA (dengan tangan, digantung). Polanya kata umum : cara khususnya.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Menempel tidak berhubungan dengan membawa.",
+      "Membuang kebalikan dari membawa, bukan cara khusus membawa.",
+      "",
+      "Memanggil tidak berhubungan dengan membawa.",
+      "Menoleh cara menggerakkan kepala, lebih dekat dengan melihat daripada membawa."
+     ]
+    },
+    {
+     "id": "analogi-kata-7",
+     "teks": "KARDIOLOGI : JANTUNG = ... : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "BIOLOGI : ILMU",
+      "FARMAKOLOGI : OBAT-OBATAN",
+      "TEKNOLOGI : ALAT",
+      "AKUNTANSI : PERUSAHAAN",
+      "PATOLOGI : PETA"
+     ],
+     "kunci": 1,
+     "pembahasan": "KARDIOLOGI adalah ilmu yang mempelajari JANTUNG dan FARMAKOLOGI adalah ilmu yang mempelajari OBATOBATAN.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Biologi adalah salah satu ilmu. Ini hubungan jenis dan golongannya, bukan ilmu dan objek kajiannya.",
+      "",
+      "Teknologi menghasilkan alat. Ini hubungan penerapan, bukan ilmu dan objek kajiannya.",
+      "Akuntansi dipakai di perusahaan, tapi objek kajiannya transaksi keuangan.",
+      "Patologi mempelajari penyakit. Peta dipelajari kartografi."
+     ]
+    },
+    {
+     "id": "analogi-kata-8",
+     "teks": "SENAPAN : BERBURU = PERANGKAP : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "BERLABUH",
+      "LANGSIR",
+      "IKAN",
+      "MENANGKAP",
+      "MENGASAH"
+     ],
+     "kunci": 3,
+     "pembahasan": "SENAPAN adalah alat yang digunakan untuk BERBURU dan PERANGKAP adalah alat yang biasa digunakan untuk MENANGKAP.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Berlabuh kegiatan kapal.",
+      "Langsir artinya memindahkan gerbong kereta.",
+      "Ikan objek yang ditangkap, bukan kegiatannya. Polanya alat dan fungsi.",
+      "",
+      "Mengasah artinya menajamkan pisau."
+     ]
+    },
+    {
+     "id": "analogi-kata-9",
+     "teks": "KULIT : SISIK = ... : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "TEGEL : LANTAI",
+      "RUMAH : KAMAR",
+      "KERAMIK : MOZAIK",
+      "DINDING : CAT",
+      "ATAP : GENTENG"
+     ],
+     "kunci": 4,
+     "pembahasan": "KULIT ditutupi SISIK sebagai pelindung dan ATAP ditutupi oleh GENTENG sebagai pelindung.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Urutannya terbalik: tegel penutup lantai. Di soal, yang ditutup disebut dulu (kulit), penutupnya kemudian (sisik).",
+      "Kamar bagian ruang di dalam rumah, bukan lapisan penutupnya.",
+      "Keramik bahan untuk membuat mozaik. Hubungannya bahan dan karya.",
+      "Cat melapisi dinding, tapi berupa lapisan warna, bukan kepingan penutup seperti sisik dan genteng.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-kata-10",
+     "teks": "PARIS : PRANCIS = DOHA : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "SAUDI ARABIA",
+      "KAMBOJA",
+      "QATAR",
+      "LEBANON",
+      "AFGHANISTAN"
+     ],
+     "kunci": 2,
+     "pembahasan": "PARIS adalah ibukota dari PRANCIS dan DOHA adalah ibukota dari QATAR.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Ibu kota Saudi Arabia adalah Riyadh.",
+      "Ibu kota Kamboja adalah Phnom Penh.",
+      "",
+      "Ibu kota Lebanon adalah Beirut.",
+      "Ibu kota Afghanistan adalah Kabul."
+     ]
+    },
+    {
+     "id": "analogi-kata-11",
+     "teks": "KEPALA : ... = RUMAH : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "SABUT : KELAPA",
+      "HELM : ATAP",
+      "JARI : CINCIN",
+      "ALBUM : FOTO",
+      "KAKI : KAUS"
+     ],
+     "kunci": 1,
+     "pembahasan": "KEPALA dilindungi oleh HELM dan RUMAH dilindungi oleh ATAP.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Kalau diisikan jadi kepala : sabut = rumah : kelapa. Tidak sejajar.",
+      "",
+      "Kalau diisikan jadi kepala : jari = rumah : cincin. Tidak sejajar.",
+      "Kalau diisikan jadi kepala : album = rumah : foto. Tidak sejajar.",
+      "Kalau diisikan jadi kepala : kaki = rumah : kaus. Tidak sejajar."
+     ]
+    },
+    {
+     "id": "analogi-kata-12",
+     "teks": "LAMPU : GELAP = MAKANAN : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "KENYANG",
+      "PENUH",
+      "GIZI",
+      "PUAS",
+      "LAPAR"
+     ],
+     "kunci": 4,
+     "pembahasan": "LAMPU merupakan solusi untuk GELAP dan MAKANAN merupakan solusi untuk LAPAR.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Kenyang hasil makan, bukan hal yang dihilangkan oleh makanan.",
+      "Penuh keadaan terisi, bukan hal yang dihilangkan.",
+      "Gizi kandungan makanan, bukan hal yang dihilangkan.",
+      "Puas perasaan setelah makan, bukan hal yang dihilangkan.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-kata-13",
+     "teks": "FIKTIF : ... = DONGENG : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "DAGELAN : SANDIWARA",
+      "FAKTA: PERISTIWA",
+      "DUGAAN : REKAAN",
+      "DATA : ESTIMASI",
+      "RENCANA : PROYEKSI"
+     ],
+     "kunci": 1,
+     "pembahasan": "FIKTIF (rekaan) berlawanan dengan FAKTA, dan DONGENG (cerita rekaan) berlawanan dengan PERISTIWA nyata. Polanya lawan kata.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Kalau diisikan jadi fiktif : dagelan = dongeng : sandiwara. Hubungannya tidak berlawanan.",
+      "",
+      "Rekaan justru searti dengan fiktif, bukan lawannya.",
+      "Kalau diisikan jadi fiktif : data = dongeng : estimasi. Estimasi bukan lawan dongeng.",
+      "Rencana dan proyeksi sama-sama tentang masa depan. Tidak ada pola berlawanan."
+     ]
+    },
+    {
+     "id": "analogi-kata-14",
+     "teks": "PEDAS : CABAI = MANIS : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "GADIS",
+      "MANISAN",
+      "TEH BOTOL",
+      "SAKARIN",
+      "KECAP"
+     ],
+     "kunci": 3,
+     "pembahasan": "Rasa PEDAS ditimbulkan dari CABAI dan rasa MANIS ditimbulkan dari SAKARIN.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Manis pada gadis hanya kiasan, bukan sumber rasa manis.",
+      "Manisan hasil olahan yang diberi gula, bukan bahan sumber rasa seperti cabai.",
+      "Teh botol minuman manis hasil olahan, bukan bahan sumber rasa.",
+      "",
+      "Kecap memang manis, tapi produk olahan. Sakarin zat pemanis murni, sejajar dengan cabai sebagai sumber pedas."
+     ]
+    },
+    {
+     "id": "analogi-kata-15",
+     "teks": "TAJAM : ... = DEKAT : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "MUKA : MATA",
+      "PALU : PUKUL",
+      "PULSA : PONSEL",
+      "TUMPUL : JAUH",
+      "SUKAR : SULIT"
+     ],
+     "kunci": 3,
+     "pembahasan": "TAJAM lawan kata dari TUMPUL dan DEKAT lawan kata dari JAUH.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Kalau diisikan jadi tajam : muka = dekat : mata. Tidak sejajar.",
+      "Palu dan pukul hubungan alat dan fungsi, bukan lawan kata.",
+      "Pulsa dan ponsel hubungan isi dan alat, bukan lawan kata.",
+      "",
+      "Sukar dan sulit sinonim. Pola soalnya lawan kata."
+     ]
+    },
+    {
+     "id": "analogi-kata-16",
+     "teks": "PESAWAT : ... = SEPEDA MOTOR : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "RADIO : LISTRIK",
+      "AVTUR : BENSIN",
+      "PEDATI : KUDA",
+      "HANDPHONE : BATERAI",
+      "MOBIL : AKI"
+     ],
+     "kunci": 1,
+     "pembahasan": "PESAWAT bahan bakarnya AVTUR dan SEPEDA MOTOR bahan bakarnya BENSIN.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Kalau diisikan jadi pesawat : radio = sepeda motor : listrik. Tidak sejajar.",
+      "",
+      "Kalau diisikan jadi pesawat : pedati = sepeda motor : kuda. Tidak sejajar.",
+      "Kalau diisikan jadi pesawat : handphone = sepeda motor : baterai. Tidak sejajar.",
+      "Kalau diisikan jadi pesawat : mobil = sepeda motor : aki. Tidak sejajar."
+     ]
+    },
+    {
+     "id": "analogi-kata-17",
+     "teks": "BOLA LAMPU : ... = MESIN UAP : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "TELEPON : GALILEO GALILEI",
+      "EDISON : JAMES WATT",
+      "PESAWAT : TORRICELLI",
+      "RADIO : MARIE CURIE",
+      "DINAMO : MICHAEL FARADAY"
+     ],
+     "kunci": 1,
+     "pembahasan": "BOLA LAMPU ditemukan oleh EDISON dan MESIN UAP ditemukan oleh JAMES WATT.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Kalau diisikan jadi bola lampu : telepon = mesin uap : Galileo. Tidak sejajar.",
+      "",
+      "Torricelli penemu barometer, bukan mesin uap.",
+      "Marie Curie peneliti radioaktivitas, bukan penemu mesin uap.",
+      "Faraday memang penemu dinamo, tapi kalau diisikan jadi bola lampu : dinamo = mesin uap : Faraday. Tidak sejajar."
+     ]
+    },
+    {
+     "id": "analogi-kata-18",
+     "teks": "GEMPA : RICHTER = ... : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "OMBAK : KNOT",
+      "JARAK : DINAMO",
+      "OBAT : DOSIS",
+      "SUHU : FAHRENHEIT",
+      "BANJIR : AIR"
+     ],
+     "kunci": 3,
+     "pembahasan": "GEMPA dapat diukur dengan Skala RICHTER dan SUHU dapat diukur dengan skala FAHRENHEIT.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Knot satuan kecepatan kapal atau angin, bukan ukuran ombak.",
+      "Dinamo pembangkit listrik, bukan satuan ukur.",
+      "Dosis takaran pemakaian obat, bukan skala ukur besaran.",
+      "",
+      "Air penyebab banjir, bukan skala pengukurnya."
+     ]
+    },
+    {
+     "id": "analogi-kata-19",
+     "teks": "BATA :TANAH LIAT = ... : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "BATU : PASIR",
+      "TEMBIKAR : KERAMIK",
+      "BUNGA : BUAH",
+      "BETON : SEMEN",
+      "KERTAS : BUKU"
+     ],
+     "kunci": 3,
+     "pembahasan": "BATA adalah hasil olahan berbahan dasar TANAH LIAT dan BETON adalah hasil olahan berbahan dasar SEMEN.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Batu tidak dibuat dari pasir. Justru pasir bisa berasal dari batu.",
+      "Tembikar dan keramik sama-sama barang dari tanah liat, bukan benda dan bahannya.",
+      "Bunga dan buah tahapan pertumbuhan tanaman.",
+      "",
+      "Urutannya terbalik: kertas bahan untuk membuat buku."
+     ]
+    },
+    {
+     "id": "analogi-kata-20",
+     "teks": "LAPAR : NASI = ... : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "HAUS : AIR",
+      "MUAL : OBAT",
+      "MENGANTUK : MELAMUN",
+      "BOSAN : TIDUR",
+      "MEMBACA : MENGGAMBAR"
+     ],
+     "kunci": 0,
+     "pembahasan": "Rasa LAPAR dapat dihilangkan oleh NASI. Rasa HAUS dapat dihilangkan oleh AIR.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "",
+      "Obat bisa meredakan mual, tapi mual gejala sakit, bukan kebutuhan tubuh seperti lapar dan haus.",
+      "Melamun tidak menghilangkan kantuk.",
+      "Tidur tidak menghilangkan bosan.",
+      "Dua kegiatan tanpa hubungan pemenuhan kebutuhan."
+     ]
+    },
+    {
+     "id": "analogi-kata-21",
+     "teks": "TUNTUTAN : ... = PERMINTAAN : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "UNDIAN : HADIAH",
+      "SANTUNAN: PEMBERIAN",
+      "PERSEDIAAN : PENAWARAN",
+      "RUSAK : GANTI RUGI",
+      "TABUNGAN : PEMBELANJAAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "TUNTUTAN lawan kata dari SANTUNAN dan PERMINTAAN lawan kata dari PEMBERIAN.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Hadiah hasil undian, bukan lawan katanya.",
+      "",
+      "Persediaan dan penawaran berkaitan, bukan berlawanan.",
+      "Ganti rugi akibat dari kerusakan, bukan lawan kata.",
+      "Kalau diisikan jadi tuntutan : tabungan = permintaan : pembelanjaan. Tidak sejajar."
+     ]
+    },
+    {
+     "id": "analogi-kata-22",
+     "teks": "MATA: ... = LIDAH : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "JARI : TANGAN",
+      "TELINGA : HIDUNG",
+      "LUTUT : SIKU",
+      "KAKI : PAHA",
+      "PERUT : DADA"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kata kuncinya adalah alat indra. Jadi, MATA, TELINGA, LIDAH, dan HIDUNG.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Jari bagian tangan, bukan alat indra.",
+      "",
+      "Lutut dan siku sendi, bukan alat indra.",
+      "Kaki dan paha anggota gerak, bukan alat indra.",
+      "Perut dan dada bagian badan, bukan alat indra."
+     ]
+    },
+    {
+     "id": "analogi-kata-23",
+     "teks": "MERAH : ... = PUTIH : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "HIJAU : JATI",
+      "KUNING : APEL",
+      "MAWAR : MELATI",
+      "HITAM : TEBU",
+      "SALMON : IKAN"
+     ],
+     "kunci": 2,
+     "pembahasan": "Warna MERAH identik dengan bunga MAWAR dan warna PUTIH identik dengan bunga MELATI.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Jati pohon, bukan bunga yang identik dengan warna hijau.",
+      "Apel buah, bukan bunga, dan tidak identik dengan kuning.",
+      "",
+      "Tebu tanaman, bukan bunga.",
+      "Salmon jenis ikan. Ini hubungan jenis dan golongan, bukan warna dan bunga."
+     ]
+    },
+    {
+     "id": "analogi-kata-24",
+     "teks": "INDONESIA : ... = MALAYSIA : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "INDIA : SPANYOL",
+      "BELANDA : INGGRIS",
+      "AUSTRALIA : SELANDIA BARU",
+      "SINGAPURA : CHINA",
+      "ITALIA : LUXEMBURG"
+     ],
+     "kunci": 1,
+     "pembahasan": "INDONESIA dijajah oleh BELANDA dan MALAYSIA dijajah oleh INGGRIS.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "India dijajah Inggris, dan Spanyol tidak pernah menjajah Malaysia.",
+      "",
+      "Australia dan Selandia Baru bukan negara yang menjajah Indonesia dan Malaysia.",
+      "Singapura dan China bukan penjajah Indonesia dan Malaysia.",
+      "Italia dan Luxemburg bukan penjajah Indonesia dan Malaysia."
+     ]
+    },
+    {
+     "id": "analogi-kata-25",
+     "teks": "GERAHAM : ... = IGA : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "GIGI : TULANG",
+      "GUSI : TENGKORAK",
+      "KRAM : KESELEO",
+      "URAT : TULANG",
+      "LIUR : DARAH"
+     ],
+     "kunci": 0,
+     "pembahasan": "GERAHAM adalah jenis GIGI dan IGA adalah jenis TULANG.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "",
+      "Gusi bukan golongan geraham, dan tengkorak bukan golongan iga.",
+      "Kram dan keseleo gangguan tubuh, bukan golongan.",
+      "Kalau diisikan jadi geraham : urat. Geraham bukan jenis urat.",
+      "Liur dan darah cairan tubuh, bukan golongan."
+     ]
+    },
+    {
+     "id": "analogi-kata-26",
+     "teks": "LOKOMOTIF : ... = PRANGKO : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "LOGARITMA : JOHN DALTON",
+      "BULU TANGKIS : SUSI SUSANTI",
+      "DYNAMO : ROBERT BOYLE",
+      "GEORGE STEPHENSON : ROWLAND HILL",
+      "PIALA DUNIA : BRAZIL"
+     ],
+     "kunci": 3,
+     "pembahasan": "LOKOMOTIF ditemukan oleh GEORGE STEPHENSON dan PRANGKO ditemukan oleh SIR ROWLAND HILL.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Logaritma ditemukan John Napier, bukan Dalton. Polanya penemuan dan penemu.",
+      "Susi Susanti atlet bulu tangkis, bukan penemunya.",
+      "Robert Boyle ahli kimia (hukum Boyle), bukan penemu dinamo.",
+      "",
+      "Brazil juara Piala Dunia, bukan penemunya."
+     ]
+    },
+    {
+     "id": "analogi-kata-27",
+     "teks": "MASINIS : KERETA API = SUPIR : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "PILOT",
+      "PEDATI",
+      "MOBIL",
+      "KUSIR",
+      "MASINIS"
+     ],
+     "kunci": 2,
+     "pembahasan": "MASINIS adalah orang yang mengemudikan KERETA API dan SUPIR adalah orang yang mengemudikan MOBIL.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Pilot mengemudikan pesawat, bukan kendaraan yang dikemudikan sopir.",
+      "Pedati dikemudikan kusir.",
+      "",
+      "Kusir orang yang mengemudikan delman. Yang dicari kendaraannya.",
+      "Masinis orang yang mengemudikan kereta, bukan kendaraan yang dikemudikan sopir."
+     ]
+    },
+    {
+     "id": "analogi-kata-28",
+     "teks": "TERATAI : AIR = KAKTUS : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "BUNGA",
+      "DURI",
+      "KERING",
+      "PASIR",
+      "GUNUNG"
+     ],
+     "kunci": 3,
+     "pembahasan": "BUNGA TERATAI habitatnya di AIR dan KAKTUS habitatnya di PASIR.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Bunga bagian tanaman, bukan tempat hidup.",
+      "Duri ciri kaktus, bukan tempat hidupnya.",
+      "Kering sifat lingkungan, bukan nama tempat hidup.",
+      "",
+      "Kaktus umumnya hidup di gurun berpasir, bukan khas gunung."
+     ]
+    },
+    {
+     "id": "analogi-kata-29",
+     "teks": "UANG : PUNDI-PUNDI = AIR : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "JAMBANGAN",
+      "NAMPAN",
+      "TEMPAYAN",
+      "PERCETAKAN",
+      "ASBAK"
+     ],
+     "kunci": 2,
+     "pembahasan": "PUNDI-PUNDI adalah tempat untuk menaruh/menyimpan UANG dan TEMPAYAN adalah tempat untuk menadah/menyimpan AIR.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Jambangan tempat bunga.",
+      "Nampan tempat menyajikan, bukan menyimpan air.",
+      "",
+      "Percetakan tempat mencetak, tidak berhubungan dengan air.",
+      "Asbak tempat abu rokok."
+     ]
+    },
+    {
+     "id": "analogi-kata-30",
+     "teks": "BATH :THAILAND = DONG : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "KAMBOJA",
+      "BRUNEI DARUSSALAM",
+      "FILIPINA",
+      "VIETNAM",
+      "LAOS"
+     ],
+     "kunci": 3,
+     "pembahasan": "BATH adalah mata uang THAILAND dan DONG adalah mata uang VIETNAM.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Mata uang Kamboja adalah riel.",
+      "Mata uang Brunei adalah dolar Brunei.",
+      "Mata uang Filipina adalah peso.",
+      "",
+      "Mata uang Laos adalah kip."
+     ]
+    },
+    {
+     "id": "analogi-kata-31",
+     "teks": "RAMALAN : ASTROLOGI = BANGSA : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "SOSIOLOGI",
+      "ANTROPOLOGI",
+      "DEMOGRAFI",
+      "PSIKOLOGI",
+      "ETNOLOGI"
+     ],
+     "kunci": 4,
+     "pembahasan": "RAMALAN/prakiraan termasuk kajian ASTROLOGI dan BANGSA termasuk kajian ETNOLOGI.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Sosiologi mempelajari masyarakat dan hubungan sosialnya, bukan bangsa sebagai kelompok budaya.",
+      "Antropologi mempelajari manusia secara umum. Ilmu yang khusus mempelajari bangsa-bangsa adalah etnologi.",
+      "Demografi mempelajari jumlah dan persebaran penduduk, bukan bangsa.",
+      "Psikologi mempelajari jiwa dan perilaku manusia.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-kata-32",
+     "teks": "PEDATI : KUDA = PESAWAT TERBANG : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "SAYAP",
+      "BALING-BALING",
+      "PRAMUGARI",
+      "PILOT",
+      "LANDASAN"
+     ],
+     "kunci": 1,
+     "pembahasan": "PEDATI digerakkan oleh KUDA dan PESAWAT TERBANG digerakkan oleh BALING-BALING.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "Sayap membuat pesawat terangkat, tapi yang mendorongnya bergerak adalah baling-baling atau mesin.",
+      "",
+      "Pramugari melayani penumpang, bukan penggerak pesawat.",
+      "Pilot mengemudikan, bukan menggerakkan. Kuda di soal adalah penggerak pedati.",
+      "Landasan tempat pesawat lepas landas, bukan penggerak."
+     ]
+    },
+    {
+     "id": "analogi-kata-33",
+     "teks": "KANDANG : AYAM = KORAL : ...\nPilih yang hubungannya sama.",
+     "opsi": [
+      "KUDA",
+      "SINGA",
+      "HARIMAU",
+      "BUAYA",
+      "UNTA"
+     ],
+     "kunci": 0,
+     "pembahasan": "KANDANG tempat untuk AYAM dan KORAL tempat untuk KUDA.\nTips: Buat kalimat penghubung untuk pasangan di soal, misalnya \"A dirasakan oleh B\", lalu uji kalimat yang sama pada tiap opsi dengan urutan yang sama.",
+     "alasan": [
+      "",
+      "Singa ditempatkan di kandang atau taman satwa, bukan koral.",
+      "Harimau tidak dikandangkan di koral.",
+      "Buaya ditempatkan di penangkaran berair.",
+      "Koral memang bisa dipakai untuk unta, tapi koral identik dengan kandang kuda."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "silogisme",
+   "nama": "Silogisme & Logika",
+   "jenis": "kognitif",
+   "durasi_menit": 20,
+   "instruksi": "Tarik kesimpulan hanya dari premis yang diberikan, bukan dari pengetahuan umum.",
+   "soal": [
+    {
+     "id": "silogisme-1",
+     "teks": "Premis 1: Jika server ujian sedang sibuk, maka halaman tes lambat dimuat.\nPremis 2: Halaman tes lambat dimuat.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Server ujian tidak sedang sibuk.",
+      "Jika server ujian tidak sedang sibuk, maka halaman tes tidak lambat dimuat.",
+      "Server ujian sedang sibuk.",
+      "Halaman tes tidak lambat dimuat.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 4,
+     "pembahasan": "Bentuk \"Jika P maka Q. Q terjadi.\" Q bisa terjadi karena sebab lain, jadi P belum tentu terjadi. Ini kesalahan logika yang sering dijebak (menegaskan akibat).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Belum tentu juga. Bisa saja memang server ujian sedang sibuk. Premis tidak memberi tahu.",
+      "Ini membalik kedua bagian dengan kata \"tidak\". Premis tidak mengatur apa yang terjadi kalau server ujian tidak sedang sibuk.",
+      "Jebakan paling sering. Halaman tes lambat dimuat bisa terjadi karena sebab lain, tidak harus karena server ujian sedang sibuk.",
+      "Bertentangan dengan premis kedua, yang bilang halaman tes lambat dimuat.",
+      ""
+     ]
+    },
+    {
+     "id": "silogisme-2",
+     "teks": "Premis 1: Andi bangun kesiangan atau Andi terlambat masuk kantor.\nPremis 2: Andi tidak bangun kesiangan.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Jika Andi terlambat masuk kantor, maka Andi bangun kesiangan.",
+      "Andi tidak terlambat masuk kantor.",
+      "Andi terlambat masuk kantor.",
+      "Andi bangun kesiangan.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 2,
+     "pembahasan": "Bentuk \"P atau Q. P tidak terjadi.\" Salah satu harus terjadi, jadi Q (silogisme disjungtif).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Premis tidak membuat hubungan sebab-akibat seperti ini. Bentuknya \"atau\", bukan \"jika\".",
+      "Tidak mungkin. Premis pertama bilang salah satu pasti terjadi. Karena Andi tidak bangun kesiangan, yang tersisa Andi terlambat masuk kantor.",
+      "",
+      "Bertentangan dengan premis kedua, yang bilang Andi tidak bangun kesiangan.",
+      "Kesimpulan bisa ditarik: dari dua pilihan, satu sudah gugur."
+     ]
+    },
+    {
+     "id": "silogisme-3",
+     "teks": "Jika server ujian sedang sibuk, maka halaman tes lambat dimuat.\nPernyataan yang setara dengan pernyataan di atas adalah ...",
+     "opsi": [
+      "Jika server ujian tidak sedang sibuk, maka halaman tes tidak lambat dimuat.",
+      "Jika halaman tes tidak lambat dimuat, maka server ujian tidak sedang sibuk.",
+      "Server ujian tidak sedang sibuk atau halaman tes tidak lambat dimuat.",
+      "Jika halaman tes lambat dimuat, maka server ujian sedang sibuk.",
+      "Server ujian sedang sibuk dan halaman tes tidak lambat dimuat."
+     ],
+     "kunci": 1,
+     "pembahasan": "Pernyataan \"Jika P maka Q\" selalu setara dengan kontraposisinya: \"Jika tidak Q maka tidak P\".\nTips: Ingat empat bentuk: implikasi (P→Q) setara kontraposisi (¬Q→¬P). Konvers (Q→P) dan invers (¬P→¬Q) tidak setara.",
+     "alasan": [
+      "Ini hanya menambah kata \"tidak\" tanpa membalik urutan (invers). Maknanya berubah.",
+      "",
+      "Yang setara dengan \"Jika P maka Q\" adalah \"tidak P atau Q\". Pilihan ini memakai \"tidak Q\", jadi maknanya berubah.",
+      "Ini hanya membalik urutan (konvers). Maknanya berubah: halaman tes lambat dimuat belum tentu karena server ujian sedang sibuk.",
+      "Ini justru lawan (ingkaran) pernyataan awal, kebalikan dari setara."
+     ]
+    },
+    {
+     "id": "silogisme-4",
+     "teks": "Premis 1: Semua pegawai teladan adalah pengguna sepeda.\nPremis 2: Sebagian peserta pelatihan adalah pegawai teladan.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Semua pengguna sepeda adalah peserta pelatihan.",
+      "Sebagian peserta pelatihan adalah pengguna sepeda.",
+      "Tidak satu pun peserta pelatihan adalah pengguna sepeda.",
+      "Semua peserta pelatihan adalah pengguna sepeda.",
+      "Sebagian peserta pelatihan bukan pengguna sepeda."
+     ],
+     "kunci": 1,
+     "pembahasan": "Sebagian peserta pelatihan adalah pegawai teladan, dan semua pegawai teladan adalah pengguna sepeda. Jadi peserta pelatihan yang termasuk pegawai teladan itu pasti pengguna sepeda: sebagian peserta pelatihan adalah pengguna sepeda.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "Tidak ada premis yang mendukung ini.",
+      "",
+      "Bertentangan dengan premis: ada peserta pelatihan yang pasti pengguna sepeda.",
+      "Terlalu luas. Hanya sebagian peserta pelatihan yang pegawai teladan, jadi hanya sebagian peserta pelatihan yang pasti pengguna sepeda.",
+      "Belum tentu. Premis tidak menyebut peserta pelatihan yang bukan pegawai teladan, jadi bisa saja semua peserta pelatihan ternyata pengguna sepeda."
+     ]
+    },
+    {
+     "id": "silogisme-5",
+     "teks": "Premis 1: Tidak satu pun penghuni asrama adalah pelari pagi.\nPremis 2: Sebagian pendaki gunung adalah penghuni asrama.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Sebagian pendaki gunung bukan pelari pagi.",
+      "Semua pendaki gunung adalah pelari pagi.",
+      "Tidak satu pun pendaki gunung adalah pelari pagi.",
+      "Sebagian pendaki gunung adalah pelari pagi.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 0,
+     "pembahasan": "Sebagian pendaki gunung adalah penghuni asrama, dan penghuni asrama tidak ada yang pelari pagi. Jadi pendaki gunung yang termasuk penghuni asrama itu pasti bukan pelari pagi: sebagian pendaki gunung bukan pelari pagi.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "",
+      "Bertentangan: ada pendaki gunung yang pasti bukan pelari pagi.",
+      "Terlalu luas. Pendaki gunung yang bukan penghuni asrama tidak dibahas, jadi bisa saja ada yang pelari pagi.",
+      "Belum tentu. Tidak ada premis yang menyebut pendaki gunung yang pelari pagi.",
+      "Kesimpulan bisa ditarik untuk pendaki gunung yang termasuk penghuni asrama."
+     ]
+    },
+    {
+     "id": "silogisme-6",
+     "teks": "Premis 1: Tidak satu pun anggota koperasi adalah perenang.\nPremis 2: Sebagian pengguna sepeda adalah anggota koperasi.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Sebagian pengguna sepeda bukan perenang.",
+      "Sebagian pengguna sepeda adalah perenang.",
+      "Tidak satu pun pengguna sepeda adalah perenang.",
+      "Semua pengguna sepeda adalah perenang.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 0,
+     "pembahasan": "Sebagian pengguna sepeda adalah anggota koperasi, dan anggota koperasi tidak ada yang perenang. Jadi pengguna sepeda yang termasuk anggota koperasi itu pasti bukan perenang: sebagian pengguna sepeda bukan perenang.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "",
+      "Belum tentu. Tidak ada premis yang menyebut pengguna sepeda yang perenang.",
+      "Terlalu luas. Pengguna sepeda yang bukan anggota koperasi tidak dibahas, jadi bisa saja ada yang perenang.",
+      "Bertentangan: ada pengguna sepeda yang pasti bukan perenang.",
+      "Kesimpulan bisa ditarik untuk pengguna sepeda yang termasuk anggota koperasi."
+     ]
+    },
+    {
+     "id": "silogisme-7",
+     "teks": "Premis 1: Jika Andi bangun kesiangan, maka Andi terlambat masuk kantor.\nPremis 2: Andi tidak terlambat masuk kantor.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Jika Andi tidak bangun kesiangan, maka Andi tidak terlambat masuk kantor.",
+      "Andi bangun kesiangan.",
+      "Andi tidak bangun kesiangan.",
+      "Andi terlambat masuk kantor.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 2,
+     "pembahasan": "Bentuk \"Jika P maka Q. Q tidak terjadi.\" Kalau P terjadi, Q pasti terjadi. Karena Q tidak terjadi, P juga tidak (modus tollens).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Ini membalik kedua bagian dengan kata \"tidak\". Premis tidak mengatur apa yang terjadi kalau Andi tidak bangun kesiangan, jadi belum tentu benar.",
+      "Tidak mungkin. Kalau Andi bangun kesiangan, maka Andi terlambat masuk kantor. Padahal premis kedua bilang Andi tidak terlambat masuk kantor.",
+      "",
+      "Bertentangan dengan premis kedua, yang bilang Andi tidak terlambat masuk kantor.",
+      "Kesimpulan bisa ditarik: akibatnya tidak terjadi, jadi syaratnya pasti juga tidak terjadi."
+     ]
+    },
+    {
+     "id": "silogisme-8",
+     "teks": "Premis 1: Jika Sari lulus seleksi, maka Sari mengikuti pelatihan dasar.\nPremis 2: Sari tidak mengikuti pelatihan dasar.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Sari tidak lulus seleksi.",
+      "Sari lulus seleksi.",
+      "Jika Sari tidak lulus seleksi, maka Sari tidak mengikuti pelatihan dasar.",
+      "Sari mengikuti pelatihan dasar.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 0,
+     "pembahasan": "Bentuk \"Jika P maka Q. Q tidak terjadi.\" Kalau P terjadi, Q pasti terjadi. Karena Q tidak terjadi, P juga tidak (modus tollens).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "",
+      "Tidak mungkin. Kalau Sari lulus seleksi, maka Sari mengikuti pelatihan dasar. Padahal premis kedua bilang Sari tidak mengikuti pelatihan dasar.",
+      "Ini membalik kedua bagian dengan kata \"tidak\". Premis tidak mengatur apa yang terjadi kalau Sari tidak lulus seleksi, jadi belum tentu benar.",
+      "Bertentangan dengan premis kedua, yang bilang Sari tidak mengikuti pelatihan dasar.",
+      "Kesimpulan bisa ditarik: akibatnya tidak terjadi, jadi syaratnya pasti juga tidak terjadi."
+     ]
+    },
+    {
+     "id": "silogisme-9",
+     "teks": "Premis 1: Jika listrik gedung padam, maka genset dinyalakan.\nPremis 2: Listrik gedung tidak padam.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Jika genset dinyalakan, maka listrik gedung padam.",
+      "Genset tidak dinyalakan.",
+      "Genset dinyalakan.",
+      "Listrik gedung padam.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 4,
+     "pembahasan": "Bentuk \"Jika P maka Q. P tidak terjadi.\" Premis tidak mengatur apa yang terjadi kalau P tidak terjadi, jadi Q belum tentu. Ini kesalahan menyangkal sebab.\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Ini membalik arah \"jika\". Premis hanya bilang listrik gedung padam membuat genset dinyalakan, bukan sebaliknya.",
+      "Jebakan paling sering. Walaupun listrik gedung tidak padam, genset dinyalakan tetap bisa terjadi karena sebab lain.",
+      "Belum tentu juga. Premis tidak memberi tahu apa yang terjadi kalau listrik gedung tidak padam.",
+      "Bertentangan dengan premis kedua, yang bilang listrik gedung tidak padam.",
+      ""
+     ]
+    },
+    {
+     "id": "silogisme-10",
+     "teks": "Premis 1: Sebagian pegawai teladan adalah pemain catur.\nPremis 2: Sebagian pemain catur adalah perenang.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Sebagian pegawai teladan adalah perenang.",
+      "Semua pegawai teladan adalah perenang.",
+      "Tidak satu pun pegawai teladan adalah perenang.",
+      "Sebagian pegawai teladan bukan perenang.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 4,
+     "pembahasan": "Dua premis yang sama-sama \"sebagian\" tidak menghasilkan kesimpulan pasti. Pemain catur yang perenang belum tentu sama dengan pemain catur yang pegawai teladan.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "Belum tentu. Pemain catur yang pegawai teladan dan pemain catur yang perenang bisa saja orang yang berbeda.",
+      "Kedua premis hanya memakai kata \"sebagian\", jadi tidak mungkin muncul kesimpulan \"semua\".",
+      "Belum tentu. Bisa saja ada pegawai teladan yang juga perenang.",
+      "Belum tentu. Bisa saja semua pegawai teladan ternyata perenang.",
+      ""
+     ]
+    },
+    {
+     "id": "silogisme-11",
+     "teks": "Premis 1: Sebagian penghuni asrama bukan penggemar kopi.\nPremis 2: Semua penghuni asrama adalah perenang.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Tidak satu pun perenang adalah penggemar kopi.",
+      "Semua perenang adalah penggemar kopi.",
+      "Sebagian penggemar kopi bukan perenang.",
+      "Sebagian perenang bukan penggemar kopi.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 3,
+     "pembahasan": "Ada penghuni asrama yang bukan penggemar kopi. Karena semua penghuni asrama adalah perenang, penghuni asrama itu juga perenang. Jadi sebagian perenang bukan penggemar kopi.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "Terlalu luas. Yang pasti hanya sebagian perenang bukan penggemar kopi.",
+      "Bertentangan: ada perenang yang bukan penggemar kopi.",
+      "Tidak ada premis yang memastikan ada penggemar kopi yang bukan perenang.",
+      "",
+      "Kesimpulan bisa ditarik lewat penghuni asrama yang bukan penggemar kopi."
+     ]
+    },
+    {
+     "id": "silogisme-12",
+     "teks": "Premis 1: Jika Dimas rajin berlatih soal, maka Dimas cepat mengerjakan tes.\nPremis 2: Jika Dimas cepat mengerjakan tes, maka Dimas sempat memeriksa jawaban.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Jika Dimas sempat memeriksa jawaban, maka Dimas rajin berlatih soal.",
+      "Dimas sempat memeriksa jawaban.",
+      "Jika Dimas tidak rajin berlatih soal, maka Dimas tidak sempat memeriksa jawaban.",
+      "Jika Dimas rajin berlatih soal, maka Dimas sempat memeriksa jawaban.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 3,
+     "pembahasan": "Bentuk \"Jika P maka Q. Jika Q maka R.\" Rantainya bersambung lewat Q, jadi jika P maka R (silogisme hipotetis).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Ini membalik arah rantai. Dimas sempat memeriksa jawaban bisa terjadi karena sebab lain, tidak harus karena Dimas rajin berlatih soal.",
+      "Belum diketahui apakah Dimas rajin berlatih soal, jadi Dimas sempat memeriksa jawaban belum pasti terjadi.",
+      "Ini membalik dengan kata \"tidak\". Premis tidak mengatur apa yang terjadi kalau Dimas tidak rajin berlatih soal.",
+      "",
+      "Kesimpulan bisa ditarik karena kedua premis bersambung lewat \"Dimas cepat mengerjakan tes\"."
+     ]
+    },
+    {
+     "id": "silogisme-13",
+     "teks": "Premis 1: Jika listrik gedung padam, maka genset dinyalakan.\nPremis 2: Genset dinyalakan.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Listrik gedung tidak padam.",
+      "Listrik gedung padam.",
+      "Genset tidak dinyalakan.",
+      "Jika listrik gedung tidak padam, maka genset tidak dinyalakan.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 4,
+     "pembahasan": "Bentuk \"Jika P maka Q. Q terjadi.\" Q bisa terjadi karena sebab lain, jadi P belum tentu terjadi. Ini kesalahan logika yang sering dijebak (menegaskan akibat).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Belum tentu juga. Bisa saja memang listrik gedung padam. Premis tidak memberi tahu.",
+      "Jebakan paling sering. Genset dinyalakan bisa terjadi karena sebab lain, tidak harus karena listrik gedung padam.",
+      "Bertentangan dengan premis kedua, yang bilang genset dinyalakan.",
+      "Ini membalik kedua bagian dengan kata \"tidak\". Premis tidak mengatur apa yang terjadi kalau listrik gedung tidak padam.",
+      ""
+     ]
+    },
+    {
+     "id": "silogisme-14",
+     "teks": "Premis 1: Semua peserta pelatihan adalah anggota koperasi.\nPremis 2: Tidak satu pun pemilik kebun adalah anggota koperasi.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Sebagian peserta pelatihan adalah pemilik kebun.",
+      "Semua pemilik kebun adalah peserta pelatihan.",
+      "Tidak satu pun peserta pelatihan adalah pemilik kebun.",
+      "Sebagian anggota koperasi bukan peserta pelatihan.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 2,
+     "pembahasan": "Semua peserta pelatihan adalah anggota koperasi, sedangkan tidak satu pun pemilik kebun adalah anggota koperasi. Jadi peserta pelatihan dan pemilik kebun tidak mungkin beririsan: tidak satu pun peserta pelatihan adalah pemilik kebun.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "Bertentangan. Kalau ada peserta pelatihan yang pemilik kebun, berarti ada pemilik kebun yang anggota koperasi.",
+      "Bertentangan dengan premis.",
+      "",
+      "Tidak ada premis yang memastikan ini.",
+      "Kesimpulan bisa ditarik: kelompok peserta pelatihan seluruhnya di dalam anggota koperasi, dan pemilik kebun seluruhnya di luar anggota koperasi."
+     ]
+    },
+    {
+     "id": "silogisme-15",
+     "teks": "Jika listrik gedung padam, maka genset dinyalakan.\nPernyataan yang setara dengan pernyataan di atas adalah ...",
+     "opsi": [
+      "Listrik gedung padam dan genset tidak dinyalakan.",
+      "Listrik gedung tidak padam atau genset tidak dinyalakan.",
+      "Jika genset dinyalakan, maka listrik gedung padam.",
+      "Jika genset tidak dinyalakan, maka listrik gedung tidak padam.",
+      "Jika listrik gedung tidak padam, maka genset tidak dinyalakan."
+     ],
+     "kunci": 3,
+     "pembahasan": "Pernyataan \"Jika P maka Q\" selalu setara dengan kontraposisinya: \"Jika tidak Q maka tidak P\".\nTips: Ingat empat bentuk: implikasi (P→Q) setara kontraposisi (¬Q→¬P). Konvers (Q→P) dan invers (¬P→¬Q) tidak setara.",
+     "alasan": [
+      "Ini justru lawan (ingkaran) pernyataan awal, kebalikan dari setara.",
+      "Yang setara dengan \"Jika P maka Q\" adalah \"tidak P atau Q\". Pilihan ini memakai \"tidak Q\", jadi maknanya berubah.",
+      "Ini hanya membalik urutan (konvers). Maknanya berubah: genset dinyalakan belum tentu karena listrik gedung padam.",
+      "",
+      "Ini hanya menambah kata \"tidak\" tanpa membalik urutan (invers). Maknanya berubah."
+     ]
+    },
+    {
+     "id": "silogisme-16",
+     "teks": "Premis 1: Jika Andi bangun kesiangan, maka Andi terlambat masuk kantor.\nPremis 2: Andi terlambat masuk kantor.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Andi tidak terlambat masuk kantor.",
+      "Jika Andi tidak bangun kesiangan, maka Andi tidak terlambat masuk kantor.",
+      "Andi bangun kesiangan.",
+      "Andi tidak bangun kesiangan.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 4,
+     "pembahasan": "Bentuk \"Jika P maka Q. Q terjadi.\" Q bisa terjadi karena sebab lain, jadi P belum tentu terjadi. Ini kesalahan logika yang sering dijebak (menegaskan akibat).\nTips: Kenali bentuknya: modus ponens dan modus tollens sah; menegaskan akibat dan menyangkal sebab tidak sah.",
+     "alasan": [
+      "Bertentangan dengan premis kedua, yang bilang Andi terlambat masuk kantor.",
+      "Ini membalik kedua bagian dengan kata \"tidak\". Premis tidak mengatur apa yang terjadi kalau Andi tidak bangun kesiangan.",
+      "Jebakan paling sering. Andi terlambat masuk kantor bisa terjadi karena sebab lain, tidak harus karena Andi bangun kesiangan.",
+      "Belum tentu juga. Bisa saja memang Andi bangun kesiangan. Premis tidak memberi tahu.",
+      ""
+     ]
+    },
+    {
+     "id": "silogisme-17",
+     "teks": "Premis 1: Semua pegawai teladan adalah pemusik.\nPremis 2: Semua pemusik adalah pemain catur.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Semua pegawai teladan adalah pemain catur.",
+      "Semua pemusik adalah pegawai teladan.",
+      "Tidak satu pun pegawai teladan adalah pemain catur.",
+      "Semua pemain catur adalah pegawai teladan.",
+      "Sebagian pegawai teladan bukan pemain catur."
+     ],
+     "kunci": 0,
+     "pembahasan": "Pegawai teladan seluruhnya berada di dalam kelompok pemusik, dan pemusik seluruhnya di dalam pemain catur. Maka semua pegawai teladan pasti pemain catur.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "",
+      "Premis pertama hanya menyebut pegawai teladan di dalam pemusik, bukan sebaliknya.",
+      "Bertentangan dengan premis. Pegawai teladan pasti pemain catur.",
+      "Kebalikannya belum tentu. Premis hanya menyebut semua pegawai teladan termasuk pemain catur, tidak semua pemain catur harus pegawai teladan.",
+      "Bertentangan dengan kesimpulan yang pasti: semua pegawai teladan adalah pemain catur."
+     ]
+    },
+    {
+     "id": "silogisme-18",
+     "teks": "Premis 1: Tidak satu pun pemain catur adalah pelari pagi.\nPremis 2: Sebagian pegawai teladan adalah pemain catur.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Sebagian pegawai teladan adalah pelari pagi.",
+      "Sebagian pegawai teladan bukan pelari pagi.",
+      "Tidak satu pun pegawai teladan adalah pelari pagi.",
+      "Semua pegawai teladan adalah pelari pagi.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 1,
+     "pembahasan": "Sebagian pegawai teladan adalah pemain catur, dan pemain catur tidak ada yang pelari pagi. Jadi pegawai teladan yang termasuk pemain catur itu pasti bukan pelari pagi: sebagian pegawai teladan bukan pelari pagi.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "Belum tentu. Tidak ada premis yang menyebut pegawai teladan yang pelari pagi.",
+      "",
+      "Terlalu luas. Pegawai teladan yang bukan pemain catur tidak dibahas, jadi bisa saja ada yang pelari pagi.",
+      "Bertentangan: ada pegawai teladan yang pasti bukan pelari pagi.",
+      "Kesimpulan bisa ditarik untuk pegawai teladan yang termasuk pemain catur."
+     ]
+    },
+    {
+     "id": "silogisme-19",
+     "teks": "Jika Dimas rajin berlatih soal, maka Dimas cepat mengerjakan tes.\nPernyataan yang setara dengan pernyataan di atas adalah ...",
+     "opsi": [
+      "Dimas rajin berlatih soal dan Dimas tidak cepat mengerjakan tes.",
+      "Jika Dimas tidak rajin berlatih soal, maka Dimas tidak cepat mengerjakan tes.",
+      "Dimas tidak rajin berlatih soal atau Dimas tidak cepat mengerjakan tes.",
+      "Jika Dimas cepat mengerjakan tes, maka Dimas rajin berlatih soal.",
+      "Jika Dimas tidak cepat mengerjakan tes, maka Dimas tidak rajin berlatih soal."
+     ],
+     "kunci": 4,
+     "pembahasan": "Pernyataan \"Jika P maka Q\" selalu setara dengan kontraposisinya: \"Jika tidak Q maka tidak P\".\nTips: Ingat empat bentuk: implikasi (P→Q) setara kontraposisi (¬Q→¬P). Konvers (Q→P) dan invers (¬P→¬Q) tidak setara.",
+     "alasan": [
+      "Ini justru lawan (ingkaran) pernyataan awal, kebalikan dari setara.",
+      "Ini hanya menambah kata \"tidak\" tanpa membalik urutan (invers). Maknanya berubah.",
+      "Yang setara dengan \"Jika P maka Q\" adalah \"tidak P atau Q\". Pilihan ini memakai \"tidak Q\", jadi maknanya berubah.",
+      "Ini hanya membalik urutan (konvers). Maknanya berubah: Dimas cepat mengerjakan tes belum tentu karena Dimas rajin berlatih soal.",
+      ""
+     ]
+    },
+    {
+     "id": "silogisme-20",
+     "teks": "Premis 1: Tidak satu pun pelari pagi adalah peserta pelatihan.\nPremis 2: Sebagian anggota koperasi adalah pelari pagi.\nKesimpulan yang tepat adalah ...",
+     "opsi": [
+      "Semua anggota koperasi adalah peserta pelatihan.",
+      "Sebagian anggota koperasi bukan peserta pelatihan.",
+      "Sebagian anggota koperasi adalah peserta pelatihan.",
+      "Tidak satu pun anggota koperasi adalah peserta pelatihan.",
+      "Tidak dapat ditarik kesimpulan yang pasti"
+     ],
+     "kunci": 1,
+     "pembahasan": "Sebagian anggota koperasi adalah pelari pagi, dan pelari pagi tidak ada yang peserta pelatihan. Jadi anggota koperasi yang termasuk pelari pagi itu pasti bukan peserta pelatihan: sebagian anggota koperasi bukan peserta pelatihan.\nTips: Gambar diagram Venn sederhana untuk setiap premis. Kesimpulan harus benar di semua kemungkinan gambar, bukan hanya di salah satunya.",
+     "alasan": [
+      "Bertentangan: ada anggota koperasi yang pasti bukan peserta pelatihan.",
+      "",
+      "Belum tentu. Tidak ada premis yang menyebut anggota koperasi yang peserta pelatihan.",
+      "Terlalu luas. Anggota koperasi yang bukan pelari pagi tidak dibahas, jadi bisa saja ada yang peserta pelatihan.",
+      "Kesimpulan bisa ditarik untuk anggota koperasi yang termasuk pelari pagi."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "verbal",
+   "nama": "VCR-S Tambahan (Keuangan Negara)",
+   "jenis": "kognitif",
+   "durasi_menit": 10,
+   "instruksi": "Bacalah teks, lalu nilai apakah pernyataan Benar, Tidak dapat disimpulkan, atau Salah berdasarkan informasi dalam teks saja.",
+   "stimulus": {
+    "s1": {
+     "tipe": "teks",
+     "isi": "Sebuah kantor pelayanan pajak membuka layanan konsultasi daring sejak Januari. Dalam tiga bulan pertama, jumlah wajib pajak yang datang langsung ke kantor turun 30 persen dibanding periode yang sama tahun lalu, sedangkan konsultasi daring mencapai 4.200 sesi. Kepala kantor menyebut penurunan kunjungan itu membuat antrean di loket lebih pendek. Namun, sekitar seperlima pengguna layanan daring mengeluhkan sulitnya mengunggah dokumen berukuran besar. Kantor tersebut berencana menambah kapasitas server pada semester kedua."
+    },
+    "s2": {
+     "tipe": "teks",
+     "isi": "Pemerintah sebuah provinsi mengalokasikan 18 persen belanjanya untuk belanja modal tahun ini, naik dari 15 persen tahun lalu. Sebagian besar belanja modal dipakai untuk perbaikan jalan dan jembatan. Sampai September, realisasi belanja modal baru 41 persen dari pagu, lebih rendah daripada realisasi belanja pegawai yang sudah 72 persen. Dinas terkait beralasan banyak proyek baru selesai dilelang pada pertengahan tahun. Biasanya realisasi belanja modal di provinsi itu melonjak pada kuartal terakhir."
+    },
+    "s3": {
+     "tipe": "teks",
+     "isi": "Sebuah negara menerapkan aturan baru untuk barang kiriman dari luar negeri. Barang dengan nilai sampai USD3 dibebaskan dari bea masuk, tetapi tetap dikenai pajak dalam rangka impor. Barang dengan nilai di atas USD3 dikenai bea masuk dan pajak. Aturan ini dibuat untuk melindungi produk usaha kecil dalam negeri yang kalah bersaing dengan barang impor murah yang dijual secara daring. Dalam enam bulan setelah aturan berlaku, jumlah paket kiriman yang masuk turun 25 persen."
+    }
+   },
+   "soal": [
+    {
+     "id": "verbal-1",
+     "teks": "Jumlah wajib pajak yang datang langsung ke kantor pada tiga bulan pertama tahun ini lebih sedikit daripada periode yang sama tahun lalu.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut kunjungan langsung turun 30 persen dibanding periode yang sama tahun lalu. Turun berarti lebih sedikit.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "",
+      "Teks memberi informasinya dengan jelas (turun 30 persen), jadi bisa disimpulkan.",
+      "Tidak ada bagian teks yang bertentangan. Justru teks mendukungnya."
+     ],
+     "stimulus": "s1"
+    },
+    {
+     "id": "verbal-2",
+     "teks": "Penurunan kunjungan langsung ke kantor disebabkan sepenuhnya oleh layanan konsultasi daring.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya menyebut dua hal yang terjadi bersamaan: kunjungan turun dan konsultasi daring ramai. Teks tidak menyebut penyebab penurunan, apalagi penyebab tunggal. Kata \"sepenuhnya\" membuat pernyataan ini melampaui isi teks.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Teks tidak menyebut penyebab penurunan. Bersamaan waktunya belum tentu sebab-akibat.",
+      "",
+      "Teks juga tidak membantah. Bisa saja memang karena layanan daring, tapi teks tidak mengatakan apa pun soal itu."
+     ],
+     "stimulus": "s1"
+    },
+    {
+     "id": "verbal-3",
+     "teks": "Sebagian besar pengguna layanan daring mengeluhkan sulitnya mengunggah dokumen.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut sekitar seperlima pengguna yang mengeluh. Seperlima itu 20 persen, jauh dari \"sebagian besar\" yang berarti lebih dari setengah.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Seperlima bukan sebagian besar.",
+      "Teks memberi angkanya (seperlima), jadi pernyataan bisa diuji. Hasilnya bertentangan.",
+      ""
+     ],
+     "stimulus": "s1"
+    },
+    {
+     "id": "verbal-4",
+     "teks": "Kantor tersebut sudah menambah kapasitas server dalam tiga bulan pertama.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut kantor itu baru berencana menambah kapasitas server pada semester kedua. Artinya belum dilakukan di tiga bulan pertama.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Teks bilang penambahan masih rencana untuk semester kedua.",
+      "Teks cukup jelas: masih rencana dan waktunya semester kedua. Itu bertentangan dengan \"sudah\".",
+      ""
+     ],
+     "stimulus": "s1"
+    },
+    {
+     "id": "verbal-5",
+     "teks": "Porsi belanja modal provinsi itu tahun ini lebih besar daripada tahun lalu.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Porsinya 18 persen tahun ini dan 15 persen tahun lalu. 18 lebih besar dari 15.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "",
+      "Teks memberi kedua angkanya, jadi bisa dibandingkan.",
+      "Tidak ada yang bertentangan. 18 persen memang lebih besar dari 15 persen."
+     ],
+     "stimulus": "s2"
+    },
+    {
+     "id": "verbal-6",
+     "teks": "Nilai belanja modal dalam rupiah tahun ini pasti lebih besar daripada tahun lalu.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya memberi porsi, yaitu persen dari total belanja. Total belanjanya tidak disebut. Kalau total belanja tahun ini turun, 18 persen bisa saja nilainya lebih kecil daripada 15 persen tahun lalu.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Porsi naik belum tentu nilainya naik, karena total belanjanya tidak diketahui. Kata \"pasti\" terlalu jauh.",
+      "",
+      "Teks juga tidak menyebut nilainya turun. Tidak ada yang bisa dibantah."
+     ],
+     "stimulus": "s2"
+    },
+    {
+     "id": "verbal-7",
+     "teks": "Sampai September, realisasi belanja pegawai lebih rendah daripada realisasi belanja modal.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Realisasi belanja pegawai 72 persen, belanja modal 41 persen. Pernyataan ini membaliknya.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Terbalik. Belanja pegawai (72 persen) lebih tinggi daripada belanja modal (41 persen).",
+      "Kedua angka ada di teks, jadi bisa dibandingkan. Hasilnya bertentangan.",
+      ""
+     ],
+     "stimulus": "s2"
+    },
+    {
+     "id": "verbal-8",
+     "teks": "Realisasi belanja modal provinsi itu akan mencapai 100 persen pada akhir tahun.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya bilang realisasi belanja modal biasanya melonjak di kuartal terakhir. Melonjak tidak sama dengan mencapai 100 persen. Angka akhirnya tidak ada di teks.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Teks tidak menjanjikan 100 persen. \"Biasanya melonjak\" hanya pola tahun-tahun sebelumnya.",
+      "",
+      "Teks juga tidak bilang realisasinya pasti di bawah 100 persen."
+     ],
+     "stimulus": "s2"
+    },
+    {
+     "id": "verbal-9",
+     "teks": "Barang kiriman senilai USD2 tidak perlu membayar pajak apa pun.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Barang sampai USD3 memang bebas bea masuk, tapi teks menegaskan tetap dikenai pajak dalam rangka impor. Jadi \"tidak perlu membayar pajak apa pun\" bertentangan dengan teks.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Yang dibebaskan hanya bea masuk. Pajak dalam rangka impor tetap ada.",
+      "Teks jelas menyebut pajak tetap dikenakan, jadi pernyataan ini bisa diuji dan hasilnya bertentangan.",
+      ""
+     ],
+     "stimulus": "s3"
+    },
+    {
+     "id": "verbal-10",
+     "teks": "Barang kiriman senilai USD10 dikenai bea masuk.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "USD10 di atas USD3. Teks menyebut barang di atas USD3 dikenai bea masuk dan pajak.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "",
+      "Aturannya ada di teks dan USD10 jelas di atas batas, jadi bisa disimpulkan.",
+      "Tidak ada yang bertentangan. Teks justru menyebut barang di atas USD3 kena bea masuk."
+     ],
+     "stimulus": "s3"
+    },
+    {
+     "id": "verbal-11",
+     "teks": "Turunnya jumlah paket kiriman membuat penjualan usaha kecil dalam negeri naik.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya menyebut jumlah paket turun 25 persen. Teks tidak menyebut apa yang terjadi pada penjualan usaha kecil. Tujuan aturan belum tentu sama dengan hasilnya.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "Tujuan aturan memang melindungi usaha kecil, tapi teks tidak melaporkan hasilnya.",
+      "",
+      "Teks juga tidak bilang penjualan mereka tidak naik."
+     ],
+     "stimulus": "s3"
+    },
+    {
+     "id": "verbal-12",
+     "teks": "Salah satu tujuan aturan ini adalah melindungi produk usaha kecil dalam negeri.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut aturan ini dibuat untuk melindungi produk usaha kecil dalam negeri. Kata \"salah satu\" tetap sesuai, karena teks tidak bilang itu satu-satunya tujuan.\nTips: Nilai pernyataan hanya dari isi teks. Benar: teks mendukung. Salah: teks bertentangan. Tidak dapat disimpulkan: teks tidak memberi cukup informasi.",
+     "alasan": [
+      "",
+      "Tujuannya tertulis jelas di teks.",
+      "Tidak ada yang bertentangan. Teks justru menyebut tujuan ini."
+     ],
+     "stimulus": "s3"
+    }
+   ]
+  }
+ ]
+}

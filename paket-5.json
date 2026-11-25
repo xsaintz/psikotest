@@ -1,0 +1,1013 @@
+{
+ "id": "paket-5",
+ "judul": "Paket 5 — Latihan Potensia (Verbal, Numerik, Abstrak, Kreativitas)",
+ "durasi_total_menit": 70,
+ "catatan": "Dikonversi dari cetakan tes potensia.co. PDF asli tidak memuat kunci; kunci, pembahasan, dan alasan disusun sendiri. Angka grafik dibaca dari gambar sehingga berupa perkiraan. Numerik 9 diberi keterangan tambahan supaya jawabannya tunggal. Kreativitas gambar tidak dinilai.",
+ "bagian": [
+  {
+   "id": "verbal",
+   "nama": "Penalaran Verbal",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Bacalah setiap teks dengan saksama, lalu tentukan apakah pernyataan Benar, Salah, atau Tidak dapat disimpulkan berdasarkan informasi dalam teks saja.",
+   "stimulus": {
+    "v1": {
+     "tipe": "teks",
+     "isi": "BACAAN 1\n\nLimbah industri berpotensi menimbulkan dampak serius terhadap ekosistem apabila tidak dikelola secara memadai. Selain berdampak langsung pada manusia, pembuangan limbah di wilayah yang berdekatan dengan permukiman cenderung menimbulkan kerugian bagi binatang dan tumbuhan. Limbah industri umumnya mengandung logam berat, senyawa kimia, minyak, gas berbahaya, dan zat beracun. Kandungan tersebut dalam kondisi tertentu dapat merusak habitat alami, mencemari sungai dan air tanah, serta mengganggu sistem pernapasan makhluk hidup.\n\nLimbah padat sering dilaporkan sebagai jenis limbah yang paling banyak dihasilkan oleh sektor industri. Meskipun limbah cair dan gas juga dihasilkan dalam jumlah signifikan, volume limbah padat dilaporkan cenderung meningkat seiring bertambahnya aktivitas produksi dari industri. Kondisi tersebut mendorong pemerintah dan lembaga masyarakat untuk menekan perusahaan agar menerapkan sistem pengelolaan limbah yang lebih efektif dan ramah lingkungan, meskipun tingkat penerapannya dapat bervariasi antar sektor industri."
+    },
+    "v2": {
+     "tipe": "teks",
+     "isi": "BACAAN 2\n\nMengapa seseorang sering merasa lelah meskipun telah tidur dalam durasi yang panjang? Para ahli menyatakan bahwa lamanya waktu tidur tidak selalu berbanding lurus dengan tingkat kesegaran tubuh. Hal ini karena kualitas istirahat sangat dipengaruhi oleh dinamika siklus tidur alami manusia. Ketika durasi tidur diperpanjang, tubuh dapat kembali memasuki siklus tidur baru sehingga meningkatkan kemungkinan seseorang terbangun pada tahap tidur yang lebih dalam atau pada fase REM (Rapid Eye Movement), yaitu fase ketika aktivitas otak meningkat dan mimpi lebih sering terjadi. Kondisi tersebut justru dapat menimbulkan sensasi kelelahan meskipun waktu tidur yang ditempuh relatif lama.\n\nSelain itu, durasi tidur yang memadai tidak selalu menjamin pemulihan energi tubuh secara optimal. Kualitas tidur dan kondisi fisiologis individu turut berperan dalam menentukan tingkat kesegaran setelah bangun. Berbagai faktor seperti gangguan tidur, paparan cahaya layar sebelum tidur, tekanan psikologis, rendahnya aktivitas fisik, hingga ketidakseimbangan asupan nutrisi dapat menghambat proses restorasi energi tubuh. Akibatnya, seseorang tetap dapat merasakan kelelahan meskipun telah tidur dalam rentang waktu yang dianjurkan."
+    },
+    "v3": {
+     "tipe": "teks",
+     "isi": "BACAAN 3\n\nBanyak pengguna merasa bahwa ponsel dapat \"mendengarkan\" percakapan sehari-hari. Asumsi ini muncul ketika iklan atau konten di laman pencarian tampak sangat relevan dengan topik yang baru saja dibicarakan. Sebuah laporan media bahkan mengungkap adanya dokumen internal dari perusahaan pengembang perangkat lunak yang menyebutkan kemungkinan pemanfaatan data suara untuk kepentingan periklanan.\n\nDi sisi lain, penelitian terhadap ribuan aplikasi tidak menemukan bukti bahwa mikrofon diaktifkan secara diam-diam untuk merekam percakapan pengguna. Mikrofon umumnya hanya berfungsi setelah pengguna memberikan izin. Meski demikian, perangkat tetap memungkinkan pelacakan melalui metode lain, seperti riwayat pencarian, pola pengetikan, serta durasi penggunaan aplikasi untuk membangun profil perilaku pengguna. Analisis data ini yang menyebabkan kemunculan iklan yang tampak \"mendengarkan\" percakapan pengguna."
+    },
+    "v4": {
+     "tipe": "teks",
+     "isi": "BACAAN 4\n\nPenelitian merupakan sarana utama dalam pengembangan ilmu pengetahuan, khususnya dalam bidang kesehatan yang melibatkan manusia sebagai partisipan. Oleh karena itu, praktik penelitian kesehatan tidak terlepas dari prinsip etika sebagai landasan perlindungan partisipan. Sejarah penelitian mencatat sejumlah kasus pelanggaran etika terhadap subjek manusia, meskipun hanya sebagian yang terdokumentasi secara mendalam melalui media publikasi.\n\nSecara konseptual, prinsip etika penelitian bersifat universal karena melampaui batas geografis, budaya, dan kondisi sosial-ekonomi. Namun dalam praktiknya, penerapan prinsip tersebut tidak selalu konsisten. Keterbatasan prosedur operasional, variasi kapasitas peneliti, serta pengawasan penelitian yang belum optimal sering disebut sebagai faktor yang berkontribusi terhadap terjadinya pelanggaran etik dalam penelitian kesehatan. Penelitian yang melibatkan manusia pada dasarnya mengandung potensi risiko dan ketidaknyamanan yang ditanggung partisipan. Oleh karena itu, terdapat tiga prinsip utama yang menjadi dasar penelitian pada manusia, meliputi penghormatan terhadap individu, kebermanfaatan, dan keadilan terhadap hak partisipan. Pelanggaran integritas ilmiah, seperti fabrikasi dan falsifikasi data, dilaporkan sebagai bentuk pelanggaran etika yang paling sering mengancam keabsahan pengetahuan ilmiah."
+    },
+    "v5": {
+     "tipe": "teks",
+     "isi": "BACAAN 5\n\nBias memori pada saksi dapat mengakibatkan salah vonis terhadap terdakwa yang tidak bersalah. Ingatan saksi bersifat dinamis dan dapat berubah seiring waktu. Pernyataan yang diberikan pada tahap awal penyelidikan umumnya lebih akurat dibandingkan pernyataan setelah wawancara atau prosedur identifikasi lanjutan. Meski demikian, keyakinan saksi terhadap ingatannya dapat meningkat tanpa diikuti peningkatan ketepatan fakta terkait memori. Salah satu contoh terkenal adalah kasus Jennifer yang secara yakin mengidentifikasi Ronald sebagai pelaku rudapaksa, sehingga ia dipidana penjara seumur hidup. Hingga akhirnya bukti DNA pada lebih dari satu dekade kemudian membuktikan bahwa Ronald bukanlah pelaku.\n\nPerubahan dan kesalahan memori pada saksi bisa dipengaruhi berbagai faktor, termasuk proses mengingat kembali yang dapat memodifikasi ingatan awal, paparan informasi setelah kejadian seperti diskusi dengan orang lain, serta kondisi stres yang memengaruhi perhatian saat peristiwa berlangsung. Keterbatasan perhatian juga dapat menyebabkan saksi melewatkan detail yang penting, bahkan unsur utama kejadian. Sementara kondisi pengamatan yang buruk atau jeda waktu yang panjang meningkatkan risiko kesalahan dalam mengidentifikasi pelaku."
+    }
+   },
+   "soal": [
+    {
+     "id": "verbal-1",
+     "stimulus": "v1",
+     "teks": "Limbah padat dilaporkan sebagai jenis limbah yang paling banyak dihasilkan oleh sektor industri.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Paragraf 2 menyatakan langsung: \"Limbah padat sering dilaporkan sebagai jenis limbah yang paling banyak dihasilkan oleh sektor industri.\"",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-2",
+     "stimulus": "v1",
+     "teks": "Tekanan dari pemerintah dan lembaga masyarakat telah memastikan seluruh sektor industri menerapkan pengelolaan limbah yang ramah lingkungan.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks menyebut tekanan itu ada, tetapi \"tingkat penerapannya dapat bervariasi antar sektor industri\". Artinya tidak semua sektor sudah menerapkan, jadi kata \"seluruh\" dan \"memastikan\" bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-3",
+     "stimulus": "v1",
+     "teks": "Limbah industri dapat mencemari sungai dan air tanah apabila tidak dikelola secara memadai.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Paragraf 1: limbah yang tidak dikelola memadai mengandung zat yang \"dapat merusak habitat alami, mencemari sungai dan air tanah\".",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-4",
+     "stimulus": "v2",
+     "teks": "Durasi tidur yang panjang menjamin tubuh terbangun dalam kondisi yang segar.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks menyatakan lamanya tidur \"tidak selalu berbanding lurus\" dengan kesegaran, dan tidur panjang justru bisa menimbulkan rasa lelah. Kata \"menjamin\" bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-5",
+     "stimulus": "v2",
+     "teks": "Rendahnya aktivitas fisik dapat menghambat pemulihan energi tubuh meskipun durasi tidur telah mencukupi.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Paragraf 2 menyebut \"rendahnya aktivitas fisik\" sebagai salah satu faktor yang dapat menghambat restorasi energi, sehingga orang tetap lelah walau tidurnya cukup.",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-6",
+     "stimulus": "v2",
+     "teks": "Jika seseorang telah tidur dalam durasi yang dianjurkan tetapi tetap merasa lelah, maka penyebabnya pasti berasal dari gangguan medis.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks menyebut banyak penyebab yang bukan gangguan medis: paparan cahaya layar, tekanan psikologis, kurang aktivitas fisik, dan nutrisi. Jadi penyebabnya tidak \"pasti\" medis.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-7",
+     "stimulus": "v3",
+     "teks": "Perangkat masih dapat melacak pengguna melalui metode lain seperti riwayat pencarian dan pola pengetikan.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Paragraf 2: \"perangkat tetap memungkinkan pelacakan melalui metode lain, seperti riwayat pencarian, pola pengetikan…\"",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-8",
+     "stimulus": "v3",
+     "teks": "Kemunculan iklan yang relevan disebabkan oleh ponsel yang merekam percakapan pengguna secara langsung.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks menyebut penelitian tidak menemukan bukti mikrofon merekam diam-diam, dan iklan relevan muncul karena analisis data seperti riwayat pencarian dan pola pengetikan.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-9",
+     "stimulus": "v3",
+     "teks": "Mikrofon pada perangkat umumnya baru berfungsi setelah pengguna memberikan izin.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Paragraf 2: \"Mikrofon umumnya hanya berfungsi setelah pengguna memberikan izin.\"",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-10",
+     "stimulus": "v4",
+     "teks": "Prinsip etika penelitian tetap berlaku tanpa dibatasi oleh perbedaan budaya antarnegara.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut prinsip etika penelitian \"bersifat universal karena melampaui batas geografis, budaya, dan kondisi sosial-ekonomi\".",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-11",
+     "stimulus": "v4",
+     "teks": "Karena prinsip etika bersifat universal, pelanggaran etik dalam penelitian kesehatan jarang terjadi di negara yang memiliki pengawasan baik.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks tidak membahas seberapa sering pelanggaran terjadi di negara dengan pengawasan baik. Teks hanya menyebut pengawasan yang belum optimal sebagai salah satu faktor pelanggaran, jadi pernyataan ini tidak bisa dinilai dari teks.",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-12",
+     "stimulus": "v4",
+     "teks": "Fabrikasi dan falsifikasi data dilaporkan sebagai bentuk pelanggaran etika yang paling sering mengancam keabsahan pengetahuan ilmiah.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kalimat terakhir teks menyatakan hal yang sama persis.",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-13",
+     "stimulus": "v5",
+     "teks": "Stres yang dialami saksi selama kejadian merupakan faktor utama yang secara langsung menyebabkan kesalahan identifikasi pelaku.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut stres sebagai salah satu dari beberapa faktor, tetapi tidak menyebutnya sebagai faktor utama. Teks juga tidak membantahnya.",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-14",
+     "stimulus": "v5",
+     "teks": "Kesalahan identifikasi saksi merupakan penyebab utama terjadinya salah vonis dalam sistem peradilan.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks hanya menyebut bias memori saksi \"dapat mengakibatkan\" salah vonis. Teks tidak membandingkannya dengan penyebab lain, jadi tidak bisa disimpulkan sebagai penyebab utama.",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-15",
+     "stimulus": "v5",
+     "teks": "Ingatan saksi bersifat dinamis dan dapat berubah seiring berjalannya waktu.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Paragraf 1: \"Ingatan saksi bersifat dinamis dan dapat berubah seiring waktu.\"",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "numerik",
+   "nama": "Penalaran Numerik",
+   "jenis": "kognitif",
+   "durasi_menit": 20,
+   "instruksi": "Perhatikan grafik atau tabel, lalu pilih satu jawaban yang paling tepat.",
+   "stimulus": {
+    "n1": {
+     "tipe": "gambar",
+     "src": "aset/paket-5/num-1.png",
+     "judul": "Jumlah penonton bioskop (ribu)"
+    },
+    "n2": {
+     "tipe": "gambar",
+     "src": "aset/paket-5/num-2.png",
+     "judul": "Tujuan ekspor kopi (ton)"
+    },
+    "n3": {
+     "tipe": "tabel",
+     "judul": "Penjualan platform belanja daring",
+     "kolom": [
+      "Platform",
+      "Q1 (ribu)",
+      "Q2 (ribu)",
+      "Q3 (ribu)",
+      "Q4 (ribu)",
+      "Jumlah Pembeli",
+      "Rating Pelanggan"
+     ],
+     "baris": [
+      [
+       "Toktok",
+       520,
+       770,
+       430,
+       810,
+       2160,
+       "4,8"
+      ],
+      [
+       "Diagram",
+       610,
+       720,
+       500,
+       740,
+       2070,
+       "4,9"
+      ],
+      [
+       "Youtip",
+       370,
+       450,
+       280,
+       520,
+       1270,
+       "4,4"
+      ],
+      [
+       "Soping",
+       720,
+       680,
+       630,
+       790,
+       1940,
+       "4,6"
+      ],
+      [
+       "Tersedia",
+       500,
+       530,
+       460,
+       630,
+       1520,
+       "4,7"
+      ]
+     ]
+    },
+    "n4": {
+     "tipe": "gambar",
+     "src": "aset/paket-5/num-4.png",
+     "judul": "Distribusi tiket terjual per negara dan tabel harga"
+    },
+    "n5": {
+     "tipe": "gambar",
+     "src": "aset/paket-5/num-5.png",
+     "judul": "Jumlah unit laptop terjual dan harga per series"
+    }
+   },
+   "soal": [
+    {
+     "id": "numerik-1",
+     "stimulus": "n1",
+     "teks": "Berapa total penonton bioskop di kota Makassar selama tiga hari?",
+     "opsi": [
+      "1.520 ribu",
+      "1.570 ribu",
+      "1.600 ribu",
+      "1.650 ribu"
+     ],
+     "kunci": 1,
+     "pembahasan": "Batang kuning (Makassar): Jumat ≈ 500, Sabtu ≈ 530, Minggu ≈ 540 ribu. Total = 500 + 530 + 540 = 1.570 ribu.",
+     "alasan": [
+      "Terlalu kecil. Selisih 50 ribu biasanya karena batang Sabtu atau Minggu dibaca terlalu rendah.",
+      "",
+      "Terlalu besar. Batang Makassar tidak ada yang mencapai garis 600.",
+      "Terlalu besar. Angka ini muncul jika batang Makassar dibaca sekitar 550 setiap hari."
+     ]
+    },
+    {
+     "id": "numerik-2",
+     "stimulus": "n1",
+     "teks": "Berapa persentase pertumbuhan total penonton ketiga kota dari hari Jumat ke hari Minggu?",
+     "opsi": [
+      "21,6%",
+      "25,0%",
+      "27,5%",
+      "31,2%"
+     ],
+     "kunci": 2,
+     "pembahasan": "Total Jumat = 650 + 575 + 500 = 1.725 ribu. Total Minggu = 880 + 780 + 540 = 2.200 ribu. Pertumbuhan = (2.200 − 1.725) / 1.725 = 475 / 1.725 ≈ 27,5%.",
+     "alasan": [
+      "Ini hasil 475 / 2.200: selisih dibagi nilai akhir (Minggu). Pertumbuhan selalu dibagi nilai awal (Jumat).",
+      "Terlalu kecil. Selisih 475 ribu dari 1.725 ribu lebih dari seperempat.",
+      "",
+      "Terlalu besar. Angka ini muncul jika total Jumat dibaca terlalu rendah."
+     ]
+    },
+    {
+     "id": "numerik-3",
+     "stimulus": "n1",
+     "teks": "Jika jumlah penonton bioskop kota Jakarta pada hari Senin diperkirakan naik 10% dari hari Minggu, berapa perkiraan jumlah penonton Jakarta pada hari Senin?",
+     "opsi": [
+      "950 ribu",
+      "968 ribu",
+      "980 ribu",
+      "990 ribu"
+     ],
+     "kunci": 1,
+     "pembahasan": "Batang abu-abu (Jakarta) hari Minggu tepat di garis 880 ribu. Naik 10%: 880 × 1,1 = 968 ribu.",
+     "alasan": [
+      "Kenaikannya hanya 70 ribu (sekitar 8%), bukan 10%.",
+      "",
+      "Kenaikannya 100 ribu (sekitar 11%), lebih dari 10%.",
+      "Ini 900 × 1,1. Nilai Minggu Jakarta 880, bukan 900."
+     ]
+    },
+    {
+     "id": "numerik-4",
+     "stimulus": "n2",
+     "teks": "Berapa rasio total ekspor kopi Gayo terhadap total ekspor kopi Jawa?",
+     "opsi": [
+      "3 : 2",
+      "2 : 1",
+      "5 : 2",
+      "5 : 3"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kopi Gayo: 17 + 13 + 16 + 12 = 58. Kopi Jawa: 6 + 7 + 3 + 13 = 29. Rasio 58 : 29 = 2 : 1.",
+     "alasan": [
+      "Rasio 3 : 2 berarti Gayo hanya 1,5 kali Jawa, padahal 58 tepat dua kali 29.",
+      "",
+      "Rasio 5 : 2 berarti Gayo 2,5 kali Jawa (sekitar 72), terlalu besar.",
+      "Rasio 5 : 3 berarti Gayo sekitar 1,67 kali Jawa, terlalu kecil."
+     ]
+    },
+    {
+     "id": "numerik-5",
+     "stimulus": "n2",
+     "teks": "Jika ekspor kopi Kintamani untuk Domestik diperkirakan akan meningkat 20% dari ekspor kopi Jawa untuk Domestik pada tahun ini. Berapakah perkiraan jumlah ekspor kopi Kintamani untuk Domestik?",
+     "opsi": [
+      "7.2 ton",
+      "8.2 ton",
+      "12.2 ton",
+      "13.2 ton"
+     ],
+     "kunci": 0,
+     "pembahasan": "Dasarnya ekspor kopi Jawa untuk Domestik = 6 ton. Naik 20%: 6 × 1,2 = 7,2 ton.",
+     "alasan": [
+      "",
+      "Ini 6 + 2,2. Kenaikan 20% dari 6 adalah 1,2, bukan 2,2.",
+      "Angka ini tidak berasal dari 20% data mana pun di grafik.",
+      "Ini 11 × 1,2: memakai ekspor Kintamani sendiri (11 ton) sebagai dasar. Soal meminta 20% dari ekspor Jawa."
+     ]
+    },
+    {
+     "id": "numerik-6",
+     "stimulus": "n2",
+     "teks": "Jenis kopi manakah yang memiliki total ekspor (seluruh tujuan) paling banyak?",
+     "opsi": [
+      "Kopi Toraja",
+      "Kopi Kintamani",
+      "Kopi Jawa",
+      "Kopi Gayo"
+     ],
+     "kunci": 3,
+     "pembahasan": "Total: Gayo 17 + 13 + 16 + 12 = 58, Toraja 8 + 15 + 16 + 7 = 46, Kintamani 11 + 8 + 9 + 14 = 42, Jawa 6 + 7 + 3 + 13 = 29. Terbanyak kopi Gayo.",
+     "alasan": [
+      "Toraja (46) unggul di Amerika dan Eropa, tetapi totalnya di bawah Gayo (58).",
+      "Kintamani unggul di Asia, tetapi totalnya hanya 42.",
+      "Jawa justru totalnya paling sedikit (29).",
+      ""
+     ]
+    },
+    {
+     "id": "numerik-7",
+     "stimulus": "n3",
+     "teks": "Platform manakah yang memiliki rating pelanggan tertinggi?",
+     "opsi": [
+      "Diagram",
+      "Toktok",
+      "Soping",
+      "Youtip"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kolom Rating Pelanggan: Diagram 4,9, Toktok 4,8, Tersedia 4,7, Soping 4,6, Youtip 4,4. Tertinggi Diagram.",
+     "alasan": [
+      "",
+      "Toktok (4,8) urutan kedua. Jumlah pembelinya terbanyak, tetapi soal menanyakan rating.",
+      "Rating Soping 4,6, di bawah Diagram.",
+      "Rating Youtip 4,4, justru terendah."
+     ]
+    },
+    {
+     "id": "numerik-8",
+     "stimulus": "n3",
+     "teks": "Platform manakah yang memiliki rating pelanggan tertinggi?",
+     "opsi": [
+      "Toktok",
+      "Diagram",
+      "Soping",
+      "Tersedia"
+     ],
+     "kunci": 1,
+     "pembahasan": "Sama dengan soal sebelumnya, hanya urutan pilihannya berbeda. Rating tertinggi Diagram (4,9).",
+     "alasan": [
+      "Toktok (4,8) urutan kedua.",
+      "",
+      "Rating Soping 4,6.",
+      "Rating Tersedia 4,7, masih di bawah Diagram."
+     ]
+    },
+    {
+     "id": "numerik-9",
+     "stimulus": "n3",
+     "teks": "Platform manakah yang memberikan keuntungan terbesar (dilihat dari total penjualan Q1–Q4)?",
+     "opsi": [
+      "Toktok",
+      "Diagram",
+      "Soping",
+      "Tersedia"
+     ],
+     "kunci": 2,
+     "pembahasan": "Tabel tidak memuat biaya, jadi keuntungan dibaca dari total penjualan Q1–Q4. Soping 720 + 680 + 630 + 790 = 2.820, Diagram 2.570, Toktok 2.530, Tersedia 2.120. Terbesar Soping. (Teks soal asli hanya menulis \"keuntungan terbesar\"; keterangan dalam kurung ditambahkan supaya jawabannya tunggal.)",
+     "alasan": [
+      "Jumlah pembeli Toktok terbanyak (2.160), tetapi total penjualannya 2.530, di bawah Soping.",
+      "Rating Diagram tertinggi, tetapi total penjualannya 2.570, di bawah Soping.",
+      "",
+      "Total penjualan Tersedia 2.120, terendah di antara pilihan."
+     ]
+    },
+    {
+     "id": "numerik-10",
+     "stimulus": "n4",
+     "teks": "Berapa total tiket yang terjual di China dan Jepang?",
+     "opsi": [
+      "4.000.000 tiket",
+      "5.000.000 tiket",
+      "6.000.000 tiket",
+      "7.000.000 tiket"
+     ],
+     "kunci": 1,
+     "pembahasan": "China 8% + Jepang 12% = 20% dari 25.000.000 tiket = 5.000.000 tiket.",
+     "alasan": [
+      "Ini 16% dari 25 juta. Jumlah persentase China dan Jepang 20%, bukan 16%.",
+      "",
+      "Ini 24% dari 25 juta, yaitu bagian Amerika Serikat.",
+      "Ini 28% dari 25 juta, terlalu besar."
+     ]
+    },
+    {
+     "id": "numerik-11",
+     "stimulus": "n4",
+     "teks": "Berdasarkan tabel harga, berapa nilai penjualan tiket di China (dalam rupiah)?",
+     "opsi": [
+      "IDR 0,70 triliun",
+      "IDR 0,72 triliun",
+      "IDR 0,75 triliun",
+      "IDR 0,80 triliun"
+     ],
+     "kunci": 0,
+     "pembahasan": "Tiket China = 8% × 25.000.000 = 2.000.000. Harga ¥140 × Rp2.500 = Rp350.000 per tiket. Nilai = 2.000.000 × 350.000 = Rp700 miliar = 0,70 triliun.",
+     "alasan": [
+      "",
+      "Terlalu besar Rp20 miliar. Cek lagi kurs ¥1 CNY = Rp2.500 dan harga ¥140.",
+      "Terlalu besar. Angka ini muncul jika harga per tiket dianggap Rp375.000.",
+      "Terlalu besar. Angka ini muncul jika harga per tiket dianggap Rp400.000."
+     ]
+    },
+    {
+     "id": "numerik-12",
+     "stimulus": "n4",
+     "teks": "Berapa nilai penjualan tiket di Amerika dalam rupiah?",
+     "opsi": [
+      "1.440.000.000.000",
+      "1.800.000.000.000",
+      "2.100.000.000.000",
+      "2.160.000.000.000"
+     ],
+     "kunci": 3,
+     "pembahasan": "Tiket Amerika Serikat = 24% × 25.000.000 = 6.000.000. Harga $24 × Rp15.000 = Rp360.000 per tiket. Nilai = 6.000.000 × 360.000 = Rp2.160.000.000.000.",
+     "alasan": [
+      "Ini memakai 4.000.000 tiket (16%), bukan 24%.",
+      "Ini memakai 5.000.000 tiket (20%, bagian Inggris).",
+      "Terlalu kecil. Harga per tiket Rp360.000, bukan Rp350.000.",
+      ""
+     ]
+    },
+    {
+     "id": "numerik-13",
+     "stimulus": "n5",
+     "teks": "Jika produksi laptop series Y di bulan Juli mengalami peningkatan sebesar 20% dari jumlah unit terjual di bulan Juni, berapakah nilai penjualan yang diperoleh pada Juli jika seluruh unit habis terjual?",
+     "opsi": [
+      "IDR 625 juta",
+      "IDR 725 juta",
+      "IDR 750 juta",
+      "IDR 925 juta"
+     ],
+     "kunci": 2,
+     "pembahasan": "Series Y bulan Juni ≈ 125 unit. Juli naik 20%: 125 × 1,2 = 150 unit. Harga series Y = Rp125 juta per 25 unit = Rp5 juta per unit. Nilai = 150 × 5 juta = Rp750 juta.",
+     "alasan": [
+      "Ini 125 × 5 juta: penjualan Juni, lupa menambah 20%.",
+      "Terlalu kecil. Setara 145 unit, padahal 125 naik 20% menjadi 150.",
+      "",
+      "Terlalu besar. Setara 185 unit."
+     ]
+    },
+    {
+     "id": "numerik-14",
+     "stimulus": "n5",
+     "teks": "Berapa total unit laptop yang terjual dari ketiga series pada bulan Maret?",
+     "opsi": [
+      "340 unit",
+      "360 unit",
+      "380 unit",
+      "400 unit"
+     ],
+     "kunci": 1,
+     "pembahasan": "Bulan Maret: Series X ≈ 120, Series Y = 100, Series Z ≈ 140. Total = 360 unit.",
+     "alasan": [
+      "Kurang 20 unit. Cek titik Series X (≈120) dan Z (≈140).",
+      "",
+      "Kelebihan 20 unit.",
+      "Kelebihan 40 unit. Titik Series Y bulan Maret ada di garis 100."
+     ]
+    },
+    {
+     "id": "numerik-15",
+     "stimulus": "n5",
+     "teks": "Series laptop manakah yang mengalami persentase pertumbuhan unit terbesar dari bulan Maret ke bulan Desember?",
+     "opsi": [
+      "Series X",
+      "Series Y",
+      "Series Z",
+      "Pertumbuhannya sama besar"
+     ],
+     "kunci": 0,
+     "pembahasan": "Series X: 120 → 200, naik 80/120 ≈ 66,7%. Series Y: 100 → 150, naik 50%. Series Z: 140 → 180, naik 40/140 ≈ 28,6%. Terbesar Series X.",
+     "alasan": [
+      "",
+      "Series Y naik 50%. Puncaknya di September, tetapi turun lagi di Desember.",
+      "Series Z hanya naik sekitar 28,6%, walaupun nilai Desembernya tinggi.",
+      "Persentasenya berbeda-beda: 66,7%, 50%, dan 28,6%."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "abstrak",
+   "nama": "Penalaran Abstrak",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Perhatikan urutan gambar, lalu tentukan gambar berikutnya (atau gambar yang melengkapi pola) yang paling tepat. Pilih A, B, C, atau D.",
+   "soal": [
+    {
+     "id": "abstrak-1",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-1.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 3,
+     "pembahasan": "Bulatan hitam berpindah menyusuri tepi kotak: kiri atas → kiri tengah → kiri bawah → tengah bawah, jadi berikutnya kanan bawah. Segitiga bergantian hitam dan putih; kotak 4 putih, jadi berikutnya hitam.",
+     "alasan": [
+      "Bulatan kembali ke kiri atas dan segitiga putih; keduanya tidak sesuai pola.",
+      "Segitiga hitam sudah benar, tetapi bulatan kembali ke kiri atas, padahal seharusnya terus bergeser ke kanan bawah.",
+      "Posisi bulatan benar, tetapi segitiga putih. Setelah putih (kotak 4) giliran hitam.",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-2",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-2.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 3,
+     "pembahasan": "Panah berputar 90° searah jarum jam (atas → kanan → bawah → kiri) dan makin kecil di setiap langkah. Berikutnya panah menunjuk ke atas dan lebih kecil dari panah kotak 4.",
+     "alasan": [
+      "Menunjuk ke kiri lagi, padahal panah harus terus berputar ke atas.",
+      "Arahnya benar, tetapi ukurannya lebih besar dari panah kotak 4. Ukuran panah harus terus mengecil.",
+      "Menunjuk ke kanan, padahal setelah kiri giliran atas.",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-3",
+     "teks": "Lengkapi pola pada kotak yang kosong.",
+     "img": "aset/paket-5/abstrak-3.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 1,
+     "pembahasan": "Pada baris 1, kotak ketiga adalah gabungan dua kotak pertama setelah garis yang sama dihapus: lingkaran ada di keduanya sehingga hilang, tersisa garis mendatar + tegak. Baris 3: lingkaran bergaris tegak + garis tegak → garis tegak hilang, tersisa lingkaran saja. (Catatan: baris 2 di soal asli tidak mengikuti aturan ini secara persis; kunci diambil dari pola baris 1 dan 3.)",
+     "alasan": [
+      "Hanya garis tegak, padahal garis tegak ada di kedua kotak sehingga harus dihapus.",
+      "",
+      "Garis mendatar tidak ada di dua kotak pertama baris 3, jadi tidak mungkin muncul.",
+      "Menggabungkan semua unsur tanpa menghapus yang sama, bahkan menambah garis mendatar."
+     ]
+    },
+    {
+     "id": "abstrak-4",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-4.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 2,
+     "pembahasan": "Jumlah tanda panah (chevron) bertambah satu di setiap kotak: 1, 2, 3, 4, jadi berikutnya 5 chevron yang tetap menghadap ke atas.",
+     "alasan": [
+      "Berisi 4 chevron, sama dengan kotak terakhir; jumlahnya tidak bertambah.",
+      "Berisi 6 chevron, bertambah dua sekaligus.",
+      "",
+      "Jumlahnya 5, tetapi menghadap ke bawah. Semua kotak sebelumnya menghadap ke atas."
+     ]
+    },
+    {
+     "id": "abstrak-5",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-5.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 2,
+     "pembahasan": "Bulatan membesar di setiap langkah dan warnanya bergantian hitam-putih. Kotak 4 putih, jadi berikutnya bulatan hitam yang lebih besar dari kotak 4.",
+     "alasan": [
+      "Bulatan putih, padahal setelah putih giliran hitam.",
+      "Hitam, tetapi ukurannya sama dengan bulatan kotak 4; ukurannya harus terus membesar.",
+      "",
+      "Bulatan putih, padahal warnanya seharusnya hitam."
+     ]
+    },
+    {
+     "id": "abstrak-6",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-6.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 0,
+     "pembahasan": "Setiap langkah, bentuk paling kiri pindah ke ujung kanan dan warnanya berubah (hitam ↔ putih). Kotak 4: segitiga putih, lingkaran hitam, persegi hitam. Segitiga pindah ke kanan dan menjadi hitam: lingkaran hitam, persegi hitam, segitiga hitam.",
+     "alasan": [
+      "",
+      "Segitiga tetap putih, padahal bentuk yang pindah ke ujung selalu berganti warna.",
+      "Urutannya tidak sesuai pergeseran, dan lingkaran berubah menjadi putih tanpa berpindah.",
+      "Sama persis dengan kotak 4; tidak ada pergeseran."
+     ]
+    },
+    {
+     "id": "abstrak-7",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-7.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 1,
+     "pembahasan": "Jumlah kotak kecil: 3, 6, 5, 8. Polanya +3, −1 berulang, jadi berikutnya 8 − 1 = 7 kotak.",
+     "alasan": [
+      "Berisi 8 kotak, sama dengan kotak 4; langkah −1 terlewat.",
+      "",
+      "Berisi 10 kotak (+2), tidak sesuai pola +3, −1.",
+      "Berisi 6 kotak (−2), tidak sesuai pola +3, −1."
+     ]
+    },
+    {
+     "id": "abstrak-8",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-8.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 0,
+     "pembahasan": "Bentuk L berputar searah jarum jam dengan sudut tetap di setiap langkah, dan warnanya bergantian hitam dan garis tepi. Kotak 4 sudah terbalik 180°, berarti tiap langkah 60°. Berikutnya L berputar 240° dan berwarna hitam.",
+     "alasan": [
+      "",
+      "Hanya garis tepi, padahal setelah garis tepi giliran hitam.",
+      "Hitam, tetapi posisinya sama dengan kotak 4 (180°); bentuknya tidak berputar.",
+      "Hitam, tetapi sudut putarnya tidak sesuai (berbentuk V, sekitar 315°)."
+     ]
+    },
+    {
+     "id": "abstrak-9",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-9.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 3,
+     "pembahasan": "Panah berputar sekitar 30° berlawanan arah jarum jam (kanan → serong kanan atas → serong lebih tegak → atas), dengan warna bergantian hitam-putih. Berikutnya panah hitam menunjuk serong kiri atas (sekitar 30° dari tegak).",
+     "alasan": [
+      "Hitam, tetapi terlalu miring ke kiri (melompat sekitar 60°).",
+      "Arahnya mendekati benar, tetapi putih; setelah putih giliran hitam.",
+      "Putih dan terlalu miring ke kiri.",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-10",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-10.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 0,
+     "pembahasan": "Lingkaran mengecil di setiap langkah. Berikutnya lingkaran yang lebih kecil dari kotak 4, yaitu yang paling kecil.",
+     "alasan": [
+      "",
+      "Ukurannya kira-kira sama dengan kotak 4; tidak mengecil.",
+      "Lebih besar dari kotak 4.",
+      "Kembali ke ukuran terbesar."
+     ]
+    },
+    {
+     "id": "abstrak-11",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-11.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 1,
+     "pembahasan": "Jumlah titik sama dengan jumlah sisi bangun: setengah lingkaran 2 sisi berisi 2 titik, jajargenjang 4 sisi berisi 4 titik, segi lima berisi 5 titik, segi enam berisi 6 titik. Pilihan B: bangun 4 sisi (2 busur, 2 garis) berisi 4 titik.",
+     "alasan": [
+      "Belah ketupat punya 4 sisi, tetapi titiknya hanya 1.",
+      "",
+      "Lingkaran punya 1 sisi, tetapi titiknya 4.",
+      "Segitiga punya 3 sisi, tetapi titiknya hanya 2."
+     ]
+    },
+    {
+     "id": "abstrak-12",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-12.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 1,
+     "pembahasan": "Pola berulang setiap tiga kotak: lingkaran + garis miring, persegi berisi lingkaran, persegi + garis miring, lalu kembali ke lingkaran + garis miring. Kotak berikutnya sama dengan kotak 2: persegi berisi lingkaran.",
+     "alasan": [
+      "Menggabungkan semua unsur sekaligus; tidak ada kotak seperti ini di pola.",
+      "",
+      "Hanya garis miring; tidak ada kotak seperti ini di pola.",
+      "Sama dengan kotak 3, padahal setelah kotak 4 (= kotak 1) giliran kotak 2."
+     ]
+    },
+    {
+     "id": "abstrak-13",
+     "teks": "Lengkapi pola pada kotak yang kosong.",
+     "img": "aset/paket-5/abstrak-13.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 0,
+     "pembahasan": "Bandingkan dua kotak pertama setiap baris per posisi: jika warnanya sama (sama-sama hitam atau sama-sama putih), kotak ketiga hitam; jika berbeda, putih. Baris 3: kiri atas putih-putih → hitam, kanan atas hitam-hitam → hitam, kiri bawah hitam-putih → putih, kanan bawah putih-hitam → putih. Hasilnya atas hitam, bawah putih.",
+     "alasan": [
+      "",
+      "Kebalikan jawaban: aturan sama → hitam dibalik.",
+      "Kiri atas seharusnya hitam karena di dua kotak pertama sama-sama putih.",
+      "Sama dengan kotak pertama baris 3, bukan hasil perbandingan."
+     ]
+    },
+    {
+     "id": "abstrak-14",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-14.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 2,
+     "pembahasan": "Segitiga bergeser ke kanan di setiap langkah dan bergantian antara segitiga besar menghadap atas dan segitiga kecil menghadap bawah. Kotak 4 kecil menghadap bawah, jadi berikutnya segitiga besar menghadap atas di posisi paling kanan.",
+     "alasan": [
+      "Posisinya benar, tetapi segitiganya kecil; setelah kecil giliran besar.",
+      "Menghadap ke bawah, padahal giliran menghadap atas.",
+      "",
+      "Besar dan menghadap atas, tetapi posisinya sama dengan kotak 4; tidak bergeser."
+     ]
+    },
+    {
+     "id": "abstrak-15",
+     "teks": "Tentukan kotak berikutnya berdasarkan urutan.",
+     "img": "aset/paket-5/abstrak-15.png",
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "kunci": 2,
+     "pembahasan": "Bendera berputar searah jarum jam dengan sudut yang terus bertambah: +45°, +90°, +135°, lalu +180°. Kotak 4 sudah berputar 270° (tiang menunjuk ke kiri); ditambah 180° menjadi 450° = 90°: tiang mendatar ke kanan dan bendera menghadap ke bawah.",
+     "alasan": [
+      "Sama dengan kotak 2 (putaran 45°).",
+      "Hasil jika putaran tetap +90° (kembali ke posisi awal), padahal tambahan sudutnya terus naik 45°.",
+      "",
+      "Sama dengan kotak 3 (putaran 135°)."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kreativitas",
+   "nama": "Kreativitas Gambar",
+   "jenis": "gambar",
+   "durasi_menit": 20,
+   "instruksi": "Lengkapi setiap bentuk menjadi gambar apa saja yang Anda inginkan. Tidak ada jawaban benar atau salah; yang dilihat adalah orisinalitas dan detail. Gunakan pena, penghapus, dan Undo di atas kanvas.",
+   "soal": [
+    {
+     "id": "gambar-1",
+     "teks": "Gambar 1 — Lengkung",
+     "pola": "M40 236 Q182 36 322 236"
+    },
+    {
+     "id": "gambar-2",
+     "teks": "Gambar 2 — Sudut siku",
+     "pola": "M60 80 L60 300 L300 300"
+    },
+    {
+     "id": "gambar-3",
+     "teks": "Gambar 3 — Lingkaran terbuka",
+     "pola": "M130 106 A78 78 0 1 1 189 182"
+    },
+    {
+     "id": "gambar-4",
+     "teks": "Gambar 4 — Zigzag",
+     "pola": "M40 240 L118 104 L196 240 L274 106"
+    },
+    {
+     "id": "gambar-5",
+     "teks": "Gambar 5 — Garis sejajar",
+     "pola": "M52 70 H286 M52 112 H286"
+    },
+    {
+     "id": "gambar-6",
+     "teks": "Gambar 6 — Segitiga terbuka",
+     "pola": "M162 66 L66 280 L262 280"
+    },
+    {
+     "id": "gambar-7",
+     "teks": "Gambar 7 — Spiral",
+     "pola": "M78 124 C78 180 110 201 157 201 C205 201 235 180 235 144 C235 115 215 103 196 103 C170 103 156 120 156 144"
+    },
+    {
+     "id": "gambar-8",
+     "teks": "Gambar 8 — Titik-titik",
+     "pola": "M79 91 h.1 M183 78 h.1 M131 117 h.1 M105 169 h.1 M196 182 h.1"
+    }
+   ]
+  }
+ ]
+}

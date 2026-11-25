@@ -1,0 +1,2973 @@
+{
+ "id": "paket-7",
+ "judul": "Paket 7 — TPA Numerik (deret, hitung, perbandingan, soal cerita, data)",
+ "durasi_total_menit": 125,
+ "catatan": "Soal dari web latihan-tpp-nikzone.pages.dev. Kuesioner kepribadian dan set PEEPL asli tidak diikutkan (sudah ada di Paket 1).",
+ "bagian": [
+  {
+   "id": "deret-angka",
+   "nama": "Deret Angka",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Tentukan bilangan berikutnya dari deret.",
+   "soal": [
+    {
+     "id": "deret-angka-1",
+     "teks": "4, 6, 10, 16, 26, 42, 68, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "94",
+      "109",
+      "136",
+      "110",
+      "111"
+     ],
+     "kunci": 3,
+     "pembahasan": "Setiap suku adalah jumlah dua suku sebelumnya, misalnya 10 = 4 + 6. Suku berikutnya: 42 + 68 = 110.\nTips: Kalau tiap suku kira-kira jumlah dua suku sebelumnya, cek pola Fibonacci.",
+     "alasan": [
+      "Kamu menambahkan selisih terakhir (26). Yang dijumlah seharusnya dua suku terakhir.",
+      "Kurang satu dari jawaban, kemungkinan salah jumlah.",
+      "Ini 68 × 2. Deret ini tidak dikali, tapi menjumlah dua suku terakhir.",
+      "",
+      "Lebih 1 dari hasil yang benar (110). Jumlahkan dua suku terakhir."
+     ]
+    },
+    {
+     "id": "deret-angka-2",
+     "teks": "7, 13, 26, 32, 64, 70, 140, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "147",
+      "292",
+      "152",
+      "146",
+      "280"
+     ],
+     "kunci": 3,
+     "pembahasan": "Operasinya bergantian: + 6, × 2, + 6, × 2, dan seterusnya. Langkah terakhir (70 → 140) adalah × 2, jadi sekarang giliran + 6: 140 + 6 = 146.\nTips: Kalau pola satu operasi tidak cocok, coba operasi yang bergantian, misalnya tambah lalu kali.",
+     "alasan": [
+      "Lebih satu dari jawaban.",
+      "Ini dua langkah sekaligus (+ 6 lalu × 2). Yang ditanya satu suku berikutnya.",
+      "Kamu menambahkan 6 × 2. Langkah berikutnya cukup + 6.",
+      "",
+      "Ini kalau langkah berikutnya dikira × 2 lagi. Operasinya bergantian, sekarang giliran + 6."
+     ]
+    },
+    {
+     "id": "deret-angka-3",
+     "teks": "12, 13, 15, 19, 27, 43, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "75",
+      "59",
+      "76",
+      "86",
+      "60"
+     ],
+     "kunci": 0,
+     "pembahasan": "Selisihnya +1, +2, +4, +8, +16. Setiap selisih dua kali selisih sebelumnya, jadi selisih berikutnya +32. 43 + 32 = 75.\nTips: Tulis selisihnya. Kalau selisihnya membentuk deret kali (×2), selisih berikutnya juga dikali 2.",
+     "alasan": [
+      "",
+      "Kamu memakai selisih terakhir (+16) lagi. Selisihnya berlipat dua setiap langkah.",
+      "Lebih satu dari jawaban.",
+      "Ini 43 × 2. Yang dikali 2 adalah selisihnya, bukan sukunya.",
+      "Selisihnya kamu tambah 1. Polanya dikali 2, bukan ditambah."
+     ]
+    },
+    {
+     "id": "deret-angka-4",
+     "teks": "119, 111, 103, 95, 87, 79, 71, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "55",
+      "63",
+      "64",
+      "62",
+      "87"
+     ],
+     "kunci": 1,
+     "pembahasan": "Selisih tiap suku tetap −8. Suku berikutnya: 71 − 8 = 63.\nTips: Hitung selisih antarsuku. Kalau selisihnya selalu sama, tambahkan selisih itu ke suku terakhir.",
+     "alasan": [
+      "Ini dua langkah ke depan (71 − 8 − 8). Yang ditanya hanya satu suku berikutnya.",
+      "",
+      "Lebih satu dari jawaban. Biasanya karena salah hitung di langkah terakhir.",
+      "Kurang satu dari jawaban. Biasanya karena salah hitung di langkah terakhir.",
+      "Arahnya terbalik. Deret ini turun 8 setiap langkah, bukan naik."
+     ]
+    },
+    {
+     "id": "deret-angka-5",
+     "teks": "2, 6, 18, 54, 162, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "489",
+      "648",
+      "486",
+      "484",
+      "270"
+     ],
+     "kunci": 2,
+     "pembahasan": "Setiap suku dikali 3 (6 : 2 = 3). Suku berikutnya: 162 × 3 = 486.\nTips: Kalau selisihnya membesar cepat, coba bagi suku dengan suku sebelumnya. Hasil bagi yang sama berarti deret kali.",
+     "alasan": [
+      "Lebih 3 dari jawaban, mungkin salah hitung saat mengalikan.",
+      "Ini 162 × 4. Pengalinya tetap 3.",
+      "",
+      "Kurang 2 dari jawaban. Cek lagi perkaliannya: 162 × 3.",
+      "Kamu menambahkan selisih terakhir (108). Deret ini perkalian, jadi selisihnya ikut berlipat."
+     ]
+    },
+    {
+     "id": "deret-angka-6",
+     "teks": "8, 16, 32, 64, 128, 256, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "384",
+      "514",
+      "768",
+      "512",
+      "504"
+     ],
+     "kunci": 3,
+     "pembahasan": "Setiap suku dikali 2 (16 : 8 = 2). Suku berikutnya: 256 × 2 = 512.\nTips: Kalau selisihnya membesar cepat, coba bagi suku dengan suku sebelumnya. Hasil bagi yang sama berarti deret kali.",
+     "alasan": [
+      "Kamu menambahkan selisih terakhir (128). Deret ini perkalian, jadi selisihnya ikut berlipat.",
+      "Lebih 2 dari jawaban, mungkin salah hitung saat mengalikan.",
+      "Ini 256 × 3. Pengalinya tetap 2.",
+      "",
+      "Kurang 8 dari jawaban. Cek lagi perkaliannya: 256 × 2."
+     ]
+    },
+    {
+     "id": "deret-angka-7",
+     "teks": "2, 8, 10, 18, 28, 46, 74, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "148",
+      "121",
+      "120",
+      "119",
+      "102"
+     ],
+     "kunci": 2,
+     "pembahasan": "Setiap suku adalah jumlah dua suku sebelumnya, misalnya 10 = 2 + 8. Suku berikutnya: 46 + 74 = 120.\nTips: Kalau tiap suku kira-kira jumlah dua suku sebelumnya, cek pola Fibonacci.",
+     "alasan": [
+      "Ini 74 × 2. Deret ini tidak dikali, tapi menjumlah dua suku terakhir.",
+      "Lebih 1 dari hasil yang benar (120). Jumlahkan dua suku terakhir.",
+      "",
+      "Kurang satu dari jawaban, kemungkinan salah jumlah.",
+      "Kamu menambahkan selisih terakhir (28). Yang dijumlah seharusnya dua suku terakhir."
+     ]
+    },
+    {
+     "id": "deret-angka-8",
+     "teks": "4, 10, 22, 46, 94, 190, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "286",
+      "380",
+      "382",
+      "384",
+      "383"
+     ],
+     "kunci": 2,
+     "pembahasan": "Setiap suku dikali 2 lalu ditambah 2. Contoh: 10 = 4 × 2 + 2. Suku berikutnya: 190 × 2 + 2 = 382.\nTips: Kalau hasil baginya hampir sama tapi tidak bulat, coba pola kali lalu tambah/kurang: suku × a ± b.",
+     "alasan": [
+      "Kamu menambahkan selisih terakhir (96). Deret ini memakai perkalian.",
+      "Baru dikali 2, belum ditambah 2.",
+      "",
+      "Urutannya terbalik: ditambah dulu baru dikali. Polanya dikali dulu, baru ditambah.",
+      "Lebih 1 dari hasil yang benar (382). Polanya × 2 lalu +2."
+     ]
+    },
+    {
+     "id": "deret-angka-9",
+     "teks": "47, 62, 79, 98, 119, 142, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "194",
+      "169",
+      "168",
+      "165",
+      "167"
+     ],
+     "kunci": 4,
+     "pembahasan": "Setiap suku adalah bilangan kuadrat berurutan dikurangi 2: 7² − 2, 8² − 2, dan seterusnya. Berikutnya 13² − 2 = 169 − 2 = 167.\nTips: Kalau selisihnya bilangan ganjil berurutan (3, 5, 7, ...), curigai bilangan kuadrat.",
+     "alasan": [
+      "Melompati satu bilangan: ini 14² − 2, padahal yang berikutnya 13² − 2.",
+      "Ini 13² saja, lupa dikurangi 2.",
+      "Lebih satu dari jawaban.",
+      "Kamu memakai selisih terakhir (23) lagi. Selisihnya naik 2 setiap langkah.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-angka-10",
+     "teks": "29, 30, 34, 33, 39, 36, 44, 39, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "44",
+      "42",
+      "47",
+      "50",
+      "49"
+     ],
+     "kunci": 4,
+     "pembahasan": "Ada dua deret yang diselang-seling. Suku ke-1, 3, 5, 7: 29, 34, 39, 44 (selisih +5). Suku ke-2, 4, 6, 8: 30, 33, 36, 39 (selisih +3). Yang ditanya suku ke-9, jadi ikut deret pertama: 44 + 5 = 49.\nTips: Kalau naik-turunnya tidak beraturan, pisahkan suku ganjil dan suku genap. Sering ada dua deret yang diselang-seling.",
+     "alasan": [
+      "Selisih deret pertama (+5) ditambahkan ke suku ke-8, padahal suku ke-8 milik deret kedua.",
+      "Ini lanjutan deret kedua (39 + 3). Suku ke-9 ada di urutan ganjil, jadi ikut deret pertama.",
+      "Suku dasarnya sudah benar (44), tapi selisih yang dipakai milik deret kedua (+3).",
+      "Lebih satu dari jawaban, kemungkinan salah hitung.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-angka-11",
+     "teks": "4, 43, 6, 38, 8, 33, 10, 28, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "23",
+      "30",
+      "12",
+      "13",
+      "5"
+     ],
+     "kunci": 2,
+     "pembahasan": "Ada dua deret yang diselang-seling. Suku ke-1, 3, 5, 7: 4, 6, 8, 10 (selisih +2). Suku ke-2, 4, 6, 8: 43, 38, 33, 28 (selisih −5). Yang ditanya suku ke-9, jadi ikut deret pertama: 10 + 2 = 12.\nTips: Kalau naik-turunnya tidak beraturan, pisahkan suku ganjil dan suku genap. Sering ada dua deret yang diselang-seling.",
+     "alasan": [
+      "Ini lanjutan deret kedua (28 − 5). Suku ke-9 ada di urutan ganjil, jadi ikut deret pertama.",
+      "Selisih deret pertama (+2) ditambahkan ke suku ke-8, padahal suku ke-8 milik deret kedua.",
+      "",
+      "Lebih satu dari jawaban, kemungkinan salah hitung.",
+      "Suku dasarnya sudah benar (10), tapi selisih yang dipakai milik deret kedua (−5)."
+     ]
+    },
+    {
+     "id": "deret-angka-12",
+     "teks": "1, 4, 8, 11, 22, 25, 50, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "106",
+      "56",
+      "53",
+      "100",
+      "54"
+     ],
+     "kunci": 2,
+     "pembahasan": "Operasinya bergantian: + 3, × 2, + 3, × 2, dan seterusnya. Langkah terakhir (25 → 50) adalah × 2, jadi sekarang giliran + 3: 50 + 3 = 53.\nTips: Kalau pola satu operasi tidak cocok, coba operasi yang bergantian, misalnya tambah lalu kali.",
+     "alasan": [
+      "Ini dua langkah sekaligus (+ 3 lalu × 2). Yang ditanya satu suku berikutnya.",
+      "Kamu menambahkan 3 × 2. Langkah berikutnya cukup + 3.",
+      "",
+      "Ini kalau langkah berikutnya dikira × 2 lagi. Operasinya bergantian, sekarang giliran + 3.",
+      "Lebih satu dari jawaban."
+     ]
+    },
+    {
+     "id": "deret-angka-13",
+     "teks": "5, 7, 12, 19, 31, 50, 81, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "131",
+      "112",
+      "132",
+      "162",
+      "130"
+     ],
+     "kunci": 0,
+     "pembahasan": "Setiap suku adalah jumlah dua suku sebelumnya, misalnya 12 = 5 + 7. Suku berikutnya: 50 + 81 = 131.\nTips: Kalau tiap suku kira-kira jumlah dua suku sebelumnya, cek pola Fibonacci.",
+     "alasan": [
+      "",
+      "Kamu menambahkan selisih terakhir (31). Yang dijumlah seharusnya dua suku terakhir.",
+      "Lebih 1 dari hasil yang benar (131). Jumlahkan dua suku terakhir.",
+      "Ini 81 × 2. Deret ini tidak dikali, tapi menjumlah dua suku terakhir.",
+      "Kurang satu dari jawaban, kemungkinan salah jumlah."
+     ]
+    },
+    {
+     "id": "deret-angka-14",
+     "teks": "8, 9, 14, 23, 36, 53, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "95",
+      "73",
+      "74",
+      "78",
+      "70"
+     ],
+     "kunci": 2,
+     "pembahasan": "Selisihnya +1, +5, +9, +13, +17. Selisih itu sendiri naik 4 setiap langkah, jadi selisih berikutnya +21. 53 + 21 = 74.\nTips: Kalau selisihnya tidak sama, tulis selisihnya lalu cari pola dari deret selisih itu (deret bertingkat).",
+     "alasan": [
+      "Ini 53 ditambah 21 dua kali. Yang ditanya satu suku berikutnya.",
+      "Kurang satu dari jawaban, kemungkinan salah jumlah di langkah terakhir.",
+      "",
+      "Kenaikan selisih dihitung dua kali (+25). Selisih berikutnya cukup +21.",
+      "Kamu memakai selisih terakhir (+17) sekali lagi. Selisihnya sendiri naik 4, jadi seharusnya +21."
+     ]
+    },
+    {
+     "id": "deret-angka-15",
+     "teks": "7, 10, 16, 28, 52, 100, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "148",
+      "151",
+      "197",
+      "196",
+      "200"
+     ],
+     "kunci": 3,
+     "pembahasan": "Selisihnya +3, +6, +12, +24, +48. Setiap selisih dua kali selisih sebelumnya, jadi selisih berikutnya +96. 100 + 96 = 196.\nTips: Tulis selisihnya. Kalau selisihnya membentuk deret kali (×2), selisih berikutnya juga dikali 2.",
+     "alasan": [
+      "Kamu memakai selisih terakhir (+48) lagi. Selisihnya berlipat dua setiap langkah.",
+      "Selisihnya kamu tambah 3. Polanya dikali 2, bukan ditambah.",
+      "Lebih satu dari jawaban.",
+      "",
+      "Ini 100 × 2. Yang dikali 2 adalah selisihnya, bukan sukunya."
+     ]
+    },
+    {
+     "id": "deret-angka-16",
+     "teks": "1, 2, 3, 5, 8, 13, 21, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "33",
+      "35",
+      "29",
+      "42",
+      "34"
+     ],
+     "kunci": 4,
+     "pembahasan": "Setiap suku adalah jumlah dua suku sebelumnya, misalnya 3 = 1 + 2. Suku berikutnya: 13 + 21 = 34.\nTips: Kalau tiap suku kira-kira jumlah dua suku sebelumnya, cek pola Fibonacci.",
+     "alasan": [
+      "Kurang satu dari jawaban, kemungkinan salah jumlah.",
+      "Lebih 1 dari hasil yang benar (34). Jumlahkan dua suku terakhir.",
+      "Kamu menambahkan selisih terakhir (8). Yang dijumlah seharusnya dua suku terakhir.",
+      "Ini 21 × 2. Deret ini tidak dikali, tapi menjumlah dua suku terakhir.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-angka-17",
+     "teks": "4, 19, 34, 49, 64, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "79",
+      "78",
+      "94",
+      "80",
+      "128"
+     ],
+     "kunci": 0,
+     "pembahasan": "Selisih tiap suku tetap +15. Suku berikutnya: 64 + 15 = 79.\nTips: Hitung selisih antarsuku. Kalau selisihnya selalu sama, tambahkan selisih itu ke suku terakhir.",
+     "alasan": [
+      "",
+      "Kurang satu dari jawaban. Biasanya karena salah hitung di langkah terakhir.",
+      "Ini dua langkah ke depan (64 + 15 + 15). Yang ditanya hanya satu suku berikutnya.",
+      "Lebih satu dari jawaban. Biasanya karena salah hitung di langkah terakhir.",
+      "Ini 64 × 2. Deret ini tidak memakai perkalian, selisihnya tetap +15."
+     ]
+    },
+    {
+     "id": "deret-angka-18",
+     "teks": "104, 97, 90, 83, 76, 69, 62, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "55",
+      "54",
+      "76",
+      "48",
+      "56"
+     ],
+     "kunci": 0,
+     "pembahasan": "Selisih tiap suku tetap −7. Suku berikutnya: 62 − 7 = 55.\nTips: Hitung selisih antarsuku. Kalau selisihnya selalu sama, tambahkan selisih itu ke suku terakhir.",
+     "alasan": [
+      "",
+      "Kurang satu dari jawaban. Biasanya karena salah hitung di langkah terakhir.",
+      "Arahnya terbalik. Deret ini turun 7 setiap langkah, bukan naik.",
+      "Ini dua langkah ke depan (62 − 7 − 7). Yang ditanya hanya satu suku berikutnya.",
+      "Lebih satu dari jawaban. Biasanya karena salah hitung di langkah terakhir."
+     ]
+    },
+    {
+     "id": "deret-angka-19",
+     "teks": "9, 18, 36, 72, 144, 288, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "578",
+      "432",
+      "567",
+      "864",
+      "576"
+     ],
+     "kunci": 4,
+     "pembahasan": "Setiap suku dikali 2 (18 : 9 = 2). Suku berikutnya: 288 × 2 = 576.\nTips: Kalau selisihnya membesar cepat, coba bagi suku dengan suku sebelumnya. Hasil bagi yang sama berarti deret kali.",
+     "alasan": [
+      "Lebih 2 dari jawaban, mungkin salah hitung saat mengalikan.",
+      "Kamu menambahkan selisih terakhir (144). Deret ini perkalian, jadi selisihnya ikut berlipat.",
+      "Kurang 9 dari jawaban. Cek lagi perkaliannya: 288 × 2.",
+      "Ini 288 × 3. Pengalinya tetap 2.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-angka-20",
+     "teks": "19, 23, 31, 47, 79, 143, ...\nBilangan berikutnya adalah ...",
+     "opsi": [
+      "211",
+      "286",
+      "272",
+      "271",
+      "207"
+     ],
+     "kunci": 3,
+     "pembahasan": "Selisihnya +4, +8, +16, +32, +64. Setiap selisih dua kali selisih sebelumnya, jadi selisih berikutnya +128. 143 + 128 = 271.\nTips: Tulis selisihnya. Kalau selisihnya membentuk deret kali (×2), selisih berikutnya juga dikali 2.",
+     "alasan": [
+      "Selisihnya kamu tambah 4. Polanya dikali 2, bukan ditambah.",
+      "Ini 143 × 2. Yang dikali 2 adalah selisihnya, bukan sukunya.",
+      "Lebih satu dari jawaban.",
+      "",
+      "Kamu memakai selisih terakhir (+64) lagi. Selisihnya berlipat dua setiap langkah."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "deret-huruf",
+   "nama": "Deret Huruf",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Ubah huruf ke nomor urutnya (A = 1, B = 2, ...), cari polanya, lalu tentukan huruf berikutnya.",
+   "soal": [
+    {
+     "id": "deret-huruf-1",
+     "teks": "E  Y  G  X  I  W  K  V  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "O",
+      "N",
+      "U",
+      "M",
+      "X"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: E(5) Y(25) G(7) X(24) I(9) W(23) K(11) V(22). Ada dua deret: urutan ganjil E G I K (maju 2) dan urutan genap Y X W V (mundur 1). Huruf ke-9 ikut deret ganjil: 11 + 2 = 13, yaitu M.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "O urutan ke-15, meleset 2 dari jawaban M (urutan ke-13). Huruf ke-9 ikut deret urutan ganjil.",
+      "Ini N, lebih satu huruf.",
+      "Ini lanjutan deret genap (U). Huruf ke-9 ada di urutan ganjil.",
+      "",
+      "Lompatan deret ganjil ditempelkan ke huruf ke-8, padahal huruf ke-8 milik deret genap."
+     ]
+    },
+    {
+     "id": "deret-huruf-2",
+     "teks": "E  I  H  L  K  O  N  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "T",
+      "S",
+      "Q",
+      "R",
+      "M"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: E(5) I(9) H(8) L(12) K(11) O(15) N(14). Polanya maju 4, mundur 1, maju 4, mundur 1, dan seterusnya. Langkah terakhir mundur, jadi sekarang maju 4: 14 + 4 = 18, yaitu R.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "T urutan ke-20, meleset 2 dari jawaban R (urutan ke-18). Polanya maju 4, mundur 1.",
+      "Ini S, lebih satu huruf.",
+      "Maju dan mundur dikerjakan sekaligus. Yang ditanya satu huruf berikutnya.",
+      "",
+      "Ini kalau mundur lagi. Setelah mundur, giliran maju 4."
+     ]
+    },
+    {
+     "id": "deret-huruf-3",
+     "teks": "D  G  E  H  F  I  G  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "E",
+      "J",
+      "K",
+      "H",
+      "L"
+     ],
+     "kunci": 1,
+     "pembahasan": "Nomor urutnya: D(4) G(7) E(5) H(8) F(6) I(9) G(7). Polanya maju 3, mundur 2, maju 3, mundur 2, dan seterusnya. Langkah terakhir mundur, jadi sekarang maju 3: 7 + 3 = 10, yaitu J.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini kalau mundur lagi. Setelah mundur, giliran maju 3.",
+      "",
+      "Ini K, lebih satu huruf.",
+      "Maju dan mundur dikerjakan sekaligus. Yang ditanya satu huruf berikutnya.",
+      "L urutan ke-12, meleset 2 dari jawaban J (urutan ke-10). Polanya maju 3, mundur 2."
+     ]
+    },
+    {
+     "id": "deret-huruf-4",
+     "teks": "B  F  J  N  R  V  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "Z",
+      "Y",
+      "X",
+      "W",
+      "V"
+     ],
+     "kunci": 0,
+     "pembahasan": "Ubah huruf jadi nomor urut: B(2) F(6) J(10) N(14) R(18) V(22). Setiap huruf melompat 4 (3 huruf dilewati). Berikutnya 22 + 4 = 26, yaitu Z.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "",
+      "Ini Y (urutan 25), kurang satu. Hitung lagi huruf yang dilewati.",
+      "X urutan ke-24, meleset 2 dari jawaban Z (urutan ke-26). Lompatannya tetap 4.",
+      "W urutan ke-23, meleset 3 dari jawaban Z (urutan ke-26). Lompatannya tetap 4.",
+      "V urutan ke-22, meleset 4 dari jawaban Z (urutan ke-26). Lompatannya tetap 4."
+     ]
+    },
+    {
+     "id": "deret-huruf-5",
+     "teks": "E  F  H  K  O  T  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "X",
+      "W",
+      "V",
+      "Z",
+      "Y"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: E(5) F(6) H(8) K(11) O(15) T(20). Lompatannya +1, +2, +3, +4, +5, jadi berikutnya +6: 20 + 6 = 26, yaitu Z.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "X urutan ke-24, meleset 2 dari jawaban Z (urutan ke-26). Lompatannya bertambah satu setiap langkah.",
+      "W urutan ke-23, meleset 3 dari jawaban Z (urutan ke-26). Lompatannya bertambah satu setiap langkah.",
+      "V urutan ke-22, meleset 4 dari jawaban Z (urutan ke-26). Lompatannya bertambah satu setiap langkah.",
+      "",
+      "Ini Y: lompatan terakhir (+5) dipakai lagi. Lompatannya naik, jadi +6."
+     ]
+    },
+    {
+     "id": "deret-huruf-6",
+     "teks": "C  D  F  I  M  R  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "Y",
+      "W",
+      "X",
+      "Z",
+      "V"
+     ],
+     "kunci": 2,
+     "pembahasan": "Nomor urutnya: C(3) D(4) F(6) I(9) M(13) R(18). Lompatannya +1, +2, +3, +4, +5, jadi berikutnya +6: 18 + 6 = 24, yaitu X.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini Y, lebih satu huruf.",
+      "Ini W: lompatan terakhir (+5) dipakai lagi. Lompatannya naik, jadi +6.",
+      "",
+      "Z urutan ke-26, meleset 2 dari jawaban X (urutan ke-24). Lompatannya bertambah satu setiap langkah.",
+      "V urutan ke-22, meleset 2 dari jawaban X (urutan ke-24). Lompatannya bertambah satu setiap langkah."
+     ]
+    },
+    {
+     "id": "deret-huruf-7",
+     "teks": "C  V  F  S  I  P  L  M  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "J",
+      "M",
+      "Q",
+      "P",
+      "O"
+     ],
+     "kunci": 4,
+     "pembahasan": "Nomor urutnya: C(3) V(22) F(6) S(19) I(9) P(16) L(12) M(13). Ada dua deret: urutan ganjil C F I L (maju 3) dan urutan genap V S P M (mundur 3). Huruf ke-9 ikut deret ganjil: 12 + 3 = 15, yaitu O.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini lanjutan deret genap (J). Huruf ke-9 ada di urutan ganjil.",
+      "M urutan ke-13, meleset 2 dari jawaban O (urutan ke-15). Huruf ke-9 ikut deret urutan ganjil.",
+      "Q urutan ke-17, meleset 2 dari jawaban O (urutan ke-15). Huruf ke-9 ikut deret urutan ganjil.",
+      "Ini P, lebih satu huruf.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-huruf-8",
+     "teks": "C  V  E  S  G  P  I  M  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "M",
+      "J",
+      "L",
+      "K",
+      "O"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: C(3) V(22) E(5) S(19) G(7) P(16) I(9) M(13). Ada dua deret: urutan ganjil C E G I (maju 2) dan urutan genap V S P M (mundur 3). Huruf ke-9 ikut deret ganjil: 9 + 2 = 11, yaitu K.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "M urutan ke-13, meleset 2 dari jawaban K (urutan ke-11). Huruf ke-9 ikut deret urutan ganjil.",
+      "Ini lanjutan deret genap (J). Huruf ke-9 ada di urutan ganjil.",
+      "Ini L, lebih satu huruf.",
+      "",
+      "Lompatan deret ganjil ditempelkan ke huruf ke-8, padahal huruf ke-8 milik deret genap."
+     ]
+    },
+    {
+     "id": "deret-huruf-9",
+     "teks": "A  E  C  G  E  I  G  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "I",
+      "E",
+      "L",
+      "K",
+      "M"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: A(1) E(5) C(3) G(7) E(5) I(9) G(7). Polanya maju 4, mundur 2, maju 4, mundur 2, dan seterusnya. Langkah terakhir mundur, jadi sekarang maju 4: 7 + 4 = 11, yaitu K.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Maju dan mundur dikerjakan sekaligus. Yang ditanya satu huruf berikutnya.",
+      "Ini kalau mundur lagi. Setelah mundur, giliran maju 4.",
+      "Ini L, lebih satu huruf.",
+      "",
+      "M urutan ke-13, meleset 2 dari jawaban K (urutan ke-11). Polanya maju 4, mundur 2."
+     ]
+    },
+    {
+     "id": "deret-huruf-10",
+     "teks": "A  B  D  G  K  P  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "T",
+      "U",
+      "X",
+      "V",
+      "W"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: A(1) B(2) D(4) G(7) K(11) P(16). Lompatannya +1, +2, +3, +4, +5, jadi berikutnya +6: 16 + 6 = 22, yaitu V.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "T urutan ke-20, meleset 2 dari jawaban V (urutan ke-22). Lompatannya bertambah satu setiap langkah.",
+      "Ini U: lompatan terakhir (+5) dipakai lagi. Lompatannya naik, jadi +6.",
+      "X urutan ke-24, meleset 2 dari jawaban V (urutan ke-22). Lompatannya bertambah satu setiap langkah.",
+      "",
+      "Ini W, lebih satu huruf."
+     ]
+    },
+    {
+     "id": "deret-huruf-11",
+     "teks": "A  D  C  F  E  H  G  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "K",
+      "I",
+      "J",
+      "F",
+      "L"
+     ],
+     "kunci": 2,
+     "pembahasan": "Nomor urutnya: A(1) D(4) C(3) F(6) E(5) H(8) G(7). Polanya maju 3, mundur 1, maju 3, mundur 1, dan seterusnya. Langkah terakhir mundur, jadi sekarang maju 3: 7 + 3 = 10, yaitu J.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini K, lebih satu huruf.",
+      "Maju dan mundur dikerjakan sekaligus. Yang ditanya satu huruf berikutnya.",
+      "",
+      "Ini kalau mundur lagi. Setelah mundur, giliran maju 3.",
+      "L urutan ke-12, meleset 2 dari jawaban J (urutan ke-10). Polanya maju 3, mundur 1."
+     ]
+    },
+    {
+     "id": "deret-huruf-12",
+     "teks": "F  X  H  U  J  R  L  O  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "L",
+      "O",
+      "N",
+      "P",
+      "Q"
+     ],
+     "kunci": 2,
+     "pembahasan": "Nomor urutnya: F(6) X(24) H(8) U(21) J(10) R(18) L(12) O(15). Ada dua deret: urutan ganjil F H J L (maju 2) dan urutan genap X U R O (mundur 3). Huruf ke-9 ikut deret ganjil: 12 + 2 = 14, yaitu N.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini lanjutan deret genap (L). Huruf ke-9 ada di urutan ganjil.",
+      "Ini O, lebih satu huruf.",
+      "",
+      "P urutan ke-16, meleset 2 dari jawaban N (urutan ke-14). Huruf ke-9 ikut deret urutan ganjil.",
+      "Lompatan deret ganjil ditempelkan ke huruf ke-8, padahal huruf ke-8 milik deret genap."
+     ]
+    },
+    {
+     "id": "deret-huruf-13",
+     "teks": "B  D  F  H  J  L  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "P",
+      "N",
+      "M",
+      "O",
+      "L"
+     ],
+     "kunci": 1,
+     "pembahasan": "Ubah huruf jadi nomor urut: B(2) D(4) F(6) H(8) J(10) L(12). Setiap huruf melompat 2 (1 huruf dilewati). Berikutnya 12 + 2 = 14, yaitu N.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini dua lompatan sekaligus.",
+      "",
+      "Ini M (urutan 13), kurang satu. Hitung lagi huruf yang dilewati.",
+      "Ini O (urutan 15), lebih satu langkah. Lompatannya 2.",
+      "L urutan ke-12, meleset 2 dari jawaban N (urutan ke-14). Lompatannya tetap 2."
+     ]
+    },
+    {
+     "id": "deret-huruf-14",
+     "teks": "A  U  C  S  E  Q  G  O  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "K",
+      "Q",
+      "J",
+      "I",
+      "M"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: A(1) U(21) C(3) S(19) E(5) Q(17) G(7) O(15). Ada dua deret: urutan ganjil A C E G (maju 2) dan urutan genap U S Q O (mundur 2). Huruf ke-9 ikut deret ganjil: 7 + 2 = 9, yaitu I.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "K urutan ke-11, meleset 2 dari jawaban I (urutan ke-9). Huruf ke-9 ikut deret urutan ganjil.",
+      "Lompatan deret ganjil ditempelkan ke huruf ke-8, padahal huruf ke-8 milik deret genap.",
+      "Ini J, lebih satu huruf.",
+      "",
+      "Ini lanjutan deret genap (M). Huruf ke-9 ada di urutan ganjil."
+     ]
+    },
+    {
+     "id": "deret-huruf-15",
+     "teks": "J  L  N  P  R  T  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "T",
+      "U",
+      "W",
+      "X",
+      "V"
+     ],
+     "kunci": 4,
+     "pembahasan": "Ubah huruf jadi nomor urut: J(10) L(12) N(14) P(16) R(18) T(20). Setiap huruf melompat 2 (1 huruf dilewati). Berikutnya 20 + 2 = 22, yaitu V.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "T urutan ke-20, meleset 2 dari jawaban V (urutan ke-22). Lompatannya tetap 2.",
+      "Ini U (urutan 21), kurang satu. Hitung lagi huruf yang dilewati.",
+      "Ini W (urutan 23), lebih satu langkah. Lompatannya 2.",
+      "Ini dua lompatan sekaligus.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-huruf-16",
+     "teks": "B  C  E  H  L  Q  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "X",
+      "Y",
+      "V",
+      "W",
+      "U"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: B(2) C(3) E(5) H(8) L(12) Q(17). Lompatannya +1, +2, +3, +4, +5, jadi berikutnya +6: 17 + 6 = 23, yaitu W.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini X, lebih satu huruf.",
+      "Y urutan ke-25, meleset 2 dari jawaban W (urutan ke-23). Lompatannya bertambah satu setiap langkah.",
+      "Ini V: lompatan terakhir (+5) dipakai lagi. Lompatannya naik, jadi +6.",
+      "",
+      "U urutan ke-21, meleset 2 dari jawaban W (urutan ke-23). Lompatannya bertambah satu setiap langkah."
+     ]
+    },
+    {
+     "id": "deret-huruf-17",
+     "teks": "B  F  D  H  F  J  H  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "M",
+      "N",
+      "J",
+      "F",
+      "L"
+     ],
+     "kunci": 4,
+     "pembahasan": "Nomor urutnya: B(2) F(6) D(4) H(8) F(6) J(10) H(8). Polanya maju 4, mundur 2, maju 4, mundur 2, dan seterusnya. Langkah terakhir mundur, jadi sekarang maju 4: 8 + 4 = 12, yaitu L.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini M, lebih satu huruf.",
+      "N urutan ke-14, meleset 2 dari jawaban L (urutan ke-12). Polanya maju 4, mundur 2.",
+      "Maju dan mundur dikerjakan sekaligus. Yang ditanya satu huruf berikutnya.",
+      "Ini kalau mundur lagi. Setelah mundur, giliran maju 4.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-huruf-18",
+     "teks": "C  F  E  H  G  J  I  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "M",
+      "H",
+      "K",
+      "N",
+      "L"
+     ],
+     "kunci": 4,
+     "pembahasan": "Nomor urutnya: C(3) F(6) E(5) H(8) G(7) J(10) I(9). Polanya maju 3, mundur 1, maju 3, mundur 1, dan seterusnya. Langkah terakhir mundur, jadi sekarang maju 3: 9 + 3 = 12, yaitu L.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini M, lebih satu huruf.",
+      "Ini kalau mundur lagi. Setelah mundur, giliran maju 3.",
+      "Maju dan mundur dikerjakan sekaligus. Yang ditanya satu huruf berikutnya.",
+      "N urutan ke-14, meleset 2 dari jawaban L (urutan ke-12). Polanya maju 3, mundur 1.",
+      ""
+     ]
+    },
+    {
+     "id": "deret-huruf-19",
+     "teks": "C  X  F  V  I  T  L  R  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "P",
+      "M",
+      "U",
+      "O",
+      "Q"
+     ],
+     "kunci": 3,
+     "pembahasan": "Nomor urutnya: C(3) X(24) F(6) V(22) I(9) T(20) L(12) R(18). Ada dua deret: urutan ganjil C F I L (maju 3) dan urutan genap X V T R (mundur 2). Huruf ke-9 ikut deret ganjil: 12 + 3 = 15, yaitu O.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "Ini lanjutan deret genap (P). Huruf ke-9 ada di urutan ganjil.",
+      "M urutan ke-13, meleset 2 dari jawaban O (urutan ke-15). Huruf ke-9 ikut deret urutan ganjil.",
+      "Lompatan deret ganjil ditempelkan ke huruf ke-8, padahal huruf ke-8 milik deret genap.",
+      "",
+      "Q urutan ke-17, meleset 2 dari jawaban O (urutan ke-15). Huruf ke-9 ikut deret urutan ganjil."
+     ]
+    },
+    {
+     "id": "deret-huruf-20",
+     "teks": "E  Z  H  Y  K  X  N  W  ...\nHuruf berikutnya adalah ...",
+     "opsi": [
+      "S",
+      "Q",
+      "R",
+      "V",
+      "Z"
+     ],
+     "kunci": 1,
+     "pembahasan": "Nomor urutnya: E(5) Z(26) H(8) Y(25) K(11) X(24) N(14) W(23). Ada dua deret: urutan ganjil E H K N (maju 3) dan urutan genap Z Y X W (mundur 1). Huruf ke-9 ikut deret ganjil: 14 + 3 = 17, yaitu Q.\nTips: Ganti setiap huruf dengan nomor urutnya (A = 1, B = 2, ..., Z = 26), lalu kerjakan seperti deret angka.",
+     "alasan": [
+      "S urutan ke-19, meleset 2 dari jawaban Q (urutan ke-17). Huruf ke-9 ikut deret urutan ganjil.",
+      "",
+      "Ini R, lebih satu huruf.",
+      "Ini lanjutan deret genap (V). Huruf ke-9 ada di urutan ganjil.",
+      "Lompatan deret ganjil ditempelkan ke huruf ke-8, padahal huruf ke-8 milik deret genap."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "analogi-angka",
+   "nama": "Analogi Angka (gaya NGR)",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Cari pengali atau hubungan pasangan pertama, lalu terapkan pada pasangan kedua.",
+   "soal": [
+    {
+     "id": "analogi-angka-1",
+     "teks": "35 : 7 = 65 : ?\n35 pada 7 seperti 65 pada ... ?",
+     "opsi": [
+      "14",
+      "11",
+      "13",
+      "325",
+      "37"
+     ],
+     "kunci": 2,
+     "pembahasan": "35 : 5 = 7, jadi angka kedua adalah angka pertama dibagi 5. 65 : 5 = 13.\nTips: Kalau angka kedua lebih kecil, coba bagi angka pertama dengan angka kedua. Pembagi yang sama dipakai untuk pasangan kedua.",
+     "alasan": [
+      "Lebih 1 dari hasil yang benar (13). Hubungannya dibagi 5: 65 : 5 = 13.",
+      "Ini kira-kira 65 dibagi 6. Pembaginya 5, karena 35 : 7 = 5.",
+      "",
+      "Arahnya terbalik. Dari 35 ke 7 angkanya mengecil, jadi 65 harus dibagi 5, bukan dikali.",
+      "Ini memakai selisih (35 − 7 = 28), padahal hubungannya pembagian dengan 5."
+     ]
+    },
+    {
+     "id": "analogi-angka-2",
+     "teks": "120 : 90 = 220 : ?\n120 pada 90 seperti 220 pada ... ?",
+     "opsi": [
+      "164",
+      "55",
+      "166",
+      "165",
+      "190"
+     ],
+     "kunci": 3,
+     "pembahasan": "90 adalah 75% dari 120 (120 × 75 : 100). Jadi 75% dari 220 = 165.\nTips: Kalau angka kedua lebih kecil dan pembaginya tidak bulat, coba nyatakan sebagai persen dari angka pertama.",
+     "alasan": [
+      "Kurang 1 dari hasil yang benar (165). Hubungannya 75%: 220 × 75 : 100 = 165.",
+      "Ini 25% dari 220, sisanya. Yang dicari 75%.",
+      "Lebih 1 dari hasil yang benar (165). Hubungannya 75%: 220 × 75 : 100 = 165.",
+      "",
+      "Ini memakai selisih 120 − 90 = 30. Selisihnya ikut berubah kalau angkanya berubah, yang tetap adalah persennya (75%)."
+     ]
+    },
+    {
+     "id": "analogi-angka-3",
+     "teks": "180 : 18 = 200 : ?\n180 pada 18 seperti 200 pada ... ?",
+     "opsi": [
+      "38",
+      "20",
+      "180",
+      "21",
+      "19"
+     ],
+     "kunci": 1,
+     "pembahasan": "18 adalah 10% dari 180 (180 × 10 : 100). Jadi 10% dari 200 = 20.\nTips: Kalau angka kedua lebih kecil dan pembaginya tidak bulat, coba nyatakan sebagai persen dari angka pertama.",
+     "alasan": [
+      "Ini memakai selisih 180 − 18 = 162. Selisihnya ikut berubah kalau angkanya berubah, yang tetap adalah persennya (10%).",
+      "",
+      "Ini 90% dari 200, sisanya. Yang dicari 10%.",
+      "Lebih 1 dari hasil yang benar (20). Hubungannya 10%: 200 × 10 : 100 = 20.",
+      "Kurang 1 dari hasil yang benar (20). Hubungannya 10%: 200 × 10 : 100 = 20."
+     ]
+    },
+    {
+     "id": "analogi-angka-4",
+     "teks": "14 : 98 = 16 : ?\n14 pada 98 seperti 16 pada ... ?",
+     "opsi": [
+      "100",
+      "112",
+      "128",
+      "96",
+      "113"
+     ],
+     "kunci": 1,
+     "pembahasan": "98 : 14 = 7, jadi angka kedua selalu 7 kali angka pertama. Terapkan ke 16: 16 × 7 = 112.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Ini memakai selisih (98 − 14 = 84), padahal hubungannya perkalian. Cek: 14 × 7 = 98.",
+      "",
+      "Ini dikali 8. Pengalinya 7, karena 98 : 14 = 7.",
+      "Ini dikali 6. Pengalinya 7, karena 98 : 14 = 7.",
+      "Lebih 1 dari hasil yang benar (112). Hubungannya dikali 7: 16 × 7 = 112."
+     ]
+    },
+    {
+     "id": "analogi-angka-5",
+     "teks": "0,35 : 3,15 = 5 : ?\n0,35 pada 3,15 seperti 5 pada ... ?",
+     "opsi": [
+      "50",
+      "40",
+      "4,5",
+      "45",
+      "7,8"
+     ],
+     "kunci": 3,
+     "pembahasan": "3,15 : 0,35 = 9, jadi angka kedua selalu 9 kali angka pertama. Terapkan ke 5: 5 × 9 = 45.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Ini dikali 10. Pengalinya 9, karena 3,15 : 0,35 = 9.",
+      "Ini dikali 8. Pengalinya 9, karena 3,15 : 0,35 = 9.",
+      "Koma bergeser satu tempat. 5 × 9 = 45, bukan 4,5. Desimal di 0,35 hanya untuk mencari pengalinya.",
+      "",
+      "Ini memakai selisih (3,15 − 0,35 = 2,8), padahal hubungannya perkalian. Cek: 0,35 × 9 = 3,15."
+     ]
+    },
+    {
+     "id": "analogi-angka-6",
+     "teks": "0,83 : 4,98 = 11 : ?\n0,83 pada 4,98 seperti 11 pada ... ?",
+     "opsi": [
+      "77",
+      "15,15",
+      "6,6",
+      "55",
+      "66"
+     ],
+     "kunci": 4,
+     "pembahasan": "4,98 : 0,83 = 6, jadi angka kedua selalu 6 kali angka pertama. Terapkan ke 11: 11 × 6 = 66.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Ini dikali 7. Pengalinya 6, karena 4,98 : 0,83 = 6.",
+      "Ini memakai selisih (4,98 − 0,83 = 4,15), padahal hubungannya perkalian. Cek: 0,83 × 6 = 4,98.",
+      "Koma bergeser satu tempat. 11 × 6 = 66, bukan 6,6. Desimal di 0,83 hanya untuk mencari pengalinya.",
+      "Ini dikali 5. Pengalinya 6, karena 4,98 : 0,83 = 6.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-angka-7",
+     "teks": "39 : 13 = 24 : ?\n39 pada 13 seperti 24 pada ... ?",
+     "opsi": [
+      "7",
+      "6",
+      "72",
+      "8",
+      "9"
+     ],
+     "kunci": 3,
+     "pembahasan": "39 : 3 = 13, jadi angka kedua adalah angka pertama dibagi 3. 24 : 3 = 8.\nTips: Kalau angka kedua lebih kecil, coba bagi angka pertama dengan angka kedua. Pembagi yang sama dipakai untuk pasangan kedua.",
+     "alasan": [
+      "Kurang 1 dari hasil yang benar (8). Hubungannya dibagi 3: 24 : 3 = 8.",
+      "Ini kira-kira 24 dibagi 4. Pembaginya 3, karena 39 : 13 = 3.",
+      "Arahnya terbalik. Dari 39 ke 13 angkanya mengecil, jadi 24 harus dibagi 3, bukan dikali.",
+      "",
+      "Lebih 1 dari hasil yang benar (8). Hubungannya dibagi 3: 24 : 3 = 8."
+     ]
+    },
+    {
+     "id": "analogi-angka-8",
+     "teks": "15 : 5 = 21 : ?\n15 pada 5 seperti 21 pada ... ?",
+     "opsi": [
+      "5",
+      "11",
+      "7",
+      "63",
+      "8"
+     ],
+     "kunci": 2,
+     "pembahasan": "15 : 3 = 5, jadi angka kedua adalah angka pertama dibagi 3. 21 : 3 = 7.\nTips: Kalau angka kedua lebih kecil, coba bagi angka pertama dengan angka kedua. Pembagi yang sama dipakai untuk pasangan kedua.",
+     "alasan": [
+      "Ini kira-kira 21 dibagi 4. Pembaginya 3, karena 15 : 5 = 3.",
+      "Ini memakai selisih (15 − 5 = 10), padahal hubungannya pembagian dengan 3.",
+      "",
+      "Arahnya terbalik. Dari 15 ke 5 angkanya mengecil, jadi 21 harus dibagi 3, bukan dikali.",
+      "Lebih 1 dari hasil yang benar (7). Hubungannya dibagi 3: 21 : 3 = 7."
+     ]
+    },
+    {
+     "id": "analogi-angka-9",
+     "teks": "11 : 121 = 13 : ?\n11 pada 121 seperti 13 pada ... ?",
+     "opsi": [
+      "123",
+      "143",
+      "170",
+      "2.197",
+      "169"
+     ],
+     "kunci": 4,
+     "pembahasan": "11 × 11 = 121, jadi angka kedua adalah kuadrat angka pertama. 13² = 169.\nTips: Kalau pengalinya tidak sama untuk dua pasangan, coba kuadrat (dikali dirinya sendiri) atau pangkat tiga.",
+     "alasan": [
+      "Ini memakai selisih 121 − 11 = 110. Hubungannya kuadrat, bukan tambah.",
+      "Ini 13 × 11. Pengalinya bukan 11 untuk semua angka: setiap angka dikalikan dengan dirinya sendiri.",
+      "Lebih 1 dari hasil yang benar (169). Hubungannya kuadrat: 13 × 13 = 169.",
+      "Ini pangkat tiga. 11³ = 1331, bukan 121. Yang benar pangkat dua.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-angka-10",
+     "teks": "0,62 : 3,72 = 12 : ?\n0,62 pada 3,72 seperti 12 pada ... ?",
+     "opsi": [
+      "15,1",
+      "7,2",
+      "60",
+      "72",
+      "84"
+     ],
+     "kunci": 3,
+     "pembahasan": "3,72 : 0,62 = 6, jadi angka kedua selalu 6 kali angka pertama. Terapkan ke 12: 12 × 6 = 72.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Ini memakai selisih (3,72 − 0,62 = 3,1), padahal hubungannya perkalian. Cek: 0,62 × 6 = 3,72.",
+      "Koma bergeser satu tempat. 12 × 6 = 72, bukan 7,2. Desimal di 0,62 hanya untuk mencari pengalinya.",
+      "Ini dikali 5. Pengalinya 6, karena 3,72 : 0,62 = 6.",
+      "",
+      "Ini dikali 7. Pengalinya 6, karena 3,72 : 0,62 = 6."
+     ]
+    },
+    {
+     "id": "analogi-angka-11",
+     "teks": "0,46 : 1,84 = 4 : ?\n0,46 pada 1,84 seperti 4 pada ... ?",
+     "opsi": [
+      "1,6",
+      "16",
+      "20",
+      "12",
+      "5,38"
+     ],
+     "kunci": 1,
+     "pembahasan": "1,84 : 0,46 = 4, jadi angka kedua selalu 4 kali angka pertama. Terapkan ke 4: 4 × 4 = 16.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Koma bergeser satu tempat. 4 × 4 = 16, bukan 1,6. Desimal di 0,46 hanya untuk mencari pengalinya.",
+      "",
+      "Ini dikali 5. Pengalinya 4, karena 1,84 : 0,46 = 4.",
+      "Ini dikali 3. Pengalinya 4, karena 1,84 : 0,46 = 4.",
+      "Ini memakai selisih (1,84 − 0,46 = 1,38), padahal hubungannya perkalian. Cek: 0,46 × 4 = 1,84."
+     ]
+    },
+    {
+     "id": "analogi-angka-12",
+     "teks": "7 : 49 = 9 : ?\n7 pada 49 seperti 9 pada ... ?",
+     "opsi": [
+      "63",
+      "51",
+      "82",
+      "729",
+      "81"
+     ],
+     "kunci": 4,
+     "pembahasan": "7 × 7 = 49, jadi angka kedua adalah kuadrat angka pertama. 9² = 81.\nTips: Kalau pengalinya tidak sama untuk dua pasangan, coba kuadrat (dikali dirinya sendiri) atau pangkat tiga.",
+     "alasan": [
+      "Ini 9 × 7. Pengalinya bukan 7 untuk semua angka: setiap angka dikalikan dengan dirinya sendiri.",
+      "Ini memakai selisih 49 − 7 = 42. Hubungannya kuadrat, bukan tambah.",
+      "Lebih 1 dari hasil yang benar (81). Hubungannya kuadrat: 9 × 9 = 81.",
+      "Ini pangkat tiga. 7³ = 343, bukan 49. Yang benar pangkat dua.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-angka-13",
+     "teks": "48 : 8 = 72 : ?\n48 pada 8 seperti 72 pada ... ?",
+     "opsi": [
+      "32",
+      "12",
+      "13",
+      "432",
+      "10"
+     ],
+     "kunci": 1,
+     "pembahasan": "48 : 6 = 8, jadi angka kedua adalah angka pertama dibagi 6. 72 : 6 = 12.\nTips: Kalau angka kedua lebih kecil, coba bagi angka pertama dengan angka kedua. Pembagi yang sama dipakai untuk pasangan kedua.",
+     "alasan": [
+      "Ini memakai selisih (48 − 8 = 40), padahal hubungannya pembagian dengan 6.",
+      "",
+      "Lebih 1 dari hasil yang benar (12). Hubungannya dibagi 6: 72 : 6 = 12.",
+      "Arahnya terbalik. Dari 48 ke 8 angkanya mengecil, jadi 72 harus dibagi 6, bukan dikali.",
+      "Ini kira-kira 72 dibagi 7. Pembaginya 6, karena 48 : 8 = 6."
+     ]
+    },
+    {
+     "id": "analogi-angka-14",
+     "teks": "4 : 16 = 14 : ?\n4 pada 16 seperti 14 pada ... ?",
+     "opsi": [
+      "57",
+      "42",
+      "56",
+      "70",
+      "26"
+     ],
+     "kunci": 2,
+     "pembahasan": "16 : 4 = 4, jadi angka kedua selalu 4 kali angka pertama. Terapkan ke 14: 14 × 4 = 56.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Lebih 1 dari hasil yang benar (56). Hubungannya dikali 4: 14 × 4 = 56.",
+      "Ini dikali 3. Pengalinya 4, karena 16 : 4 = 4.",
+      "",
+      "Ini dikali 5. Pengalinya 4, karena 16 : 4 = 4.",
+      "Ini memakai selisih (16 − 4 = 12), padahal hubungannya perkalian. Cek: 4 × 4 = 16."
+     ]
+    },
+    {
+     "id": "analogi-angka-15",
+     "teks": "120 : 48 = 220 : ?\n120 pada 48 seperti 220 pada ... ?",
+     "opsi": [
+      "132",
+      "89",
+      "148",
+      "87",
+      "88"
+     ],
+     "kunci": 4,
+     "pembahasan": "48 adalah 40% dari 120 (120 × 40 : 100). Jadi 40% dari 220 = 88.\nTips: Kalau angka kedua lebih kecil dan pembaginya tidak bulat, coba nyatakan sebagai persen dari angka pertama.",
+     "alasan": [
+      "Ini 60% dari 220, sisanya. Yang dicari 40%.",
+      "Lebih 1 dari hasil yang benar (88). Hubungannya 40%: 220 × 40 : 100 = 88.",
+      "Ini memakai selisih 120 − 48 = 72. Selisihnya ikut berubah kalau angkanya berubah, yang tetap adalah persennya (40%).",
+      "Kurang 1 dari hasil yang benar (88). Hubungannya 40%: 220 × 40 : 100 = 88.",
+      ""
+     ]
+    },
+    {
+     "id": "analogi-angka-16",
+     "teks": "10 : 5 = 12 : ?\n10 pada 5 seperti 12 pada ... ?",
+     "opsi": [
+      "24",
+      "5",
+      "6",
+      "7",
+      "4"
+     ],
+     "kunci": 2,
+     "pembahasan": "10 : 2 = 5, jadi angka kedua adalah angka pertama dibagi 2. 12 : 2 = 6.\nTips: Kalau angka kedua lebih kecil, coba bagi angka pertama dengan angka kedua. Pembagi yang sama dipakai untuk pasangan kedua.",
+     "alasan": [
+      "Arahnya terbalik. Dari 10 ke 5 angkanya mengecil, jadi 12 harus dibagi 2, bukan dikali.",
+      "Kurang 1 dari hasil yang benar (6). Hubungannya dibagi 2: 12 : 2 = 6.",
+      "",
+      "Ini memakai selisih (10 − 5 = 5), padahal hubungannya pembagian dengan 2.",
+      "Ini kira-kira 12 dibagi 3. Pembaginya 2, karena 10 : 5 = 2."
+     ]
+    },
+    {
+     "id": "analogi-angka-17",
+     "teks": "11 : 44 = 3 : ?\n11 pada 44 seperti 3 pada ... ?",
+     "opsi": [
+      "12",
+      "9",
+      "36",
+      "15",
+      "13"
+     ],
+     "kunci": 0,
+     "pembahasan": "44 : 11 = 4, jadi angka kedua selalu 4 kali angka pertama. Terapkan ke 3: 3 × 4 = 12.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "",
+      "Ini dikali 3. Pengalinya 4, karena 44 : 11 = 4.",
+      "Ini memakai selisih (44 − 11 = 33), padahal hubungannya perkalian. Cek: 11 × 4 = 44.",
+      "Ini dikali 5. Pengalinya 4, karena 44 : 11 = 4.",
+      "Lebih 1 dari hasil yang benar (12). Hubungannya dikali 4: 3 × 4 = 12."
+     ]
+    },
+    {
+     "id": "analogi-angka-18",
+     "teks": "14 : 112 = 12 : ?\n14 pada 112 seperti 12 pada ... ?",
+     "opsi": [
+      "96",
+      "84",
+      "97",
+      "110",
+      "108"
+     ],
+     "kunci": 0,
+     "pembahasan": "112 : 14 = 8, jadi angka kedua selalu 8 kali angka pertama. Terapkan ke 12: 12 × 8 = 96.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "",
+      "Ini dikali 7. Pengalinya 8, karena 112 : 14 = 8.",
+      "Lebih 1 dari hasil yang benar (96). Hubungannya dikali 8: 12 × 8 = 96.",
+      "Ini memakai selisih (112 − 14 = 98), padahal hubungannya perkalian. Cek: 14 × 8 = 112.",
+      "Ini dikali 9. Pengalinya 8, karena 112 : 14 = 8."
+     ]
+    },
+    {
+     "id": "analogi-angka-19",
+     "teks": "0,86 : 4,3 = 3 : ?\n0,86 pada 4,3 seperti 3 pada ... ?",
+     "opsi": [
+      "1,5",
+      "18",
+      "6,44",
+      "15",
+      "12"
+     ],
+     "kunci": 3,
+     "pembahasan": "4,3 : 0,86 = 5, jadi angka kedua selalu 5 kali angka pertama. Terapkan ke 3: 3 × 5 = 15.\nTips: Bagi angka kedua dengan angka pertama untuk mendapat pengalinya, lalu kalikan angka ketiga dengan pengali itu. Angka desimal biasanya cuma pengecoh: pengalinya tetap bilangan bulat.",
+     "alasan": [
+      "Koma bergeser satu tempat. 3 × 5 = 15, bukan 1,5. Desimal di 0,86 hanya untuk mencari pengalinya.",
+      "Ini dikali 6. Pengalinya 5, karena 4,3 : 0,86 = 5.",
+      "Ini memakai selisih (4,3 − 0,86 = 3,44), padahal hubungannya perkalian. Cek: 0,86 × 5 = 4,3.",
+      "",
+      "Ini dikali 4. Pengalinya 5, karena 4,3 : 0,86 = 5."
+     ]
+    },
+    {
+     "id": "analogi-angka-20",
+     "teks": "280 : 210 = 100 : ?\n280 pada 210 seperti 100 pada ... ?",
+     "opsi": [
+      "25",
+      "74",
+      "76",
+      "30",
+      "75"
+     ],
+     "kunci": 4,
+     "pembahasan": "210 adalah 75% dari 280 (280 × 75 : 100). Jadi 75% dari 100 = 75.\nTips: Kalau angka kedua lebih kecil dan pembaginya tidak bulat, coba nyatakan sebagai persen dari angka pertama.",
+     "alasan": [
+      "Ini 25% dari 100, sisanya. Yang dicari 75%.",
+      "Kurang 1 dari hasil yang benar (75). Hubungannya 75%: 100 × 75 : 100 = 75.",
+      "Lebih 1 dari hasil yang benar (75). Hubungannya 75%: 100 × 75 : 100 = 75.",
+      "Ini memakai selisih 280 − 210 = 70. Selisihnya ikut berubah kalau angkanya berubah, yang tetap adalah persennya (75%).",
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hitung",
+   "nama": "Hitung Cepat",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Kerjakan tanpa kalkulator. Cari jalan pintas sebelum menghitung panjang.",
+   "soal": [
+    {
+     "id": "hitung-1",
+     "teks": "Jika 5x − 10 = 4x − 1, maka x = ...",
+     "opsi": [
+      "10",
+      "1",
+      "-11",
+      "9",
+      "-9"
+     ],
+     "kunci": 3,
+     "pembahasan": "5x − 4x = -1 + 10, jadi 1x = 9 dan x = 9.\nTips: Kumpulkan suku x di satu ruas dan angka di ruas lain. Tanda berubah saat suku pindah ruas.",
+     "alasan": [
+      "Lebih satu dari jawaban. Coba substitusi untuk memeriksa.",
+      "Saat 4x pindah ke ruas kiri, tandanya jadi minus, jadi koefisiennya 1, bukan 9.",
+      "Saat -10 pindah ke ruas kanan, tandanya harus dibalik. Jawaban ini lupa membalik tanda itu.",
+      "",
+      "Tandanya terbalik. Masukkan x = -9 ke persamaan dan kedua ruas tidak sama."
+     ]
+    },
+    {
+     "id": "hitung-2",
+     "teks": "75% dari 88 + 15% dari 180 = ...",
+     "opsi": [
+      "336",
+      "39",
+      "68,7",
+      "241,2",
+      "93"
+     ],
+     "kunci": 4,
+     "pembahasan": "75% × 88 = 66 dan 15% × 180 = 27. Jumlahnya 93.\nTips: Hitung setiap persen terhadap bilangannya sendiri, baru jumlahkan. Pakai bentuk pecahan yang mudah: 25% = 1/4, 12,5% = 1/8, 75% = 3/4.",
+     "alasan": [
+      "Koma bergeser pada suku kedua: 15% dari 180 adalah 27, bukan 270.",
+      "Ini selisihnya, bukan jumlahnya.",
+      "Suku kedua dibagi 1.000, padahal persen artinya dibagi 100.",
+      "Persennya dijumlah dan bilangannya dijumlah, lalu dikalikan. Setiap persen punya bilangannya sendiri.",
+      ""
+     ]
+    },
+    {
+     "id": "hitung-3",
+     "teks": "23 + 12 × 10 − 24 : 3 = ...",
+     "opsi": [
+      "71",
+      "147",
+      "342",
+      "135",
+      "47"
+     ],
+     "kunci": 3,
+     "pembahasan": "Kerjakan perkalian dan pembagian dulu: 12 × 10 = 120 dan 24 : 3 = 8. Lalu 23 + 120 − 8 = 135.\nTips: Kali dan bagi dikerjakan lebih dulu dari tambah dan kurang. Yang setingkat dikerjakan dari kiri.",
+     "alasan": [
+      "Pembagian 24 : 3 terbaca sebagai perkalian.",
+      "Meleset 12. Ulangi perkaliannya.",
+      "Penjumlahan 23 + 12 dikerjakan sebelum perkalian.",
+      "",
+      "Pengurangan dikerjakan sebelum perkalian."
+     ]
+    },
+    {
+     "id": "hitung-4",
+     "teks": "40% dari 150 + 75% dari 116 = ...",
+     "opsi": [
+      "147",
+      "930",
+      "305,9",
+      "68,7",
+      "27"
+     ],
+     "kunci": 0,
+     "pembahasan": "40% × 150 = 60 dan 75% × 116 = 87. Jumlahnya 147.\nTips: Hitung setiap persen terhadap bilangannya sendiri, baru jumlahkan. Pakai bentuk pecahan yang mudah: 25% = 1/4, 12,5% = 1/8, 75% = 3/4.",
+     "alasan": [
+      "",
+      "Koma bergeser pada suku kedua: 75% dari 116 adalah 87, bukan 870.",
+      "Persennya dijumlah dan bilangannya dijumlah, lalu dikalikan. Setiap persen punya bilangannya sendiri.",
+      "Suku kedua dibagi 1.000, padahal persen artinya dibagi 100.",
+      "Ini selisihnya, bukan jumlahnya."
+     ]
+    },
+    {
+     "id": "hitung-5",
+     "teks": "2/3 : 2/4 = ...",
+     "opsi": [
+      "5/3",
+      "1/3",
+      "1",
+      "4/3",
+      "3/4"
+     ],
+     "kunci": 3,
+     "pembahasan": "2/3 : 2/4 = 2/3 × 4/2 = 8/6 = 4/3.\nTips: Membagi pecahan = mengalikan dengan kebalikannya (pembilang dan penyebut pecahan kedua ditukar).",
+     "alasan": [
+      "Pembilangnya kelebihan satu. Hasil yang benar 4/3.",
+      "Pecahannya langsung dikali tanpa dibalik. Pada pembagian, pecahan kedua dibalik dulu.",
+      "Penyebutnya meleset satu. Hasil yang benar 4/3.",
+      "",
+      "Yang dibalik pecahan pertama. Seharusnya pecahan kedua yang dibalik."
+     ]
+    },
+    {
+     "id": "hitung-6",
+     "teks": "6/8 − 2/9 = ...",
+     "opsi": [
+      "19/37",
+      "35/36",
+      "4",
+      "5/9",
+      "19/36"
+     ],
+     "kunci": 4,
+     "pembahasan": "Samakan penyebut jadi 72: 54/72 − 16/72 = 38/72 = 19/36.\nTips: Samakan penyebut dulu (KPK), baru jumlahkan atau kurangkan pembilangnya.",
+     "alasan": [
+      "Penyebutnya meleset satu. Hasil yang benar 19/36.",
+      "Ini hasil penjumlahan, padahal soalnya pengurangan.",
+      "Pembilang dikurangi pembilang dan penyebut dikurangi penyebut. Penyebutnya harus disamakan dulu.",
+      "Pembilangnya kelebihan satu. Hasil yang benar 19/36.",
+      ""
+     ]
+    },
+    {
+     "id": "hitung-7",
+     "teks": "√256 + 11² − 3³ = ...",
+     "opsi": [
+      "164",
+      "128",
+      "29",
+      "110",
+      "222"
+     ],
+     "kunci": 3,
+     "pembahasan": "√256 = 16, 11² = 121, 3³ = 27. Jadi 16 + 121 − 27 = 110.\nTips: Hafalkan kuadrat 11–25 dan kubik 2–10. √ (akar) adalah kebalikan kuadrat.",
+     "alasan": [
+      "Tandanya terbalik: 3³ seharusnya dikurangkan.",
+      "3³ dihitung sebagai 3² = 9. Pangkat tiga artinya 3 × 3 × 3 = 27.",
+      "Pangkat terbaca sebagai perkalian (11² dikira 11 × 2, 3³ dikira 3 × 3).",
+      "",
+      "Akar dianggap sama dengan dibagi 2. √256 = 16."
+     ]
+    },
+    {
+     "id": "hitung-8",
+     "teks": "√256 + 5² − 3³ = ...",
+     "opsi": [
+      "126",
+      "17",
+      "14",
+      "32",
+      "68"
+     ],
+     "kunci": 2,
+     "pembahasan": "√256 = 16, 5² = 25, 3³ = 27. Jadi 16 + 25 − 27 = 14.\nTips: Hafalkan kuadrat 11–25 dan kubik 2–10. √ (akar) adalah kebalikan kuadrat.",
+     "alasan": [
+      "Akar dianggap sama dengan dibagi 2. √256 = 16.",
+      "Pangkat terbaca sebagai perkalian (5² dikira 5 × 2, 3³ dikira 3 × 3).",
+      "",
+      "3³ dihitung sebagai 3² = 9. Pangkat tiga artinya 3 × 3 × 3 = 27.",
+      "Tandanya terbalik: 3³ seharusnya dikurangkan."
+     ]
+    },
+    {
+     "id": "hitung-9",
+     "teks": "Jika 8x + 16 = 2x + 94, maka x = ...",
+     "opsi": [
+      "15",
+      "13",
+      "14",
+      "12",
+      "-13"
+     ],
+     "kunci": 1,
+     "pembahasan": "8x − 2x = 94 − 16, jadi 6x = 78 dan x = 13.\nTips: Kumpulkan suku x di satu ruas dan angka di ruas lain. Tanda berubah saat suku pindah ruas.",
+     "alasan": [
+      "Lebih 2 dari hasil yang benar (13). Pindahkan 2x ke kiri dan 16 ke kanan: 6x = 78, jadi x = 13.",
+      "",
+      "Lebih satu dari jawaban. Coba substitusi untuk memeriksa.",
+      "Kurang 1 dari hasil yang benar (13). Pindahkan 2x ke kiri dan 16 ke kanan: 6x = 78, jadi x = 13.",
+      "Tandanya terbalik. Masukkan x = -13 ke persamaan dan kedua ruas tidak sama."
+     ]
+    },
+    {
+     "id": "hitung-10",
+     "teks": "0,2 × 12 = ...",
+     "opsi": [
+      "24",
+      "12,2",
+      "2,4",
+      "0,24",
+      "240"
+     ],
+     "kunci": 2,
+     "pembahasan": "Abaikan komanya dulu: 2 × 12 = 24. 0,2 punya 1 angka di belakang koma dan 12 punya 0, jadi hasilnya punya 1 angka di belakang koma: 2,4.\nTips: Kalikan seperti bilangan bulat, lalu jumlahkan banyak angka di belakang koma dari kedua bilangan.",
+     "alasan": [
+      "Komanya bergeser satu ke kanan.",
+      "Ini hasil penjumlahan, bukan perkalian.",
+      "",
+      "Komanya bergeser satu ke kiri.",
+      "Komanya bergeser dua tempat."
+     ]
+    },
+    {
+     "id": "hitung-11",
+     "teks": "6 + 5 × 10 − 18 : 3 = ...",
+     "opsi": [
+      "104",
+      "26",
+      "50",
+      "55",
+      "2"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kerjakan perkalian dan pembagian dulu: 5 × 10 = 50 dan 18 : 3 = 6. Lalu 6 + 50 − 6 = 50.\nTips: Kali dan bagi dikerjakan lebih dulu dari tambah dan kurang. Yang setingkat dikerjakan dari kiri.",
+     "alasan": [
+      "Penjumlahan 6 + 5 dikerjakan sebelum perkalian.",
+      "Pengurangan dikerjakan sebelum perkalian.",
+      "",
+      "Meleset 5. Ulangi perkaliannya.",
+      "Pembagian 18 : 3 terbaca sebagai perkalian."
+     ]
+    },
+    {
+     "id": "hitung-12",
+     "teks": "25% dari 20 + 20% dari 140 = ...",
+     "opsi": [
+      "285",
+      "23",
+      "7,8",
+      "33",
+      "72"
+     ],
+     "kunci": 3,
+     "pembahasan": "25% × 20 = 5 dan 20% × 140 = 28. Jumlahnya 33.\nTips: Hitung setiap persen terhadap bilangannya sendiri, baru jumlahkan. Pakai bentuk pecahan yang mudah: 25% = 1/4, 12,5% = 1/8, 75% = 3/4.",
+     "alasan": [
+      "Koma bergeser pada suku kedua: 20% dari 140 adalah 28, bukan 280.",
+      "Ini selisihnya, bukan jumlahnya.",
+      "Suku kedua dibagi 1.000, padahal persen artinya dibagi 100.",
+      "",
+      "Persennya dijumlah dan bilangannya dijumlah, lalu dikalikan. Setiap persen punya bilangannya sendiri."
+     ]
+    },
+    {
+     "id": "hitung-13",
+     "teks": "Jika 6x + 10 = 4x + 32, maka x = ...",
+     "opsi": [
+      "21",
+      "-11",
+      "11",
+      "10",
+      "12"
+     ],
+     "kunci": 2,
+     "pembahasan": "6x − 4x = 32 − 10, jadi 2x = 22 dan x = 11.\nTips: Kumpulkan suku x di satu ruas dan angka di ruas lain. Tanda berubah saat suku pindah ruas.",
+     "alasan": [
+      "Saat 10 pindah ke ruas kanan, tandanya harus dibalik. Jawaban ini lupa membalik tanda itu.",
+      "Tandanya terbalik. Masukkan x = -11 ke persamaan dan kedua ruas tidak sama.",
+      "",
+      "Kurang 1 dari hasil yang benar (11). Pindahkan 4x ke kiri dan 10 ke kanan: 2x = 22, jadi x = 11.",
+      "Lebih satu dari jawaban. Coba substitusi untuk memeriksa."
+     ]
+    },
+    {
+     "id": "hitung-14",
+     "teks": "1/9 + 3/7 = ...",
+     "opsi": [
+      "34/63",
+      "20/63",
+      "1/21",
+      "5/9",
+      "1/4"
+     ],
+     "kunci": 0,
+     "pembahasan": "Samakan penyebut jadi 63: 7/63 + 27/63 = 34/63.\nTips: Samakan penyebut dulu (KPK), baru jumlahkan atau kurangkan pembilangnya.",
+     "alasan": [
+      "",
+      "Ini hasil pengurangan, padahal soalnya penjumlahan.",
+      "Ini hasil perkalian kedua pecahan, bukan penjumlahan.",
+      "Pembilangnya kelebihan satu. Hasil yang benar 34/63.",
+      "Pembilang ditambah pembilang dan penyebut ditambah penyebut. Penyebutnya harus disamakan dulu."
+     ]
+    },
+    {
+     "id": "hitung-15",
+     "teks": "28 + 3 × 4 − 30 : 6 = ...",
+     "opsi": [
+      "25",
+      "36",
+      "35",
+      "38",
+      "119"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kerjakan perkalian dan pembagian dulu: 3 × 4 = 12 dan 30 : 6 = 5. Lalu 28 + 12 − 5 = 35.\nTips: Kali dan bagi dikerjakan lebih dulu dari tambah dan kurang. Yang setingkat dikerjakan dari kiri.",
+     "alasan": [
+      "Pengurangan dikerjakan sebelum perkalian.",
+      "Lebih 1 dari hasil yang benar (35). Kerjakan 3 × 4 dan 30 : 6 dulu, baru tambah dan kurang.",
+      "",
+      "Meleset 3. Ulangi perkaliannya.",
+      "Penjumlahan 28 + 3 dikerjakan sebelum perkalian."
+     ]
+    },
+    {
+     "id": "hitung-16",
+     "teks": "Jika 4x + 6 = x − 18, maka x = ...",
+     "opsi": [
+      "-9",
+      "-7",
+      "8",
+      "-8",
+      "-4"
+     ],
+     "kunci": 3,
+     "pembahasan": "4x − x = -18 − 6, jadi 3x = -24 dan x = -8.\nTips: Kumpulkan suku x di satu ruas dan angka di ruas lain. Tanda berubah saat suku pindah ruas.",
+     "alasan": [
+      "Kurang 1 dari hasil yang benar (-8). Pindahkan x ke kiri dan 6 ke kanan: 3x = -24, jadi x = -8.",
+      "Lebih satu dari jawaban. Coba substitusi untuk memeriksa.",
+      "Tandanya terbalik. Masukkan x = 8 ke persamaan dan kedua ruas tidak sama.",
+      "",
+      "Saat 6 pindah ke ruas kanan, tandanya harus dibalik. Jawaban ini lupa membalik tanda itu."
+     ]
+    },
+    {
+     "id": "hitung-17",
+     "teks": "12,5% dari 32 + 40% dari 130 = ...",
+     "opsi": [
+      "56",
+      "9,2",
+      "85,05",
+      "524",
+      "48"
+     ],
+     "kunci": 0,
+     "pembahasan": "12,5% × 32 = 4 dan 40% × 130 = 52. Jumlahnya 56.\nTips: Hitung setiap persen terhadap bilangannya sendiri, baru jumlahkan. Pakai bentuk pecahan yang mudah: 25% = 1/4, 12,5% = 1/8, 75% = 3/4.",
+     "alasan": [
+      "",
+      "Suku kedua dibagi 1.000, padahal persen artinya dibagi 100.",
+      "Persennya dijumlah dan bilangannya dijumlah, lalu dikalikan. Setiap persen punya bilangannya sendiri.",
+      "Koma bergeser pada suku kedua: 40% dari 130 adalah 52, bukan 520.",
+      "Ini selisihnya, bukan jumlahnya."
+     ]
+    },
+    {
+     "id": "hitung-18",
+     "teks": "60% dari 130 + 75% dari 72 = ...",
+     "opsi": [
+      "132",
+      "618",
+      "83,4",
+      "24",
+      "272,7"
+     ],
+     "kunci": 0,
+     "pembahasan": "60% × 130 = 78 dan 75% × 72 = 54. Jumlahnya 132.\nTips: Hitung setiap persen terhadap bilangannya sendiri, baru jumlahkan. Pakai bentuk pecahan yang mudah: 25% = 1/4, 12,5% = 1/8, 75% = 3/4.",
+     "alasan": [
+      "",
+      "Koma bergeser pada suku kedua: 75% dari 72 adalah 54, bukan 540.",
+      "Suku kedua dibagi 1.000, padahal persen artinya dibagi 100.",
+      "Ini selisihnya, bukan jumlahnya.",
+      "Persennya dijumlah dan bilangannya dijumlah, lalu dikalikan. Setiap persen punya bilangannya sendiri."
+     ]
+    },
+    {
+     "id": "hitung-19",
+     "teks": "1/2 + 1/3 = ...",
+     "opsi": [
+      "5/6",
+      "1",
+      "2/5",
+      "5/7",
+      "1/6"
+     ],
+     "kunci": 0,
+     "pembahasan": "Samakan penyebut jadi 6: 3/6 + 2/6 = 5/6.\nTips: Samakan penyebut dulu (KPK), baru jumlahkan atau kurangkan pembilangnya.",
+     "alasan": [
+      "",
+      "Pembilangnya kelebihan satu. Hasil yang benar 5/6.",
+      "Pembilang ditambah pembilang dan penyebut ditambah penyebut. Penyebutnya harus disamakan dulu.",
+      "Penyebutnya meleset satu. Hasil yang benar 5/6.",
+      "Ini hasil pengurangan, padahal soalnya penjumlahan."
+     ]
+    },
+    {
+     "id": "hitung-20",
+     "teks": "12 + 3 × 6 − 99 : 9 = ...",
+     "opsi": [
+      "18",
+      "21",
+      "19",
+      "79",
+      "20"
+     ],
+     "kunci": 2,
+     "pembahasan": "Kerjakan perkalian dan pembagian dulu: 3 × 6 = 18 dan 99 : 9 = 11. Lalu 12 + 18 − 11 = 19.\nTips: Kali dan bagi dikerjakan lebih dulu dari tambah dan kurang. Yang setingkat dikerjakan dari kiri.",
+     "alasan": [
+      "Kurang 1 dari hasil yang benar (19). Kerjakan 3 × 6 dan 99 : 9 dulu, baru tambah dan kurang.",
+      "Lebih 2 dari hasil yang benar (19). Kerjakan 3 × 6 dan 99 : 9 dulu, baru tambah dan kurang.",
+      "",
+      "Penjumlahan 12 + 3 dikerjakan sebelum perkalian.",
+      "Lebih 1 dari hasil yang benar (19). Kerjakan 3 × 6 dan 99 : 9 dulu, baru tambah dan kurang."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "banding",
+   "nama": "Perbandingan x dan y",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Hitung x dan y, lalu pilih hubungan yang benar: x > y, x < y, x = y, atau tidak dapat ditentukan.",
+   "soal": [
+    {
+     "id": "banding-1",
+     "teks": "x = √144\ny = 13\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Tanda √ selalu berarti akar positif, jadi √144 = 12, bukan ±12. Bandingkan 12 dengan 13.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 12 dan y = 13, jadi yang benar x < y.",
+      "",
+      "Keliru. x = 12 dan y = 13, jadi yang benar x < y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 12, y = 13."
+     ]
+    },
+    {
+     "id": "banding-2",
+     "teks": "x = 90% dari 40\ny = 40% dari 80\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 90 × 40 : 100 = 36. y = 40 × 80 : 100 = 32.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 36 dan y = 32, jadi yang benar x > y.",
+      "Keliru. x = 36 dan y = 32, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 36, y = 32."
+     ]
+    },
+    {
+     "id": "banding-3",
+     "teks": "x = 30% dari 60\ny = 60% dari 40\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "x = 30 × 60 : 100 = 18. y = 60 × 40 : 100 = 24.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 18 dan y = 24, jadi yang benar x < y.",
+      "",
+      "Keliru. x = 18 dan y = 24, jadi yang benar x < y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 18, y = 24."
+     ]
+    },
+    {
+     "id": "banding-4",
+     "teks": "x = 50% dari 400\ny = 4/10 dari 240\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 50% dari 400 = 200. y = 4/10 dari 240 = 96.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 200 dan y = 96, jadi yang benar x > y.",
+      "Keliru. x = 200 dan y = 96, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 200, y = 96."
+     ]
+    },
+    {
+     "id": "banding-5",
+     "teks": "x = 75% dari 120\ny = 1/6 dari 48\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 75% dari 120 = 90. y = 1/6 dari 48 = 8.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 90 dan y = 8, jadi yang benar x > y.",
+      "Keliru. x = 90 dan y = 8, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 90, y = 8."
+     ]
+    },
+    {
+     "id": "banding-6",
+     "teks": "x = 25% dari 340\ny = 85\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "x = 25% dari 340 = 85. y = 85 = 85.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 85 dan y = 85, jadi yang benar x = y.",
+      "Keliru. x = 85 dan y = 85, jadi yang benar x = y.",
+      "",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 85, y = 85."
+     ]
+    },
+    {
+     "id": "banding-7",
+     "teks": "x² = 36\ny = 6\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Dari x² = 36, nilai x bisa 6 atau −6. Kalau x = 6, x = y. Kalau x = −6, x < y. Hubungannya tidak pasti.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Belum pasti. x bisa positif atau negatif, jadi x > y hanya benar untuk salah satu kemungkinan.",
+      "Belum pasti. x bisa positif atau negatif, jadi x < y hanya benar untuk salah satu kemungkinan.",
+      "Belum pasti. x bisa positif atau negatif, jadi x = y hanya benar untuk salah satu kemungkinan.",
+      ""
+     ]
+    },
+    {
+     "id": "banding-8",
+     "teks": "x² = 49\ny = 7\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Dari x² = 49, nilai x bisa 7 atau −7. Kalau x = 7, x = y. Kalau x = −7, x < y. Hubungannya tidak pasti.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Belum pasti. x bisa positif atau negatif, jadi x > y hanya benar untuk salah satu kemungkinan.",
+      "Belum pasti. x bisa positif atau negatif, jadi x < y hanya benar untuk salah satu kemungkinan.",
+      "Belum pasti. x bisa positif atau negatif, jadi x = y hanya benar untuk salah satu kemungkinan.",
+      ""
+     ]
+    },
+    {
+     "id": "banding-9",
+     "teks": "x = √196\ny = 13\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Tanda √ selalu berarti akar positif, jadi √196 = 14, bukan ±14. Bandingkan 14 dengan 13.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 14 dan y = 13, jadi yang benar x > y.",
+      "Keliru. x = 14 dan y = 13, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 14, y = 13."
+     ]
+    },
+    {
+     "id": "banding-10",
+     "teks": "x = 40% dari 260\ny = 104\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "x = 40% dari 260 = 104. y = 104 = 104.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 104 dan y = 104, jadi yang benar x = y.",
+      "Keliru. x = 104 dan y = 104, jadi yang benar x = y.",
+      "",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 104, y = 104."
+     ]
+    },
+    {
+     "id": "banding-11",
+     "teks": "x = 10% dari 180\ny = 1/6 dari 144\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "x = 10% dari 180 = 18. y = 1/6 dari 144 = 24.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 18 dan y = 24, jadi yang benar x < y.",
+      "",
+      "Keliru. x = 18 dan y = 24, jadi yang benar x < y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 18, y = 24."
+     ]
+    },
+    {
+     "id": "banding-12",
+     "teks": "x = 50% dari 50\ny = 50% dari 50\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "50% dari 50 = 50 × 50 : 100 = 25, dan 50% dari 50 juga 25. Persen bisa ditukar tempat: a% dari b = b% dari a.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 25 dan y = 25, jadi yang benar x = y.",
+      "Keliru. x = 25 dan y = 25, jadi yang benar x = y.",
+      "",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 25, y = 25."
+     ]
+    },
+    {
+     "id": "banding-13",
+     "teks": "x = √169\ny = 14\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Tanda √ selalu berarti akar positif, jadi √169 = 13, bukan ±13. Bandingkan 13 dengan 14.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 13 dan y = 14, jadi yang benar x < y.",
+      "",
+      "Keliru. x = 13 dan y = 14, jadi yang benar x < y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 13, y = 14."
+     ]
+    },
+    {
+     "id": "banding-14",
+     "teks": "x = 20% dari 60\ny = 4/6 dari 132\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "x = 20% dari 60 = 12. y = 4/6 dari 132 = 88.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 12 dan y = 88, jadi yang benar x < y.",
+      "",
+      "Keliru. x = 12 dan y = 88, jadi yang benar x < y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 12, y = 88."
+     ]
+    },
+    {
+     "id": "banding-15",
+     "teks": "x = 60% dari 40\ny = 40% dari 50\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 60 × 40 : 100 = 24. y = 40 × 50 : 100 = 20.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 24 dan y = 20, jadi yang benar x > y.",
+      "Keliru. x = 24 dan y = 20, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 24, y = 20."
+     ]
+    },
+    {
+     "id": "banding-16",
+     "teks": "x = √4\ny = 2\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Tanda √ selalu berarti akar positif, jadi √4 = 2, bukan ±2. Bandingkan 2 dengan 2.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 2 dan y = 2, jadi yang benar x = y.",
+      "Keliru. x = 2 dan y = 2, jadi yang benar x = y.",
+      "",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 2, y = 2."
+     ]
+    },
+    {
+     "id": "banding-17",
+     "teks": "x = 20% dari 280\ny = 1/10 dari 210\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 20% dari 280 = 56. y = 1/10 dari 210 = 21.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 56 dan y = 21, jadi yang benar x > y.",
+      "Keliru. x = 56 dan y = 21, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 56, y = 21."
+     ]
+    },
+    {
+     "id": "banding-18",
+     "teks": "x = 75% dari 380\ny = 4/8 dari 104\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 75% dari 380 = 285. y = 4/8 dari 104 = 52.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 285 dan y = 52, jadi yang benar x > y.",
+      "Keliru. x = 285 dan y = 52, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 285, y = 52."
+     ]
+    },
+    {
+     "id": "banding-19",
+     "teks": "x = 25% dari 360\ny = 1/8 dari 24\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "x = 25% dari 360 = 90. y = 1/8 dari 24 = 3.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "",
+      "Keliru. x = 90 dan y = 3, jadi yang benar x > y.",
+      "Keliru. x = 90 dan y = 3, jadi yang benar x > y.",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 90, y = 3."
+     ]
+    },
+    {
+     "id": "banding-20",
+     "teks": "x = 90% dari 90\ny = 90% dari 90\nHubungan yang tepat antara x dan y adalah ...",
+     "opsi": [
+      "x > y",
+      "x < y",
+      "x = y",
+      "Hubungan x dan y tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "90% dari 90 = 90 × 90 : 100 = 81, dan 90% dari 90 juga 81. Persen bisa ditukar tempat: a% dari b = b% dari a.\nTips: Hitung x dan y sampai angka pasti. Kalau salah satu punya lebih dari satu kemungkinan nilai (misalnya dari x²), jawabannya biasanya tidak dapat ditentukan.",
+     "alasan": [
+      "Keliru. x = 81 dan y = 81, jadi yang benar x = y.",
+      "Keliru. x = 81 dan y = 81, jadi yang benar x = y.",
+      "",
+      "Hubungannya bisa dipastikan karena x dan y masing-masing punya satu nilai: x = 81, y = 81."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cerita",
+   "nama": "Soal Cerita",
+   "jenis": "kognitif",
+   "durasi_menit": 25,
+   "instruksi": "Jarak-waktu, kerja bersama, diskon, rata-rata, pajak, bunga, dan umur. Kerjakan tanpa kalkulator.",
+   "soal": [
+    {
+     "id": "cerita-1",
+     "teks": "Perbandingan uang Bayu dan adiknya 8 : 3. Selisih uang mereka Rp150.000. Jumlah uang mereka berdua adalah ...",
+     "opsi": [
+      "Rp480.000",
+      "Rp1.650.000",
+      "Rp240.000",
+      "Rp330.000",
+      "Rp90.000"
+     ],
+     "kunci": 3,
+     "pembahasan": "Selisih perbandingan 8 − 3 = 5 bagian = Rp150.000, jadi satu bagian = Rp30.000. Jumlah = 11 bagian × Rp30.000 = Rp330.000.\nTips: Cari nilai satu bagian dari selisih: satu bagian = selisih : selisih angka perbandingan.",
+     "alasan": [
+      "Selisihnya ikut ditambahkan lagi ke jumlah.",
+      "Selisihnya langsung dikali 11. Selisih itu mewakili 5 bagian, bukan satu bagian.",
+      "Ini uang Bayu saja (8 bagian), bukan jumlah berdua.",
+      "",
+      "Ini uang adiknya saja."
+     ]
+    },
+    {
+     "id": "cerita-2",
+     "teks": "Yoga menabung Rp2.500.000 dengan bunga tunggal 8% per tahun. Bunga yang diterima setelah 6 bulan adalah ...",
+     "opsi": [
+      "Rp1.200.000",
+      "Rp2.600.000",
+      "Rp16.667",
+      "Rp200.000",
+      "Rp100.000"
+     ],
+     "kunci": 4,
+     "pembahasan": "Bunga setahun = 8% × Rp2.500.000 = Rp200.000. Untuk 6 bulan: Rp200.000 × 6/12 = Rp100.000.\nTips: Bunga tunggal = modal × persen per tahun × (bulan : 12).",
+     "alasan": [
+      "Bunga per tahun dikali 6, seolah-olah 6 tahun.",
+      "Ini saldo akhirnya (modal + bunga), bukan bunganya.",
+      "Ini bunga satu bulan saja.",
+      "Ini bunga satu tahun penuh. Soalnya hanya 6 bulan.",
+      ""
+     ]
+    },
+    {
+     "id": "cerita-3",
+     "teks": "5 tahun lalu, umur Pak Hadi 4 kali umur anaknya. Umur anaknya sekarang 11 tahun. Umur Pak Hadi sekarang adalah ... tahun.",
+     "opsi": [
+      "24",
+      "44",
+      "29",
+      "34",
+      "49"
+     ],
+     "kunci": 2,
+     "pembahasan": "5 tahun lalu umur anaknya 6 tahun, jadi umur Pak Hadi waktu itu 4 × 6 = 24. Sekarang 24 + 5 = 29 tahun.\nTips: Kembalikan semua umur ke waktu yang sama sebelum dibandingkan.",
+     "alasan": [
+      "Ini umur Pak Hadi 5 tahun lalu. Yang ditanya umur sekarang.",
+      "Umur anak sekarang langsung dikali 4. Perbandingan 4 kali berlaku 5 tahun lalu.",
+      "",
+      "Tambahan 5 tahun dihitung dua kali.",
+      "Umur anak sekarang dikali 4 lalu ditambah 5. Seharusnya umur anak 5 tahun lalu yang dikali."
+     ]
+    },
+    {
+     "id": "cerita-4",
+     "teks": "Bayu berangkat dari Bintaro pukul 09.45 menuju kota yang berjarak 280 km. Kecepatan rata-ratanya 80 km/jam. Pukul berapa Bayu tiba?",
+     "opsi": [
+      "13.45",
+      "13.15",
+      "12.15",
+      "13.35",
+      "12.45"
+     ],
+     "kunci": 1,
+     "pembahasan": "Waktu tempuh = 280 : 80 = 3,5 jam = 3 jam 30 menit. 09.45 + 3 jam 30 menit = 13.15.\nTips: Waktu = jarak : kecepatan. Ubah sisa jam desimal ke menit (0,5 jam = 30 menit, 0,25 jam = 15 menit).",
+     "alasan": [
+      "Lebih 30 menit dari hasil hitungan.",
+      "",
+      "Kurang satu jam. Hitung lagi 280 : 80.",
+      "Angka desimal jam (0,5) dibaca sebagai 50 menit. Padahal 0,5 jam = 30 menit.",
+      "Hanya jam bulatnya yang dihitung, sisa 30 menit terlewat."
+     ]
+    },
+    {
+     "id": "cerita-5",
+     "teks": "Sebuah jaket seharga Rp340.000 mendapat diskon 20% lalu diskon tambahan 10%. Harga yang dibayar adalah ...",
+     "opsi": [
+      "Rp27.200",
+      "Rp95.200",
+      "Rp272.000",
+      "Rp238.000",
+      "Rp244.800"
+     ],
+     "kunci": 4,
+     "pembahasan": "Setelah diskon 20%: Rp340.000 × 80% = Rp272.000. Setelah diskon 10%: Rp272.000 × 90% = Rp244.800.\nTips: Diskon bertingkat dihitung bertahap: diskon kedua dihitung dari harga setelah diskon pertama.",
+     "alasan": [
+      "Ini besar potongan diskon kedua saja, bukan harga yang dibayar.",
+      "Ini total potongannya, bukan harga yang dibayar.",
+      "Diskon kedua belum dihitung.",
+      "Diskonnya dijumlah jadi 30%. Diskon bertingkat tidak boleh dijumlah langsung.",
+      ""
+     ]
+    },
+    {
+     "id": "cerita-6",
+     "teks": "Sebuah jaket seharga Rp860.000 mendapat diskon 50% lalu diskon tambahan 10%. Harga yang dibayar adalah ...",
+     "opsi": [
+      "Rp344.000",
+      "Rp473.000",
+      "Rp43.000",
+      "Rp387.000",
+      "Rp430.000"
+     ],
+     "kunci": 3,
+     "pembahasan": "Setelah diskon 50%: Rp860.000 × 50% = Rp430.000. Setelah diskon 10%: Rp430.000 × 90% = Rp387.000.\nTips: Diskon bertingkat dihitung bertahap: diskon kedua dihitung dari harga setelah diskon pertama.",
+     "alasan": [
+      "Diskonnya dijumlah jadi 60%. Diskon bertingkat tidak boleh dijumlah langsung.",
+      "Ini total potongannya, bukan harga yang dibayar.",
+      "Ini besar potongan diskon kedua saja, bukan harga yang dibayar.",
+      "",
+      "Diskon kedua belum dihitung."
+     ]
+    },
+    {
+     "id": "cerita-7",
+     "teks": "Harga sebuah printer sudah termasuk PPN 11% adalah Rp888.000. Besar PPN pada harga itu adalah ...",
+     "opsi": [
+      "Rp800.000",
+      "Rp880.000",
+      "Rp88.000",
+      "Rp80.727",
+      "Rp97.680"
+     ],
+     "kunci": 2,
+     "pembahasan": "Harga dasar = Rp888.000 : 1,11 = Rp800.000. PPN = 11% × Rp800.000 = Rp88.000. Cara cepat: PPN = 11/111 × Rp888.000.\nTips: Harga termasuk PPN = harga dasar × (100% + tarif). Cari harga dasar dulu, baru hitung PPN-nya.",
+     "alasan": [
+      "Ini harga dasarnya (sebelum PPN), bukan besar PPN.",
+      "Nolnya kelebihan satu.",
+      "",
+      "Pembaginya 1,1 (tarif 10%). Tarif di soal 11%, jadi pembaginya 1,11.",
+      "Ini 11% dari harga yang sudah termasuk PPN. PPN dihitung dari harga dasar."
+     ]
+    },
+    {
+     "id": "cerita-8",
+     "teks": "Harga sebuah printer sudah termasuk PPN 11% adalah Rp277.500. Besar PPN pada harga itu adalah ...",
+     "opsi": [
+      "Rp275.000",
+      "Rp27.500",
+      "Rp250.000",
+      "Rp25.227",
+      "Rp30.525"
+     ],
+     "kunci": 1,
+     "pembahasan": "Harga dasar = Rp277.500 : 1,11 = Rp250.000. PPN = 11% × Rp250.000 = Rp27.500. Cara cepat: PPN = 11/111 × Rp277.500.\nTips: Harga termasuk PPN = harga dasar × (100% + tarif). Cari harga dasar dulu, baru hitung PPN-nya.",
+     "alasan": [
+      "Nolnya kelebihan satu.",
+      "",
+      "Ini harga dasarnya (sebelum PPN), bukan besar PPN.",
+      "Pembaginya 1,1 (tarif 10%). Tarif di soal 11%, jadi pembaginya 1,11.",
+      "Ini 11% dari harga yang sudah termasuk PPN. PPN dihitung dari harga dasar."
+     ]
+    },
+    {
+     "id": "cerita-9",
+     "teks": "Perbandingan uang Yoga dan adiknya 6 : 5. Selisih uang mereka Rp90.000. Jumlah uang mereka berdua adalah ...",
+     "opsi": [
+      "Rp991.000",
+      "Rp990.000",
+      "Rp450.000",
+      "Rp1.080.000",
+      "Rp540.000"
+     ],
+     "kunci": 1,
+     "pembahasan": "Selisih perbandingan 6 − 5 = 1 bagian = Rp90.000, jadi satu bagian = Rp90.000. Jumlah = 11 bagian × Rp90.000 = Rp990.000.\nTips: Cari nilai satu bagian dari selisih: satu bagian = selisih : selisih angka perbandingan.",
+     "alasan": [
+      "Lebih Rp1.000 dari hasil yang benar (Rp990.000). Satu bagian = Rp90.000.",
+      "",
+      "Ini uang adiknya saja.",
+      "Selisihnya ikut ditambahkan lagi ke jumlah.",
+      "Ini uang Yoga saja (6 bagian), bukan jumlah berdua."
+     ]
+    },
+    {
+     "id": "cerita-10",
+     "teks": "Jumlah wajib pajak yang melapor SPT di sebuah KPP naik dari 3.800 menjadi 5.320 orang. Persentase kenaikannya adalah ...",
+     "opsi": [
+      "140%",
+      "28,6%",
+      "80%",
+      "20%",
+      "40%"
+     ],
+     "kunci": 4,
+     "pembahasan": "Perubahan = 1.520. Dibagi nilai lama: 1.520 : 3.800 × 100% = 40%.\nTips: Persentase perubahan = (nilai baru − nilai lama) : nilai lama × 100%. Pembaginya selalu nilai lama.",
+     "alasan": [
+      "Ini perbandingan nilai baru terhadap nilai lama, bukan persentase perubahannya.",
+      "Pembaginya nilai baru (5.320). Persentase perubahan selalu dibagi nilai lama.",
+      "Dua kali jawaban yang benar. Cek lagi pembagiannya.",
+      "Setengah dari jawaban yang benar.",
+      ""
+     ]
+    },
+    {
+     "id": "cerita-11",
+     "teks": "Rata-rata nilai 6 peserta adalah 62. Setelah satu peserta lagi bergabung, rata-ratanya menjadi 61. Nilai peserta yang baru bergabung adalah ...",
+     "opsi": [
+      "60",
+      "54",
+      "55",
+      "61",
+      "56"
+     ],
+     "kunci": 2,
+     "pembahasan": "Jumlah lama = 6 × 62 = 372. Jumlah baru = 7 × 61 = 427. Nilai peserta baru = 427 − 372 = 55.\nTips: Ubah rata-rata menjadi jumlah: jumlah = rata-rata × banyak data. Nilai data baru = jumlah baru − jumlah lama.",
+     "alasan": [
+      "Ini 61 − 1: perubahan rata-rata cuma dipakai sekali. Perubahan 1 poin itu dialami 6 peserta lama, jadi harus dikali 6: 61 − 6 × 1 = 55.",
+      "Kurang 1 dari hasil yang benar (55). Jumlah baru 427 − jumlah lama 372 = 55.",
+      "",
+      "Ini rata-rata barunya. Nilai satu peserta bisa jauh berbeda dari rata-rata.",
+      "Lebih 1 dari hasil yang benar (55). Jumlah baru 427 − jumlah lama 372 = 55."
+     ]
+    },
+    {
+     "id": "cerita-12",
+     "teks": "Raka menabung Rp3.500.000 dengan bunga tunggal 3% per tahun. Bunga yang diterima setelah 10 bulan adalah ...",
+     "opsi": [
+      "Rp1.050.000",
+      "Rp3.587.500",
+      "Rp8.750",
+      "Rp87.500",
+      "Rp105.000"
+     ],
+     "kunci": 3,
+     "pembahasan": "Bunga setahun = 3% × Rp3.500.000 = Rp105.000. Untuk 10 bulan: Rp105.000 × 10/12 = Rp87.500.\nTips: Bunga tunggal = modal × persen per tahun × (bulan : 12).",
+     "alasan": [
+      "Bunga per tahun dikali 10, seolah-olah 10 tahun.",
+      "Ini saldo akhirnya (modal + bunga), bukan bunganya.",
+      "Ini bunga satu bulan saja.",
+      "",
+      "Ini bunga satu tahun penuh. Soalnya hanya 10 bulan."
+     ]
+    },
+    {
+     "id": "cerita-13",
+     "teks": "Perbandingan uang Laras dan adiknya 8 : 3. Selisih uang mereka Rp375.000. Jumlah uang mereka berdua adalah ...",
+     "opsi": [
+      "Rp600.000",
+      "Rp4.125.000",
+      "Rp825.000",
+      "Rp1.200.000",
+      "Rp225.000"
+     ],
+     "kunci": 2,
+     "pembahasan": "Selisih perbandingan 8 − 3 = 5 bagian = Rp375.000, jadi satu bagian = Rp75.000. Jumlah = 11 bagian × Rp75.000 = Rp825.000.\nTips: Cari nilai satu bagian dari selisih: satu bagian = selisih : selisih angka perbandingan.",
+     "alasan": [
+      "Ini uang Laras saja (8 bagian), bukan jumlah berdua.",
+      "Selisihnya langsung dikali 11. Selisih itu mewakili 5 bagian, bukan satu bagian.",
+      "",
+      "Selisihnya ikut ditambahkan lagi ke jumlah.",
+      "Ini uang adiknya saja."
+     ]
+    },
+    {
+     "id": "cerita-14",
+     "teks": "Fajar dapat menyelesaikan rekap data dalam 10 hari. Temannya dapat menyelesaikan pekerjaan yang sama dalam 15 hari. Jika mereka bekerja bersama, pekerjaan itu selesai dalam ... hari.",
+     "opsi": [
+      "25",
+      "6",
+      "5",
+      "12,5",
+      "7"
+     ],
+     "kunci": 1,
+     "pembahasan": "Per hari Fajar menyelesaikan 1/10 bagian dan temannya 1/15 bagian. Bersama: 1/10 + 1/15 = 25/150 bagian per hari. Waktunya 150 : 25 = 6 hari.\nTips: Jumlahkan kecepatan kerja per hari: 1/a + 1/b. Waktu bersama = 1 : (1/a + 1/b) = (a × b) : (a + b).",
+     "alasan": [
+      "Waktunya dijumlah. Kerja bersama justru lebih cepat.",
+      "",
+      "Selisih waktu tidak ada hubungannya dengan kerja bersama.",
+      "Ini rata-rata waktu keduanya. Kalau bekerja bersama, waktunya pasti lebih cepat dari yang tercepat (10 hari).",
+      "Lebih satu hari dari hasil (a × b) : (a + b)."
+     ]
+    },
+    {
+     "id": "cerita-15",
+     "teks": "2 tahun lalu, umur Pak Hadi 5 kali umur anaknya. Umur anaknya sekarang 9 tahun. Umur Pak Hadi sekarang adalah ... tahun.",
+     "opsi": [
+      "35",
+      "37",
+      "47",
+      "39",
+      "45"
+     ],
+     "kunci": 1,
+     "pembahasan": "2 tahun lalu umur anaknya 7 tahun, jadi umur Pak Hadi waktu itu 5 × 7 = 35. Sekarang 35 + 2 = 37 tahun.\nTips: Kembalikan semua umur ke waktu yang sama sebelum dibandingkan.",
+     "alasan": [
+      "Ini umur Pak Hadi 2 tahun lalu. Yang ditanya umur sekarang.",
+      "",
+      "Umur anak sekarang dikali 5 lalu ditambah 2. Seharusnya umur anak 2 tahun lalu yang dikali.",
+      "Tambahan 2 tahun dihitung dua kali.",
+      "Umur anak sekarang langsung dikali 5. Perbandingan 5 kali berlaku 2 tahun lalu."
+     ]
+    },
+    {
+     "id": "cerita-16",
+     "teks": "Perbandingan uang Dita dan adiknya 4 : 2. Selisih uang mereka Rp140.000. Jumlah uang mereka berdua adalah ...",
+     "opsi": [
+      "Rp560.000",
+      "Rp140.000",
+      "Rp840.000",
+      "Rp420.000",
+      "Rp280.000"
+     ],
+     "kunci": 3,
+     "pembahasan": "Selisih perbandingan 4 − 2 = 2 bagian = Rp140.000, jadi satu bagian = Rp70.000. Jumlah = 6 bagian × Rp70.000 = Rp420.000.\nTips: Cari nilai satu bagian dari selisih: satu bagian = selisih : selisih angka perbandingan.",
+     "alasan": [
+      "Selisihnya ikut ditambahkan lagi ke jumlah.",
+      "Ini uang adiknya saja.",
+      "Selisihnya langsung dikali 6. Selisih itu mewakili 2 bagian, bukan satu bagian.",
+      "",
+      "Ini uang Dita saja (4 bagian), bukan jumlah berdua."
+     ]
+    },
+    {
+     "id": "cerita-17",
+     "teks": "Fajar berangkat dari Bintaro pukul 09.30 menuju kota yang berjarak 108 km. Kecepatan rata-ratanya 72 km/jam. Pukul berapa Fajar tiba?",
+     "opsi": [
+      "11.00",
+      "11.20",
+      "11.30",
+      "10.30",
+      "10.00"
+     ],
+     "kunci": 0,
+     "pembahasan": "Waktu tempuh = 108 : 72 = 1,5 jam = 1 jam 30 menit. 09.30 + 1 jam 30 menit = 11.00.\nTips: Waktu = jarak : kecepatan. Ubah sisa jam desimal ke menit (0,5 jam = 30 menit, 0,25 jam = 15 menit).",
+     "alasan": [
+      "",
+      "Angka desimal jam (0,5) dibaca sebagai 50 menit. Padahal 0,5 jam = 30 menit.",
+      "Lebih 30 menit dari hasil hitungan.",
+      "Hanya jam bulatnya yang dihitung, sisa 30 menit terlewat.",
+      "Kurang satu jam. Hitung lagi 108 : 72."
+     ]
+    },
+    {
+     "id": "cerita-18",
+     "teks": "Laras berangkat dari Bintaro pukul 08.15 menuju kota yang berjarak 60 km. Kecepatan rata-ratanya 80 km/jam. Pukul berapa Laras tiba?",
+     "opsi": [
+      "09.00",
+      "08.15",
+      "09.30",
+      "08.00",
+      "09.45"
+     ],
+     "kunci": 0,
+     "pembahasan": "Waktu tempuh = 60 : 80 = 0,75 jam = 0 jam 45 menit. 08.15 + 0 jam 45 menit = 09.00.\nTips: Waktu = jarak : kecepatan. Ubah sisa jam desimal ke menit (0,5 jam = 30 menit, 0,25 jam = 15 menit).",
+     "alasan": [
+      "",
+      "Hanya jam bulatnya yang dihitung, sisa 45 menit terlewat.",
+      "Angka desimal jam (0,75) dibaca sebagai 75 menit. Padahal 0,75 jam = 45 menit.",
+      "Kurang satu jam. Hitung lagi 60 : 80.",
+      "Tidak sesuai hitungan waktu tempuh 0,75 jam."
+     ]
+    },
+    {
+     "id": "cerita-19",
+     "teks": "Sebuah jaket seharga Rp900.000 mendapat diskon 10% lalu diskon tambahan 25%. Harga yang dibayar adalah ...",
+     "opsi": [
+      "Rp292.500",
+      "Rp810.000",
+      "Rp585.000",
+      "Rp202.500",
+      "Rp607.500"
+     ],
+     "kunci": 4,
+     "pembahasan": "Setelah diskon 10%: Rp900.000 × 90% = Rp810.000. Setelah diskon 25%: Rp810.000 × 75% = Rp607.500.\nTips: Diskon bertingkat dihitung bertahap: diskon kedua dihitung dari harga setelah diskon pertama.",
+     "alasan": [
+      "Ini total potongannya, bukan harga yang dibayar.",
+      "Diskon kedua belum dihitung.",
+      "Diskonnya dijumlah jadi 35%. Diskon bertingkat tidak boleh dijumlah langsung.",
+      "Ini besar potongan diskon kedua saja, bukan harga yang dibayar.",
+      ""
+     ]
+    },
+    {
+     "id": "cerita-20",
+     "teks": "2 tahun lalu, umur Pak Hadi 3 kali umur anaknya. Umur anaknya sekarang 15 tahun. Umur Pak Hadi sekarang adalah ... tahun.",
+     "opsi": [
+      "47",
+      "43",
+      "41",
+      "45",
+      "39"
+     ],
+     "kunci": 2,
+     "pembahasan": "2 tahun lalu umur anaknya 13 tahun, jadi umur Pak Hadi waktu itu 3 × 13 = 39. Sekarang 39 + 2 = 41 tahun.\nTips: Kembalikan semua umur ke waktu yang sama sebelum dibandingkan.",
+     "alasan": [
+      "Umur anak sekarang dikali 3 lalu ditambah 2. Seharusnya umur anak 2 tahun lalu yang dikali.",
+      "Tambahan 2 tahun dihitung dua kali.",
+      "",
+      "Umur anak sekarang langsung dikali 3. Perbandingan 3 kali berlaku 2 tahun lalu.",
+      "Ini umur Pak Hadi 2 tahun lalu. Yang ditanya umur sekarang."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "numerik",
+   "nama": "Membaca Tabel & Grafik (gaya NCR-S)",
+   "jenis": "kognitif",
+   "durasi_menit": 25,
+   "instruksi": "Jawab berdasarkan tabel atau grafik. Pilih \"Tidak dapat ditentukan\" bila datanya memang tidak cukup.",
+   "stimulus": {
+    "s1": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penjualan lima produk koperasi pegawai (juta rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Seragam</th><td>135</td><td>130</td><td>151</td><td>131</td><td>135</td></tr><tr><th>Alat tulis</th><td>111</td><td>134</td><td>134</td><td>118</td><td>116</td></tr><tr><th>Kopi</th><td>92</td><td>92</td><td>100</td><td>97</td><td>103</td></tr><tr><th>Buku</th><td>78</td><td>66</td><td>79</td><td>90</td><td>95</td></tr><tr><th>Pulsa</th><td>47</td><td>57</td><td>62</td><td>74</td><td>75</td></tr></tbody></table></div>"
+    },
+    "s2": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Kantor A</th><td>120</td><td>114</td><td>103</td><td>101</td><td>89</td></tr><tr><th>Kantor B</th><td>105</td><td>116</td><td>116</td><td>117</td><td>140</td></tr><tr><th>Kantor C</th><td>56</td><td>50</td><td>52</td><td>61</td><td>61</td></tr><tr><th>Kantor D</th><td>111</td><td>113</td><td>107</td><td>108</td><td>112</td></tr><tr><th>Kantor E</th><td>160</td><td>173</td><td>209</td><td>186</td><td>193</td></tr></tbody></table></div>"
+    },
+    "s3": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)\"><text x=\"0\" y=\"15\" class=\"ch-l\">Kantor A</text><rect x=\"0\" y=\"19\" width=\"175.3\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"179.3\" y=\"29\" class=\"ch-v\">103</text><rect x=\"0\" y=\"34\" width=\"226.3\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"230.3\" y=\"44\" class=\"ch-v\">133</text><rect x=\"0\" y=\"49\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"278.0\" y=\"59\" class=\"ch-v\">161</text><text x=\"0\" y=\"86\" class=\"ch-l\">Kantor B</text><rect x=\"0\" y=\"90\" width=\"245.1\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"249.1\" y=\"100\" class=\"ch-v\">144</text><rect x=\"0\" y=\"105\" width=\"207.6\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"211.6\" y=\"115\" class=\"ch-v\">122</text><rect x=\"0\" y=\"120\" width=\"257.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"261.0\" y=\"130\" class=\"ch-v\">151</text><text x=\"0\" y=\"157\" class=\"ch-l\">Kantor C</text><rect x=\"0\" y=\"161\" width=\"211.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"215.0\" y=\"171\" class=\"ch-v\">124</text><rect x=\"0\" y=\"176\" width=\"257.0\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"261.0\" y=\"186\" class=\"ch-v\">151</text><rect x=\"0\" y=\"191\" width=\"267.2\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"271.2\" y=\"201\" class=\"ch-v\">157</text><text x=\"0\" y=\"228\" class=\"ch-l\">Kantor D</text><rect x=\"0\" y=\"232\" width=\"238.3\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"242.3\" y=\"242\" class=\"ch-v\">140</text><rect x=\"0\" y=\"247\" width=\"245.1\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"249.1\" y=\"257\" class=\"ch-v\">144</text><rect x=\"0\" y=\"262\" width=\"255.3\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"259.3\" y=\"272\" class=\"ch-v\">150</text><text x=\"0\" y=\"299\" class=\"ch-l\">Kantor E</text><rect x=\"0\" y=\"303\" width=\"195.7\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"199.7\" y=\"313\" class=\"ch-v\">115</text><rect x=\"0\" y=\"318\" width=\"194.0\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"198.0\" y=\"328\" class=\"ch-v\">114</text><rect x=\"0\" y=\"333\" width=\"219.5\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"223.5\" y=\"343\" class=\"ch-v\">129</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)</p>"
+    },
+    "s4": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penerimaan pajak lima KPP (miliar rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>KPP Alfa</th><td>157</td><td>201</td><td>239</td><td>294</td><td>312</td></tr><tr><th>KPP Beta</th><td>152</td><td>154</td><td>169</td><td>213</td><td>258</td></tr><tr><th>KPP Gama</th><td>159</td><td>169</td><td>164</td><td>171</td><td>169</td></tr><tr><th>KPP Delta</th><td>30</td><td>33</td><td>40</td><td>48</td><td>42</td></tr><tr><th>KPP Sigma</th><td>71</td><td>81</td><td>105</td><td>110</td><td>100</td></tr></tbody></table></div>"
+    },
+    "s5": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penyaluran kredit usaha lima cabang (miliar rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Cabang Utara</th><td>126</td><td>130</td><td>126</td><td>126</td><td>108</td></tr><tr><th>Cabang Selatan</th><td>146</td><td>131</td><td>149</td><td>192</td><td>198</td></tr><tr><th>Cabang Timur</th><td>89</td><td>78</td><td>69</td><td>77</td><td>89</td></tr><tr><th>Cabang Barat</th><td>56</td><td>50</td><td>43</td><td>50</td><td>62</td></tr><tr><th>Cabang Pusat</th><td>98</td><td>124</td><td>112</td><td>124</td><td>151</td></tr></tbody></table></div>"
+    },
+    "s6": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penyaluran kredit usaha lima cabang (miliar rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Cabang Utara</th><td>142</td><td>131</td><td>161</td><td>142</td><td>175</td></tr><tr><th>Cabang Selatan</th><td>92</td><td>106</td><td>113</td><td>107</td><td>108</td></tr><tr><th>Cabang Timur</th><td>91</td><td>110</td><td>140</td><td>154</td><td>194</td></tr><tr><th>Cabang Barat</th><td>51</td><td>55</td><td>69</td><td>61</td><td>62</td></tr><tr><th>Cabang Pusat</th><td>83</td><td>77</td><td>96</td><td>85</td><td>104</td></tr></tbody></table></div>"
+    },
+    "s7": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penjualan lima produk koperasi pegawai (juta rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">Seragam</text><rect x=\"0\" y=\"19\" width=\"129.1\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"133.1\" y=\"29\" class=\"ch-v\">74</text><rect x=\"0\" y=\"34\" width=\"153.6\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"157.6\" y=\"44\" class=\"ch-v\">88</text><rect x=\"0\" y=\"49\" width=\"141.4\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"145.4\" y=\"59\" class=\"ch-v\">81</text><text x=\"0\" y=\"86\" class=\"ch-l\">Alat tulis</text><rect x=\"0\" y=\"90\" width=\"199.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"203.0\" y=\"100\" class=\"ch-v\">114</text><rect x=\"0\" y=\"105\" width=\"235.6\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"239.6\" y=\"115\" class=\"ch-v\">135</text><rect x=\"0\" y=\"120\" width=\"237.4\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"241.4\" y=\"130\" class=\"ch-v\">136</text><text x=\"0\" y=\"157\" class=\"ch-l\">Kopi</text><rect x=\"0\" y=\"161\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"278.0\" y=\"171\" class=\"ch-v\">157</text><rect x=\"0\" y=\"176\" width=\"265.3\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"269.3\" y=\"186\" class=\"ch-v\">152</text><rect x=\"0\" y=\"191\" width=\"260.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"264.0\" y=\"201\" class=\"ch-v\">149</text><text x=\"0\" y=\"228\" class=\"ch-l\">Buku</text><rect x=\"0\" y=\"232\" width=\"78.5\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"82.5\" y=\"242\" class=\"ch-v\">45</text><rect x=\"0\" y=\"247\" width=\"94.2\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"98.2\" y=\"257\" class=\"ch-v\">54</text><rect x=\"0\" y=\"262\" width=\"85.5\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"89.5\" y=\"272\" class=\"ch-v\">49</text><text x=\"0\" y=\"299\" class=\"ch-l\">Pulsa</text><rect x=\"0\" y=\"303\" width=\"160.6\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"164.6\" y=\"313\" class=\"ch-v\">92</text><rect x=\"0\" y=\"318\" width=\"181.5\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"185.5\" y=\"328\" class=\"ch-v\">104</text><rect x=\"0\" y=\"333\" width=\"155.3\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"159.3\" y=\"343\" class=\"ch-v\">89</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penjualan lima produk koperasi pegawai (juta rupiah)</p>"
+    },
+    "s8": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penjualan lima produk koperasi pegawai (juta rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">Seragam</text><rect x=\"0\" y=\"19\" width=\"212.8\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"216.8\" y=\"29\" class=\"ch-v\">139</text><rect x=\"0\" y=\"34\" width=\"244.9\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"248.9\" y=\"44\" class=\"ch-v\">160</text><rect x=\"0\" y=\"49\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"278.0\" y=\"59\" class=\"ch-v\">179</text><text x=\"0\" y=\"86\" class=\"ch-l\">Alat tulis</text><rect x=\"0\" y=\"90\" width=\"101.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"105.0\" y=\"100\" class=\"ch-v\">66</text><rect x=\"0\" y=\"105\" width=\"120.9\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"124.9\" y=\"115\" class=\"ch-v\">79</text><rect x=\"0\" y=\"120\" width=\"154.6\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"158.6\" y=\"130\" class=\"ch-v\">101</text><text x=\"0\" y=\"157\" class=\"ch-l\">Kopi</text><rect x=\"0\" y=\"161\" width=\"102.6\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"106.6\" y=\"171\" class=\"ch-v\">67</text><rect x=\"0\" y=\"176\" width=\"96.4\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"100.4\" y=\"186\" class=\"ch-v\">63</text><rect x=\"0\" y=\"191\" width=\"91.8\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"95.8\" y=\"201\" class=\"ch-v\">60</text><text x=\"0\" y=\"228\" class=\"ch-l\">Buku</text><rect x=\"0\" y=\"232\" width=\"179.1\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"183.1\" y=\"242\" class=\"ch-v\">117</text><rect x=\"0\" y=\"247\" width=\"180.6\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"184.6\" y=\"257\" class=\"ch-v\">118</text><rect x=\"0\" y=\"262\" width=\"218.9\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"222.9\" y=\"272\" class=\"ch-v\">143</text><text x=\"0\" y=\"299\" class=\"ch-l\">Pulsa</text><rect x=\"0\" y=\"303\" width=\"111.7\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"115.7\" y=\"313\" class=\"ch-v\">73</text><rect x=\"0\" y=\"318\" width=\"134.7\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"138.7\" y=\"328\" class=\"ch-v\">88</text><rect x=\"0\" y=\"333\" width=\"159.2\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"163.2\" y=\"343\" class=\"ch-v\">104</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penjualan lima produk koperasi pegawai (juta rupiah)</p>"
+    },
+    "s9": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Kantor A</th><td>51</td><td>64</td><td>60</td><td>77</td><td>95</td></tr><tr><th>Kantor B</th><td>79</td><td>92</td><td>99</td><td>115</td><td>113</td></tr><tr><th>Kantor C</th><td>136</td><td>163</td><td>179</td><td>181</td><td>165</td></tr><tr><th>Kantor D</th><td>144</td><td>164</td><td>208</td><td>239</td><td>287</td></tr><tr><th>Kantor E</th><td>87</td><td>91</td><td>108</td><td>117</td><td>112</td></tr></tbody></table></div>"
+    },
+    "s10": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penyaluran kredit usaha lima cabang (miliar rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Cabang Utara</th><td>154</td><td>166</td><td>148</td><td>130</td><td>112</td></tr><tr><th>Cabang Selatan</th><td>152</td><td>167</td><td>187</td><td>228</td><td>201</td></tr><tr><th>Cabang Timur</th><td>38</td><td>47</td><td>55</td><td>71</td><td>72</td></tr><tr><th>Cabang Barat</th><td>51</td><td>53</td><td>57</td><td>71</td><td>79</td></tr><tr><th>Cabang Pusat</th><td>93</td><td>83</td><td>95</td><td>90</td><td>112</td></tr></tbody></table></div>"
+    },
+    "s11": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penyaluran kredit usaha lima cabang (miliar rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">Cabang Utara</text><rect x=\"0\" y=\"19\" width=\"91.3\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"95.3\" y=\"29\" class=\"ch-v\">45</text><rect x=\"0\" y=\"34\" width=\"91.3\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"95.3\" y=\"44\" class=\"ch-v\">45</text><rect x=\"0\" y=\"49\" width=\"109.6\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"113.6\" y=\"59\" class=\"ch-v\">54</text><text x=\"0\" y=\"86\" class=\"ch-l\">Cabang Selatan</text><rect x=\"0\" y=\"90\" width=\"272.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"276.0\" y=\"100\" class=\"ch-v\">134</text><rect x=\"0\" y=\"105\" width=\"263.9\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"267.9\" y=\"115\" class=\"ch-v\">130</text><rect x=\"0\" y=\"120\" width=\"237.5\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"241.5\" y=\"130\" class=\"ch-v\">117</text><text x=\"0\" y=\"157\" class=\"ch-l\">Cabang Timur</text><rect x=\"0\" y=\"161\" width=\"239.5\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"243.5\" y=\"171\" class=\"ch-v\">118</text><rect x=\"0\" y=\"176\" width=\"257.8\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"261.8\" y=\"186\" class=\"ch-v\">127</text><rect x=\"0\" y=\"191\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"278.0\" y=\"201\" class=\"ch-v\">135</text><text x=\"0\" y=\"228\" class=\"ch-l\">Cabang Barat</text><rect x=\"0\" y=\"232\" width=\"144.1\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"148.1\" y=\"242\" class=\"ch-v\">71</text><rect x=\"0\" y=\"247\" width=\"172.5\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"176.5\" y=\"257\" class=\"ch-v\">85</text><rect x=\"0\" y=\"262\" width=\"219.2\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"223.2\" y=\"272\" class=\"ch-v\">108</text><text x=\"0\" y=\"299\" class=\"ch-l\">Cabang Pusat</text><rect x=\"0\" y=\"303\" width=\"117.7\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"121.7\" y=\"313\" class=\"ch-v\">58</text><rect x=\"0\" y=\"318\" width=\"111.6\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"115.6\" y=\"328\" class=\"ch-v\">55</text><rect x=\"0\" y=\"333\" width=\"97.4\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"101.4\" y=\"343\" class=\"ch-v\">48</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penyaluran kredit usaha lima cabang (miliar rupiah)</p>"
+    },
+    "s12": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Kantor A</th><td>43</td><td>54</td><td>52</td><td>49</td><td>53</td></tr><tr><th>Kantor B</th><td>66</td><td>65</td><td>58</td><td>67</td><td>79</td></tr><tr><th>Kantor C</th><td>70</td><td>79</td><td>68</td><td>61</td><td>76</td></tr><tr><th>Kantor D</th><td>52</td><td>53</td><td>66</td><td>60</td><td>52</td></tr><tr><th>Kantor E</th><td>133</td><td>121</td><td>156</td><td>161</td><td>195</td></tr></tbody></table></div>"
+    },
+    "s13": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penjualan lima produk koperasi pegawai (juta rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Seragam</th><td>123</td><td>145</td><td>168</td><td>200</td><td>192</td></tr><tr><th>Alat tulis</th><td>34</td><td>38</td><td>32</td><td>39</td><td>50</td></tr><tr><th>Kopi</th><td>148</td><td>175</td><td>221</td><td>265</td><td>265</td></tr><tr><th>Buku</th><td>99</td><td>123</td><td>139</td><td>143</td><td>156</td></tr><tr><th>Pulsa</th><td>112</td><td>105</td><td>112</td><td>111</td><td>144</td></tr></tbody></table></div>"
+    },
+    "s14": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penerimaan pajak lima KPP (miliar rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">KPP Alfa</text><rect x=\"0\" y=\"19\" width=\"228.8\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"232.8\" y=\"29\" class=\"ch-v\">152</text><rect x=\"0\" y=\"34\" width=\"236.4\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"240.4\" y=\"44\" class=\"ch-v\">157</text><rect x=\"0\" y=\"49\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"278.0\" y=\"59\" class=\"ch-v\">182</text><text x=\"0\" y=\"86\" class=\"ch-l\">KPP Beta</text><rect x=\"0\" y=\"90\" width=\"88.8\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"92.8\" y=\"100\" class=\"ch-v\">59</text><rect x=\"0\" y=\"105\" width=\"91.8\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"95.8\" y=\"115\" class=\"ch-v\">61</text><rect x=\"0\" y=\"120\" width=\"99.4\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"103.4\" y=\"130\" class=\"ch-v\">66</text><text x=\"0\" y=\"157\" class=\"ch-l\">KPP Gama</text><rect x=\"0\" y=\"161\" width=\"206.3\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"210.3\" y=\"171\" class=\"ch-v\">137</text><rect x=\"0\" y=\"176\" width=\"245.4\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"249.4\" y=\"186\" class=\"ch-v\">163</text><rect x=\"0\" y=\"191\" width=\"272.5\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"276.5\" y=\"201\" class=\"ch-v\">181</text><text x=\"0\" y=\"228\" class=\"ch-l\">KPP Delta</text><rect x=\"0\" y=\"232\" width=\"135.5\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"139.5\" y=\"242\" class=\"ch-v\">90</text><rect x=\"0\" y=\"247\" width=\"173.1\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"177.1\" y=\"257\" class=\"ch-v\">115</text><rect x=\"0\" y=\"262\" width=\"206.3\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"210.3\" y=\"272\" class=\"ch-v\">137</text><text x=\"0\" y=\"299\" class=\"ch-l\">KPP Sigma</text><rect x=\"0\" y=\"303\" width=\"82.8\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"86.8\" y=\"313\" class=\"ch-v\">55</text><rect x=\"0\" y=\"318\" width=\"79.8\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"83.8\" y=\"328\" class=\"ch-v\">53</text><rect x=\"0\" y=\"333\" width=\"72.3\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"76.3\" y=\"343\" class=\"ch-v\">48</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penerimaan pajak lima KPP (miliar rupiah)</p>"
+    },
+    "s15": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Kantor A</th><td>118</td><td>105</td><td>99</td><td>105</td><td>106</td></tr><tr><th>Kantor B</th><td>68</td><td>62</td><td>66</td><td>75</td><td>89</td></tr><tr><th>Kantor C</th><td>67</td><td>81</td><td>91</td><td>78</td><td>78</td></tr><tr><th>Kantor D</th><td>118</td><td>127</td><td>133</td><td>114</td><td>109</td></tr><tr><th>Kantor E</th><td>47</td><td>49</td><td>50</td><td>44</td><td>44</td></tr></tbody></table></div>"
+    },
+    "s16": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penjualan lima produk koperasi pegawai (juta rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">Seragam</text><rect x=\"0\" y=\"19\" width=\"198.9\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"202.9\" y=\"29\" class=\"ch-v\">143</text><rect x=\"0\" y=\"34\" width=\"242.0\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"246.0\" y=\"44\" class=\"ch-v\">174</text><rect x=\"0\" y=\"49\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"278.0\" y=\"59\" class=\"ch-v\">197</text><text x=\"0\" y=\"86\" class=\"ch-l\">Alat tulis</text><rect x=\"0\" y=\"90\" width=\"122.4\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"126.4\" y=\"100\" class=\"ch-v\">88</text><rect x=\"0\" y=\"105\" width=\"107.1\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"111.1\" y=\"115\" class=\"ch-v\">77</text><rect x=\"0\" y=\"120\" width=\"137.7\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"141.7\" y=\"130\" class=\"ch-v\">99</text><text x=\"0\" y=\"157\" class=\"ch-l\">Kopi</text><rect x=\"0\" y=\"161\" width=\"79.3\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"83.3\" y=\"171\" class=\"ch-v\">57</text><rect x=\"0\" y=\"176\" width=\"86.2\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"90.2\" y=\"186\" class=\"ch-v\">62</text><rect x=\"0\" y=\"191\" width=\"107.1\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"111.1\" y=\"201\" class=\"ch-v\">77</text><text x=\"0\" y=\"228\" class=\"ch-l\">Buku</text><rect x=\"0\" y=\"232\" width=\"62.6\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"66.6\" y=\"242\" class=\"ch-v\">45</text><rect x=\"0\" y=\"247\" width=\"69.5\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"73.5\" y=\"257\" class=\"ch-v\">50</text><rect x=\"0\" y=\"262\" width=\"64.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"68.0\" y=\"272\" class=\"ch-v\">46</text><text x=\"0\" y=\"299\" class=\"ch-l\">Pulsa</text><rect x=\"0\" y=\"303\" width=\"140.5\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"144.5\" y=\"313\" class=\"ch-v\">101</text><rect x=\"0\" y=\"318\" width=\"173.9\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"177.9\" y=\"328\" class=\"ch-v\">125</text><rect x=\"0\" y=\"333\" width=\"212.8\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"216.8\" y=\"343\" class=\"ch-v\">153</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penjualan lima produk koperasi pegawai (juta rupiah)</p>"
+    },
+    "s17": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penerimaan pajak lima KPP (miliar rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">KPP Alfa</text><rect x=\"0\" y=\"19\" width=\"56.7\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"60.7\" y=\"29\" class=\"ch-v\">36</text><rect x=\"0\" y=\"34\" width=\"69.3\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"73.3\" y=\"44\" class=\"ch-v\">44</text><rect x=\"0\" y=\"49\" width=\"78.7\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"82.7\" y=\"59\" class=\"ch-v\">50</text><text x=\"0\" y=\"86\" class=\"ch-l\">KPP Beta</text><rect x=\"0\" y=\"90\" width=\"166.9\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"170.9\" y=\"100\" class=\"ch-v\">106</text><rect x=\"0\" y=\"105\" width=\"189.0\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"193.0\" y=\"115\" class=\"ch-v\">120</text><rect x=\"0\" y=\"120\" width=\"236.2\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"240.2\" y=\"130\" class=\"ch-v\">150</text><text x=\"0\" y=\"157\" class=\"ch-l\">KPP Gama</text><rect x=\"0\" y=\"161\" width=\"211.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"215.0\" y=\"171\" class=\"ch-v\">134</text><rect x=\"0\" y=\"176\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"278.0\" y=\"186\" class=\"ch-v\">174</text><rect x=\"0\" y=\"191\" width=\"248.8\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"252.8\" y=\"201\" class=\"ch-v\">158</text><text x=\"0\" y=\"228\" class=\"ch-l\">KPP Delta</text><rect x=\"0\" y=\"232\" width=\"215.7\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"219.7\" y=\"242\" class=\"ch-v\">137</text><rect x=\"0\" y=\"247\" width=\"204.7\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"208.7\" y=\"257\" class=\"ch-v\">130</text><rect x=\"0\" y=\"262\" width=\"220.5\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"224.5\" y=\"272\" class=\"ch-v\">140</text><text x=\"0\" y=\"299\" class=\"ch-l\">KPP Sigma</text><rect x=\"0\" y=\"303\" width=\"121.3\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"125.3\" y=\"313\" class=\"ch-v\">77</text><rect x=\"0\" y=\"318\" width=\"122.8\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"126.8\" y=\"328\" class=\"ch-v\">78</text><rect x=\"0\" y=\"333\" width=\"140.1\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"144.1\" y=\"343\" class=\"ch-v\">89</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penerimaan pajak lima KPP (miliar rupiah)</p>"
+    },
+    "s18": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Penerimaan pajak lima KPP (miliar rupiah)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>KPP Alfa</th><td>137</td><td>151</td><td>154</td><td>191</td><td>218</td></tr><tr><th>KPP Beta</th><td>109</td><td>125</td><td>111</td><td>105</td><td>131</td></tr><tr><th>KPP Gama</th><td>72</td><td>92</td><td>114</td><td>136</td><td>162</td></tr><tr><th>KPP Delta</th><td>96</td><td>86</td><td>103</td><td>108</td><td>131</td></tr><tr><th>KPP Sigma</th><td>76</td><td>86</td><td>110</td><td>107</td><td>132</td></tr></tbody></table></div>"
+    },
+    "s19": {
+     "tipe": "html",
+     "isi": "<svg class=\"chart\" viewBox=\"0 0 320 381\" role=\"img\" aria-label=\"Penyaluran kredit usaha lima cabang (miliar rupiah)\"><text x=\"0\" y=\"15\" class=\"ch-l\">Cabang Utara</text><rect x=\"0\" y=\"19\" width=\"56.9\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"60.9\" y=\"29\" class=\"ch-v\">32</text><rect x=\"0\" y=\"34\" width=\"64.1\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"68.1\" y=\"44\" class=\"ch-v\">36</text><rect x=\"0\" y=\"49\" width=\"55.2\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"59.2\" y=\"59\" class=\"ch-v\">31</text><text x=\"0\" y=\"86\" class=\"ch-l\">Cabang Selatan</text><rect x=\"0\" y=\"90\" width=\"185.0\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"189.0\" y=\"100\" class=\"ch-v\">104</text><rect x=\"0\" y=\"105\" width=\"201.1\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"205.1\" y=\"115\" class=\"ch-v\">113</text><rect x=\"0\" y=\"120\" width=\"211.7\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"215.7\" y=\"130\" class=\"ch-v\">119</text><text x=\"0\" y=\"157\" class=\"ch-l\">Cabang Timur</text><rect x=\"0\" y=\"161\" width=\"197.5\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"201.5\" y=\"171\" class=\"ch-v\">111</text><rect x=\"0\" y=\"176\" width=\"227.7\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"231.7\" y=\"186\" class=\"ch-v\">128</text><rect x=\"0\" y=\"191\" width=\"193.9\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"197.9\" y=\"201\" class=\"ch-v\">109</text><text x=\"0\" y=\"228\" class=\"ch-l\">Cabang Barat</text><rect x=\"0\" y=\"232\" width=\"97.9\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"101.9\" y=\"242\" class=\"ch-v\">55</text><rect x=\"0\" y=\"247\" width=\"90.7\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"94.7\" y=\"257\" class=\"ch-v\">51</text><rect x=\"0\" y=\"262\" width=\"115.6\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"119.6\" y=\"272\" class=\"ch-v\">65</text><text x=\"0\" y=\"299\" class=\"ch-l\">Cabang Pusat</text><rect x=\"0\" y=\"303\" width=\"249.1\" height=\"12\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"253.1\" y=\"313\" class=\"ch-v\">140</text><rect x=\"0\" y=\"318\" width=\"261.5\" height=\"12\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"265.5\" y=\"328\" class=\"ch-v\">147</text><rect x=\"0\" y=\"333\" width=\"274.0\" height=\"12\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"278.0\" y=\"343\" class=\"ch-v\">154</text><rect x=\"0\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#d9c7a6\"/><text x=\"17\" y=\"373\" class=\"ch-v\">2023</text><rect x=\"72\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#9b6a4b\"/><text x=\"89\" y=\"373\" class=\"ch-v\">2024</text><rect x=\"144\" y=\"363\" width=\"12\" height=\"11\" rx=\"2\" fill=\"#4b1f1a\"/><text x=\"161\" y=\"373\" class=\"ch-v\">2025</text></svg><p class=\"ch-cap\">Penyaluran kredit usaha lima cabang (miliar rupiah)</p>"
+    },
+    "s20": {
+     "tipe": "html",
+     "isi": "<div class=\"table-scroll\"><table class=\"data\"><caption>Jumlah dokumen impor yang diperiksa lima kantor (ratus dokumen)</caption><thead><tr><th></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><th>Kantor A</th><td>63</td><td>56</td><td>58</td><td>62</td><td>61</td></tr><tr><th>Kantor B</th><td>32</td><td>31</td><td>35</td><td>36</td><td>31</td></tr><tr><th>Kantor C</th><td>107</td><td>125</td><td>116</td><td>124</td><td>124</td></tr><tr><th>Kantor D</th><td>57</td><td>53</td><td>64</td><td>68</td><td>76</td></tr><tr><th>Kantor E</th><td>46</td><td>43</td><td>40</td><td>37</td><td>47</td></tr></tbody></table></div>"
+    }
+   },
+   "soal": [
+    {
+     "id": "numerik-1",
+     "teks": "Rata-rata nilai Pulsa per tahun selama 2021–2025 adalah ...",
+     "opsi": [
+      "62",
+      "78,75",
+      "61",
+      "63",
+      "315",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Jumlah 47 + 57 + 62 + 74 + 75 = 315. Dibagi 5 tahun = 63.\nTips: Rata-rata = jumlah semua nilai : banyak data. Hitung dulu banyak tahunnya.",
+     "alasan": [
+      "Ini nilai tengah (median), bukan rata-rata.",
+      "Dibagi 4, padahal ada 5 tahun.",
+      "Ini rata-rata tahun pertama dan terakhir saja.",
+      "",
+      "Ini jumlahnya, belum dibagi banyak tahun.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s1"
+    },
+    {
+     "id": "numerik-2",
+     "teks": "Rata-rata jumlah dokumen Kantor E per tahun selama 2021–2025 adalah ...",
+     "opsi": [
+      "176,5",
+      "184,2",
+      "921",
+      "186",
+      "230,25",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Jumlah 160 + 173 + 209 + 186 + 193 = 921. Dibagi 5 tahun = 184,2.\nTips: Rata-rata = jumlah semua nilai : banyak data. Hitung dulu banyak tahunnya.",
+     "alasan": [
+      "Ini rata-rata tahun pertama dan terakhir saja.",
+      "",
+      "Ini jumlahnya, belum dibagi banyak tahun.",
+      "Ini nilai tengah (median), bukan rata-rata.",
+      "Dibagi 4, padahal ada 5 tahun.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s2"
+    },
+    {
+     "id": "numerik-3",
+     "teks": "Jika pada 2026 nilai Kantor C naik 20% dari 2025, nilainya menjadi ...",
+     "opsi": [
+      "188,4",
+      "31,4",
+      "226,08",
+      "181,2",
+      "177",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Nilai 2025 = 157. 157 × 1,2 = 188,4.\nTips: Naik p% artinya nilai lama × (100% + p%). Besar kenaikan saja bukan nilai akhirnya.",
+     "alasan": [
+      "",
+      "Ini besar kenaikannya saja (20% × 157), belum ditambah nilai lama.",
+      "Kenaikannya dihitung dua kali.",
+      "Tahun yang dipakai salah: ini 2024 dinaikkan 20%.",
+      "Persennya ditambahkan sebagai angka biasa (157 + 20).",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s3"
+    },
+    {
+     "id": "numerik-4",
+     "teks": "Selisih total kelima KPP antara 2021 dan 2025 adalah ...",
+     "opsi": [
+      "12",
+      "312",
+      "322",
+      "881",
+      "267",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Total 2021 = 569. Total 2025 = 881. Selisihnya 312.\nTips: Jumlahkan satu kolom penuh untuk tiap tahun, baru cari selisihnya.",
+     "alasan": [
+      "Ini selisih KPP Delta saja, bukan total kelimanya.",
+      "",
+      "Lebih 10 dari hasil. Jumlahkan ulang kolomnya.",
+      "Ini total 2025, belum dikurangi total 2021.",
+      "Tahun yang dipakai 2024, bukan 2025.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s4"
+    },
+    {
+     "id": "numerik-5",
+     "teks": "Dari 2024 ke 2025, cabang mana yang mengalami kenaikan persentase paling besar?",
+     "opsi": [
+      "Cabang Utara",
+      "Cabang Selatan",
+      "Cabang Timur",
+      "Cabang Barat",
+      "Cabang Pusat",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Perubahan 2024 ke 2025: Cabang Utara turun 18 (14,3%); Cabang Selatan naik 6 (3,1%); Cabang Timur naik 12 (15,6%); Cabang Barat naik 12 (24%); Cabang Pusat naik 27 (21,8%). Persentase kenaikan tertinggi: Cabang Barat.\nTips: Kenaikan persentase = (nilai baru − nilai lama) : nilai lama. Kenaikan terbesar dalam angka belum tentu terbesar dalam persen.",
+     "alasan": [
+      "Justru turun 14,3%.",
+      "Naik 3,1%, masih di bawah Cabang Barat.",
+      "Naik 15,6%, masih di bawah Cabang Barat.",
+      "",
+      "Kenaikannya paling besar dalam angka (27), tapi nilai awalnya besar (124), jadi persentasenya hanya 21,8%.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s5"
+    },
+    {
+     "id": "numerik-6",
+     "teks": "Pada 2025, porsi Cabang Selatan terhadap total kelima cabang kira-kira ...",
+     "opsi": [
+      "19%",
+      "11%",
+      "17%",
+      "24%",
+      "20%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Total 2025 = 175 + 108 + 194 + 62 + 104 = 643. 108 : 643 × 100% ≈ 17%.\nTips: Porsi = bagian : total semua × 100%. Totalnya harus dari tahun yang sama.",
+     "alasan": [
+      "Ini porsi tahun 2024, bukan 2025.",
+      "Terlalu kecil. Bagi lagi 108 dengan 643.",
+      "",
+      "Terlalu besar. Bagi lagi 108 dengan 643.",
+      "Pembaginya total unit lain (535), padahal porsi dibagi total semuanya (643).",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s6"
+    },
+    {
+     "id": "numerik-7",
+     "teks": "Selisih total kelima produk antara 2023 dan 2025 adalah ...",
+     "opsi": [
+      "22",
+      "504",
+      "51",
+      "32",
+      "3",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Total 2023 = 482. Total 2025 = 504. Selisihnya 22.\nTips: Jumlahkan satu kolom penuh untuk tiap tahun, baru cari selisihnya.",
+     "alasan": [
+      "",
+      "Ini total 2025, belum dikurangi total 2023.",
+      "Tahun yang dipakai 2024, bukan 2025.",
+      "Lebih 10 dari hasil. Jumlahkan ulang kolomnya.",
+      "Ini selisih Pulsa saja, bukan total kelimanya.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s7"
+    },
+    {
+     "id": "numerik-8",
+     "teks": "Dari 2024 ke 2025, produk mana yang mengalami kenaikan persentase paling besar?",
+     "opsi": [
+      "Seragam",
+      "Alat tulis",
+      "Kopi",
+      "Buku",
+      "Pulsa",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Perubahan 2024 ke 2025: Seragam naik 19 (11,9%); Alat tulis naik 22 (27,8%); Kopi turun 3 (4,8%); Buku naik 25 (21,2%); Pulsa naik 16 (18,2%). Persentase kenaikan tertinggi: Alat tulis.\nTips: Kenaikan persentase = (nilai baru − nilai lama) : nilai lama. Kenaikan terbesar dalam angka belum tentu terbesar dalam persen.",
+     "alasan": [
+      "Naik 11,9%, masih di bawah Alat tulis.",
+      "",
+      "Justru turun 4,8%.",
+      "Kenaikannya paling besar dalam angka (25), tapi nilai awalnya besar (118), jadi persentasenya hanya 21,2%.",
+      "Naik 18,2%, masih di bawah Alat tulis.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s8"
+    },
+    {
+     "id": "numerik-9",
+     "teks": "Pada 2025, porsi Kantor D terhadap total kelima kantor kira-kira ...",
+     "opsi": [
+      "33%",
+      "31%",
+      "59%",
+      "44%",
+      "37%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Total 2025 = 95 + 113 + 165 + 287 + 112 = 772. 287 : 772 × 100% ≈ 37%.\nTips: Porsi = bagian : total semua × 100%. Totalnya harus dari tahun yang sama.",
+     "alasan": [
+      "Ini porsi tahun 2024, bukan 2025.",
+      "Terlalu kecil. Bagi lagi 287 dengan 772.",
+      "Pembaginya total unit lain (485), padahal porsi dibagi total semuanya (772).",
+      "Terlalu besar. Bagi lagi 287 dengan 772.",
+      "",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s9"
+    },
+    {
+     "id": "numerik-10",
+     "teks": "Berapa jumlah nasabah baru Cabang Barat pada 2025?",
+     "opsi": [
+      "71",
+      "158",
+      "40",
+      "79",
+      "576",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 5,
+     "pembahasan": "Data hanya berisi penyaluran kredit usaha lima cabang (miliar rupiah). Tidak ada angka jumlah nasabah baru, jadi jawabannya tidak dapat ditentukan.\nTips: Sebelum menghitung, pastikan datanya memang ada di tabel atau grafik. Kalau tidak ada, pilih 'Tidak dapat ditentukan'.",
+     "alasan": [
+      "Ini angka tahun sebelumnya, dan itu pun bukan jumlah nasabah baru.",
+      "Tidak ada dasar perhitungannya di data.",
+      "Tidak ada dasar membagi dua. Datanya tidak memuat jumlah nasabah baru.",
+      "Ini miliar rupiah Cabang Barat, bukan jumlah nasabah baru.",
+      "Ini total semua unit, bukan jumlah nasabah baru.",
+      ""
+     ],
+     "stimulus": "s10"
+    },
+    {
+     "id": "numerik-11",
+     "teks": "Pada 2025, porsi Cabang Utara terhadap total kelima cabang kira-kira ...",
+     "opsi": [
+      "12%",
+      "6%",
+      "19%",
+      "10%",
+      "13%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Total 2025 = 54 + 117 + 135 + 108 + 48 = 462. 54 : 462 × 100% ≈ 12%.\nTips: Porsi = bagian : total semua × 100%. Totalnya harus dari tahun yang sama.",
+     "alasan": [
+      "",
+      "Terlalu kecil. Bagi lagi 54 dengan 462.",
+      "Terlalu besar. Bagi lagi 54 dengan 462.",
+      "Ini porsi tahun 2024, bukan 2025.",
+      "Pembaginya total unit lain (408), padahal porsi dibagi total semuanya (462).",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s11"
+    },
+    {
+     "id": "numerik-12",
+     "teks": "Jika pada 2026 nilai Kantor C naik 20% dari 2025, nilainya menjadi ...",
+     "opsi": [
+      "96",
+      "15,2",
+      "91,2",
+      "109,44",
+      "73,2",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Nilai 2025 = 76. 76 × 1,2 = 91,2.\nTips: Naik p% artinya nilai lama × (100% + p%). Besar kenaikan saja bukan nilai akhirnya.",
+     "alasan": [
+      "Persennya ditambahkan sebagai angka biasa (76 + 20).",
+      "Ini besar kenaikannya saja (20% × 76), belum ditambah nilai lama.",
+      "",
+      "Kenaikannya dihitung dua kali.",
+      "Tahun yang dipakai salah: ini 2024 dinaikkan 20%.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s12"
+    },
+    {
+     "id": "numerik-13",
+     "teks": "Jika pada 2026 nilai Alat tulis naik 20% dari 2025, nilainya menjadi ...",
+     "opsi": [
+      "70",
+      "60",
+      "10",
+      "46,8",
+      "72",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Nilai 2025 = 50. 50 × 1,2 = 60.\nTips: Naik p% artinya nilai lama × (100% + p%). Besar kenaikan saja bukan nilai akhirnya.",
+     "alasan": [
+      "Persennya ditambahkan sebagai angka biasa (50 + 20).",
+      "",
+      "Ini besar kenaikannya saja (20% × 50), belum ditambah nilai lama.",
+      "Tahun yang dipakai salah: ini 2024 dinaikkan 20%.",
+      "Kenaikannya dihitung dua kali.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s13"
+    },
+    {
+     "id": "numerik-14",
+     "teks": "Dari 2023 ke 2024, KPP mana yang mengalami kenaikan persentase paling besar?",
+     "opsi": [
+      "KPP Alfa",
+      "KPP Beta",
+      "KPP Gama",
+      "KPP Delta",
+      "KPP Sigma",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Perubahan 2023 ke 2024: KPP Alfa naik 5 (3,3%); KPP Beta naik 2 (3,4%); KPP Gama naik 26 (19%); KPP Delta naik 25 (27,8%); KPP Sigma turun 2 (3,6%). Persentase kenaikan tertinggi: KPP Delta.\nTips: Kenaikan persentase = (nilai baru − nilai lama) : nilai lama. Kenaikan terbesar dalam angka belum tentu terbesar dalam persen.",
+     "alasan": [
+      "Naik 3,3%, masih di bawah KPP Delta.",
+      "Naik 3,4%, masih di bawah KPP Delta.",
+      "Kenaikannya paling besar dalam angka (26), tapi nilai awalnya besar (137), jadi persentasenya hanya 19%.",
+      "",
+      "Justru turun 3,6%.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s14"
+    },
+    {
+     "id": "numerik-15",
+     "teks": "Rata-rata jumlah dokumen Kantor E per tahun selama 2021–2025 adalah ...",
+     "opsi": [
+      "45,5",
+      "234",
+      "47",
+      "58,5",
+      "46,8",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Jumlah 47 + 49 + 50 + 44 + 44 = 234. Dibagi 5 tahun = 46,8.\nTips: Rata-rata = jumlah semua nilai : banyak data. Hitung dulu banyak tahunnya.",
+     "alasan": [
+      "Ini rata-rata tahun pertama dan terakhir saja.",
+      "Ini jumlahnya, belum dibagi banyak tahun.",
+      "Ini nilai tengah (median), bukan rata-rata.",
+      "Dibagi 4, padahal ada 5 tahun.",
+      "",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s15"
+    },
+    {
+     "id": "numerik-16",
+     "teks": "Dari 2023 ke 2024, produk mana yang mengalami kenaikan persentase paling besar?",
+     "opsi": [
+      "Seragam",
+      "Alat tulis",
+      "Kopi",
+      "Buku",
+      "Pulsa",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Perubahan 2023 ke 2024: Seragam naik 31 (21,7%); Alat tulis turun 11 (12,5%); Kopi naik 5 (8,8%); Buku naik 5 (11,1%); Pulsa naik 24 (23,8%). Persentase kenaikan tertinggi: Pulsa.\nTips: Kenaikan persentase = (nilai baru − nilai lama) : nilai lama. Kenaikan terbesar dalam angka belum tentu terbesar dalam persen.",
+     "alasan": [
+      "Kenaikannya paling besar dalam angka (31), tapi nilai awalnya besar (143), jadi persentasenya hanya 21,7%.",
+      "Justru turun 12,5%.",
+      "Naik 8,8%, masih di bawah Pulsa.",
+      "Naik 11,1%, masih di bawah Pulsa.",
+      "",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s16"
+    },
+    {
+     "id": "numerik-17",
+     "teks": "Berapa jumlah pegawai KPP Alfa pada 2025?",
+     "opsi": [
+      "44",
+      "587",
+      "50",
+      "25",
+      "100",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 5,
+     "pembahasan": "Data hanya berisi penerimaan pajak lima kpp (miliar rupiah). Tidak ada angka jumlah pegawai, jadi jawabannya tidak dapat ditentukan.\nTips: Sebelum menghitung, pastikan datanya memang ada di tabel atau grafik. Kalau tidak ada, pilih 'Tidak dapat ditentukan'.",
+     "alasan": [
+      "Ini angka tahun sebelumnya, dan itu pun bukan jumlah pegawai.",
+      "Ini total semua unit, bukan jumlah pegawai.",
+      "Ini miliar rupiah KPP Alfa, bukan jumlah pegawai.",
+      "Tidak ada dasar membagi dua. Datanya tidak memuat jumlah pegawai.",
+      "Tidak ada dasar perhitungannya di data.",
+      ""
+     ],
+     "stimulus": "s17"
+    },
+    {
+     "id": "numerik-18",
+     "teks": "Selisih total kelima KPP antara 2021 dan 2025 adalah ...",
+     "opsi": [
+      "56",
+      "157",
+      "294",
+      "774",
+      "284",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Total 2021 = 490. Total 2025 = 774. Selisihnya 284.\nTips: Jumlahkan satu kolom penuh untuk tiap tahun, baru cari selisihnya.",
+     "alasan": [
+      "Ini selisih KPP Sigma saja, bukan total kelimanya.",
+      "Tahun yang dipakai 2024, bukan 2025.",
+      "Lebih 10 dari hasil. Jumlahkan ulang kolomnya.",
+      "Ini total 2025, belum dikurangi total 2021.",
+      "",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s18"
+    },
+    {
+     "id": "numerik-19",
+     "teks": "Selisih total kelima cabang antara 2023 dan 2025 adalah ...",
+     "opsi": [
+      "10",
+      "478",
+      "33",
+      "36",
+      "46",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Total 2023 = 442. Total 2025 = 478. Selisihnya 36.\nTips: Jumlahkan satu kolom penuh untuk tiap tahun, baru cari selisihnya.",
+     "alasan": [
+      "Ini selisih Cabang Barat saja, bukan total kelimanya.",
+      "Ini total 2025, belum dikurangi total 2023.",
+      "Tahun yang dipakai 2024, bukan 2025.",
+      "",
+      "Lebih 10 dari hasil. Jumlahkan ulang kolomnya.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s19"
+    },
+    {
+     "id": "numerik-20",
+     "teks": "Selisih total kelima kantor antara 2021 dan 2025 adalah ...",
+     "opsi": [
+      "34",
+      "339",
+      "44",
+      "19",
+      "22",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Total 2021 = 305. Total 2025 = 339. Selisihnya 34.\nTips: Jumlahkan satu kolom penuh untuk tiap tahun, baru cari selisihnya.",
+     "alasan": [
+      "",
+      "Ini total 2025, belum dikurangi total 2021.",
+      "Lebih 10 dari hasil. Jumlahkan ulang kolomnya.",
+      "Ini selisih Kantor D saja, bukan total kelimanya.",
+      "Tahun yang dipakai 2024, bukan 2025.",
+      "Datanya cukup untuk menjawab pertanyaan ini, jadi jawabannya bisa dihitung."
+     ],
+     "stimulus": "s20"
+    }
+   ]
+  }
+ ]
+}

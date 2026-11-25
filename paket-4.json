@@ -1,0 +1,4984 @@
+{
+ "id": "paket-4",
+ "judul": "Paket 4 — Simulasi Psikotes Tingkat Lanjut (Kepemimpinan)",
+ "durasi_total_menit": 120,
+ "catatan": "Durasi per bagian dapat disesuaikan. Total kerja 110 menit + 10 menit instruksi/jeda.",
+ "dimensi": {
+  "E": "Ekstraversi (sosiabilitas, ketegasan)",
+  "A": "Keramahan & Kerja Sama",
+  "C": "Ketelitian & Tanggung Jawab",
+  "S": "Stabilitas Emosi",
+  "O": "Keterbukaan terhadap Pengalaman",
+  "I": "Integritas",
+  "L": "Validitas: kecenderungan menjawab ideal berlebihan"
+ },
+ "aturan_konsistensi": {
+  "nilai": "Jawaban diubah ke rentang -1..+1 (skala 3: Setuju=+1, ?=0, Tidak setuju=-1; skala 5: Sangat setuju=+1, Setuju=+0.5, Netral=0, Kurang setuju=-0.5, Tidak setuju=-1), lalu dikali 'arah' butir.",
+  "grup": "Butir dengan 'grup' yang sama mengukur hal yang sama (parafrase atau kalimat terbalik), termasuk lintas bagian kepribadian-1 dan kepribadian-2.",
+  "tidak_konsisten": "Sebuah grup dianggap tidak konsisten jika selisih nilai tertinggi dan terendah di dalamnya >= 1.5.",
+  "indeks": "Indeks konsistensi = persentase grup yang konsisten. >= 85% baik, 70-84% cukup, < 70% perlu diwaspadai.",
+  "validitas_L": "Butir dimensi L berisi klaim yang hampir mustahil (mis. 'tidak pernah berbohong'). Nilai > 0 pada lebih dari separuh butir L menandakan kecenderungan menjawab ideal (faking good).",
+  "netral": "Proporsi jawaban '?' / 'Netral' > 30% ditandai karena profil sulit dibaca.",
+  "skor_dimensi": "Skor dimensi = rata-rata nilai (sudah dikali arah) seluruh butir dimensi tersebut, ditampilkan 0-100: (rata2 + 1) * 50."
+ },
+ "bagian": [
+  {
+   "id": "verbal",
+   "nama": "Penalaran Verbal",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Bacalah setiap teks dengan saksama, lalu tentukan apakah pernyataan Benar, Salah, atau Tidak dapat disimpulkan. Nilailah hanya berdasarkan informasi dalam teks, bukan pengetahuan atau asumsi Anda sendiri.",
+   "stimulus": {
+    "v1": {
+     "tipe": "teks",
+     "isi": "Sebuah bank swasta mulai menggunakan asisten virtual berbasis kecerdasan buatan untuk menjawab pertanyaan nasabah melalui aplikasi. Dalam enam bulan pertama, asisten tersebut menangani sekitar 60 persen pertanyaan tanpa perlu dialihkan ke petugas. Waktu tunggu rata-rata layanan pelanggan turun dari delapan menit menjadi dua menit. Bank menyatakan tidak ada petugas layanan yang diberhentikan; sebagian petugas justru dialihkan untuk menangani pengaduan yang kompleks. Meskipun demikian, survei kepuasan menunjukkan nasabah berusia di atas 55 tahun cenderung memberi nilai lebih rendah dibandingkan nasabah muda, terutama karena kesulitan memahami jawaban otomatis."
+    },
+    "v2": {
+     "tipe": "teks",
+     "isi": "Setelah banjir besar melanda sejumlah kabupaten, otoritas pengawas mengizinkan bank memberikan restrukturisasi kredit kepada debitur terdampak tanpa menurunkan kualitas kredit mereka. Kebijakan ini berlaku selama satu tahun dan hanya untuk debitur yang usahanya berada di wilayah yang ditetapkan sebagai daerah bencana. Bank tetap diwajibkan melakukan penilaian kelayakan sebelum menyetujui restrukturisasi. Data awal menunjukkan bahwa sekitar 30 persen debitur UMKM di wilayah tersebut mengajukan restrukturisasi, sebagian besar berupa perpanjangan jangka waktu kredit."
+    },
+    "v3": {
+     "tipe": "teks",
+     "isi": "Harga beras di tingkat konsumen naik sekitar 15 persen dalam enam bulan terakhir. Pemerintah menyebut penurunan produksi akibat musim kemarau panjang sebagai penyebab utama. Untuk menstabilkan harga, pemerintah menyalurkan cadangan beras melalui operasi pasar dan menambah kuota impor. Sejumlah ekonom menilai kebijakan impor hanya meredam harga dalam jangka pendek, dan menyarankan investasi pada irigasi serta benih tahan kekeringan. Di sisi lain, asosiasi petani mengkhawatirkan masuknya beras impor menjelang panen raya dapat menekan harga gabah di tingkat petani."
+    },
+    "v4": {
+     "tipe": "teks",
+     "isi": "Penjualan mobil listrik di Indonesia meningkat tajam tahun lalu, meskipun porsinya masih sekitar 5 persen dari total penjualan mobil nasional. Pemerintah memberikan insentif berupa pengurangan pajak pertambahan nilai untuk mobil listrik dengan tingkat komponen dalam negeri minimal 40 persen. Ketersediaan stasiun pengisian daya umum masih terpusat di kota-kota besar di Pulau Jawa. Survei konsumen menunjukkan bahwa harga yang tinggi dan kekhawatiran akan jarak tempuh merupakan dua hambatan utama bagi calon pembeli."
+    },
+    "v5": {
+     "tipe": "teks",
+     "isi": "Bank sentral sedang mengembangkan rupiah digital sebagai bentuk uang yang diterbitkan secara resmi dalam format digital. Pada tahap awal, rupiah digital direncanakan hanya digunakan untuk transaksi antarbank dalam jumlah besar. Penggunaan oleh masyarakat umum baru akan dipertimbangkan setelah uji coba tahap pertama dievaluasi. Bank sentral menegaskan bahwa rupiah digital tidak dimaksudkan untuk menggantikan uang kertas dan logam, melainkan melengkapinya. Para pengamat menilai keberhasilan proyek ini sangat bergantung pada keamanan sistem dan kesiapan infrastruktur perbankan."
+    }
+   },
+   "soal": [
+    {
+     "id": "verbal-1",
+     "teks": "Sebagian besar pertanyaan nasabah dalam enam bulan pertama diselesaikan asisten virtual tanpa dialihkan ke petugas.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Sekitar 60 persen pertanyaan berarti sebagian besar.",
+     "stimulus": "v1",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-2",
+     "teks": "Penerapan asisten virtual menyebabkan pemutusan hubungan kerja sebagian petugas layanan.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Bank menyatakan tidak ada petugas yang diberhentikan.",
+     "stimulus": "v1",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-3",
+     "teks": "Nasabah muda memberi nilai kepuasan lebih rendah daripada nasabah berusia di atas 55 tahun.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Kebalikannya: nasabah di atas 55 tahun yang cenderung memberi nilai lebih rendah.",
+     "stimulus": "v1",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-4",
+     "teks": "Biaya operasional layanan pelanggan bank turun setelah asisten virtual diterapkan.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks membahas waktu tunggu dan kepuasan, bukan biaya.",
+     "stimulus": "v1",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-5",
+     "teks": "Keringanan dalam kebijakan ini hanya berlaku bagi debitur yang usahanya berada di wilayah yang ditetapkan sebagai daerah bencana.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Dinyatakan langsung ('hanya untuk debitur yang usahanya berada di wilayah ... daerah bencana').",
+     "stimulus": "v2",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-6",
+     "teks": "Bank wajib menyetujui semua pengajuan restrukturisasi dari debitur terdampak.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Bank tetap wajib menilai kelayakan sebelum menyetujui, jadi tidak otomatis disetujui.",
+     "stimulus": "v2",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-7",
+     "teks": "Perpanjangan jangka waktu kredit merupakan bentuk restrukturisasi yang paling banyak diajukan.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Pengajuan 'sebagian besar berupa perpanjangan jangka waktu kredit'.",
+     "stimulus": "v2",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-8",
+     "teks": "Kebijakan restrukturisasi tersebut akan diperpanjang setelah satu tahun.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks hanya menyebut masa berlaku satu tahun; tidak ada informasi perpanjangan.",
+     "stimulus": "v2",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-9",
+     "teks": "Pemerintah menilai musim kemarau panjang sebagai penyebab utama kenaikan harga beras.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Pemerintah menyebut penurunan produksi akibat kemarau panjang sebagai penyebab utama.",
+     "stimulus": "v3",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-10",
+     "teks": "Para ekonom menilai impor beras merupakan solusi jangka panjang untuk menstabilkan harga.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Ekonom menilai impor hanya meredam harga dalam jangka pendek.",
+     "stimulus": "v3",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-11",
+     "teks": "Harga gabah di tingkat petani telah turun akibat masuknya beras impor.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Itu baru kekhawatiran asosiasi petani ('dapat menekan'); teks tidak menyebut harga gabah sudah turun atau belum.",
+     "stimulus": "v3",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-12",
+     "teks": "Operasi pasar merupakan salah satu langkah pemerintah untuk menstabilkan harga beras.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Dinyatakan langsung.",
+     "stimulus": "v3",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-13",
+     "teks": "Mobil listrik telah menguasai sebagian besar pasar mobil nasional.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Porsinya baru sekitar 5 persen.",
+     "stimulus": "v4",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-14",
+     "teks": "Semua mobil listrik yang dijual di Indonesia mendapat pengurangan pajak pertambahan nilai.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Insentif hanya untuk mobil dengan komponen dalam negeri minimal 40 persen.",
+     "stimulus": "v4",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-15",
+     "teks": "Kekhawatiran akan jarak tempuh termasuk hambatan utama bagi calon pembeli mobil listrik.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Disebut sebagai salah satu dari dua hambatan utama.",
+     "stimulus": "v4",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-16",
+     "teks": "Penjualan mobil listrik di luar Pulau Jawa lebih rendah daripada di Pulau Jawa.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks hanya menyebut sebaran stasiun pengisian daya, bukan sebaran penjualan.",
+     "stimulus": "v4",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-17",
+     "teks": "Pada tahap awal, rupiah digital direncanakan untuk transaksi antarbank.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Dinyatakan langsung.",
+     "stimulus": "v5",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-18",
+     "teks": "Rupiah digital dirancang untuk menggantikan uang kertas dan logam.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Bank sentral menegaskan rupiah digital melengkapi, bukan menggantikan.",
+     "stimulus": "v5",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah."
+     ]
+    },
+    {
+     "id": "verbal-19",
+     "teks": "Penggunaan rupiah digital oleh masyarakat umum baru dipertimbangkan setelah evaluasi uji coba tahap pertama.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Dinyatakan langsung di kalimat ketiga.",
+     "stimulus": "v5",
+     "alasan": [
+      "",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya.",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai."
+     ]
+    },
+    {
+     "id": "verbal-20",
+     "teks": "Uji coba tahap pertama rupiah digital telah berhasil.",
+     "opsi": [
+      "Benar",
+      "Salah",
+      "Tidak dapat disimpulkan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks tidak menyebut hasil uji coba.",
+     "stimulus": "v5",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah.",
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "id": "numerik",
+   "nama": "Penalaran Numerik",
+   "jenis": "kognitif",
+   "durasi_menit": 20,
+   "instruksi": "Perhatikan tabel atau grafik, lalu pilih jawaban yang paling tepat. Pilih 'Tidak dapat ditentukan' jika data yang tersedia tidak cukup untuk menjawab. Anda boleh memakai kertas buram dan kalkulator.",
+   "stimulus": {
+    "n1": {
+     "tipe": "tabel",
+     "judul": "Penyaluran Kredit Usaha Rakyat per Kuartal (Rp miliar)",
+     "kolom": [
+      "Provinsi",
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+     ],
+     "baris": [
+      [
+       "Jawa Barat",
+       385,
+       185,
+       465,
+       445
+      ],
+      [
+       "Jawa Tengah",
+       240,
+       250,
+       335,
+       155
+      ],
+      [
+       "Jawa Timur",
+       215,
+       355,
+       160,
+       440
+      ],
+      [
+       "Sumatra Utara",
+       270,
+       120,
+       210,
+       135
+      ],
+      [
+       "Sulawesi Selatan",
+       200,
+       215,
+       175,
+       445
+      ]
+     ]
+    },
+    "n2": {
+     "tipe": "grafik",
+     "jenis": "batang",
+     "judul": "Jumlah Pembukaan Rekening Baru per Kanal (ribu rekening)",
+     "satuan": "ribu",
+     "kategori": [
+      "September",
+      "Oktober",
+      "November",
+      "Desember"
+     ],
+     "seri": [
+      {
+       "nama": "Aplikasi",
+       "data": [
+        610,
+        380,
+        590,
+        760
+       ]
+      },
+      {
+       "nama": "Kantor Cabang",
+       "data": [
+        690,
+        820,
+        740,
+        480
+       ]
+      },
+      {
+       "nama": "Agen Laku Pandai",
+       "data": [
+        820,
+        750,
+        320,
+        760
+       ]
+      }
+     ]
+    },
+    "n3": {
+     "tipe": "tabel",
+     "judul": "Portofolio Kredit Bank Bahari per Produk, Akhir Tahun",
+     "kolom": [
+      "Produk",
+      "Outstanding (Rp miliar)",
+      "Rasio NPL (%)",
+      "Jumlah Debitur"
+     ],
+     "baris": [
+      [
+       "Modal Kerja",
+       4200,
+       2.9,
+       8690
+      ],
+      [
+       "Investasi",
+       2250,
+       2.0,
+       940
+      ],
+      [
+       "KPR",
+       4800,
+       1.3,
+       1550
+      ],
+      [
+       "Kendaraan",
+       1000,
+       2.8,
+       5490
+      ],
+      [
+       "Kartu Kredit",
+       850,
+       3.7,
+       1870
+      ]
+     ]
+    }
+   },
+   "soal": [
+    {
+     "id": "numerik-1",
+     "teks": "Berapa total penyaluran KUR Sulawesi Selatan selama empat kuartal?",
+     "opsi": [
+      "Rp590 miliar",
+      "Rp1.035 miliar",
+      "Rp1.235 miliar",
+      "Rp1.242 miliar",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "200 + 215 + 175 + 445 = 1.035, jadi Rp1.035 miliar.",
+     "alasan": [
+      "Hanya menjumlah Q1–Q3; nilai Q4 terlewat.",
+      "",
+      "Nilai Q1 terhitung dua kali.",
+      "Lebih besar dari hasil hitung yang benar (Rp1.035 miliar).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n1"
+    },
+    {
+     "id": "numerik-2",
+     "teks": "Berapa persentase kenaikan penyaluran KUR Jawa Timur dari Q1 ke Q4?",
+     "opsi": [
+      "51,1%",
+      "104,7%",
+      "109,9%",
+      "115,1%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "(440 − 215) ÷ 215 × 100% = 104,7%. Pembaginya nilai awal (Q1), bukan Q4.",
+     "alasan": [
+      "Membagi dengan Q4. Persentase kenaikan dibagi nilai awal (Q1).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (104,7%).",
+      "Lebih besar dari hasil hitung yang benar (104,7%).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n1"
+    },
+    {
+     "id": "numerik-3",
+     "teks": "Pada Q3, berapa persen kontribusi Jawa Tengah terhadap total penyaluran KUR seluruh provinsi?",
+     "opsi": [
+      "22,4%",
+      "24,9%",
+      "26,2%",
+      "34,2%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Total Q3 = 1.345. 335 ÷ 1.345 × 100% = 24,9%.",
+     "alasan": [
+      "Lebih kecil dari hasil hitung yang benar (24,9%).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (24,9%).",
+      "Ini porsi Q3 terhadap total setahun Jawa Tengah, bukan terhadap total Q3 seluruh provinsi.",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n1"
+    },
+    {
+     "id": "numerik-4",
+     "teks": "Provinsi manakah yang mengalami kenaikan penyaluran KUR terbesar (dalam nilai) dari Q2 ke Q3?",
+     "opsi": [
+      "Jawa Barat",
+      "Jawa Tengah",
+      "Jawa Timur",
+      "Sumatra Utara",
+      "Sulawesi Selatan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Selisih Q3 − Q2 → Jawa Barat: +280; Jawa Tengah: +85; Jawa Timur: -195; Sumatra Utara: +90; Sulawesi Selatan: -40. Terbesar: Jawa Barat.",
+     "alasan": [
+      "",
+      "Q3 − Q2 = +85, lebih kecil dari Jawa Barat (+280).",
+      "Q3 − Q2 = -195, lebih kecil dari Jawa Barat (+280).",
+      "Q3 − Q2 = +90, lebih kecil dari Jawa Barat (+280).",
+      "Q3 − Q2 = -40, lebih kecil dari Jawa Barat (+280)."
+     ],
+     "stimulus": "n1"
+    },
+    {
+     "id": "numerik-5",
+     "teks": "Berapa rata-rata penyaluran KUR per debitur Jawa Barat pada Q4?",
+     "opsi": [
+      "Rp1.223,8 juta",
+      "Rp1.279,4 juta",
+      "Rp1.335,0 juta",
+      "Rp1.390,6 juta",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Tabel hanya memuat nilai total, tidak ada data jumlah debitur. Rata-rata per debitur tidak dapat dihitung.",
+     "alasan": [
+      "Tabel tidak memuat jumlah debitur, jadi angka ini tidak bisa diperoleh dari data.",
+      "Tabel tidak memuat jumlah debitur, jadi angka ini tidak bisa diperoleh dari data.",
+      "Tabel tidak memuat jumlah debitur, jadi angka ini tidak bisa diperoleh dari data.",
+      "Tabel tidak memuat jumlah debitur, jadi angka ini tidak bisa diperoleh dari data.",
+      ""
+     ],
+     "stimulus": "n1"
+    },
+    {
+     "id": "numerik-6",
+     "teks": "Berapa total pembukaan rekening melalui Kantor Cabang selama September–Desember?",
+     "opsi": [
+      "2.250 ribu",
+      "2.320 ribu",
+      "2.730 ribu",
+      "3.549 ribu",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "690 + 820 + 740 + 480 = 2.730 ribu.",
+     "alasan": [
+      "Bulan Desember belum ikut dijumlahkan.",
+      "Lebih kecil dari hasil hitung yang benar (2.730 ribu).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (2.730 ribu).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n2"
+    },
+    {
+     "id": "numerik-7",
+     "teks": "Berapa persentase kenaikan pembukaan rekening Aplikasi dari September ke Desember?",
+     "opsi": [
+      "19,7%",
+      "22,1%",
+      "24,6%",
+      "28,3%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "(760 − 610) ÷ 610 × 100% = 24,6%.",
+     "alasan": [
+      "Membagi dengan nilai Desember. Persentase kenaikan dibagi nilai awal (September).",
+      "Lebih kecil dari hasil hitung yang benar (24,6%).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (24,6%).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n2"
+    },
+    {
+     "id": "numerik-8",
+     "teks": "Jika pembukaan rekening Aplikasi pada bulan berikutnya naik 15% dari Desember, berapa perkiraannya?",
+     "opsi": [
+      "701,5 ribu",
+      "775,0 ribu",
+      "874,0 ribu",
+      "1.005,1 ribu",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "760 × (1 + 15%) = 874,0 ribu.",
+     "alasan": [
+      "Memakai nilai September, padahal kenaikan dihitung dari Desember.",
+      "Menambahkan 15 ribu, bukan 15%.",
+      "",
+      "Lebih besar dari hasil hitung yang benar (874,0 ribu).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n2"
+    },
+    {
+     "id": "numerik-9",
+     "teks": "Pada bulan apa total pembukaan rekening seluruh kanal paling tinggi?",
+     "opsi": [
+      "September",
+      "Oktober",
+      "November",
+      "Desember",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 0,
+     "pembahasan": "Total per bulan → September: 2.120; Oktober: 1.950; November: 1.650; Desember: 2.000. Tertinggi: September.",
+     "alasan": [
+      "",
+      "Total Oktober = 1.950, lebih kecil dari September (2.120).",
+      "Total November = 1.650, lebih kecil dari September (2.120).",
+      "Total Desember = 2.000, lebih kecil dari September (2.120).",
+      "Semua angka tersedia di grafik, jadi total per bulan bisa dihitung."
+     ],
+     "stimulus": "n2"
+    },
+    {
+     "id": "numerik-10",
+     "teks": "Berapa selisih total pembukaan rekening Kantor Cabang dan Aplikasi selama empat bulan?",
+     "opsi": [
+      "280 ribu",
+      "332 ribu",
+      "390 ribu",
+      "448 ribu",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Total Kantor Cabang = 2.730, total Aplikasi = 2.340. Selisih = 390 ribu.",
+     "alasan": [
+      "Ini selisih bulan Desember saja, bukan selisih total empat bulan.",
+      "Lebih kecil dari hasil hitung yang benar (390 ribu).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (390 ribu).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n2"
+    },
+    {
+     "id": "numerik-11",
+     "teks": "Berapa nilai kredit bermasalah (NPL) produk Investasi dalam rupiah?",
+     "opsi": [
+      "Rp4,50 miliar",
+      "Rp36,00 miliar",
+      "Rp45,00 miliar",
+      "Rp51,75 miliar",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "2.250 × 2,0% = Rp45,00 miliar.",
+     "alasan": [
+      "Salah konversi persen: rasio dibagi 1.000, seharusnya dibagi 100.",
+      "Lebih kecil dari hasil hitung yang benar (Rp45,00 miliar).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (Rp45,00 miliar).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n3"
+    },
+    {
+     "id": "numerik-12",
+     "teks": "Produk manakah yang memiliki nilai NPL (dalam rupiah) terbesar?",
+     "opsi": [
+      "Modal Kerja",
+      "Investasi",
+      "KPR",
+      "Kendaraan",
+      "Kartu Kredit"
+     ],
+     "kunci": 0,
+     "pembahasan": "NPL nominal = outstanding × rasio NPL → Modal Kerja: 121,80; Investasi: 45,00; KPR: 62,40; Kendaraan: 28,00; Kartu Kredit: 31,45. Terbesar: Modal Kerja. Rasio tertinggi belum tentu nominal tertinggi.",
+     "alasan": [
+      "",
+      "NPL nominal Investasi = Rp45,00 miliar, lebih kecil dari Modal Kerja (Rp121,80 miliar).",
+      "NPL nominal KPR = Rp62,40 miliar, lebih kecil dari Modal Kerja (Rp121,80 miliar). Outstanding-nya terbesar, tetapi rasio NPL-nya lebih rendah.",
+      "NPL nominal Kendaraan = Rp28,00 miliar, lebih kecil dari Modal Kerja (Rp121,80 miliar).",
+      "NPL nominal Kartu Kredit = Rp31,45 miliar, lebih kecil dari Modal Kerja (Rp121,80 miliar). Rasio NPL-nya memang tertinggi, tetapi outstanding-nya lebih kecil."
+     ],
+     "stimulus": "n3"
+    },
+    {
+     "id": "numerik-13",
+     "teks": "Berapa persen porsi outstanding produk Modal Kerja terhadap total outstanding?",
+     "opsi": [
+      "30,5%",
+      "32,1%",
+      "38,5%",
+      "41,7%",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Total = 13.100. 4.200 ÷ 13.100 × 100% = 32,1%.",
+     "alasan": [
+      "Lebih kecil dari hasil hitung yang benar (32,1%).",
+      "",
+      "Lebih besar dari hasil hitung yang benar (32,1%).",
+      "Lebih besar dari hasil hitung yang benar (32,1%).",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n3"
+    },
+    {
+     "id": "numerik-14",
+     "teks": "Berapa rata-rata outstanding per debitur produk KPR?",
+     "opsi": [
+      "Rp309,7 juta",
+      "Rp2.632,3 juta",
+      "Rp2.787,1 juta",
+      "Rp3.096,8 juta",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Rp4.800 miliar = Rp4.800.000 juta. ÷ 1.550 debitur = Rp3.096,8 juta.",
+     "alasan": [
+      "Salah konversi: Rp1 miliar = Rp1.000 juta, bukan Rp100 juta.",
+      "Lebih kecil dari hasil hitung yang benar (Rp3.096,8 juta).",
+      "Lebih kecil dari hasil hitung yang benar (Rp3.096,8 juta).",
+      "",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n3"
+    },
+    {
+     "id": "numerik-15",
+     "teks": "Jika rasio NPL produk Kartu Kredit turun 0,5 poin persentase dan outstanding tetap, berapa penurunan nilai NPL-nya?",
+     "opsi": [
+      "Rp0,16 miliar",
+      "Rp4,25 miliar",
+      "Rp5,10 miliar",
+      "Rp42,50 miliar",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 1,
+     "pembahasan": "Turun 0,5 poin persentase berarti 0,5% dari outstanding: 850 × 0,5% = Rp4,25 miliar.",
+     "alasan": [
+      "0,5% dikalikan ke nilai NPL, padahal yang turun adalah rasio terhadap outstanding.",
+      "",
+      "Lebih besar dari hasil hitung yang benar (Rp4,25 miliar).",
+      "Memakai 5%, padahal 0,5 poin persentase = 0,5%.",
+      "Data yang tersedia cukup untuk menghitung jawabannya."
+     ],
+     "stimulus": "n3"
+    }
+   ]
+  },
+  {
+   "id": "abstrak",
+   "nama": "Penalaran Abstrak",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Perhatikan urutan empat gambar di atas garis. Tentukan gambar kelima yang paling tepat melanjutkan pola tersebut.",
+   "soal": [
+    {
+     "id": "abstrak-1",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 50,
+        "r": 6,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 6,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 50,
+        "r": 6,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 72,
+        "y": 28,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 28,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 6,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 0,
+     "pembahasan": "Jumlah titik bertambah 1 setiap langkah: 2, 3, 4, 5, sehingga berikutnya 6 titik.",
+     "alasan": [
+      "",
+      "4 titik; seharusnya 6 titik.",
+      "Jumlah titiknya benar, tetapi titiknya putih; warna seharusnya tetap hitam.",
+      "5 titik; seharusnya 6 titik."
+     ]
+    },
+    {
+     "id": "abstrak-2",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "line",
+        "x1": 50.0,
+        "y1": 20,
+        "x2": 50.0,
+        "y2": 80
+       }
+      ],
+      [
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 40.0,
+        "x2": 80,
+        "y2": 40.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 60.0,
+        "x2": 80,
+        "y2": 60.0
+       }
+      ],
+      [
+       {
+        "t": "line",
+        "x1": 35.0,
+        "y1": 20,
+        "x2": 35.0,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 50.0,
+        "y1": 20,
+        "x2": 50.0,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 65.0,
+        "y1": 20,
+        "x2": 65.0,
+        "y2": 80
+       }
+      ],
+      [
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 32.0,
+        "x2": 80,
+        "y2": 32.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 44.0,
+        "x2": 80,
+        "y2": 44.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 56.0,
+        "x2": 80,
+        "y2": 56.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 68.0,
+        "x2": 80,
+        "y2": 68.0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "line",
+        "x1": 30.0,
+        "y1": 20,
+        "x2": 30.0,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 40.0,
+        "y1": 20,
+        "x2": 40.0,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 50.0,
+        "y1": 20,
+        "x2": 50.0,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 60.0,
+        "y1": 20,
+        "x2": 60.0,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 70.0,
+        "y1": 20,
+        "x2": 70.0,
+        "y2": 80
+       }
+      ],
+      [
+       {
+        "t": "line",
+        "x1": 28.6,
+        "y1": 20,
+        "x2": 28.6,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 37.1,
+        "y1": 20,
+        "x2": 37.1,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 45.7,
+        "y1": 20,
+        "x2": 45.7,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 54.3,
+        "y1": 20,
+        "x2": 54.3,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 62.9,
+        "y1": 20,
+        "x2": 62.9,
+        "y2": 80
+       },
+       {
+        "t": "line",
+        "x1": 71.4,
+        "y1": 20,
+        "x2": 71.4,
+        "y2": 80
+       }
+      ],
+      [
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 30.0,
+        "x2": 80,
+        "y2": 30.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 40.0,
+        "x2": 80,
+        "y2": 40.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 50.0,
+        "x2": 80,
+        "y2": 50.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 60.0,
+        "x2": 80,
+        "y2": 60.0
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 70.0,
+        "x2": 80,
+        "y2": 70.0
+       }
+      ],
+      [
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 28.6,
+        "x2": 80,
+        "y2": 28.6
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 37.1,
+        "x2": 80,
+        "y2": 37.1
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 45.7,
+        "x2": 80,
+        "y2": 45.7
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 54.3,
+        "x2": 80,
+        "y2": 54.3
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 62.9,
+        "x2": 80,
+        "y2": 62.9
+       },
+       {
+        "t": "line",
+        "x1": 20,
+        "y1": 71.4,
+        "x2": 80,
+        "y2": 71.4
+       }
+      ]
+     ],
+     "kunci": 0,
+     "pembahasan": "Jumlah garis bertambah satu setiap langkah dan arahnya berganti mendatar–tegak. Gambar ke-5: 5 garis tegak.",
+     "alasan": [
+      "",
+      "6 garis; seharusnya 5.",
+      "Jumlah garisnya benar, tetapi arahnya mendatar; seharusnya tegak.",
+      "Jumlah dan arah garisnya sama-sama salah."
+     ]
+    },
+    {
+     "id": "abstrak-3",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 7,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 6,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 5,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 5,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 52,
+        "r": 26,
+        "rot": 0,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 3,
+     "pembahasan": "Jumlah sisi berkurang satu setiap langkah: 7, 6, 5, 4. Gambar berikutnya segitiga (3 sisi).",
+     "alasan": [
+      "Jumlah sisi dan warnanya sama-sama salah.",
+      "Segi lima (5 sisi); seharusnya 3 sisi.",
+      "Segi empat (4 sisi); seharusnya 3 sisi.",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-4",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 36,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 30,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 24,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 18,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 24,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 18,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 18,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 12,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 3,
+     "pembahasan": "Lingkaran makin kecil setiap langkah dan warnanya berganti hitam–putih. Gambar ke-5 adalah lingkaran paling kecil berwarna hitam.",
+     "alasan": [
+      "Ukurannya justru kembali seperti gambar ke-3, padahal seharusnya makin kecil.",
+      "Sama persis dengan gambar ke-4: ukuran dan warnanya tidak berubah.",
+      "Warnanya benar, tetapi ukurannya sama dengan gambar ke-4 (tidak berubah).",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-5",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 225,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 135,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 45,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 135,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 0,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 270,
+        "f": 0
+       }
+      ]
+     ],
+     "kunci": 2,
+     "pembahasan": "Panah berputar 90° berlawanan arah jarum jam setiap langkah. Gambar berikutnya mengarah ke kanan atas.",
+     "alasan": [
+      "Panah mengarah ke kiri bawah, seharusnya ke kanan atas.",
+      "Panah mengarah ke kanan, seharusnya ke kanan atas.",
+      "",
+      "Panah mengarah ke atas, seharusnya ke kanan atas."
+     ]
+    },
+    {
+     "id": "abstrak-6",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 85,
+        "y": 15,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 85,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 85,
+        "y": 85,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 85,
+        "r": 8,
+        "f": 1
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 85,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 85,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 2,
+     "pembahasan": "Lingkaran kecil berpindah 1 posisi searah jarum jam, sedangkan segitiga berganti hitam–putih. Gambar ke-5: lingkaran di pojok kiri bawah dan segitiga hitam.",
+     "alasan": [
+      "Lingkaran bergeser satu langkah terlalu jauh, ke tengah kiri.",
+      "Lingkaran masih di posisi gambar ke-4 (belum berpindah).",
+      "",
+      "Posisi lingkaran dan warna segitiga sama-sama salah."
+     ]
+    },
+    {
+     "id": "abstrak-7",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 180,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 225,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 225,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 135,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 315,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 45,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 90,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 180,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 135,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 45,
+        "f": 0
+       }
+      ]
+     ],
+     "kunci": 1,
+     "pembahasan": "Panah hitam berputar 45° searah jarum jam, panah putih berputar 90° berlawanan arah jarum jam. Gambar ke-5: panah hitam ke kanan, panah putih ke kanan atas.",
+     "alasan": [
+      "Panah hitam mengarah ke bawah, seharusnya ke kanan.",
+      "",
+      "Kedua panah mengarah berlawanan dari yang seharusnya.",
+      "Panah putih mengarah ke kanan bawah, seharusnya ke kanan atas."
+     ]
+    },
+    {
+     "id": "abstrak-8",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 25.299999999999997,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 50,
+        "r": 26.4,
+        "rot": 45,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 22,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 25.299999999999997,
+        "rot": 0,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 22,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 50,
+        "r": 26.4,
+        "rot": 45,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 50,
+        "r": 26.4,
+        "rot": 45,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 25.299999999999997,
+        "rot": 0,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 2,
+     "pembahasan": "Bentuk berulang tiap tiga langkah (segitiga → persegi → lingkaran) dan warna berganti tiap langkah. Gambar ke-5: persegi hitam.",
+     "alasan": [
+      "Warnanya benar, tetapi bentuknya lingkaran; seharusnya persegi.",
+      "Bentuknya benar, tetapi warnanya putih; seharusnya hitam.",
+      "",
+      "Warnanya benar, tetapi bentuknya segitiga; seharusnya persegi."
+     ]
+    },
+    {
+     "id": "abstrak-9",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 70,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 70,
+        "y": 70,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 70,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 70,
+        "r": 9,
+        "f": 0.5
+       }
+      ]
+     ],
+     "kunci": 0,
+     "pembahasan": "Kotak hitam berpindah satu kuadran searah jarum jam, lingkaran abu-abu berpindah satu kuadran berlawanan arah jarum jam. Gambar ke-5: kotak hitam di kiri bawah, lingkaran di kiri atas.",
+     "alasan": [
+      "",
+      "Kotak hitam di kanan atas, seharusnya di kiri bawah.",
+      "Lingkaran benar, tetapi kotak hitam masih di posisi gambar ke-4.",
+      "Kotak hitam dan lingkaran sama-sama bergeser satu langkah terlalu jauh."
+     ]
+    },
+    {
+     "id": "abstrak-10",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 270,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 225,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 225,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 0,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 180,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 180,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 3,
+     "pembahasan": "Dua aturan: panah berputar 45° berlawanan arah jarum jam dan warnanya berganti hitam–putih. Gambar ke-5 mengarah ke kiri dan berwarna hitam.",
+     "alasan": [
+      "Warnanya benar, tetapi arahnya sama dengan gambar ke-4 (panah tidak berputar).",
+      "Arah dan warnanya sama-sama salah.",
+      "Arahnya benar, tetapi putih. Gambar ke-4 putih, jadi gambar ke-5 hitam.",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-11",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 90,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 45,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 90,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 0,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 180,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 315,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 0,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 28,
+        "y": 50,
+        "r": 18,
+        "rot": 180,
+        "f": 1
+       },
+       {
+        "t": "arrow",
+        "x": 72,
+        "y": 50,
+        "r": 18,
+        "rot": 270,
+        "f": 0
+       }
+      ]
+     ],
+     "kunci": 2,
+     "pembahasan": "Panah hitam berputar 90° searah jarum jam, panah putih berputar 45° berlawanan arah jarum jam. Gambar ke-5: panah hitam ke atas, panah putih ke atas.",
+     "alasan": [
+      "Panah hitam mengarah ke kanan, seharusnya ke atas.",
+      "Panah putih mengarah ke kanan, seharusnya ke atas.",
+      "",
+      "Panah hitam masih menghadap arah yang sama seperti di gambar ke-4 (belum berputar)."
+     ]
+    },
+    {
+     "id": "abstrak-12",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 135,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 90,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 45,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 0,
+        "f": 0
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 315,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 45,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "arrow",
+        "x": 50,
+        "y": 50,
+        "r": 32,
+        "rot": 315,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 3,
+     "pembahasan": "Dua aturan: panah berputar 45° berlawanan arah jarum jam dan warnanya berganti hitam–putih. Gambar ke-5 mengarah ke kanan atas dan berwarna hitam.",
+     "alasan": [
+      "Warnanya benar, tetapi arahnya sama dengan gambar ke-4 (panah tidak berputar).",
+      "Arahnya benar, tetapi putih. Gambar ke-4 putih, jadi gambar ke-5 hitam.",
+      "Panah mengarah ke kanan bawah, seharusnya ke kanan atas.",
+      ""
+     ]
+    },
+    {
+     "id": "abstrak-13",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 22,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 25.299999999999997,
+        "rot": 0,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 50,
+        "r": 26.4,
+        "rot": 45,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 22,
+        "f": 1
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 22,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 4,
+        "x": 50,
+        "y": 50,
+        "r": 26.4,
+        "rot": 45,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 25.299999999999997,
+        "rot": 0,
+        "f": 0
+       }
+      ],
+      [
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 50,
+        "r": 22,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 2,
+     "pembahasan": "Bentuk berulang tiap tiga langkah (lingkaran → segitiga → persegi) dan warna berganti tiap langkah. Gambar ke-5: segitiga putih.",
+     "alasan": [
+      "Warnanya benar, tetapi bentuknya lingkaran; seharusnya segitiga.",
+      "Warnanya benar, tetapi bentuknya persegi; seharusnya segitiga.",
+      "",
+      "Bentuk dan warnanya sama-sama salah."
+     ]
+    },
+    {
+     "id": "abstrak-14",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 70,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 70,
+        "y": 70,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 70,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 70,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 10,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 10,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ],
+      [
+       {
+        "t": "rect",
+        "x": 50,
+        "y": 50,
+        "w": 40,
+        "h": 40,
+        "f": 1
+       },
+       {
+        "t": "line",
+        "x1": 50,
+        "y1": 10,
+        "x2": 50,
+        "y2": 90
+       },
+       {
+        "t": "line",
+        "x1": 10,
+        "y1": 50,
+        "x2": 90,
+        "y2": 50
+       },
+       {
+        "t": "circle",
+        "x": 30,
+        "y": 30,
+        "r": 9,
+        "f": 0.5
+       }
+      ]
+     ],
+     "kunci": 1,
+     "pembahasan": "Kotak hitam berpindah satu kuadran searah jarum jam, lingkaran abu-abu berpindah satu kuadran berlawanan arah jarum jam. Gambar ke-5: kotak hitam di kiri atas, lingkaran di kiri atas.",
+     "alasan": [
+      "Kotak hitam benar, tetapi lingkaran masih di posisi gambar ke-4.",
+      "",
+      "Lingkaran benar, tetapi kotak hitam masih di posisi gambar ke-4.",
+      "Kotak hitam di kanan bawah, seharusnya di kiri atas."
+     ]
+    },
+    {
+     "id": "abstrak-15",
+     "teks": "Tentukan gambar berikutnya berdasarkan urutan.",
+     "gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 85,
+        "y": 15,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 50,
+        "y": 85,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 15,
+        "r": 8,
+        "f": 1
+       }
+      ]
+     ],
+     "opsi": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "opsi_gambar": [
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 0
+       },
+       {
+        "t": "circle",
+        "x": 85,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 85,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 15,
+        "r": 8,
+        "f": 1
+       }
+      ],
+      [
+       {
+        "t": "poly",
+        "n": 3,
+        "x": 50,
+        "y": 55,
+        "r": 20,
+        "rot": 0,
+        "f": 1
+       },
+       {
+        "t": "circle",
+        "x": 15,
+        "y": 50,
+        "r": 8,
+        "f": 1
+       }
+      ]
+     ],
+     "kunci": 1,
+     "pembahasan": "Lingkaran kecil berpindah 3 posisi searah jarum jam, sedangkan segitiga berganti hitam–putih. Gambar ke-5: lingkaran di tengah kanan dan segitiga hitam.",
+     "alasan": [
+      "Posisi lingkaran benar, tetapi segitiganya putih; seharusnya hitam.",
+      "",
+      "Lingkaran masih di posisi gambar ke-4 (belum berpindah).",
+      "Lingkaran di tengah kiri, seharusnya di tengah kanan."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "logika",
+   "nama": "Penalaran Logis",
+   "jenis": "kognitif",
+   "durasi_menit": 15,
+   "instruksi": "Soal terdiri atas deret angka, penarikan kesimpulan (silogisme), dan analogi. Pilih satu jawaban yang paling tepat.",
+   "soal": [
+    {
+     "id": "logika-1",
+     "teks": "Tentukan bilangan berikutnya: 15, 22, 31, 42, 55, 70, …",
+     "opsi": [
+      "85",
+      "86",
+      "87",
+      "88",
+      "89"
+     ],
+     "kunci": 2,
+     "pembahasan": "Bilangan kuadrat 3², 4², 5², …, lalu ditambah 6. Suku ke-7 = 9² +6 = 87.",
+     "alasan": [
+      "Hanya mengulang selisih terakhir (70 − 55 = 15), padahal pola deret ini bukan penambahan tetap.",
+      "Tidak mengikuti pola; suku berikutnya 87, bukan 86.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 87, bukan 88.",
+      "Tidak mengikuti pola; suku berikutnya 87, bukan 89."
+     ]
+    },
+    {
+     "id": "logika-2",
+     "teks": "Tentukan bilangan berikutnya: 4, 12, 36, 108, 324, 972, …",
+     "opsi": [
+      "1620",
+      "2914",
+      "2915",
+      "2916",
+      "2918"
+     ],
+     "kunci": 3,
+     "pembahasan": "Setiap suku dikali 3.",
+     "alasan": [
+      "Hanya mengulang selisih terakhir (972 − 324 = 648), padahal pola deret ini bukan penambahan tetap.",
+      "Tidak mengikuti pola; suku berikutnya 2916, bukan 2914.",
+      "Tidak mengikuti pola; suku berikutnya 2916, bukan 2915.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 2916, bukan 2918."
+     ]
+    },
+    {
+     "id": "logika-3",
+     "teks": "Tentukan bilangan berikutnya: 17, 21, 27, 35, 45, 57, …",
+     "opsi": [
+      "69",
+      "70",
+      "71",
+      "72",
+      "73"
+     ],
+     "kunci": 2,
+     "pembahasan": "Selisih antarsuku bertambah 2: +4, +6, +8, +10, +12, +14.",
+     "alasan": [
+      "Hanya mengulang selisih terakhir (57 − 45 = 12), padahal pola deret ini bukan penambahan tetap.",
+      "Tidak mengikuti pola; suku berikutnya 71, bukan 70.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 71, bukan 72.",
+      "Tidak mengikuti pola; suku berikutnya 71, bukan 73."
+     ]
+    },
+    {
+     "id": "logika-4",
+     "teks": "Tentukan bilangan berikutnya: 9, 20, 42, 86, 174, 350, …",
+     "opsi": [
+      "526",
+      "700",
+      "701",
+      "702",
+      "704"
+     ],
+     "kunci": 3,
+     "pembahasan": "Setiap suku dikali 2 lalu ditambah 2.",
+     "alasan": [
+      "Hanya mengulang selisih terakhir (350 − 174 = 176), padahal pola deret ini bukan penambahan tetap.",
+      "Tidak mengikuti pola; suku berikutnya 702, bukan 700.",
+      "Tidak mengikuti pola; suku berikutnya 702, bukan 701.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 702, bukan 704."
+     ]
+    },
+    {
+     "id": "logika-5",
+     "teks": "Tentukan bilangan berikutnya: 14, 60, 16, 56, 18, 52, …",
+     "opsi": [
+      "18",
+      "19",
+      "20",
+      "22",
+      "86"
+     ],
+     "kunci": 2,
+     "pembahasan": "Dua deret berselang-seling. Suku ke-1, 3, 5, 7: 14, 16, 18, … (+2). Suku ke-2, 4, 6: 60, 56, 52 (-4).",
+     "alasan": [
+      "Tidak mengikuti pola; suku berikutnya 20, bukan 18.",
+      "Tidak mengikuti pola; suku berikutnya 20, bukan 19.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 20, bukan 22.",
+      "Hanya mengulang selisih terakhir (52 − 18 = 34), padahal pola deret ini bukan penambahan tetap."
+     ]
+    },
+    {
+     "id": "logika-6",
+     "teks": "Tentukan bilangan berikutnya: 13, 17, 21, 25, 29, 33, …",
+     "opsi": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39"
+     ],
+     "kunci": 2,
+     "pembahasan": "Setiap suku bertambah 4.",
+     "alasan": [
+      "Tidak mengikuti pola; suku berikutnya 37, bukan 35.",
+      "Tidak mengikuti pola; suku berikutnya 37, bukan 36.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 37, bukan 38.",
+      "Tidak mengikuti pola; suku berikutnya 37, bukan 39."
+     ]
+    },
+    {
+     "id": "logika-7",
+     "teks": "Tentukan bilangan berikutnya: 4, 3, 7, 10, 17, 27, …",
+     "opsi": [
+      "37",
+      "42",
+      "43",
+      "44",
+      "46"
+     ],
+     "kunci": 3,
+     "pembahasan": "Setiap suku = jumlah dua suku sebelumnya: 17 + 27 = 44.",
+     "alasan": [
+      "Hanya mengulang selisih terakhir (27 − 17 = 10), padahal pola deret ini bukan penambahan tetap.",
+      "Tidak mengikuti pola; suku berikutnya 44, bukan 42.",
+      "Tidak mengikuti pola; suku berikutnya 44, bukan 43.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 44, bukan 46."
+     ]
+    },
+    {
+     "id": "logika-8",
+     "teks": "Tentukan bilangan berikutnya: 8, 10, 20, 22, 44, 46, …",
+     "opsi": [
+      "48",
+      "90",
+      "91",
+      "92",
+      "94"
+     ],
+     "kunci": 3,
+     "pembahasan": "Operasi bergantian: +2, ×2, +2, ×2, … Suku berikutnya: 46 + 2 = 92.",
+     "alasan": [
+      "Hanya mengulang selisih terakhir (46 − 44 = 2), padahal pola deret ini bukan penambahan tetap.",
+      "Tidak mengikuti pola; suku berikutnya 92, bukan 90.",
+      "Tidak mengikuti pola; suku berikutnya 92, bukan 91.",
+      "",
+      "Tidak mengikuti pola; suku berikutnya 92, bukan 94."
+     ]
+    },
+    {
+     "id": "logika-9",
+     "teks": "Semua karyawan yang lulus uji kompetensi mendapat sertifikat. Sebagian karyawan divisi risiko tidak mendapat sertifikat.\nKesimpulan yang paling tepat adalah …",
+     "opsi": [
+      "Sebagian karyawan divisi risiko lulus uji kompetensi.",
+      "Semua karyawan divisi risiko tidak lulus uji kompetensi.",
+      "Semua karyawan yang tidak lulus uji kompetensi tidak mendapat sertifikat.",
+      "Sebagian karyawan divisi risiko tidak lulus uji kompetensi.",
+      "Tidak dapat ditarik kesimpulan."
+     ],
+     "kunci": 3,
+     "pembahasan": "Jika mereka lulus, pasti bersertifikat. Yang tidak bersertifikat pasti tidak lulus, jadi sebagian karyawan divisi risiko tidak lulus.",
+     "alasan": [
+      "Tidak ada informasi tentang karyawan divisi risiko yang mendapat sertifikat.",
+      "Hanya sebagian karyawan divisi risiko yang tidak bersertifikat; sisanya tidak diketahui.",
+      "Menyangkal anteseden. Premis tidak menutup kemungkinan sertifikat diperoleh lewat jalur lain.",
+      "",
+      "Bisa disimpulkan dengan modus tollens: tidak bersertifikat berarti tidak lulus."
+     ]
+    },
+    {
+     "id": "logika-10",
+     "teks": "Jika proyek disetujui, anggaran dialokasikan. Jika anggaran dialokasikan, tim baru dibentuk. Tim baru tidak dibentuk.\nKesimpulan yang paling tepat adalah …",
+     "opsi": [
+      "Proyek disetujui tetapi anggaran belum dialokasikan.",
+      "Anggaran dialokasikan untuk proyek lain.",
+      "Proyek tidak disetujui.",
+      "Tim lama yang mengerjakan proyek.",
+      "Tidak dapat ditarik kesimpulan."
+     ],
+     "kunci": 2,
+     "pembahasan": "Rantai: disetujui → anggaran → tim baru. Tim baru tidak dibentuk, jadi anggaran tidak dialokasikan, jadi proyek tidak disetujui.",
+     "alasan": [
+      "Bertentangan dengan premis: jika proyek disetujui, anggaran pasti dialokasikan.",
+      "Premis tidak membahas proyek lain.",
+      "",
+      "Tidak ada dasar; proyeknya bahkan tidak disetujui.",
+      "Rantai modus tollens-nya lengkap, jadi kesimpulan bisa ditarik."
+     ]
+    },
+    {
+     "id": "logika-11",
+     "teks": "Semua dokumen rahasia disimpan di brankas. Tidak ada dokumen di brankas yang boleh difotokopi.\nKesimpulan yang paling tepat adalah …",
+     "opsi": [
+      "Tidak ada dokumen rahasia yang boleh difotokopi.",
+      "Sebagian dokumen rahasia boleh difotokopi.",
+      "Semua dokumen di brankas adalah dokumen rahasia.",
+      "Semua dokumen yang tidak boleh difotokopi adalah dokumen rahasia.",
+      "Tidak dapat ditarik kesimpulan."
+     ],
+     "kunci": 0,
+     "pembahasan": "Dokumen rahasia ⊂ dokumen di brankas, dan seluruh dokumen di brankas tidak boleh difotokopi.",
+     "alasan": [
+      "",
+      "Bertentangan: semua dokumen rahasia ada di brankas, dan dokumen di brankas tidak boleh difotokopi.",
+      "Membalik premis pertama. Brankas bisa saja berisi dokumen nonrahasia.",
+      "Membalik hubungan. Dokumen nonrahasia di brankas juga tidak boleh difotokopi.",
+      "Bisa disimpulkan karena dokumen rahasia termasuk dokumen di brankas."
+     ]
+    },
+    {
+     "id": "logika-12",
+     "teks": "Sebagian investor menyukai saham teknologi. Sebagian investor menyukai obligasi.\nKesimpulan yang paling tepat adalah …",
+     "opsi": [
+      "Semua investor menyukai saham teknologi atau obligasi.",
+      "Investor yang menyukai obligasi tidak menyukai saham teknologi.",
+      "Sebagian investor menyukai saham teknologi dan obligasi.",
+      "Sebagian penyuka obligasi menyukai saham teknologi.",
+      "Tidak dapat ditarik kesimpulan."
+     ],
+     "kunci": 4,
+     "pembahasan": "Dua premis 'sebagian' tidak menghasilkan kesimpulan pasti; kedua kelompok bisa beririsan atau tidak sama sekali.",
+     "alasan": [
+      "Premis hanya membahas sebagian investor; bisa ada investor yang tidak menyukai keduanya.",
+      "Tidak pasti: kedua kelompok investor bisa saja beririsan.",
+      "Tidak pasti: kedua kelompok investor bisa sama sekali tidak beririsan.",
+      "Sama dengan menyatakan ada irisan, padahal irisan tidak dijamin premis.",
+      ""
+     ]
+    },
+    {
+     "id": "logika-13",
+     "teks": "Andi lebih senior daripada Budi. Citra lebih junior daripada Budi. Dewi lebih senior daripada Andi.\nKesimpulan yang paling tepat adalah …",
+     "opsi": [
+      "Budi paling junior di antara keempatnya.",
+      "Dewi paling senior di antara keempatnya.",
+      "Citra lebih senior daripada Andi.",
+      "Andi paling senior di antara keempatnya.",
+      "Tidak dapat ditarik kesimpulan."
+     ],
+     "kunci": 1,
+     "pembahasan": "Urutan: Dewi > Andi > Budi > Citra. Yang paling junior adalah Citra.",
+     "alasan": [
+      "Citra lebih junior daripada Budi.",
+      "",
+      "Citra lebih junior daripada Budi, dan Budi lebih junior daripada Andi.",
+      "Dewi lebih senior daripada Andi.",
+      "Urutan keempatnya bisa disusun lengkap: Dewi > Andi > Budi > Citra."
+     ]
+    },
+    {
+     "id": "logika-14",
+     "teks": "Rapat direksi hanya dapat dimulai jika semua kepala divisi hadir. Kepala divisi pemasaran belum hadir.\nKesimpulan yang paling tepat adalah …",
+     "opsi": [
+      "Kepala divisi lain juga belum hadir.",
+      "Rapat direksi dimulai tanpa kepala divisi pemasaran.",
+      "Rapat direksi belum dapat dimulai.",
+      "Rapat direksi dibatalkan.",
+      "Tidak dapat ditarik kesimpulan."
+     ],
+     "kunci": 2,
+     "pembahasan": "Syarat 'semua kepala divisi hadir' tidak terpenuhi, jadi rapat belum dapat dimulai. 'Dibatalkan' tidak bisa disimpulkan.",
+     "alasan": [
+      "Premis hanya menyebut kepala divisi pemasaran.",
+      "Bertentangan dengan syarat bahwa semua kepala divisi harus hadir.",
+      "",
+      "Belum dimulai bukan berarti batal; kepala divisi pemasaran masih bisa datang.",
+      "Syaratnya tidak terpenuhi, jadi bisa disimpulkan rapat belum dapat dimulai."
+     ]
+    },
+    {
+     "id": "logika-15",
+     "teks": "JAM : WAKTU = TERMOMETER : …",
+     "opsi": [
+      "DERAJAT",
+      "PANAS",
+      "SUHU",
+      "DEMAM",
+      "RAKSA"
+     ],
+     "kunci": 2,
+     "pembahasan": "Alat ukur dan besaran yang diukur. Derajat adalah satuan, bukan besarannya.",
+     "alasan": [
+      "Derajat adalah satuan suhu, bukan besarannya; padanan jam adalah waktu, bukan detik.",
+      "Panas adalah keadaan suhu tinggi, bukan besaran yang diukur.",
+      "",
+      "Demam adalah kondisi yang dapat dideteksi termometer, bukan besaran.",
+      "Raksa adalah bahan pengisi termometer."
+     ]
+    },
+    {
+     "id": "logika-16",
+     "teks": "AIR : MENGUAP = ES : …",
+     "opsi": [
+      "AIR",
+      "DINGIN",
+      "MENCAIR",
+      "MEMBEKU",
+      "BATU"
+     ],
+     "kunci": 2,
+     "pembahasan": "Zat dan perubahan wujudnya ketika dipanaskan.",
+     "alasan": [
+      "Air adalah hasil es yang mencair, bukan nama perubahan wujudnya.",
+      "Dingin adalah sifat es, bukan perubahan wujud.",
+      "",
+      "Membeku adalah perubahan air menjadi es, kebalikan dari es yang dipanaskan.",
+      "Batu bukan perubahan wujud; 'batu es' hanya sebutan."
+     ]
+    },
+    {
+     "id": "logika-17",
+     "teks": "SEMEN : TEMBOK = TEPUNG : …",
+     "opsi": [
+      "OVEN",
+      "ROTI",
+      "GANDUM",
+      "ADONAN",
+      "TUKANG ROTI"
+     ],
+     "kunci": 1,
+     "pembahasan": "Bahan dan produk jadi yang dibuat darinya. Adonan masih tahap antara, bukan produk jadi.",
+     "alasan": [
+      "Oven adalah alat untuk memanggang.",
+      "",
+      "Gandum adalah bahan asal tepung; urutannya terbalik.",
+      "Adonan masih tahap antara, bukan produk jadi.",
+      "Tukang roti adalah pembuat, bukan produknya."
+     ]
+    },
+    {
+     "id": "logika-18",
+     "teks": "LUKISAN : PELUKIS = PATUNG : …",
+     "opsi": [
+      "PAHAT",
+      "PEMAHAT",
+      "BATU",
+      "MUSEUM",
+      "GALERI"
+     ],
+     "kunci": 1,
+     "pembahasan": "Karya dan pembuatnya.",
+     "alasan": [
+      "Pahat adalah alat untuk membuat patung.",
+      "",
+      "Batu adalah bahan patung, bukan pembuatnya.",
+      "Museum adalah tempat memajang patung.",
+      "Galeri adalah tempat memajang karya."
+     ]
+    },
+    {
+     "id": "logika-19",
+     "teks": "KOPI : CANGKIR = … : …",
+     "opsi": [
+      "TEH : GULA",
+      "SENDOK : GARPU",
+      "ROTI : GANDUM",
+      "SUP : MANGKUK",
+      "PIRING : NASI"
+     ],
+     "kunci": 3,
+     "pembahasan": "Isi dan wadahnya, dengan urutan isi : wadah. 'PIRING : NASI' urutannya terbalik.",
+     "alasan": [
+      "Gula adalah campuran teh, bukan wadahnya.",
+      "Dua alat makan yang berpasangan, bukan isi dan wadah.",
+      "Hubungan produk dan bahan bakunya.",
+      "",
+      "Urutannya terbalik: wadah : isi."
+     ]
+    },
+    {
+     "id": "logika-20",
+     "teks": "2 : 4 = 5 : 25 = 7 : …",
+     "opsi": [
+      "28",
+      "49",
+      "21",
+      "64",
+      "14"
+     ],
+     "kunci": 1,
+     "pembahasan": "Bilangan kedua adalah kuadrat bilangan pertama: 2² = 4, 5² = 25, jadi 7² = 49.",
+     "alasan": [
+      "7 × 4. Pola 'dikali bilangan tetap' gugur: 2 → 4 dikali 2, sedangkan 5 → 25 dikali 5.",
+      "",
+      "7 × 3, tidak sesuai dengan pola mana pun.",
+      "8², yaitu kuadrat dari bilangan sesudah 7.",
+      "7 × 2, hanya cocok dengan pasangan 2 : 4."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sjt",
+   "nama": "Situational Judgement Test",
+   "jenis": "sjt",
+   "durasi_menit": 20,
+   "instruksi": "Setiap soal menggambarkan situasi kerja. Pilih satu tindakan yang menurut Anda paling efektif untuk menangani situasi tersebut.",
+   "soal": [
+    {
+     "id": "sjt-1",
+     "teks": "Anda baru diangkat menjadi pemimpin tim yang anggotanya mantan rekan setim Anda. Salah satu anggota senior tampak tidak menerima pengangkatan Anda dan sering mengabaikan arahan.",
+     "opsi": [
+      "Mengajaknya berdiskusi secara pribadi, mengakui pengalamannya, menjelaskan harapan peran masing-masing, dan melibatkannya dalam keputusan penting tim.",
+      "Memberinya tugas yang lebih berat agar ia sadar posisinya.",
+      "Melaporkannya kepada atasan agar ia ditegur.",
+      "Mengingatkan di rapat tim bahwa semua anggota wajib mengikuti arahan pemimpin.",
+      "Membiarkannya sampai ia terbiasa."
+     ],
+     "kunci": 0,
+     "pembahasan": "Bangun hubungan dan kejelasan peran dulu; otoritas formal saja jarang menyelesaikan resistensi.",
+     "skor": [
+      4,
+      0,
+      1,
+      2,
+      1
+     ],
+     "alasan": [
+      "",
+      "Hukuman terselubung yang tidak profesional dan memperburuk konflik.",
+      "Menunjukkan Anda belum mampu menangani tim sendiri dan memperkeruh hubungan.",
+      "Menegaskan aturan secara umum, tetapi tidak menyentuh akar resistensinya dan bisa terasa menyindir.",
+      "Sikap mengabaikan arahan bisa menular ke anggota lain."
+     ]
+    },
+    {
+     "id": "sjt-2",
+     "teks": "Target unit Anda dinaikkan 30 persen, sementara jumlah anggota tim tetap. Tim mulai mengeluh.",
+     "opsi": [
+      "Membagi target secara merata tanpa diskusi.",
+      "Meneruskan target kepada tim dan meminta semua bekerja lebih keras.",
+      "Menjanjikan bonus kepada tim tanpa persetujuan manajemen.",
+      "Menjelaskan alasan kenaikan target, mengajak tim memetakan peluang dan kendala, lalu menyusun strategi serta pembagian kerja bersama.",
+      "Meminta atasan menurunkan target karena tidak realistis."
+     ],
+     "kunci": 3,
+     "pembahasan": "Libatkan tim dalam strategi agar target terasa milik bersama.",
+     "skor": [
+      2,
+      1,
+      0,
+      4,
+      1
+     ],
+     "alasan": [
+      "Jelas, tetapi kemampuan dan peluang tiap anggota berbeda, dan keluhan tim tidak dijawab.",
+      "Tidak ada strategi, sehingga keluhan tim makin besar.",
+      "Melampaui wewenang; janji itu bisa tidak dapat dipenuhi.",
+      "",
+      "Menyerah sebelum mencoba memetakan peluang."
+     ]
+    },
+    {
+     "id": "sjt-3",
+     "teks": "Dua anggota tim terbaik Anda meminta cuti panjang pada periode yang sama, bertepatan dengan tutup buku akhir tahun.",
+     "opsi": [
+      "Meminta mereka mengundi siapa yang boleh cuti.",
+      "Menyetujui yang lebih dulu mengajukan.",
+      "Menyetujui keduanya dan menanggung sendiri pekerjaan mereka.",
+      "Menolak keduanya karena tutup buku lebih penting.",
+      "Membicarakan kebutuhan keduanya, menimbang beban kerja, lalu mencari jadwal cuti yang adil sekaligus menyiapkan rencana pengganti."
+     ],
+     "kunci": 4,
+     "pembahasan": "Seimbangkan kebutuhan individu dan organisasi melalui dialog dan perencanaan.",
+     "skor": [
+      1,
+      2,
+      1,
+      1,
+      4
+     ],
+     "alasan": [
+      "Keputusan penting diserahkan pada kebetulan, bukan pertimbangan.",
+      "Adil secara prosedur, tetapi tidak menimbang kebutuhan masing-masing dan tidak menyiapkan pengganti.",
+      "Beban Anda berlebihan dan tutup buku berisiko terganggu.",
+      "Mengabaikan hak dan kebutuhan karyawan sehingga bisa menurunkan motivasi.",
+      ""
+     ]
+    },
+    {
+     "id": "sjt-4",
+     "teks": "Anda menemukan bahwa laporan kinerja unit yang sudah dikirim ke direksi bulan lalu memuat angka yang terlalu tinggi akibat kesalahan rumus.",
+     "opsi": [
+      "Mencari anggota tim yang membuat kesalahan dan memberinya sanksi.",
+      "Mengoreksi angka pada laporan bulan berikutnya tanpa penjelasan.",
+      "Membiarkannya karena selisihnya akan tertutup oleh kinerja bulan depan.",
+      "Memperbaiki rumus untuk laporan berikutnya saja.",
+      "Segera menginformasikan kepada direksi melalui atasan, menyampaikan angka yang benar beserta penjelasan, dan memperbaiki mekanisme pemeriksaan laporan."
+     ],
+     "kunci": 4,
+     "pembahasan": "Koreksi terbuka atas informasi yang sudah dipakai pengambil keputusan, plus perbaikan sistem.",
+     "skor": [
+      1,
+      1,
+      0,
+      2,
+      4
+     ],
+     "alasan": [
+      "Fokus mencari kesalahan orang, bukan mengoreksi informasi dan memperbaiki sistem.",
+      "Perubahan angka tanpa penjelasan membingungkan dan terkesan menutupi.",
+      "Membiarkan keputusan direksi didasarkan pada angka yang salah.",
+      "Mencegah terulang, tetapi direksi tetap memegang angka yang salah.",
+      ""
+     ]
+    },
+    {
+     "id": "sjt-5",
+     "teks": "Bawahan Anda mengusulkan ide yang menurut Anda belum matang, tetapi ia sangat antusias.",
+     "opsi": [
+      "Mengapresiasi inisiatifnya, memberi masukan spesifik tentang kelemahan ide, dan mendorongnya menyempurnakan usulan.",
+      "Menyetujuinya agar ia tetap termotivasi.",
+      "Meminta tim lain menilai ide tersebut.",
+      "Langsung menolak agar tidak membuang waktu.",
+      "Menunda tanggapan sampai ia lupa."
+     ],
+     "kunci": 0,
+     "pembahasan": "Coaching: jaga motivasi sambil meningkatkan kualitas ide.",
+     "skor": [
+      4,
+      1,
+      2,
+      0,
+      0
+     ],
+     "alasan": [
+      "",
+      "Ide yang belum matang berisiko gagal dan justru menurunkan motivasinya kemudian.",
+      "Masukan tambahan bisa berguna, tetapi Anda sebagai atasan menghindari memberi umpan balik langsung.",
+      "Mematikan inisiatif tanpa memberi kesempatan belajar.",
+      "Mengabaikan bawahan dan merusak kepercayaan."
+     ]
+    },
+    {
+     "id": "sjt-6",
+     "teks": "Unit Anda harus memangkas biaya operasional 15 persen dalam tiga bulan.",
+     "opsi": [
+      "Menganalisis pos biaya bersama tim, memprioritaskan penghematan yang tidak mengganggu layanan, dan memantau dampaknya secara berkala.",
+      "Meminta pengecualian dari manajemen.",
+      "Menunda pembayaran kepada vendor.",
+      "Memangkas semua pos biaya secara merata 15 persen.",
+      "Menghentikan program pelatihan karyawan sepenuhnya."
+     ],
+     "kunci": 0,
+     "pembahasan": "Penghematan berbasis analisis dan prioritas, bukan pemotongan membabi buta.",
+     "skor": [
+      4,
+      1,
+      0,
+      2,
+      1
+     ],
+     "alasan": [
+      "",
+      "Menghindari tugas tanpa mencoba lebih dulu.",
+      "Melanggar kesepakatan dan merusak reputasi; biayanya pun tidak benar-benar turun.",
+      "Sederhana, tetapi pos penting ikut terpangkas sama besar dengan pos yang boros.",
+      "Penghematan jangka pendek yang merugikan kompetensi tim dalam jangka panjang."
+     ]
+    },
+    {
+     "id": "sjt-7",
+     "teks": "Seorang nasabah korporasi penting menawarkan tiket liburan untuk Anda sebagai ucapan terima kasih atas persetujuan kreditnya.",
+     "opsi": [
+      "Menolak tanpa melaporkannya.",
+      "Menerima, lalu memberikannya kepada anggota tim.",
+      "Menolak dengan sopan, menjelaskan kebijakan gratifikasi perusahaan, dan melaporkan penawaran tersebut sesuai ketentuan.",
+      "Menerima karena kredit sudah disetujui sehingga tidak ada konflik kepentingan.",
+      "Meminta hadiah diganti dengan bentuk lain yang nilainya lebih kecil."
+     ],
+     "kunci": 2,
+     "pembahasan": "Gratifikasi terkait jabatan wajib ditolak dan dilaporkan, kapan pun diberikan.",
+     "skor": [
+      2,
+      0,
+      4,
+      0,
+      0
+     ],
+     "alasan": [
+      "Menolak sudah benar, tetapi penawaran gratifikasi tetap wajib dilaporkan.",
+      "Tetap menerima gratifikasi; memberikannya kepada orang lain tidak mengubah hal itu.",
+      "",
+      "Hadiah terkait jabatan tetap gratifikasi, walaupun diberikan setelah keputusan.",
+      "Tetap gratifikasi, bahkan Anda sendiri yang memintanya."
+     ]
+    },
+    {
+     "id": "sjt-8",
+     "teks": "Dalam rapat, atasan Anda menyampaikan keputusan yang menurut Anda keliru dan berpotensi merugikan nasabah.",
+     "opsi": [
+      "Mengikuti keputusan tanpa menyampaikan apa pun.",
+      "Melaporkan langsung kepada pimpinan yang lebih tinggi.",
+      "Menyanggah keputusan itu secara terbuka di depan semua peserta rapat.",
+      "Menyampaikan kekhawatiran disertai data kepada atasan secara pribadi setelah rapat, dan menawarkan alternatif.",
+      "Membicarakan keberatan Anda dengan rekan-rekan setelah rapat."
+     ],
+     "kunci": 3,
+     "pembahasan": "Berani menyampaikan keberatan berbasis data, dengan cara yang menjaga hubungan kerja.",
+     "skor": [
+      1,
+      1,
+      2,
+      4,
+      0
+     ],
+     "alasan": [
+      "Membiarkan risiko kerugian nasabah yang sudah Anda lihat.",
+      "Melangkahi atasan sebelum memberinya kesempatan mempertimbangkan ulang.",
+      "Keberatannya tersampaikan, tetapi cara terbuka di depan semua peserta bisa mempermalukan atasan.",
+      "",
+      "Mengeluh di belakang tanpa menyelesaikan apa pun."
+     ]
+    },
+    {
+     "id": "sjt-9",
+     "teks": "Salah satu anggota tim berkinerja sangat baik tetapi sering bersikap kasar kepada rekan lain sehingga suasana tim memburuk.",
+     "opsi": [
+      "Membiarkannya karena kontribusinya besar bagi target.",
+      "Memindahkannya ke tim lain.",
+      "Memberi umpan balik langsung dan spesifik tentang perilakunya, menjelaskan dampaknya bagi tim, dan menyepakati perubahan yang diharapkan.",
+      "Meminta anggota lain lebih sabar menghadapinya.",
+      "Langsung memberinya surat peringatan."
+     ],
+     "kunci": 2,
+     "pembahasan": "Kinerja tinggi tidak membenarkan perilaku yang merusak tim.",
+     "skor": [
+      0,
+      1,
+      4,
+      1,
+      2
+     ],
+     "alasan": [
+      "Menyiratkan bahwa kinerja tinggi membenarkan perilaku buruk.",
+      "Masalah perilakunya hanya pindah ke tim lain.",
+      "",
+      "Membebani rekan yang dirugikan, bukan menangani pelakunya.",
+      "Tegas, tetapi melompati tahap umpan balik sehingga ia mungkin tidak paham apa yang harus berubah."
+     ]
+    },
+    {
+     "id": "sjt-10",
+     "teks": "Sistem baru yang implementasinya Anda pimpin menuai banyak keluhan pengguna pada minggu pertama.",
+     "opsi": [
+      "Menambah sesi pelatihan tanpa memperbaiki masalah sistem.",
+      "Mengumpulkan dan mengelompokkan keluhan, memperbaiki masalah prioritas bersama tim teknis, serta mengomunikasikan perkembangan secara rutin kepada pengguna.",
+      "Menganggap keluhan wajar dan menunggu pengguna terbiasa.",
+      "Kembali ke sistem lama sampai semua masalah selesai.",
+      "Menyalahkan vendor pengembang sistem."
+     ],
+     "kunci": 1,
+     "pembahasan": "Tangani masalah secara terstruktur dan jaga komunikasi dengan pengguna.",
+     "skor": [
+      2,
+      4,
+      1,
+      1,
+      0
+     ],
+     "alasan": [
+      "Membantu pengguna, tetapi masalah pada sistemnya sendiri tidak diperbaiki.",
+      "",
+      "Keluhan bisa menunjukkan masalah nyata yang perlu diperbaiki.",
+      "Reaksi berlebihan; implementasi mundur dan biaya terbuang.",
+      "Melempar tanggung jawab tanpa menyelesaikan masalah."
+     ]
+    },
+    {
+     "id": "sjt-11",
+     "teks": "Anda harus memilih satu dari dua anggota tim untuk dipromosikan. Satu adalah teman dekat Anda, yang lain memiliki kinerja sedikit lebih baik.",
+     "opsi": [
+      "Menyerahkan keputusan sepenuhnya kepada atasan.",
+      "Menilai keduanya berdasarkan kriteria kinerja dan kompetensi yang objektif, lalu mendokumentasikan dasar keputusan.",
+      "Memilih yang kinerjanya lebih baik tanpa menilai kriteria lain.",
+      "Menunda promosi agar tidak ada yang kecewa.",
+      "Memilih teman dekat karena Anda lebih memahami kemampuannya."
+     ],
+     "kunci": 1,
+     "pembahasan": "Keputusan objektif, berbasis kriteria, dan terdokumentasi menghindari konflik kepentingan.",
+     "skor": [
+      1,
+      4,
+      2,
+      0,
+      0
+     ],
+     "alasan": [
+      "Menghindari tanggung jawab sebagai penilai. Jika khawatir ada konflik kepentingan, nyatakan hal itu sambil tetap memakai kriteria objektif.",
+      "",
+      "Cukup objektif, tetapi promosi juga perlu menimbang kompetensi untuk peran baru dan dasar keputusannya perlu didokumentasikan.",
+      "Merugikan kandidat dan organisasi tanpa alasan kuat.",
+      "Konflik kepentingan; keputusannya tidak objektif."
+     ]
+    },
+    {
+     "id": "sjt-12",
+     "teks": "Beredar kabar di media sosial bahwa cabang Anda mengalami kebocoran data nasabah. Kabar tersebut belum terverifikasi.",
+     "opsi": [
+      "Menyampaikan kepada nasabah yang bertanya bahwa kabar tersebut tidak benar.",
+      "Langsung membantah kabar tersebut melalui akun media sosial pribadi.",
+      "Melaporkan kepada atasan dan menunggu instruksi tanpa tindakan lain.",
+      "Menunggu sampai kabar mereda dengan sendirinya.",
+      "Segera berkoordinasi dengan unit keamanan informasi dan komunikasi perusahaan untuk memverifikasi, lalu mengikuti protokol penanganan dan komunikasi resmi."
+     ],
+     "kunci": 4,
+     "pembahasan": "Krisis ditangani cepat melalui verifikasi dan saluran komunikasi resmi, bukan klaim pribadi yang belum pasti.",
+     "skor": [
+      1,
+      0,
+      2,
+      0,
+      4
+     ],
+     "alasan": [
+      "Membantah sesuatu yang belum diverifikasi; kabar itu bisa saja benar.",
+      "Klaim pribadi yang belum terverifikasi dan di luar saluran resmi.",
+      "Melapor sudah benar, tetapi krisis butuh koordinasi cepat dengan unit keamanan informasi dan komunikasi.",
+      "Isu kebocoran data harus diverifikasi; jika diabaikan, bisa makin membesar.",
+      ""
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kepribadian-1",
+   "nama": "Kepribadian 1",
+   "jenis": "kepribadian",
+   "durasi_menit": 10,
+   "instruksi": "Bacalah setiap pernyataan dan pilih jawaban yang paling menggambarkan diri Anda: Setuju, ?, atau Tidak setuju. Tidak ada jawaban benar atau salah. Gunakan pilihan '?' hanya jika benar-benar ragu.",
+   "skala": [
+    "Setuju",
+    "?",
+    "Tidak setuju"
+   ],
+   "nilai_skala": [
+    1,
+    0,
+    -1
+   ],
+   "soal": [
+    {
+     "id": "kepribadian-1-1",
+     "teks": "Saya memikirkan dampak ucapan saya terhadap perasaan orang lain.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A6"
+    },
+    {
+     "id": "kepribadian-1-2",
+     "teks": "Saya senang mencicipi makanan khas daerah lain.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O5"
+    },
+    {
+     "id": "kepribadian-1-3",
+     "teks": "Saya menolak ajakan teman untuk melakukan hal yang melanggar aturan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I6"
+    },
+    {
+     "id": "kepribadian-1-4",
+     "teks": "Saya senang menulis, menggambar, atau membuat sesuatu yang kreatif.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O6"
+    },
+    {
+     "id": "kepribadian-1-5",
+     "teks": "Saya lebih memilih di rumah daripada menghadiri acara yang ramai.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p4-E5"
+    },
+    {
+     "id": "kepribadian-1-6",
+     "teks": "Saya tidak pernah membuat kesalahan sekecil apa pun.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-7",
+     "teks": "Saya sering merasa khawatir tanpa sebab yang jelas.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S5"
+    },
+    {
+     "id": "kepribadian-1-8",
+     "teks": "Saya mempersiapkan segala sesuatu jauh hari sebelum tenggat.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C5"
+    },
+    {
+     "id": "kepribadian-1-9",
+     "teks": "Saya merasa nyaman ketika banyak orang memperhatikan saya.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E6"
+    },
+    {
+     "id": "kepribadian-1-10",
+     "teks": "Saya bisa menahan diri ketika diperlakukan tidak adil.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S6"
+    },
+    {
+     "id": "kepribadian-1-11",
+     "teks": "Saya mengerjakan tugas dengan langkah-langkah yang runtut.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C6"
+    },
+    {
+     "id": "kepribadian-1-12",
+     "teks": "Saya menolong orang lain tanpa mengharapkan imbalan.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A5"
+    },
+    {
+     "id": "kepribadian-1-13",
+     "teks": "Saya mengakui jika lupa mengerjakan tugas.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I5"
+    },
+    {
+     "id": "kepribadian-1-14",
+     "teks": "Saya hanya mau makan makanan yang sudah biasa saya makan.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p4-O5"
+    },
+    {
+     "id": "kepribadian-1-15",
+     "teks": "Saya tidak pernah bergosip.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-16",
+     "teks": "Saya berusaha menjaga perasaan orang lain.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A6"
+    },
+    {
+     "id": "kepribadian-1-17",
+     "teks": "Tekanan dari teman tidak membuat saya melanggar aturan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I6"
+    },
+    {
+     "id": "kepribadian-1-18",
+     "teks": "Kegiatan yang memerlukan imajinasi terasa membosankan bagi saya.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p4-O6"
+    },
+    {
+     "id": "kepribadian-1-19",
+     "teks": "Akhir pekan yang ideal bagi saya adalah bertemu banyak teman.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E5"
+    },
+    {
+     "id": "kepribadian-1-20",
+     "teks": "Saya merasa tenang dalam sebagian besar situasi.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S5"
+    },
+    {
+     "id": "kepribadian-1-21",
+     "teks": "Saya langsung bereaksi keras jika diperlakukan tidak adil.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S6"
+    },
+    {
+     "id": "kepribadian-1-22",
+     "teks": "Saya baru mulai mengerjakan tugas ketika tenggat sudah dekat.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p4-C5"
+    },
+    {
+     "id": "kepribadian-1-23",
+     "teks": "Cara kerja saya cenderung acak.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p4-C6"
+    },
+    {
+     "id": "kepribadian-1-24",
+     "teks": "Saya selalu menyukai setiap tugas yang diberikan kepada saya.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-25",
+     "teks": "Saya suka menjadi pusat perhatian.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E6"
+    },
+    {
+     "id": "kepribadian-1-26",
+     "teks": "Saya tidak membuat alasan palsu saat lalai.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I5"
+    },
+    {
+     "id": "kepribadian-1-27",
+     "teks": "Membantu orang lain memberi saya kepuasan tersendiri.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A5"
+    },
+    {
+     "id": "kepribadian-1-28",
+     "teks": "Saya berani menolak permintaan atasan yang melanggar aturan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I2"
+    },
+    {
+     "id": "kepribadian-1-29",
+     "teks": "Saya mudah terpancing emosi ketika menghadapi orang yang marah.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S1"
+    },
+    {
+     "id": "kepribadian-1-30",
+     "teks": "Saya bersemangat mempelajari aplikasi kerja yang baru.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O1"
+    },
+    {
+     "id": "kepribadian-1-31",
+     "teks": "Saya menikmati kegiatan yang memerlukan imajinasi.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O6"
+    },
+    {
+     "id": "kepribadian-1-32",
+     "teks": "Saya tetap tenang meskipun merasa dirugikan.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S6"
+    },
+    {
+     "id": "kepribadian-1-33",
+     "teks": "Saya senang mengikuti acara kumpul-kumpul.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E5"
+    },
+    {
+     "id": "kepribadian-1-34",
+     "teks": "Saya mudah memulai obrolan dengan orang yang baru dikenal.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E1"
+    },
+    {
+     "id": "kepribadian-1-35",
+     "teks": "Saya menyelesaikan tugas tanpa perlu diingatkan.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C3"
+    },
+    {
+     "id": "kepribadian-1-36",
+     "teks": "Saya sulit menerima pendapat orang lain yang berbeda dengan pendapat saya.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A1"
+    },
+    {
+     "id": "kepribadian-1-37",
+     "teks": "Saya merasa risih ketika menjadi pusat perhatian.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p4-E6"
+    },
+    {
+     "id": "kepribadian-1-38",
+     "teks": "Saya baru mau membantu jika ada imbalannya.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A5"
+    },
+    {
+     "id": "kepribadian-1-39",
+     "teks": "Saya mencari alasan agar kelalaian saya tidak terlihat.",
+     "dimensi": "I",
+     "arah": -1,
+     "grup": "p4-I5"
+    },
+    {
+     "id": "kepribadian-1-40",
+     "teks": "Saya bekerja secara sistematis.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C6"
+    },
+    {
+     "id": "kepribadian-1-41",
+     "teks": "Saya jarang merasa cemas.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S5"
+    },
+    {
+     "id": "kepribadian-1-42",
+     "teks": "Saya suka mencoba resep atau masakan baru.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O5"
+    },
+    {
+     "id": "kepribadian-1-43",
+     "teks": "Saya tidak peduli jika ucapan saya menyinggung orang lain.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A6"
+    },
+    {
+     "id": "kepribadian-1-44",
+     "teks": "Saya tidak pernah kehilangan kesabaran.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-45",
+     "teks": "Saya tidak menunggu tenggat sudah dekat untuk mulai bekerja.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C5"
+    },
+    {
+     "id": "kepribadian-1-46",
+     "teks": "Saya ikut melanggar aturan jika semua teman melakukannya.",
+     "dimensi": "I",
+     "arah": -1,
+     "grup": "p4-I6"
+    }
+   ]
+  },
+  {
+   "id": "kepribadian-2",
+   "nama": "Kepribadian 2",
+   "jenis": "kepribadian",
+   "durasi_menit": 15,
+   "instruksi": "Nyatakan seberapa setuju Anda dengan setiap pernyataan. Tidak ada jawaban benar atau salah. Jawablah dengan jujur sesuai kesan pertama Anda.",
+   "skala": [
+    "Sangat setuju",
+    "Setuju",
+    "Netral",
+    "Kurang setuju",
+    "Tidak setuju"
+   ],
+   "nilai_skala": [
+    1,
+    0.5,
+    0,
+    -0.5,
+    -1
+   ],
+   "soal": [
+    {
+     "id": "kepribadian-2-1",
+     "teks": "Folder di komputer saya tertata dengan nama yang jelas.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C4"
+    },
+    {
+     "id": "kepribadian-2-2",
+     "teks": "Saya tidak pernah merasa lelah.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-3",
+     "teks": "Saya bersikap sopan kepada siapa pun, termasuk kepada orang yang tidak saya sukai.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A3"
+    },
+    {
+     "id": "kepribadian-2-4",
+     "teks": "Saya sering membayangkan cara-cara baru untuk melakukan pekerjaan rutin.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O3"
+    },
+    {
+     "id": "kepribadian-2-5",
+     "teks": "Saya tidak menyembunyikan informasi buruk dari atasan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I1"
+    },
+    {
+     "id": "kepribadian-2-6",
+     "teks": "Teguran membuat saya introspeksi, bukan merasa diserang.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S3"
+    },
+    {
+     "id": "kepribadian-2-7",
+     "teks": "Saya menolak permintaan yang bertentangan dengan aturan, meskipun datang dari atasan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I2"
+    },
+    {
+     "id": "kepribadian-2-8",
+     "teks": "Saya mudah memercayai rekan kerja yang baru saya kenal.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A4"
+    },
+    {
+     "id": "kepribadian-2-9",
+     "teks": "Saya cepat tertarik mencoba fitur baru dalam perangkat kerja.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O1"
+    },
+    {
+     "id": "kepribadian-2-10",
+     "teks": "Saya kesulitan meyakinkan orang lain tentang gagasan saya.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p4-E3"
+    },
+    {
+     "id": "kepribadian-2-11",
+     "teks": "Saya tidak nyaman berdiskusi dengan orang yang cara pandangnya sangat berbeda.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p4-O2"
+    },
+    {
+     "id": "kepribadian-2-12",
+     "teks": "Saya tetap berpikir positif ketika hasil kerja tidak sesuai harapan.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S4"
+    },
+    {
+     "id": "kepribadian-2-13",
+     "teks": "Saya senang merenungkan makna di balik suatu peristiwa.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O4"
+    },
+    {
+     "id": "kepribadian-2-14",
+     "teks": "Saya menetapkan target pribadi yang jelas dalam pekerjaan.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C1"
+    },
+    {
+     "id": "kepribadian-2-15",
+     "teks": "Pendapat orang lain jarang lebih baik daripada pendapat saya.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A1"
+    },
+    {
+     "id": "kepribadian-2-16",
+     "teks": "Atasan tidak perlu mengawasi saya untuk memastikan pekerjaan selesai.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C3"
+    },
+    {
+     "id": "kepribadian-2-17",
+     "teks": "Saya memberi kelonggaran lebih kepada teman dekat dalam urusan pekerjaan.",
+     "dimensi": "I",
+     "arah": -1,
+     "grup": "p4-I4"
+    },
+    {
+     "id": "kepribadian-2-18",
+     "teks": "Saya tidak pernah merasa takut.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-19",
+     "teks": "Saya menjaga aset kantor seperti barang milik orang lain yang dititipkan kepada saya.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I3"
+    },
+    {
+     "id": "kepribadian-2-20",
+     "teks": "Saya berharap orang lain saja yang mempresentasikan hasil kerja tim.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p4-E4"
+    },
+    {
+     "id": "kepribadian-2-21",
+     "teks": "Saya tidak mudah merasa tertekan oleh masalah pekerjaan.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S2"
+    },
+    {
+     "id": "kepribadian-2-22",
+     "teks": "Keberhasilan rekan kerja membuat saya merasa tersaingi.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A2"
+    },
+    {
+     "id": "kepribadian-2-23",
+     "teks": "Saya tidak pernah menyesali keputusan apa pun.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-24",
+     "teks": "Saya tidak pernah menunda membalas pesan.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-25",
+     "teks": "Saya cepat menemukan kesalahan ketik atau angka dalam dokumen.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C2"
+    },
+    {
+     "id": "kepribadian-2-26",
+     "teks": "Saya mudah terbawa emosi ketika berhadapan dengan orang yang marah.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S1"
+    },
+    {
+     "id": "kepribadian-2-27",
+     "teks": "Saya merasa senang ketika banyak orang di sekitar saya saat bekerja.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E2"
+    },
+    {
+     "id": "kepribadian-2-28",
+     "teks": "Saya tidak ragu memulai obrolan dengan peserta lain dalam seminar.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E1"
+    },
+    {
+     "id": "kepribadian-2-29",
+     "teks": "Saya melaporkan hasil kerja apa adanya, termasuk kekurangannya.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I1"
+    },
+    {
+     "id": "kepribadian-2-30",
+     "teks": "Saya suka bereksperimen dengan pendekatan yang belum pernah dicoba.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O3"
+    },
+    {
+     "id": "kepribadian-2-31",
+     "teks": "Saya enggan mempelajari aplikasi baru jika aplikasi lama masih bisa dipakai.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p4-O1"
+    },
+    {
+     "id": "kepribadian-2-32",
+     "teks": "Saya tidak suka memikirkan hal-hal yang terlalu mendalam.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p4-O4"
+    },
+    {
+     "id": "kepribadian-2-33",
+     "teks": "Saya merapikan file dan dokumen kerja secara rutin.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C4"
+    },
+    {
+     "id": "kepribadian-2-34",
+     "teks": "Saya tidak pernah berprasangka.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-35",
+     "teks": "Saya cenderung membayangkan hal terburuk saat menghadapi masalah.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S4"
+    },
+    {
+     "id": "kepribadian-2-36",
+     "teks": "Perasaan saya cenderung stabil meskipun banyak masalah datang bersamaan.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S2"
+    },
+    {
+     "id": "kepribadian-2-37",
+     "teks": "Saya mampu meyakinkan orang lain untuk mendukung ide saya.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E3"
+    },
+    {
+     "id": "kepribadian-2-38",
+     "teks": "Saya berani mengatakan tidak pada permintaan yang melanggar ketentuan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I2"
+    },
+    {
+     "id": "kepribadian-2-39",
+     "teks": "Saya merasa sangat terpukul ketika ditegur atasan.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S3"
+    },
+    {
+     "id": "kepribadian-2-40",
+     "teks": "Saya bekerja mengalir saja tanpa target tertentu.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p4-C1"
+    },
+    {
+     "id": "kepribadian-2-41",
+     "teks": "Menghadapi orang yang emosi tidak membuat saya ikut terpancing.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S1"
+    },
+    {
+     "id": "kepribadian-2-42",
+     "teks": "Saya lebih suka bekerja di ruang terbuka bersama banyak rekan.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E2"
+    },
+    {
+     "id": "kepribadian-2-43",
+     "teks": "Saya senang memperkenalkan diri kepada orang-orang baru dalam sebuah acara.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E1"
+    },
+    {
+     "id": "kepribadian-2-44",
+     "teks": "Detail kecil bukan hal yang perlu saya pikirkan.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p4-C2"
+    },
+    {
+     "id": "kepribadian-2-45",
+     "teks": "Saya senang bertukar pikiran dengan orang yang berbeda latar belakang.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O2"
+    },
+    {
+     "id": "kepribadian-2-46",
+     "teks": "Saya senang melihat rekan kerja berhasil.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A2"
+    },
+    {
+     "id": "kepribadian-2-47",
+     "teks": "Saya menerima masukan dari anggota tim dengan lapang dada.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A1"
+    },
+    {
+     "id": "kepribadian-2-48",
+     "teks": "Saya tetap menghormati orang yang berselisih paham dengan saya.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A3"
+    },
+    {
+     "id": "kepribadian-2-49",
+     "teks": "Saya bersedia menjadi wakil tim dalam pertemuan penting.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E4"
+    },
+    {
+     "id": "kepribadian-2-50",
+     "teks": "Saya memakai standar yang sama untuk teman dan orang lain dalam pekerjaan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I4"
+    },
+    {
+     "id": "kepribadian-2-51",
+     "teks": "Saya curiga terhadap niat orang yang belum saya kenal.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A4"
+    },
+    {
+     "id": "kepribadian-2-52",
+     "teks": "Saya menyelesaikan tanggung jawab saya tanpa perlu diingatkan.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C3"
+    },
+    {
+     "id": "kepribadian-2-53",
+     "teks": "Saya mengembalikan barang inventaris kantor setelah selesai dipakai.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I3"
+    },
+    {
+     "id": "kepribadian-2-54",
+     "teks": "Saya antusias mempelajari teknologi atau aplikasi baru.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O1"
+    },
+    {
+     "id": "kepribadian-2-55",
+     "teks": "Saya memperhatikan hal-hal kecil yang sering terlewat oleh orang lain.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C2"
+    },
+    {
+     "id": "kepribadian-2-56",
+     "teks": "Permintaan atasan harus dituruti meskipun melanggar aturan.",
+     "dimensi": "I",
+     "arah": -1,
+     "grup": "p4-I2"
+    },
+    {
+     "id": "kepribadian-2-57",
+     "teks": "Perbedaan pandangan membuat wawasan saya bertambah.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O2"
+    },
+    {
+     "id": "kepribadian-2-58",
+     "teks": "Kekurangan dalam laporan sebaiknya tidak perlu disebutkan.",
+     "dimensi": "I",
+     "arah": -1,
+     "grup": "p4-I1"
+    },
+    {
+     "id": "kepribadian-2-59",
+     "teks": "Saya tetap tenang ketika menghadapi nasabah atau klien yang marah.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S1"
+    },
+    {
+     "id": "kepribadian-2-60",
+     "teks": "Saya tidak pernah merasa tidak suka kepada seseorang.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-61",
+     "teks": "File pekerjaan saya sering tercampur dan sulit dicari.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p4-C4"
+    },
+    {
+     "id": "kepribadian-2-62",
+     "teks": "Pekerjaan rutin sebaiknya dilakukan dengan cara yang sama setiap kali.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p4-O3"
+    },
+    {
+     "id": "kepribadian-2-63",
+     "teks": "Saya lebih produktif jika bekerja sendirian di ruangan yang sepi.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p4-E2"
+    },
+    {
+     "id": "kepribadian-2-64",
+     "teks": "Saya menghargai pendapat rekan meskipun berbeda dengan pendapat saya.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A1"
+    },
+    {
+     "id": "kepribadian-2-65",
+     "teks": "Saya selalu tahu jawaban yang benar.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-66",
+     "teks": "Saya senang tampil memimpin presentasi tim.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E4"
+    },
+    {
+     "id": "kepribadian-2-67",
+     "teks": "Saya tertarik pada pertanyaan-pertanyaan filosofis tentang kehidupan.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p4-O4"
+    },
+    {
+     "id": "kepribadian-2-68",
+     "teks": "Saya baru bekerja serius ketika ada yang mengingatkan.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p4-C3"
+    },
+    {
+     "id": "kepribadian-2-69",
+     "teks": "Saya bersikap ketus kepada orang yang tidak saya sukai.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p4-A3"
+    },
+    {
+     "id": "kepribadian-2-70",
+     "teks": "Masalah kecil dapat merusak suasana hati saya seharian.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p4-S2"
+    },
+    {
+     "id": "kepribadian-2-71",
+     "teks": "Membawa pulang perlengkapan kantor dalam jumlah kecil itu wajar.",
+     "dimensi": "I",
+     "arah": -1,
+     "grup": "p4-I3"
+    },
+    {
+     "id": "kepribadian-2-72",
+     "teks": "Dalam acara baru, saya cenderung diam sampai ada yang mengajak bicara.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p4-E1"
+    },
+    {
+     "id": "kepribadian-2-73",
+     "teks": "Saya bersikap adil kepada semua orang tanpa memandang kedekatan.",
+     "dimensi": "I",
+     "arah": 1,
+     "grup": "p4-I4"
+    },
+    {
+     "id": "kepribadian-2-74",
+     "teks": "Saya mampu menerima teguran atasan secara objektif.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S3"
+    },
+    {
+     "id": "kepribadian-2-75",
+     "teks": "Saya mengukur kemajuan kerja saya secara berkala.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p4-C1"
+    },
+    {
+     "id": "kepribadian-2-76",
+     "teks": "Saya ikut bangga ketika rekan mendapat penghargaan.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A2"
+    },
+    {
+     "id": "kepribadian-2-77",
+     "teks": "Saya selalu mematuhi semua aturan lalu lintas tanpa pengecualian.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-78",
+     "teks": "Saya optimistis setiap masalah ada jalan keluarnya.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p4-S4"
+    },
+    {
+     "id": "kepribadian-2-79",
+     "teks": "Saya pandai membujuk orang agar sepakat dengan pendapat saya.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p4-E3"
+    },
+    {
+     "id": "kepribadian-2-80",
+     "teks": "Saya memberi kesempatan kepada orang lain untuk membuktikan dirinya.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p4-A4"
+    }
+   ]
+  }
+ ]
+}

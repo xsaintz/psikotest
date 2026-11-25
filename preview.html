@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Preview Paket Soal</title>
+<style>
+  :root { color-scheme: light; }
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 920px; margin: 0 auto; padding: 16px; color: #222; background: #fff; }
+  h2 { border-bottom: 2px solid #222; padding-bottom: 4px; margin-top: 40px; }
+  .q { border: 1px solid #ddd; border-radius: 6px; padding: 10px 14px; margin: 10px 0; }
+  .stim { background: #f6f6f2; padding: 10px 14px; border-radius: 6px; margin: 16px 0 6px; white-space: pre-line; }
+  .ok { background: #d9f2dc; font-weight: 600; }
+  ol.opsi { margin: 6px 0; padding-left: 22px; list-style: upper-alpha; }
+  .pemb { color: #555; font-size: 13px; margin-top: 4px; }
+  table { border-collapse: collapse; margin: 6px 0; }
+  td, th { border: 1px solid #aaa; padding: 3px 8px; text-align: right; }
+  td:first-child, th:first-child { text-align: left; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .row svg { width: 92px; height: 92px; }
+  .pf { text-align: center; font-size: 13px; padding: 2px; border-radius: 4px; }
+  .sep { width: 100%; border-top: 2px solid #222; margin: 4px 0; }
+  .meta { font-size: 12px; color: #777; }
+  nav a { margin-right: 10px; }
+</style>
+</head>
+<body>
+<nav id="nav"></nav>
+<div id="app">Memuat…</div>
+<script src="render.js"></script>
+<script>
+// ponytail: alat cek isi paket saja, bukan aplikasi ujian. Buka lewat http server: ?p=paket-2
+const qs = new URLSearchParams(location.search);
+const pk = qs.get('p') || 'paket-2', only = qs.get('b');  // ?p=paket-3&b=abstrak → satu bagian saja
+
+fetch(pk + '.json').then(r => r.json()).then(p => {
+  document.title = p.judul;
+  document.getElementById('nav').innerHTML = ['paket-1', 'paket-2', 'paket-3', 'paket-4', 'paket-5', 'paket-6', 'paket-7', 'paket-8'].map(x => `<a href="?p=${x}">${x}</a>`).join('');
+  let h = `<h1>${esc(p.judul)}</h1><p class="meta">${esc(p.catatan)}</p>`;
+  for (const b of p.bagian) {
+    if (only && b.id !== only) continue;
+    h += `<h2>${esc(b.nama)} — ${b.soal.length} soal, ${b.durasi_menit} menit</h2><p><i>${esc(b.instruksi)}</i></p>`;
+    if (b.skala) h += `<p class="meta">Skala: ${b.skala.join(' / ')}</p>`;
+    let last = null;
+    for (const q of b.soal) {
+      if (q.stimulus && q.stimulus !== last) { h += stimulus(b.stimulus[q.stimulus]); last = q.stimulus; }
+      h += `<div class="q"><b>${q.id}.</b> ${esc(q.teks).replace(/\n/g, '<br>')}`;
+      if (b.jenis === 'kepribadian') {
+        h += ` <span class="meta">[${q.dimensi}${q.arah > 0 ? '+' : '−'} ${q.grup || (q.dimensi === 'L' ? 'validitas' : '-')}]</span>`;
+        if (q.opsi) h += `<ol class="opsi" style="list-style:lower-alpha">${q.opsi.map(o => `<li>${esc(o)}</li>`).join('')}</ol>`;
+        h += `</div>`;
+        continue;
+      }
+      if (b.jenis === 'gambar') {
+        h += `<br><svg viewBox="0 0 400 400" width="160" style="border:1px solid #ccc"><path d="${esc(q.pola)}" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round"/></svg></div>`;
+        continue;
+      }
+      if (q.html) h += q.html;
+      if (q.img) h += `<br><img src="${esc(q.img)}" alt="" style="max-width:420px">`;
+      if (q.gambar || q.opsi_html) {
+        const g = q.opsi_html || q.opsi_gambar.map(frame);
+        h += `<div class="row">${(q.gambar || []).map(frame).join('')}</div><div class="sep"></div><div class="row">${g.map((f, i) => `<div class="pf ${i === q.kunci ? 'ok' : ''}">${f}<br>${q.opsi[i]}</div>`).join('')}</div>`;
+        if (q.alasan) h += `<ul class="meta">${q.alasan.map((a, i) => a ? `<li>${q.opsi[i]}: ${esc(a)}</li>` : '').join('')}</ul>`;
+      } else {
+        h += `<ol class="opsi">${q.opsi.map((o, i) => `<li class="${i === q.kunci ? 'ok' : ''}">${esc(o)}${q.skor ? ` <span class="meta">(skor ${q.skor[i]})</span>` : ''}${q.alasan?.[i] ? `<div class="meta">${esc(q.alasan[i])}</div>` : ''}</li>`).join('')}</ol>`;
+      }
+      h += `<div class="pemb">${esc(q.pembahasan)}</div></div>`;
+    }
+  }
+  document.getElementById('app').innerHTML = h;
+});
+</script>
+</body>
+</html>

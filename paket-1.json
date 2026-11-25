@@ -1,0 +1,1786 @@
+{
+ "id": "paket-1",
+ "judul": "Paket 1 — Psychometric ODP Mandiri 2026 (Tipe PEEPL)",
+ "durasi_total_menit": 80,
+ "catatan": "Dikonversi dari PDF latihan. Urutan opsi mengikuti PDF. Durasi per bagian adalah perkiraan; pada tes asli Personality 3 berisi 122 soal dalam 20 menit. Kunci SJT mengikuti PDF latihan, kecuali no. 8 yang mengikuti lembar JAWABAN PEEPL.",
+ "dimensi": {
+  "E": "Ekstraversi (sosiabilitas, ketegasan)",
+  "A": "Keramahan & Kerja Sama",
+  "C": "Ketelitian & Tanggung Jawab",
+  "S": "Stabilitas Emosi",
+  "O": "Keterbukaan terhadap Pengalaman",
+  "I": "Integritas",
+  "L": "Validitas: kecenderungan menjawab ideal berlebihan",
+  "M": "Minat & nilai (tidak dinilai)"
+ },
+ "aturan_konsistensi": {
+  "nilai": "Jawaban diubah ke rentang -1..+1 (skala 3: Setuju=+1, ?=0, Tidak setuju=-1; skala 5: Sangat setuju=+1, Setuju=+0.5, Netral=0, Kurang setuju=-0.5, Tidak setuju=-1), lalu dikali 'arah' butir.",
+  "grup": "Butir dengan 'grup' yang sama mengukur hal yang sama (parafrase atau kalimat terbalik), termasuk lintas bagian kepribadian-1 dan kepribadian-2.",
+  "tidak_konsisten": "Sebuah grup dianggap tidak konsisten jika selisih nilai tertinggi dan terendah di dalamnya >= 1.5.",
+  "indeks": "Indeks konsistensi = persentase grup yang konsisten. >= 85% baik, 70-84% cukup, < 70% perlu diwaspadai.",
+  "validitas_L": "Butir dimensi L berisi klaim yang hampir mustahil (mis. 'tidak pernah berbohong'). Nilai > 0 pada lebih dari separuh butir L menandakan kecenderungan menjawab ideal (faking good).",
+  "netral": "Proporsi jawaban '?' / 'Netral' > 30% ditandai karena profil sulit dibaca.",
+  "skor_dimensi": "Skor dimensi = rata-rata nilai (sudah dikali arah) seluruh butir dimensi tersebut, ditampilkan 0-100: (rata2 + 1) * 50."
+ },
+ "bagian": [
+  {
+   "id": "verbal",
+   "nama": "VCR-S (Pemahaman Bacaan)",
+   "jenis": "kognitif",
+   "durasi_menit": 20,
+   "instruksi": "Bacalah teks, lalu nilai apakah pernyataan Benar, Tidak dapat disimpulkan, atau Salah berdasarkan informasi dalam teks saja.",
+   "stimulus": {
+    "v1": {
+     "tipe": "teks",
+     "isi": "Berdasarkan laporan terbaru, indeks saham di pasar Asia mengalami penurunan selama tiga hari setelah tiga perusahaan di Jepang mengumumkan berkurangnya keuntungan mereka. Dari sepuluh kelompok industri yang tercatat, sembilan di antaranya mengalami penurunan, dengan sektor keuangan mencatat penurunan paling besar. Penurunan ini menjadi yang terbesar dalam satu bulan terakhir, yang terjadi setelah kenaikan harga minyak dunia yang berdampak pada melambatnya pertumbuhan ekonomi global. Layar Corp, perusahaan produsen layar LCD terbesar di Jepang, mengalami penurunan harga saham hingga mencapai titik terendah sejak Oktober 2004 akibat turunnya laba operasional pada kuartal pertama. Selain itu, CES, produsen komputer terbesar di Jepang, juga mengalami penurunan signifikan yang menjadi yang terbesar dalam dua puluh tahun setelah perusahaan tersebut melaporkan turunnya laba usaha."
+    },
+    "v2": {
+     "tipe": "teks",
+     "isi": "NetWave Technologies, sebuah perusahaan yang bergerak di bidang pengembangan teknologi komunikasi nirkabel dan solusi data, telah berhasil menyelesaikan pembangunan jaringan berbasis teknologi High-Speed Packet Access Plus (HSPA+). Teknologi ini mampu mencapai kecepatan teoretis hingga 20 Mbps pada kanal selebar 5 MHz. Melalui penerapan teknologi tersebut, operator jaringan dapat meningkatkan kapasitas layanan data hingga dua kali lipat serta kapasitas layanan suara hingga tiga kali lipat dibandingkan teknologi HSPA sebelumnya. Para pengguna akan merasakan akses internet yang lebih cepat, sementara operator jaringan dapat memanfaatkan teknologi ini untuk menghadirkan berbagai layanan tambahan bagi pelanggan mereka. Selain itu, HSPA+ dirancang untuk meningkatkan pengalaman penggunaan mobile broadband dengan menyediakan kecepatan data yang lebih tinggi, tingkat keterlambatan yang lebih rendah, waktu respons yang lebih cepat, efisiensi penggunaan baterai yang lebih baik, serta kualitas pengalaman pengguna yang lebih optimal dibandingkan jaringan seluler generasi sebelumnya."
+    },
+    "v3": {
+     "tipe": "teks",
+     "isi": "Salah satu langkah penting yang perlu mendapat perhatian dari Bank Sentral adalah melibatkan para ahli di bidang lingkungan hidup agar sektor perbankan dapat berperan sebagai salah satu penopang dalam menghadapi dampak perubahan iklim secara global. Permasalahan lingkungan memiliki kaitan erat dengan perkembangan dunia usaha, yang selama ini menjadi pihak peminjam utama di sektor perbankan. Tanpa adanya pendampingan dari tenaga ahli, kesalahan yang pernah terjadi di masa lalu berpotensi terulang kembali. Pada dekade 1980-an, ketika industri pulp dan kertas mulai berkembang pesat di Indonesia, banyak bank lokal yang belum memiliki tenaga ahli di bidang tersebut. Selain itu, mereka juga tidak memiliki informasi yang memadai mengenai permintaan serta kebutuhan pasar global untuk industri tersebut. Akibatnya, bank sering melakukan perhitungan yang kurang tepat karena tidak menelaah secara kritis proposal kredit dari perusahaan di sektor pulp dan kertas, yang pada akhirnya memicu tingginya tingkat kredit bermasalah."
+    },
+    "v4": {
+     "tipe": "teks",
+     "isi": "Banyak organisasi saat ini mulai menerapkan sistem pengelolaan data berbasis layanan untuk meningkatkan efisiensi penggunaan media penyimpanan. Pendekatan ini membantu perusahaan mengelola pertumbuhan data yang semakin besar akibat perkembangan teknologi dan meningkatnya aktivitas digital. Di kawasan Asia Pasifik, jumlah data yang dihasilkan dan disimpan terus meningkat, terutama karena adanya regulasi baru yang mengharuskan perusahaan menyimpan data dalam jangka waktu lebih lama. Melalui sistem penyimpanan yang terintegrasi, perusahaan dapat meningkatkan pemanfaatan kapasitas penyimpanan, mengurangi sistem yang berulang, serta mengarsipkan data yang jarang digunakan agar pengelolaan data menjadi lebih efektif."
+    },
+    "v5": {
+     "tipe": "teks",
+     "isi": "PT Energi Raya berencana membangun pembangkit listrik tenaga angin di Pulau Selayar, Sulawesi Selatan. Rencana ini muncul karena pasokan listrik dari PLN di wilayah tersebut masih terbatas sehingga sering terjadi pemadaman listrik secara bergilir di beberapa daerah. Pembangunan pembangkit ini dilakukan untuk membantu memenuhi kebutuhan listrik yang sering terganggu. Fasilitas pembangkit listrik tenaga angin tersebut akan didirikan di kawasan industri yang berada di pulau itu. Menurut pihak perusahaan, seluruh peralatan instalasi pembangkit akan didatangkan dari Korea Selatan dan ditargetkan mulai beroperasi pada awal bulan depan. Walaupun kapasitas listrik yang dihasilkan tidak terlalu besar, pembangkit listrik tenaga angin ini diharapkan dapat menjadi salah satu alternatif untuk membantu mengatasi keterbatasan pasokan listrik yang terjadi di beberapa wilayah di Indonesia."
+    },
+    "v6": {
+     "tipe": "teks",
+     "isi": "PT Energi Raya berencana membangun pembangkit listrik tenaga angin di Pulau Selayar, Sulawesi Selatan. Rencana ini muncul karena pasokan listrik dari PLN di wilayah tersebut masih terbatas sehingga sering terjadi pemadaman listrik secara bergilir di beberapa daerah. Pembangunan pembangkit ini dilakukan untuk membantu memenuhi kebutuhan listrik yang sering terganggu. Fasilitas pembangkit listrik tenaga angin tersebut akan didirikan di kawasan industri yang berada di pulau itu. Menurut pihak perusahaan, seluruh peralatan instalasi pembangkit akan didatangkan dari Korea Selatan dan ditargetkan mulai beroperasi pada awal bulan depan. Walaupun kapasitas listrik yang dihasilkan tidak terlalu besar, pembangkit listrik tenaga angin ini diharapkan dapat menjadi salah satu alternatif untuk membantu mengatasi keterbatasan pasokan listrik yang terjadi di beberapa wilayah di Indonesia."
+    },
+    "v7": {
+     "tipe": "teks",
+     "isi": "Berdasarkan ketentuan terbaru, mulai tahun depan seluruh dana pensiun bagi PNS akan sepenuhnya ditanggung oleh APBN. Kebijakan ini dibuat antara lain agar PT Dana Pensiun memiliki keleluasaan dalam mengembangkan modal yang dimilikinya. Pemerintah juga menetapkan perubahan sistem pembayaran menjadi sepenuhnya dibiayai oleh APBN melalui skema pay as you go murni. Dalam sistem ini, seluruh kewajiban pembayaran pensiun menjadi tanggung jawab pemerintah, dan jumlah dana yang dikeluarkan akan menyesuaikan dengan jumlah PNS yang memasuki masa pensiun setiap tahun. Dengan adanya sistem tersebut, Dana Pensiun akan memiliki ruang keuangan yang lebih luas untuk mengelola serta mengembangkan dana melalui berbagai pilihan instrumen investasi. Dukungan penuh dari APBN ini juga diharapkan dapat mendorong terbentuknya akumulasi dana yang pada akhirnya memungkinkan penerapan sistem fully funded."
+    },
+    "v8": {
+     "tipe": "teks",
+     "isi": "Salah satu cara yang dapat dilakukan organisasi untuk memaksimalkan pemanfaatan sumber daya media penyimpanan adalah dengan menerapkan pendekatan yang berorientasi pada layanan (service oriented). Pendekatan ini berkaitan erat dengan upaya meningkatkan efisiensi serta fleksibilitas dalam pengelolaan media penyimpanan. Di kawasan Asia Pasifik, jumlah data digital yang dibuat dan disimpan terus meningkat dengan sangat cepat. Hal ini dipicu oleh munculnya berbagai regulasi baru serta tuntutan bagi perusahaan untuk menyimpan data dalam jumlah yang lebih besar dan dalam jangka waktu yang lebih lama, sekaligus tetap mampu mengakses kembali arsip data tersebut saat diperlukan. Melalui pendekatan berbasis layanan, organisasi dapat lebih mudah menyesuaikan kebutuhan penyimpanan data dengan kebutuhan bisnis yang terus berubah. Beberapa langkah dasar yang dapat dilakukan untuk mengatasi pertumbuhan data yang pesat antara lain melakukan konsolidasi sistem, meningkatkan tingkat pemanfaatan penyimpanan, menghilangkan sistem yang saling tumpang tindih, serta mengarsipkan data yang bersifat statis."
+    },
+    "v9": {
+     "tipe": "teks",
+     "isi": "Kesulitan dalam melakukan restrukturisasi kredit bermasalah pada perusahaan pembiayaan, khususnya untuk kredit kendaraan roda empat, disebabkan oleh perbedaan mekanisme pembiayaan yang diterapkan dibandingkan dengan sistem kredit di perbankan. Kredit macet pada sektor ini mulai meningkat sejak tahun sebelumnya. Kondisi tersebut dipengaruhi oleh beberapa faktor, di antaranya kenaikan harga bahan bakar serta meningkatnya tingkat inflasi yang berdampak pada kemampuan bayar nasabah. Sebagian besar nasabah perusahaan pembiayaan berasal dari kelompok masyarakat dengan pendapatan menengah ke bawah. Selain itu, dalam beberapa kasus perusahaan pembiayaan menawarkan skema kredit dengan uang muka yang sangat rendah, bahkan tanpa uang muka, sehingga sebagian nasabah merasa tidak memiliki beban awal yang besar ketika mengambil kredit."
+    },
+    "v10": {
+     "tipe": "teks",
+     "isi": "Berdasarkan laporan terbaru dari lembaga riset ekonomi regional, sebagian besar indeks saham di kawasan Asia Tenggara mengalami penurunan selama dua hari berturut-turut. Penurunan tersebut terjadi setelah beberapa perusahaan teknologi besar melaporkan penurunan laba bersih pada kuartal terakhir. Dari sebelas sektor industri yang tercatat di bursa, delapan sektor mengalami pelemahan harga saham. Sektor teknologi menjadi sektor yang mengalami penurunan paling besar, sementara sektor energi masih menunjukkan penguatan terbatas. Para analis menilai bahwa kenaikan suku bunga global serta ketidakpastian kondisi ekonomi internasional menjadi salah satu faktor yang mempengaruhi pergerakan pasar saham di kawasan tersebut."
+    },
+    "v11": {
+     "tipe": "teks",
+     "isi": "PT DataLink Indonesia berhasil mengembangkan sistem jaringan komunikasi berbasis teknologi Long Term Evolution Advanced (LTE-A). Teknologi ini mampu meningkatkan kapasitas jaringan serta mempercepat proses pengiriman data melalui jaringan seluler. Selain memberikan kecepatan akses internet yang lebih tinggi bagi pengguna, teknologi tersebut juga memungkinkan operator telekomunikasi menyediakan berbagai layanan digital tambahan seperti layanan video berkualitas tinggi dan komunikasi data dalam jumlah besar. Para pengembang teknologi menyatakan bahwa penerapan LTE-A dapat meningkatkan efisiensi jaringan sekaligus memperbaiki kualitas pengalaman pengguna dalam menggunakan layanan internet bergerak."
+    },
+    "v12": {
+     "tipe": "teks",
+     "isi": "Beberapa pakar ekonomi menilai bahwa lembaga keuangan perlu melibatkan tenaga ahli di bidang lingkungan hidup dalam proses analisis pembiayaan proyek-proyek industri. Hal ini penting karena banyak kegiatan industri memiliki dampak langsung terhadap kondisi lingkungan. Tanpa adanya kajian yang memadai dari tenaga ahli, lembaga keuangan berisiko mendanai proyek yang dapat menimbulkan kerusakan lingkungan serta masalah ekonomi di masa depan. Pengalaman di masa lalu menunjukkan bahwa kurangnya pemahaman terhadap dampak lingkungan dari suatu industri sering menyebabkan kesalahan dalam pengambilan keputusan investasi."
+    },
+    "v13": {
+     "tipe": "teks",
+     "isi": "Seiring dengan berkembangnya teknologi informasi, banyak perusahaan mulai menerapkan sistem pengelolaan data terintegrasi untuk mengatasi pertumbuhan volume data yang semakin besar. Sistem tersebut memungkinkan perusahaan menyimpan, mengelola, serta mengarsipkan data secara lebih efisien. Di kawasan Asia Pasifik, pertumbuhan data digital meningkat pesat akibat meningkatnya aktivitas bisnis digital serta adanya berbagai regulasi baru yang mewajibkan perusahaan menyimpan data dalam jangka waktu yang lebih lama. Dengan menggunakan sistem pengelolaan data terintegrasi, perusahaan dapat meningkatkan efisiensi penggunaan kapasitas penyimpanan serta mengurangi duplikasi sistem yang tidak diperlukan."
+    },
+    "v14": {
+     "tipe": "teks",
+     "isi": "PT Angin Nusantara berencana membangun pembangkit listrik tenaga angin di wilayah pesisir Kabupaten Seruni. Rencana pembangunan tersebut muncul karena kebutuhan listrik di wilayah tersebut terus meningkat sementara pasokan listrik yang tersedia masih terbatas. Pembangunan pembangkit listrik tenaga angin diharapkan dapat membantu menambah kapasitas listrik yang tersedia bagi masyarakat dan kawasan industri setempat. Meskipun kapasitas listrik yang dihasilkan tidak terlalu besar, perusahaan berharap proyek tersebut dapat menjadi salah satu alternatif sumber energi yang ramah lingkungan."
+    },
+    "v15": {
+     "tipe": "teks",
+     "isi": "Dalam beberapa tahun terakhir, pemerintah mendorong penggunaan energi terbarukan sebagai salah satu upaya untuk mengurangi ketergantungan terhadap bahan bakar fosil. Energi terbarukan seperti tenaga surya, tenaga angin, dan tenaga air dinilai lebih ramah lingkungan karena menghasilkan emisi karbon yang lebih rendah dibandingkan sumber energi konvensional. Selain itu, pengembangan energi terbarukan juga diharapkan dapat meningkatkan ketahanan energi nasional dalam jangka panjang."
+    },
+    "v16": {
+     "tipe": "teks",
+     "isi": "Pemerintah berencana melakukan perubahan sistem pembayaran dana pensiun bagi pegawai negeri sipil. Dalam sistem baru tersebut, sebagian besar kewajiban pembayaran dana pensiun akan ditanggung oleh anggaran negara. Kebijakan ini diharapkan dapat memberikan fleksibilitas yang lebih besar bagi lembaga pengelola dana pensiun untuk mengembangkan dana yang mereka miliki melalui berbagai instrumen investasi. Dengan demikian, pengelolaan dana pensiun diharapkan menjadi lebih efektif dan berkelanjutan."
+    },
+    "v17": {
+     "tipe": "teks",
+     "isi": "Perusahaan teknologi InfoData menerapkan sistem penyimpanan data berbasis layanan untuk meningkatkan efisiensi pengelolaan informasi perusahaan. Melalui pendekatan ini, perusahaan dapat menyesuaikan kapasitas penyimpanan data dengan kebutuhan operasional yang terus berkembang. Selain itu, sistem tersebut juga memungkinkan perusahaan mengarsipkan data yang jarang digunakan sehingga ruang penyimpanan dapat dimanfaatkan secara lebih optimal."
+    },
+    "v18": {
+     "tipe": "teks",
+     "isi": "Beberapa perusahaan pembiayaan kendaraan bermotor mengalami peningkatan jumlah kredit bermasalah dalam beberapa tahun terakhir. Kondisi tersebut dipengaruhi oleh berbagai faktor, antara lain meningkatnya harga bahan bakar, kenaikan inflasi, serta menurunnya kemampuan pembayaran sebagian nasabah. Selain itu, sebagian perusahaan pembiayaan juga menawarkan skema kredit dengan uang muka yang relatif rendah sehingga memudahkan masyarakat untuk membeli kendaraan."
+    },
+    "v19": {
+     "tipe": "teks",
+     "isi": "Dalam upaya meningkatkan daya saing industri nasional, pemerintah mendorong perusahaan manufaktur untuk mengadopsi teknologi otomatisasi dalam proses produksi. Penggunaan teknologi tersebut diharapkan dapat meningkatkan efisiensi, mengurangi kesalahan produksi, serta mempercepat proses pembuatan produk. Namun demikian, pemerintah juga menekankan pentingnya peningkatan keterampilan tenaga kerja agar mereka mampu beradaptasi dengan penggunaan teknologi baru di lingkungan kerja."
+    },
+    "v20": {
+     "tipe": "teks",
+     "isi": "Perkembangan perdagangan elektronik memberikan kemudahan bagi konsumen untuk melakukan transaksi secara daring tanpa harus datang langsung ke toko. Melalui berbagai platform digital, konsumen dapat mencari informasi produk, membandingkan harga, serta membaca ulasan dari pengguna lain sebelum memutuskan untuk membeli suatu barang. Kemudahan tersebut menjadi salah satu faktor yang mendorong pertumbuhan pesat sektor perdagangan elektronik dalam beberapa tahun terakhir."
+    }
+   },
+   "soal": [
+    {
+     "id": "verbal-1",
+     "stimulus": "v1",
+     "teks": "Sektor finansial merupakan sektor yang mengalami penurunan harga saham paling besar.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut bahwa dari sepuluh kelompok industri, sembilan turun dan sektor keuangan mencatat penurunan paling besar. \"Finansial\" adalah sinonim dari \"keuangan\", jadi pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-2",
+     "stimulus": "v2",
+     "teks": "Teknologi HSPA+ hanya dimanfaatkan untuk menyediakan layanan transfer data melalui jaringan nirkabel.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut HSPA+ meningkatkan kapasitas layanan data dua kali lipat dan kapasitas layanan suara tiga kali lipat. Jadi manfaatnya tidak terbatas pada transfer data. Kata \"hanya\" membuat pernyataan ini bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-3",
+     "stimulus": "v3",
+     "teks": "Tidak adanya pakar lingkungan hidup yang menjadi penasihat bagi sektor perbankan terjadi karena sulit menemukan orang yang benar-benar memahami persoalan lingkungan hidup di Indonesia.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya menyebut bahwa bank lokal pada tahun 1980-an belum memiliki tenaga ahli di bidang pulp dan kertas serta kurang informasi pasar global. Alasan \"sulit menemukan orang yang memahami lingkungan hidup di Indonesia\" tidak pernah disebut, sehingga tidak dapat disimpulkan.",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah."
+     ]
+    },
+    {
+     "id": "verbal-4",
+     "stimulus": "v4",
+     "teks": "Pertumbuhan jumlah data digital di kawasan Asia Pasifik dipengaruhi oleh adanya aturan yang mewajibkan perusahaan menyimpan data lebih lama.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyatakan bahwa data di Asia Pasifik terus meningkat terutama karena regulasi baru yang mengharuskan perusahaan menyimpan data lebih lama. Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-5",
+     "stimulus": "v5",
+     "teks": "Pembangunan pembangkit listrik tenaga angin di Pulau Selayar dapat sepenuhnya menggantikan kebutuhan listrik industri yang selama ini dipasok oleh PLN.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut kapasitas listrik yang dihasilkan \"tidak terlalu besar\" dan pembangkit ini hanya diharapkan menjadi salah satu alternatif untuk membantu. Klaim bahwa pembangkit itu dapat sepenuhnya menggantikan pasokan PLN bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-6",
+     "stimulus": "v6",
+     "teks": "Pembangkit listrik tenaga angin dapat digunakan sebagai salah satu alternatif untuk membantu mengatasi masalah kekurangan energi di Indonesia.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Kalimat penutup teks menyebut pembangkit listrik tenaga angin diharapkan menjadi salah satu alternatif untuk membantu mengatasi keterbatasan pasokan listrik di beberapa wilayah Indonesia. \"Kekurangan energi\" setara dengan \"keterbatasan pasokan listrik\", jadi pernyataan sesuai.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-7",
+     "stimulus": "v7",
+     "teks": "Kebijakan penanggungjawaban penuh dana pensiun oleh APBN dimaksudkan agar Dana Pensiun tidak lagi menanggung kewajiban pembayaran pensiun.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyatakan seluruh kewajiban pembayaran pensiun menjadi tanggung jawab pemerintah (APBN) sehingga Dana Pensiun punya ruang untuk mengembangkan modalnya. Dengan kata lain, beban pembayaran berpindah dari Dana Pensiun ke APBN, dan perpindahan itulah yang membuat Dana Pensiun leluasa. Catatan: ini butir yang paling bisa diperdebatkan, karena tujuan yang disebut eksplisit adalah keleluasaan mengembangkan modal; membebaskan Dana Pensiun dari kewajiban bayar adalah mekanismenya.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-8",
+     "stimulus": "v8",
+     "teks": "Kapasitas media penyimpanan merupakan faktor utama yang menentukan pemilihan sistem penyimpanan arsip dalam suatu perusahaan.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya menjelaskan bahwa pendekatan berorientasi layanan membantu memaksimalkan pemanfaatan media penyimpanan dan menyebut beberapa langkah dasar (konsolidasi, peningkatan pemanfaatan, dsb.). Tidak ada penjelasan tentang faktor yang menentukan pemilihan sistem penyimpanan arsip, apalagi kapasitas sebagai faktor utama. Tidak dapat disimpulkan.",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah."
+     ]
+    },
+    {
+     "id": "verbal-9",
+     "stimulus": "v9",
+     "teks": "Kesulitan restrukturisasi kredit kendaraan roda empat pada perusahaan pembiayaan terjadi karena mayoritas nasabah berasal dari kelompok masyarakat berpendapatan menengah ke bawah.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut penyebab kesulitan restrukturisasi adalah perbedaan mekanisme pembiayaan dibandingkan sistem kredit perbankan. Fakta bahwa sebagian besar nasabah berpenghasilan menengah ke bawah disebut dalam konteks naiknya kredit macet, bukan sebagai penyebab kesulitan restrukturisasi. Sebab yang disebut pernyataan berbeda dari sebab di teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-10",
+     "stimulus": "v10",
+     "teks": "Sektor teknologi merupakan sektor yang mengalami penurunan harga saham paling besar.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut sektor teknologi sebagai sektor yang mengalami penurunan paling besar. Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-11",
+     "stimulus": "v11",
+     "teks": "Teknologi LTE-A hanya digunakan untuk meningkatkan kecepatan akses internet pengguna.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Selain kecepatan akses internet yang lebih tinggi, teks menyebut LTE-A meningkatkan kapasitas jaringan, mempercepat pengiriman data, memungkinkan layanan digital tambahan (video berkualitas tinggi), dan meningkatkan efisiensi jaringan. Kata \"hanya\" bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-12",
+     "stimulus": "v12",
+     "teks": "Lembaga keuangan selalu melibatkan pakar lingkungan hidup dalam setiap proses pembiayaan proyek industri.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks hanya menyebut bahwa lembaga keuangan perlu melibatkan tenaga ahli lingkungan, dan pengalaman masa lalu menunjukkan kurangnya pemahaman dampak lingkungan sering menimbulkan kesalahan keputusan. Itu berarti pelibatan pakar belum selalu terjadi, sehingga \"selalu melibatkan\" tidak sesuai dengan teks. Catatan: sebagian orang memilih \"tidak dapat disimpulkan\" karena teks tidak menyebut praktik saat ini; namun petunjuk \"perlu\" dan \"pengalaman di masa lalu\" lebih mengarah ke Salah.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-13",
+     "stimulus": "v13",
+     "teks": "Regulasi baru yang mewajibkan perusahaan menyimpan data lebih lama menjadi salah satu penyebab meningkatnya jumlah data digital.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut regulasi baru yang mewajibkan perusahaan menyimpan data lebih lama sebagai salah satu pemicu pertumbuhan data digital (di samping meningkatnya aktivitas bisnis digital). Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-14",
+     "stimulus": "v14",
+     "teks": "Pembangkit listrik tenaga angin tersebut akan menghasilkan listrik dalam jumlah sangat besar sehingga mampu memenuhi seluruh kebutuhan listrik wilayah tersebut.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut kapasitas listrik yang dihasilkan \"tidak terlalu besar\" dan proyek hanya diharapkan menjadi salah satu alternatif sumber energi. Klaim \"jumlah sangat besar\" dan \"memenuhi seluruh kebutuhan\" bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-15",
+     "stimulus": "v15",
+     "teks": "Penggunaan energi terbarukan dapat membantu mengurangi ketergantungan terhadap bahan bakar fosil.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyatakan bahwa energi terbarukan didorong pemerintah sebagai upaya mengurangi ketergantungan terhadap bahan bakar fosil. Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-16",
+     "stimulus": "v16",
+     "teks": "Seluruh dana pensiun pegawai negeri akan dikelola sepenuhnya oleh lembaga investasi swasta.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 1,
+     "pembahasan": "Teks hanya menyebut bahwa sebagian besar kewajiban pembayaran ditanggung anggaran negara dan lembaga pengelola dana pensiun diharapkan lebih fleksibel mengembangkan dana lewat instrumen investasi. Tidak ada informasi bahwa seluruh dana dikelola sepenuhnya oleh lembaga investasi swasta. Tidak dapat disimpulkan.",
+     "alasan": [
+      "Teks tidak memuat informasi yang mendukung pernyataan ini. Jangan memakai pengetahuan atau asumsi di luar teks.",
+      "",
+      "Teks juga tidak membantahnya. Tidak disebut di teks bukan berarti salah."
+     ]
+    },
+    {
+     "id": "verbal-17",
+     "stimulus": "v17",
+     "teks": "Pendekatan berbasis layanan dapat membantu perusahaan meningkatkan efisiensi penggunaan kapasitas penyimpanan data.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut sistem berbasis layanan membuat perusahaan dapat menyesuaikan kapasitas penyimpanan dan memanfaatkan ruang penyimpanan secara lebih optimal, dengan tujuan meningkatkan efisiensi pengelolaan informasi. Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-18",
+     "stimulus": "v18",
+     "teks": "Salah satu faktor meningkatnya kredit bermasalah adalah kenaikan harga bahan bakar.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut meningkatnya harga bahan bakar sebagai salah satu faktor yang memengaruhi bertambahnya kredit bermasalah. Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    },
+    {
+     "id": "verbal-19",
+     "stimulus": "v19",
+     "teks": "Pemerintah melarang perusahaan menggunakan teknologi otomatisasi dalam proses produksi.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 2,
+     "pembahasan": "Teks menyebut pemerintah justru mendorong perusahaan manufaktur mengadopsi teknologi otomatisasi. Pernyataan bertentangan dengan teks.",
+     "alasan": [
+      "Teks memuat informasi yang bertentangan dengan pernyataan ini.",
+      "Teks cukup jelas membantah pernyataan ini, jadi bisa disimpulkan Salah.",
+      ""
+     ]
+    },
+    {
+     "id": "verbal-20",
+     "stimulus": "v20",
+     "teks": "Konsumen dapat membandingkan harga produk dari berbagai penjual melalui platform perdagangan elektronik.",
+     "opsi": [
+      "Benar",
+      "Tidak dapat disimpulkan",
+      "Salah"
+     ],
+     "kunci": 0,
+     "pembahasan": "Teks menyebut konsumen dapat mencari informasi produk dan membandingkan harga melalui berbagai platform digital. Pernyataan sesuai dengan teks.",
+     "alasan": [
+      "",
+      "Informasi yang dibutuhkan ada di teks, jadi pernyataan ini bisa dinilai.",
+      "Teks justru mendukung pernyataan ini; tidak ada informasi yang membantahnya."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "numerik",
+   "nama": "NCR-S (Numerik dari Grafik dan Tabel)",
+   "jenis": "kognitif",
+   "durasi_menit": 10,
+   "instruksi": "Perhatikan grafik atau tabel, lalu pilih jawaban yang paling tepat berdasarkan data yang ditampilkan.",
+   "stimulus": {
+    "n1": {
+     "tipe": "gambar",
+     "src": "aset/paket-1/ncr-1.png",
+     "judul": "Indeks harga per kelompok pengeluaran (Jan–Des)"
+    },
+    "n2": {
+     "tipe": "gambar",
+     "src": "aset/paket-1/ncr-2.png",
+     "judul": "Persentase per provinsi, tahun 1–5"
+    },
+    "n3": {
+     "tipe": "gambar",
+     "src": "aset/paket-1/ncr-3.png",
+     "judul": "Nilai tukar rupiah terhadap mata uang asing"
+    },
+    "n4": {
+     "tipe": "tabel",
+     "judul": "Laporan Dana Promosi PT Nusantara Bali (Rp)",
+     "kolom": [
+      "Produk",
+      "Tahun 1",
+      "Tahun 2",
+      "Tahun 3",
+      "Tahun 4"
+     ],
+     "baris": [
+      [
+       "Iklan Televisi",
+       165000000,
+       235000000,
+       270000000,
+       275000000
+      ],
+      [
+       "Program Referal",
+       "330,000,00",
+       "350,000,00",
+       415000000,
+       370000000
+      ],
+      [
+       "Kerja Influencer",
+       350000000,
+       0,
+       700000000,
+       230000000
+      ],
+      [
+       "Event Pameran",
+       0,
+       97000000,
+       270000000,
+       750000000
+      ],
+      [
+       "Iklan Media Sosial",
+       0,
+       0,
+       10000000,
+       15000000
+      ],
+      [
+       "Kerjasama Distributor",
+       70000000,
+       120000000,
+       180000000,
+       120000000
+      ]
+     ]
+    },
+    "n5": {
+     "tipe": "gambar",
+     "src": "aset/paket-1/ncr-4.png",
+     "judul": "Laju Pertumbuhan Penduduk"
+    }
+   },
+   "soal": [
+    {
+     "id": "numerik-1",
+     "stimulus": "n1",
+     "teks": "Pada bulan apa harga perumahan menyentuh harga tertinggi?",
+     "opsi": [
+      "Agustus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember",
+      "Tidak bisa ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Garis kuning (PERUMAHAN) naik hampir terus-menerus sepanjang tahun. Nilainya sekitar 164,3 pada Oktober, turun sedikit menjadi sekitar 163,6 pada November, lalu mencapai titik tertinggi sekitar 165,7 pada Desember. Jadi harga perumahan tertinggi ada di bulan Desember.",
+     "alasan": [
+      "Grafik masih terus naik setelah Agustus, jadi belum titik tertinggi.",
+      "Setelah September harga masih naik, sampai sekitar 164,3 pada Oktober.",
+      "Oktober (sekitar 164,3) masih lebih rendah daripada Desember (sekitar 165,7).",
+      "November justru turun sedikit menjadi sekitar 163,6.",
+      "",
+      "Nilai setiap bulan terbaca di grafik, jadi titik tertingginya bisa ditentukan."
+     ]
+    },
+    {
+     "id": "numerik-2",
+     "stimulus": "n2",
+     "teks": "Di antara tahun ke-1 hingga tahun ke-5, provinsi manakah yang mengalami penurunan terbesar dalam satu periode waktu (dari satu tahun ke tahun berikutnya)?",
+     "opsi": [
+      "Kalteng (tahun 2-3)",
+      "Kaltim (tahun 1-2)",
+      "Kalbar (tahun 3-4)",
+      "Sulsel (tahun 3-4)",
+      "Tidak bisa ditentukan",
+      "Maluku (tahun 3-4)"
+     ],
+     "kunci": 2,
+     "pembahasan": "Penurunan antar-tahun (poin persentase): Kalteng th 2-3 = 17,21 − 15,92 = 1,29; Kaltim th 1-2 = 21,42 − 19,80 = 1,62; Kalbar th 3-4 = 19,75 − 17,33 = 2,42; Sulsel th 3-4 = 3,90 − 3,51 = 0,39; Maluku th 3-4 = 4,60 − 4,08 = 0,52. Terbesar Kalbar tahun 3-4 (2,42 poin); penurunan lain di semua provinsi lebih kecil, jadi 'tidak bisa ditentukan' tidak tepat.",
+     "alasan": [
+      "Kalteng turun 1,29 poin, lebih kecil dari Kalbar (2,42 poin).",
+      "Kaltim turun 1,62 poin, lebih kecil dari Kalbar (2,42 poin).",
+      "",
+      "Sulsel turun 0,39 poin, lebih kecil dari Kalbar (2,42 poin).",
+      "Semua angka tersedia di grafik, jadi penurunan tiap provinsi bisa dihitung.",
+      "Maluku turun 0,52 poin, lebih kecil dari Kalbar (2,42 poin)."
+     ]
+    },
+    {
+     "id": "numerik-3",
+     "stimulus": "n3",
+     "teks": "Pada tahun ke-4 seseorang mempunyai 200 juta rupiah. Jika ditukar dengan mata uang AUD, berapa AUD yang diterima?",
+     "opsi": [
+      "21.950 AUD",
+      "22.100 AUD",
+      "22.401 AUD",
+      "22.700 AUD",
+      "23.000 AUD",
+      "Tidak bisa ditentukan"
+     ],
+     "kunci": 2,
+     "pembahasan": "Pada tahun ke-4 kurs AUD adalah Rp8.928 per 1 AUD (garis abu-abu, label 8.928). Jumlah AUD = 200.000.000 : 8.928 = 22.401,43, atau sekitar 22.401 AUD.",
+     "alasan": [
+      "Tidak sesuai hasil hitung: 200.000.000 ÷ 8.928 (kurs tahun ke-4) = 22.401 AUD.",
+      "Tidak sesuai hasil hitung: 200.000.000 ÷ 8.928 (kurs tahun ke-4) = 22.401 AUD.",
+      "",
+      "Tidak sesuai hasil hitung: 200.000.000 ÷ 8.928 (kurs tahun ke-4) = 22.401 AUD.",
+      "Tidak sesuai hasil hitung: 200.000.000 ÷ 8.928 (kurs tahun ke-4) = 22.401 AUD.",
+      "Kurs AUD tahun ke-4 tercantum di grafik (Rp8.928)."
+     ]
+    },
+    {
+     "id": "numerik-4",
+     "stimulus": "n4",
+     "teks": "Jika pada tahun ketiga perusahaan menggunakan 45% dari total dana promosi yang tersedia pada tahun tersebut, berapakah sisa dana promosi yang masih tersimpan pada tahun ketiga?",
+     "opsi": [
+      "Rp964.750.000",
+      "Rp984.750.000",
+      "Rp1.004.750.000",
+      "Rp1.014.750.000",
+      "Rp1.024.750.000",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 3,
+     "pembahasan": "Total dana promosi tahun ke-3 = 270 + 415 + 700 + 270 + 10 + 180 = 1.845 juta, yaitu Rp1.845.000.000. Dana yang dipakai 45%, sehingga sisa dana adalah 55%: 55% × 1.845.000.000 = Rp1.014.750.000. Catatan: pada tabel di file asli, dua sel kolom Program Referal tertulis \"330,000,00\" dan \"350,000,00\" (kemungkinan salah ketik). Sel tersebut ada di tahun 1 dan 2 sehingga tidak memengaruhi jawaban soal ini.",
+     "alasan": [
+      "Selisih Rp50 juta dari 55% × Rp1.845.000.000 = Rp1.014.750.000; periksa lagi penjumlahan total dana tahun ke-3.",
+      "Selisih Rp30 juta dari 55% × Rp1.845.000.000 = Rp1.014.750.000; periksa lagi penjumlahan total dana tahun ke-3.",
+      "Selisih Rp10 juta dari 55% × Rp1.845.000.000 = Rp1.014.750.000; periksa lagi penjumlahan total dana tahun ke-3.",
+      "",
+      "Selisih Rp10 juta dari 55% × Rp1.845.000.000 = Rp1.014.750.000; periksa lagi penjumlahan total dana tahun ke-3.",
+      "Semua angka tahun ke-3 tersedia di tabel; sel yang salah ketik hanya ada di tahun 1 dan 2."
+     ]
+    },
+    {
+     "id": "numerik-5",
+     "stimulus": "n5",
+     "teks": "Kota dengan laju pertumbuhan penduduk pada tahun 2006 di peringkat ketiga adalah …",
+     "opsi": [
+      "Palembang",
+      "Jakarta",
+      "Medan",
+      "Makassar",
+      "Surabaya",
+      "Tidak dapat ditentukan"
+     ],
+     "kunci": 4,
+     "pembahasan": "Urutkan laju pertumbuhan tahun 2006 (batang oranye) dari yang terbesar: Medan 4,65; Balikpapan 4,45; Surabaya 4,32; Palembang 3,45; Jakarta 2,34; Makassar 2,06; Semarang 1,23; Bandung 0,23. Peringkat ketiga adalah Surabaya. Waspadai batang berwarna lain (misalnya Surabaya 2005 = 4,65 atau Medan 2005 = 4,23) yang bisa menjebak.",
+     "alasan": [
+      "Palembang 3,45, peringkat keempat.",
+      "Jakarta 2,34, peringkat kelima.",
+      "Medan 4,65, peringkat pertama.",
+      "Makassar 2,06, peringkat keenam.",
+      "",
+      "Batang tahun 2006 terbaca jelas di grafik, jadi peringkatnya bisa ditentukan."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sjt",
+   "nama": "SJT – Leadership Mandiri",
+   "jenis": "sjt",
+   "durasi_menit": 25,
+   "instruksi": "Pilih satu tindakan yang menurut Anda paling tepat untuk menangani situasi tersebut.",
+   "soal": [
+    {
+     "id": "sjt-1",
+     "teks": "Sebagai pimpinan Unit Bisnis, Anda memimpin tim yang performanya tidak mengalami perkembangan signifikan selama dua kuartal terakhir. Hasil audit internal menunjukkan bahwa prosedur layanan sudah berjalan sesuai ketentuan, namun tingkat konversi nasabah melalui kanal digital masih jauh di bawah target yang ditetapkan wilayah. Di sisi lain, para kompetitor mulai agresif menawarkan layanan berbasis aplikasi dengan proses yang lebih cepat dan praktis. Tim Anda juga merasakan peningkatan beban kerja akibat masih tingginya proses layanan manual serta adanya penerapan kebijakan baru dari kantor pusat. Pimpinan area meminta Anda menyiapkan rencana perbaikan dalam waktu satu bulan, dengan harapan dampak perbaikan tersebut sudah mulai terlihat dalam dua kuartal mendatang. Dalam situasi ini, Anda perlu menentukan langkah yang tidak hanya mampu mengatasi tantangan operasional saat ini, tetapi juga menciptakan peluang pertumbuhan bisnis yang berkelanjutan tanpa mengurangi kualitas layanan maupun kepatuhan terhadap aturan. Langkah apa yang paling tepat dan efektif untuk Anda lakukan dalam menghadapi kondisi tersebut?",
+     "opsi": [
+      "Menginisiasi diskusi lintas fungsi untuk mengevaluasi berbagai alternatif perubahan, kemudian menetapkan arah strategi baru meskipun membutuhkan komitmen tambahan dari tim.",
+      "Memfokuskan tim pada pencapaian target bulanan agar semangat kerja tetap terjaga, sambil menunda inisiatif perubahan meskipun berisiko kehilangan peluang dari lingkungan eksternal.",
+      "Mengadaptasi sebagian pendekatan yang digunakan oleh pesaing guna mempercepat pencapaian hasil, walaupun efektivitasnya belum sepenuhnya teruji di unit Anda.",
+      "Menugaskan supervisor untuk segera menyusun rencana perbaikan agar proses lebih cepat berjalan, meskipun kemungkinan analisis strategisnya tidak terlalu mendalam.",
+      "Melakukan perbaikan kecil pada proses layanan yang ada untuk meningkatkan hasil dalam jangka pendek, walaupun dampaknya terhadap transformasi jangka panjang masih terbatas."
+     ],
+     "kunci": 0,
+     "pembahasan": "Masalahnya bersifat struktural: konversi digital rendah, pesaing sudah berbasis aplikasi, dan proses manual masih tinggi. Karena itu perlu evaluasi menyeluruh bersama lintas fungsi, lalu menetapkan arah strategi baru. Ini memenuhi syarat soal, yaitu mengatasi tantangan sekarang sekaligus membuka pertumbuhan berkelanjutan tanpa mengorbankan kualitas dan kepatuhan. Komitmen tambahan tim adalah harga yang wajar.",
+     "alasan": [
+      "",
+      "Menunda perubahan dan berisiko kehilangan peluang.",
+      "Meniru pesaing tanpa pengujian di unit sendiri.",
+      "Mendelegasikan tanpa analisis strategis yang cukup.",
+      "Hanya perbaikan kecil dengan dampak jangka panjang terbatas."
+     ]
+    },
+    {
+     "id": "sjt-2",
+     "teks": "Sebagai pemimpin unit, Anda menyadari bahwa salah satu supervisor yang selama ini menjadi andalan tim kerap memberikan perhatian atau perlakuan lebih kepada beberapa anggota tim yang memiliki hubungan personal dengannya. Dari sisi kinerja, supervisor tersebut memang menunjukkan performa yang sangat baik dan berkontribusi signifikan terhadap pencapaian target unit. Namun belakangan ini mulai muncul keluhan tidak resmi dari beberapa anggota tim lain yang merasa pembagian tugas maupun kesempatan pengembangan tidak diberikan secara adil. Jika kondisi ini dibiarkan, hal tersebut berpotensi menurunkan tingkat kepercayaan dalam tim dan menciptakan lingkungan kerja yang kurang sehat. Di sisi lain, menegur supervisor yang memiliki kinerja tinggi juga bisa menimbulkan ketegangan dan berpengaruh pada motivasinya. Dalam situasi ini, Anda perlu menentukan langkah yang dapat menunjukkan integritas sebagai seorang pemimpin sekaligus menjaga stabilitas tim. Langkah apa yang paling tepat Anda lakukan untuk menangani situasi tersebut?",
+     "opsi": [
+      "Melakukan rotasi peran di dalam tim agar kesan keberpihakan dapat berkurang secara alami, meskipun pesan nilai kepemimpinan mungkin tidak tersampaikan dengan jelas.",
+      "Menyimpan isu tersebut sebagai bahan pertimbangan dalam evaluasi kinerja tahunan sebelum mengambil tindakan lanjutan, walaupun berisiko memengaruhi dinamika tim.",
+      "Mengajak supervisor berdiskusi secara terbuka mengenai persepsi ketidakadilan yang muncul serta menegaskan kembali pentingnya menjaga standar etika kerja, meskipun ada kemungkinan menimbulkan ketegangan dalam hubungan kerja.",
+      "Meminta supervisor meninjau kembali pembagian tugas di dalam tim tanpa secara langsung mengangkat isu etika, dengan tujuan menjaga suasana kerja tetap kondusif.",
+      "Menyampaikan kepada seluruh tim mengenai pentingnya bersikap objektif dan profesional dalam forum bersama tanpa menyinggung kasus tertentu secara langsung."
+     ],
+     "kunci": 2,
+     "pembahasan": "Isu ketidakadilan ditangani langsung dan tepat sasaran: berdiskusi terbuka dengan supervisor dan menegaskan standar etika. Ini menunjukkan integritas pemimpin. Kinerja tinggi tidak boleh menjadi alasan menoleransi perlakuan tidak adil, dan risiko ketegangan bisa dikelola.",
+     "alasan": [
+      "Hanya meredam gejala dan pesan nilai tidak tersampaikan.",
+      "Menunda ke evaluasi tahunan sehingga ketidakadilan terus berlangsung.",
+      "",
+      "Menghindari isu etika yang menjadi inti masalah.",
+      "Pesan umum ke seluruh tim sehingga tidak menyentuh sumber masalah."
+     ]
+    },
+    {
+     "id": "sjt-3",
+     "teks": "Sebagai Manajer Operasional, Anda mendapat tanggung jawab untuk meningkatkan efisiensi kerja tim melalui penerapan sistem pelaporan digital yang baru diperkenalkan oleh perusahaan. Data menunjukkan bahwa beberapa unit lain yang telah menggunakan sistem tersebut berhasil mempercepat proses pelaporan hingga 15–20%. Namun, sebagian anggota tim Anda masih merasa ragu karena khawatir akan kesalahan penggunaan sistem dan tambahan waktu untuk mempelajari fitur baru. Manajemen mengharapkan peningkatan kinerja dalam waktu enam bulan, sementara Anda tetap harus memastikan proses operasional berjalan stabil selama masa penyesuaian. Apa langkah yang paling efektif yang akan Anda lakukan untuk mengatasi situasi tersebut?",
+     "opsi": [
+      "Menggunakan sistem digital hanya pada beberapa proses tertentu agar risiko kesalahan dapat dikendalikan, meskipun peningkatan efisiensi menjadi terbatas.",
+      "Menunjuk satu kelompok kecil sebagai tim percobaan untuk menggunakan sistem baru terlebih dahulu, walaupun penerapan ke seluruh tim menjadi lebih lambat.",
+      "Menunda penerapan sistem sampai ada panduan teknis yang lebih rinci dari manajemen pusat, meskipun proses peningkatan kinerja menjadi tertunda.",
+      "Menyusun rencana penerapan sistem secara bertahap dengan target yang jelas serta memberikan pelatihan dan pendampingan kepada tim, meskipun membutuhkan waktu dan komitmen tambahan.",
+      "Mewajibkan seluruh anggota tim langsung menggunakan sistem baru agar hasil peningkatan kinerja dapat terlihat lebih cepat, walaupun risiko kesalahan penggunaan cukup tinggi."
+     ],
+     "kunci": 3,
+     "pembahasan": "Penerapan bertahap dengan target jelas, disertai pelatihan dan pendampingan, menjawab sumber keraguan tim (takut salah dan butuh waktu belajar), menjaga operasional tetap stabil, dan tetap mengejar target enam bulan.",
+     "alasan": [
+      "Membuat peningkatan efisiensi terlalu terbatas.",
+      "Uji coba kecil memperlambat dan tidak menyiapkan seluruh tim.",
+      "Menunda padahal unit lain sudah membuktikan hasilnya.",
+      "",
+      "Memaksakan penggunaan langsung dengan risiko kesalahan tinggi dan mengganggu stabilitas."
+     ]
+    },
+    {
+     "id": "sjt-4",
+     "teks": "Unit kerja Anda sedang berupaya mencapai target peningkatan transaksi digital yang cukup tinggi. Salah satu usulan dari tim adalah menyederhanakan proses verifikasi agar proses pendaftaran nasabah baru dapat berlangsung lebih cepat. Namun, tim kepatuhan mengingatkan bahwa perubahan tersebut berpotensi bertentangan dengan aturan know your customer (KYC) serta dapat meningkatkan risiko operasional. Di sisi lain, manajemen mendorong inovasi untuk mempercepat pertumbuhan bisnis, tetapi tetap menegaskan bahwa kepatuhan terhadap regulasi harus dijaga secara ketat. Anda berada pada posisi yang harus mampu menyeimbangkan kebutuhan ekspansi bisnis dengan kewajiban mengikuti aturan yang berlaku. Keputusan yang Anda ambil juga akan menjadi gambaran apakah unit Anda dipandang sebagai penggerak inovasi yang tetap bertanggung jawab atau sebagai pihak yang terlalu berani mengambil risiko. Tindakan apa yang paling efektif Anda lakukan untuk menghadapi situasi tersebut?",
+     "opsi": [
+      "Melakukan studi perbandingan terhadap praktik terbaik di industri sebelum menentukan langkah agar keputusan didukung oleh referensi yang kuat.",
+      "Meninjau kembali rancangan proses bersama tim bisnis dan tim kepatuhan untuk mencari solusi yang tetap memenuhi kebutuhan operasional sekaligus mematuhi aturan.",
+      "Menerapkan uji coba terbatas pada kelompok nasabah tertentu dengan pengawasan tambahan agar dampak bisnis dan risiko dapat dipantau dengan jelas.",
+      "Menggunakan standar kepatuhan yang paling ketat pada seluruh proses digital guna memastikan potensi pelanggaran regulasi dapat diminimalkan.",
+      "Menyerahkan sepenuhnya perancangan proses baru kepada tim kepatuhan, sementara tim bisnis difokuskan pada upaya mencapai target pertumbuhan."
+     ],
+     "kunci": 1,
+     "pembahasan": "Solusi dicari bersama tim bisnis dan tim kepatuhan sehingga proses tetap cepat sekaligus patuh KYC. Ini inovasi yang bertanggung jawab dan menjawab tuntutan manajemen: tumbuh tanpa melanggar aturan.",
+     "alasan": [
+      "Hanya studi tanpa langkah penyelesaian.",
+      "",
+      "Uji coba pada rancangan yang berpotensi melanggar KYC tetap berisiko regulasi.",
+      "Terlalu defensif dan mengabaikan kebutuhan pertumbuhan.",
+      "Melepas tanggung jawab dan memisahkan bisnis dari kepatuhan."
+     ]
+    },
+    {
+     "id": "sjt-5",
+     "teks": "Sebagai kepala unit pembiayaan, Anda melihat adanya peningkatan permintaan kredit dari pelaku usaha menengah. Segmen ini selama ini dikenal mampu memberikan keuntungan yang cukup tinggi, namun juga memiliki tingkat fluktuasi risiko yang relatif besar dibanding segmen lainnya. Pada saat yang sama, perusahaan menetapkan target pertumbuhan portofolio kredit yang cukup agresif pada tahun ini sehingga menjadi perhatian manajemen wilayah. Sebagian anggota tim Anda menjadi lebih berhati-hati karena pengalaman beberapa kasus kredit bermasalah yang terjadi pada tahun sebelumnya. Namun, apabila unit terlalu konservatif, ada kemungkinan peluang bisnis akan dimanfaatkan oleh pesaing. Anda perlu menentukan pendekatan kepemimpinan yang tepat: tetap sangat berhati-hati atau mengambil langkah yang lebih progresif dengan pengelolaan risiko yang terukur. Pilihan yang Anda ambil akan memengaruhi kepercayaan diri tim dalam memanfaatkan peluang sekaligus penilaian manajemen terhadap kemampuan Anda dalam memimpin unit. Tindakan apa yang paling efektif Anda ambil untuk menghadapi kondisi tersebut?",
+     "opsi": [
+      "Membuka kembali penyaluran kredit pada segmen tersebut dengan proses seleksi yang lebih ketat serta pemantauan portofolio secara aktif, meskipun membutuhkan pengawasan tambahan.",
+      "Menetapkan batas penyaluran kredit untuk segmen tersebut sambil melakukan evaluasi berkala agar pertumbuhan tetap berjalan tetapi risikonya lebih terkendali.",
+      "Mengarahkan tim untuk meningkatkan jumlah persetujuan kredit demi mencapai target pertumbuhan dengan mengandalkan sistem pengendalian risiko yang sudah tersedia.",
+      "Meningkatkan keterlibatan komite kredit dalam pengambilan keputusan penting serta mendorong diskusi lintas fungsi untuk mempertimbangkan berbagai perspektif risiko.",
+      "Mengumpulkan data dan melakukan analisis pasar tambahan sebelum memutuskan strategi yang lebih besar agar keputusan didukung informasi yang lebih lengkap."
+     ],
+     "kunci": 0,
+     "pembahasan": "Pendekatan progresif tetapi terukur: segmen yang menguntungkan kembali dilayani dengan seleksi lebih ketat dan pemantauan portofolio aktif. Ini menjawab target agresif, mengembalikan kepercayaan diri tim, dan belajar dari kasus kredit bermasalah sebelumnya.",
+     "alasan": [
+      "",
+      "Paling mendekati kunci, tetapi membatasi penyaluran sehingga kurang proaktif terhadap target.",
+      "Mendorong jumlah persetujuan tanpa memperketat seleksi.",
+      "Menambah lapisan diskusi tanpa langkah nyata di pasar.",
+      "Menunda keputusan menunggu data tambahan saat pesaing bisa mengambil peluang."
+     ]
+    },
+    {
+     "id": "sjt-6",
+     "teks": "Anda bertugas sebagai Manajer Pengembangan Layanan yang memimpin program digitalisasi pada proses pembukaan rekening di unit kerja Anda. Program tersebut telah berjalan selama enam bulan dan menunjukkan penurunan waktu layanan secara statistik. Namun, beberapa nasabah masih menyampaikan keluhan mengenai kejelasan informasi serta ketidakkonsistenan dalam alur pelayanan. Di sisi lain, tim teknologi menilai sistem yang diterapkan sudah bekerja dengan baik, sedangkan petugas layanan merasa beberapa fitur justru membuat pekerjaan mereka lebih rumit. Pimpinan wilayah kemudian meminta dilakukan peninjauan kembali untuk memastikan apakah program tersebut benar-benar memberikan manfaat bagi tujuan bisnis jangka menengah atau hanya terlihat baik dari sisi efisiensi laporan. Dalam situasi ini, Anda perlu menentukan langkah yang mampu menjaga kualitas layanan kepada nasabah, efektivitas kerja tim, serta keberlanjutan transformasi digital di organisasi. Tindakan apa yang paling tepat Anda lakukan untuk menangani kondisi tersebut?",
+     "opsi": [
+      "Memprioritaskan pencapaian target efisiensi karena indikator tersebut menjadi perhatian utama manajemen, walaupun kualitas pengalaman nasabah belum sepenuhnya optimal.",
+      "Menunggu arahan dan evaluasi resmi dari kantor pusat sebelum melakukan perubahan agar keputusan tetap sesuai prosedur organisasi.",
+      "Menginisiasi evaluasi bersama antara tim teknologi dan tim layanan untuk menilai kembali dampak sistem terhadap proses kerja dan pengalaman nasabah.",
+      "Tetap menjalankan sistem yang ada sambil meningkatkan komunikasi kepada nasabah agar mereka lebih memahami proses yang berlaku.",
+      "Mengusulkan penyederhanaan pada beberapa fitur sistem agar alur kerja lebih praktis meskipun perbaikan hanya mencakup sebagian proses."
+     ],
+     "kunci": 2,
+     "pembahasan": "Ukuran efisiensi saja tidak cukup karena ada keluhan nasabah dan keluhan petugas, sementara tim teknologi menilai sistem baik-baik saja. Evaluasi bersama tim teknologi dan tim layanan menilai dampak nyata pada proses kerja dan pengalaman nasabah, sehingga kualitas, efektivitas, dan keberlanjutan transformasi tetap terjaga.",
+     "alasan": [
+      "Mengorbankan pengalaman nasabah demi angka.",
+      "Pasif menunggu pusat.",
+      "",
+      "Hanya memperbaiki komunikasi, padahal alur bermasalah tidak diperbaiki.",
+      "Perbaikan parsial tanpa evaluasi menyeluruh."
+     ]
+    },
+    {
+     "id": "sjt-7",
+     "teks": "Anda menjabat sebagai pimpinan unit bisnis komersial yang memiliki keunggulan pada hubungan jangka panjang dengan nasabah lama serta kualitas pelayanan yang stabil. Meskipun demikian, tingkat keuntungan unit mulai tertekan karena biaya operasional yang relatif lebih besar dibandingkan unit lain di wilayah yang sama. Pimpinan wilayah meminta setiap kepala unit menyusun strategi untuk meningkatkan profitabilitas tanpa merusak kepercayaan dan loyalitas nasabah yang sudah terbangun. Anda memahami bahwa keputusan yang diambil perlu mempertimbangkan posisi daya saing unit, apakah dengan memaksimalkan kekuatan relasi yang ada, memperbaiki efisiensi operasional, atau menata kembali fokus portofolio bisnis secara lebih strategis. Tindakan apa yang paling tepat Anda lakukan untuk merespons kondisi tersebut?",
+     "opsi": [
+      "Mengarahkan pengembangan bisnis ke segmen dengan margin lebih tinggi untuk meningkatkan keuntungan, walaupun hubungan dengan nasabah pada segmen tersebut belum terlalu kuat.",
+      "Melakukan pengurangan biaya operasional secara signifikan guna memperbaiki profitabilitas, meskipun ada risiko penurunan kualitas layanan dalam jangka menengah.",
+      "Menunda penetapan strategi baru hingga hasil evaluasi dari manajemen wilayah selesai, walaupun kesempatan memperbaiki kinerja unit bisa terlewat.",
+      "Mengajukan strategi kombinasi dengan mempertahankan layanan yang bernilai bagi nasabah sekaligus melakukan standarisasi proses pendukung agar lebih efisien, meskipun penerapannya lebih menantang.",
+      "Mengoptimalkan potensi nasabah yang sudah ada melalui program penguatan hubungan, walaupun persoalan struktur biaya operasional belum sepenuhnya terselesaikan."
+     ],
+     "kunci": 3,
+     "pembahasan": "Strategi kombinasi mempertahankan keunggulan (hubungan jangka panjang dan layanan bernilai) sambil menstandarkan proses pendukung agar efisien. Profitabilitas naik tanpa merusak kepercayaan dan loyalitas nasabah.",
+     "alasan": [
+      "Meninggalkan keunggulan relasi demi segmen yang hubungannya belum kuat.",
+      "Pemotongan biaya signifikan berisiko menurunkan kualitas.",
+      "Menunda strategi.",
+      "",
+      "Hanya memperkuat sisi pendapatan, sedangkan struktur biaya tidak tersentuh."
+     ]
+    },
+    {
+     "id": "sjt-8",
+     "teks": "Anda memimpin sebuah tim yang selama ini menunjukkan kinerja yang cukup baik. Namun berdasarkan hasil penilaian internal, sebagian anggota tim dinilai belum memiliki kesiapan untuk mengambil tanggung jawab yang lebih besar dalam dua sampai tiga tahun mendatang. Beberapa anggota merasa kemampuan mereka sudah memadai sehingga cukup sensitif ketika menerima kritik atau masukan. Jika Anda menyampaikan kebutuhan pengembangan secara terlalu tegas, ada kemungkinan hal tersebut menurunkan rasa percaya diri dan motivasi mereka. Sebaliknya, jika pendekatan yang digunakan terlalu hati-hati, kesempatan untuk menyiapkan calon pemimpin masa depan dapat terlewatkan. Pada saat yang sama, manajemen wilayah mulai meminta gambaran mengenai ketersediaan calon pemimpin yang siap dipromosikan di masa mendatang. Dalam situasi ini, Anda perlu memilih pendekatan yang dapat meningkatkan kesadaran tim mengenai kebutuhan pengembangan kompetensi tanpa mengurangi semangat kerja yang sudah terbentuk. Langkah apa yang paling efektif Anda lakukan untuk menghadapi situasi tersebut?",
+     "opsi": [
+      "Meminta divisi SDM membantu menyelenggarakan sesi umpan balik bersama agar pesan terkait pengembangan kompetensi dapat disampaikan secara lebih objektif dan terstruktur.",
+      "Menyampaikan secara langsung kepada anggota tim mengenai kebutuhan peningkatan kompetensi agar mereka memahami standar yang diharapkan organisasi.",
+      "Memberikan penugasan proyek yang lebih menantang sehingga anggota tim dapat menyadari sendiri area kemampuan yang masih perlu dikembangkan.",
+      "Mengadakan percakapan pengembangan secara individual untuk membantu setiap anggota memahami kekuatan serta area yang perlu ditingkatkan.",
+      "Menunda pembahasan terkait kesiapan promosi sampai anggota tim benar-benar menunjukkan perkembangan yang lebih jelas."
+     ],
+     "kunci": 0,
+     "pembahasan": "Kunci mengikuti lembar jawaban asli (JAWABAN PEEPL): minta divisi SDM menyelenggarakan sesi umpan balik bersama. Pesan pengembangan kompetensi jadi objektif dan terstruktur, tidak terasa sebagai kritik pribadi, sehingga cocok untuk tim yang sensitif dan tetap menjaga motivasi.",
+     "alasan": [
+      "",
+      "Terlalu langsung; anggota tim yang sensitif terhadap kritik berisiko turun motivasinya.",
+      "Bisa efektif, tetapi tidak langsung memberi arahan tentang kompetensi yang perlu dikembangkan.",
+      "Sangat personal, tetapi makan banyak waktu dan sulit menjangkau seluruh tim jika waktu terbatas. PDF latihan menjadikan opsi ini kunci; lembar jawaban asli memilih A.",
+      "Menunda pembahasan tidak memenuhi permintaan manajemen dan melewatkan kesempatan pengembangan."
+     ]
+    },
+    {
+     "id": "sjt-9",
+     "teks": "Anda bertanggung jawab mengoordinasikan beberapa unit kerja untuk peluncuran sebuah produk baru yang menjadi fokus utama di wilayah Anda. Tim pemasaran ingin proses peluncuran dipercepat agar peluang pasar tidak terlewat. Di sisi lain, tim manajemen risiko meminta waktu tambahan untuk melakukan penilaian dan mitigasi risiko. Sementara itu, tim kepatuhan menekankan bahwa seluruh dokumen dan prosedur harus lengkap sebelum produk resmi diluncurkan. Perbedaan kepentingan tersebut mulai memicu ketegangan di antara unit-unit terkait, bahkan berpotensi menimbulkan saling menyalahkan jika target tidak tercapai. Anda menyadari bahwa keputusan yang diambil akan menjadi acuan dalam kerja sama lintas fungsi di masa mendatang. Memilih cara yang terlalu cepat mungkin membantu memenuhi target waktu, tetapi dapat menimbulkan risiko terhadap tata kelola. Sebaliknya, menyatukan pandangan semua pihak membutuhkan komunikasi yang intensif serta kemampuan memahami berbagai sudut pandang. Langkah apa yang paling efektif Anda ambil untuk menyelesaikan situasi tersebut?",
+     "opsi": [
+      "Membawa permasalahan ini ke tingkat manajemen yang lebih tinggi agar keputusan lintas unit dapat ditetapkan secara resmi dan menjadi pedoman bersama.",
+      "Mengadakan pertemuan lintas unit untuk mengidentifikasi kepentingan, potensi risiko, dan harapan masing-masing pihak, meskipun memerlukan usaha komunikasi yang cukup besar.",
+      "Menyetujui peluncuran produk secara bertahap sehingga kebutuhan pemasaran tetap terakomodasi sambil memberi waktu tambahan untuk pengelolaan risiko.",
+      "Menetapkan standar mitigasi risiko yang lebih ketat sebagai acuan bersama, serta menyiapkan strategi komunikasi kepada pasar jika terjadi penyesuaian jadwal peluncuran.",
+      "Memberikan kewenangan lebih besar kepada setiap unit untuk menjalankan tugasnya masing-masing dengan kesepakatan melakukan koordinasi secara berkala."
+     ],
+     "kunci": 1,
+     "pembahasan": "Akar masalahnya adalah perbedaan kepentingan antarunit. Pertemuan lintas unit untuk memetakan kepentingan, risiko, dan harapan masing-masing membangun solusi bersama, mencegah saling menyalahkan, dan menjadi dasar kerja sama lintas fungsi ke depan.",
+     "alasan": [
+      "Mengeskalasi sebelum mencoba menyatukan pihak terkait.",
+      "",
+      "Peluncuran bertahap bisa menjadi hasil dari dialog, tetapi memutuskan sebelum pandangan disatukan.",
+      "Menetapkan standar sepihak.",
+      "Memberi kewenangan tanpa penyelarasan sehingga ketegangan tetap ada."
+     ]
+    },
+    {
+     "id": "sjt-10",
+     "teks": "Anda memimpin sebuah unit kerja yang sedang menghadapi peningkatan target penjualan yang cukup signifikan. Tim Anda selama ini mampu mencapai target, namun cara kerja yang digunakan masih sangat bergantung pada beberapa anggota senior. Di sisi lain, manajemen meminta agar proses kerja menjadi lebih sistematis agar kinerja unit tidak bergantung pada individu tertentu. Jika perubahan dilakukan terlalu cepat, ada kemungkinan tim merasa terbebani. Namun jika tidak dilakukan, risiko ketergantungan terhadap individu akan terus terjadi. Apa langkah paling efektif yang akan Anda lakukan?",
+     "opsi": [
+      "Meminta anggota senior tetap memimpin proses kerja karena mereka sudah terbukti mampu mencapai target.",
+      "Mengadakan diskusi tim untuk mengidentifikasi proses kerja yang perlu distandardisasi tanpa mengganggu pencapaian target.",
+      "Menunda perubahan proses kerja sampai target penjualan periode ini tercapai.",
+      "Menetapkan prosedur kerja baru secara langsung agar semua anggota mengikuti standar yang sama.",
+      "Membagi tanggung jawab kerja kepada semua anggota tim secara merata."
+     ],
+     "kunci": 1,
+     "pembahasan": "Tim diajak mengidentifikasi proses yang perlu distandardisasi tanpa mengganggu pencapaian target. Ini mengurangi ketergantungan pada individu, bersifat partisipatif, dan tidak membebani tim secara mendadak.",
+     "alasan": [
+      "Mempertahankan ketergantungan pada senior.",
+      "",
+      "Menunda perubahan.",
+      "Memaksakan prosedur baru secara mendadak.",
+      "Pembagian merata tidak membuat proses kerja menjadi sistematis."
+     ]
+    },
+    {
+     "id": "sjt-11",
+     "teks": "Anda memimpin proyek yang melibatkan beberapa unit kerja. Dalam beberapa minggu terakhir, komunikasi antar unit menjadi kurang efektif sehingga beberapa pekerjaan mengalami keterlambatan. Sebagian anggota tim mulai menyalahkan unit lain karena merasa pekerjaan mereka sudah selesai tepat waktu. Jika kondisi ini terus berlangsung, proyek berpotensi tidak selesai sesuai jadwal. Langkah apa yang paling tepat Anda lakukan?",
+     "opsi": [
+      "Mengingatkan semua unit agar lebih disiplin terhadap tanggung jawab masing-masing.",
+      "Mengadakan pertemuan koordinasi untuk mengevaluasi alur kerja dan hambatan yang terjadi antar unit.",
+      "Melaporkan kondisi tersebut kepada pimpinan agar mereka menentukan solusi yang tepat.",
+      "Memberikan target baru yang lebih ketat kepada seluruh unit.",
+      "Membiarkan setiap unit menyelesaikan masalahnya masing-masing."
+     ],
+     "kunci": 1,
+     "pembahasan": "Masalah ada pada komunikasi dan alur kerja antarunit. Pertemuan koordinasi untuk mengevaluasi alur dan hambatan fokus pada perbaikan proses, bukan mencari siapa yang salah.",
+     "alasan": [
+      "Sebatas imbauan tanpa memperbaiki penyebab.",
+      "",
+      "Melempar masalah ke pimpinan padahal bisa diselesaikan lebih dulu.",
+      "Menambah tekanan.",
+      "Membiarkan sehingga proyek berisiko terlambat."
+     ]
+    },
+    {
+     "id": "sjt-12",
+     "teks": "Salah satu anggota tim Anda memiliki kinerja yang cukup baik, tetapi sering terlambat menyelesaikan laporan administrasi. Hal ini mulai memengaruhi pekerjaan tim lain yang bergantung pada laporan tersebut. Jika Anda menegur terlalu keras, ada kemungkinan hubungan kerja menjadi kurang nyaman. Namun jika tidak ditangani, keterlambatan tersebut bisa terus terjadi. Apa tindakan yang paling efektif?",
+     "opsi": [
+      "Memberikan teguran tertulis agar anggota tim tersebut lebih disiplin.",
+      "Mengabaikan masalah tersebut karena kinerjanya secara umum masih baik.",
+      "Mengajak anggota tim tersebut berdiskusi untuk memahami kendala yang dihadapi dan mencari solusi bersama.",
+      "Mengalihkan tugas laporan kepada anggota tim lain.",
+      "Menunggu sampai masalah tersebut benar-benar mengganggu pekerjaan tim."
+     ],
+     "kunci": 2,
+     "pembahasan": "Pendekatan pembimbingan: memahami kendala anggota tim lalu mencari solusi bersama. Masalah keterlambatan tertangani tanpa merusak hubungan kerja.",
+     "alasan": [
+      "Teguran tertulis sebagai langkah pertama terlalu keras tanpa memahami penyebab.",
+      "Mengabaikan masalah.",
+      "",
+      "Menghindari masalah dan membebani rekan lain.",
+      "Menunggu dan membiarkan masalah berlanjut."
+     ]
+    },
+    {
+     "id": "sjt-13",
+     "teks": "Unit Anda sedang mengembangkan program kerja baru yang diharapkan dapat meningkatkan efisiensi operasional. Beberapa anggota tim terlihat antusias, tetapi sebagian lainnya merasa perubahan tersebut akan menambah beban kerja mereka. Jika perubahan diterapkan tanpa persiapan, ada kemungkinan muncul penolakan dari tim. Langkah apa yang paling efektif Anda lakukan?",
+     "opsi": [
+      "Menjalankan program tersebut secara langsung agar tim segera terbiasa.",
+      "Menjelaskan tujuan program dan meminta masukan dari tim sebelum implementasi dilakukan.",
+      "Menunda program sampai semua anggota tim benar-benar siap.",
+      "Menugaskan beberapa anggota saja untuk menjalankan program tersebut.",
+      "Mengganti program dengan rencana kerja lain yang lebih mudah diterima tim."
+     ],
+     "kunci": 1,
+     "pembahasan": "Menjelaskan tujuan program dan meminta masukan tim sebelum implementasi mengurangi penolakan, menumbuhkan rasa memiliki, dan menjawab kekhawatiran beban kerja.",
+     "alasan": [
+      "Tanpa persiapan memicu penolakan.",
+      "",
+      "Menunggu semua siap bisa berarti tidak pernah dimulai.",
+      "Hanya melibatkan sebagian tim.",
+      "Mengganti rencana semata demi penerimaan, bukan menyelesaikan masalah."
+     ]
+    },
+    {
+     "id": "sjt-14",
+     "teks": "Anda diminta oleh manajemen untuk meningkatkan kualitas layanan kepada pelanggan. Namun berdasarkan evaluasi internal, sebagian anggota tim merasa beban kerja mereka sudah cukup tinggi. Jika standar layanan langsung dinaikkan, ada kemungkinan tim merasa terbebani. Namun jika tidak dilakukan perubahan, kualitas layanan sulit meningkat. Apa langkah paling efektif yang Anda lakukan?",
+     "opsi": [
+      "Menetapkan standar layanan baru tanpa perubahan proses kerja.",
+      "Mengajak tim mengidentifikasi area layanan yang dapat diperbaiki tanpa menambah beban kerja secara signifikan.",
+      "Menunda peningkatan kualitas layanan sampai beban kerja tim berkurang.",
+      "Menambahkan target layanan baru kepada seluruh anggota tim.",
+      "Menyerahkan peningkatan kualitas layanan kepada beberapa anggota yang paling berpengalaman."
+     ],
+     "kunci": 1,
+     "pembahasan": "Tim diajak mencari area perbaikan yang tidak menambah beban secara signifikan. Solusinya realistis, partisipatif, dan tetap mengarah pada peningkatan kualitas.",
+     "alasan": [
+      "Menaikkan standar tanpa mengubah proses sehingga beban bertambah.",
+      "",
+      "Menunda perbaikan.",
+      "Menambah target sama dengan menambah beban.",
+      "Membebankan ke sebagian orang sehingga tidak merata dan tidak sistemik."
+     ]
+    },
+    {
+     "id": "sjt-15",
+     "teks": "Tim Anda sedang menghadapi tenggat waktu penyelesaian proyek yang cukup ketat. Sebagian anggota tim merasa pekerjaan mereka sudah terlalu banyak, sementara beberapa anggota lain masih memiliki kapasitas kerja yang lebih longgar. Jika pembagian tugas tidak diatur dengan baik, proyek berpotensi terlambat selesai. Langkah apa yang paling tepat Anda lakukan?",
+     "opsi": [
+      "Membiarkan anggota tim menyelesaikan tugasnya masing-masing sesuai pembagian awal.",
+      "Mengatur kembali pembagian tugas agar pekerjaan dapat didistribusikan lebih seimbang.",
+      "Meminta anggota tim bekerja lembur sampai proyek selesai.",
+      "Menurunkan standar hasil pekerjaan agar proyek selesai tepat waktu.",
+      "Meminta manajemen memperpanjang tenggat waktu proyek."
+     ],
+     "kunci": 1,
+     "pembahasan": "Pembagian tugas diatur ulang dengan memanfaatkan anggota yang kapasitasnya lebih longgar. Hasilnya lebih adil, efisien, dan tenggat waktu tetap terjaga.",
+     "alasan": [
+      "Membiarkan ketimpangan beban.",
+      "",
+      "Lembur memberatkan tim.",
+      "Menurunkan kualitas hasil.",
+      "Menyerahkan masalah ke manajemen sebelum berusaha sendiri."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kepribadian-1",
+   "nama": "Personality 1",
+   "jenis": "kepribadian",
+   "durasi_menit": 15,
+   "instruksi": "Pilih jawaban yang paling menggambarkan diri Anda: Setuju, ?, atau Tidak setuju. Butir bertanda pilihan khusus memakai pilihan yang tertera.",
+   "skala": [
+    "Setuju",
+    "?",
+    "Tidak setuju"
+   ],
+   "nilai_skala": [
+    1,
+    0,
+    -1
+   ],
+   "soal": [
+    {
+     "id": "kepribadian-1-1",
+     "teks": "Saya peduli terhadap lingkungan.",
+     "dimensi": "A",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-2",
+     "teks": "Saya akan senang menjadi konselor atau psikolog; menolong orang memecahkan masalah pribadi mereka.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A2"
+    },
+    {
+     "id": "kepribadian-1-3",
+     "teks": "Saya memiliki pengertian dan empati akan perasaan orang lain secara alami.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A1"
+    },
+    {
+     "id": "kepribadian-1-4",
+     "teks": "Saya belajar lebih cepat dari kebanyakan orang.",
+     "dimensi": "O",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-5",
+     "teks": "Saya kadang-kadang merasa bosan dan jenuh tanpa alasan yang jelas.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S2"
+    },
+    {
+     "id": "kepribadian-1-6",
+     "teks": "Orang-orang mengatakan bahwa kadang-kadang suasana hati saya bisa berubah.",
+     "dimensi": "S",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-7",
+     "teks": "Saya senang membiarkan orang lain memegang kendali.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E5"
+    },
+    {
+     "id": "kepribadian-1-8",
+     "teks": "Saya tidak menyukai pesta-pesta besar yang berisik.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E1"
+    },
+    {
+     "id": "kepribadian-1-9",
+     "teks": "Saya jarang bercanda.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E9"
+    },
+    {
+     "id": "kepribadian-1-10",
+     "teks": "Saya adalah orang yang sangat sistematis.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p1-C1"
+    },
+    {
+     "id": "kepribadian-1-11",
+     "teks": "Saya menyukai berbicara di depan umum.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E4"
+    },
+    {
+     "id": "kepribadian-1-12",
+     "teks": "Saya membutuhkan waktu beberapa lama untuk mengenal orang-orang baru.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E3"
+    },
+    {
+     "id": "kepribadian-1-13",
+     "teks": "Saya senang mendiskusikan buku dan film dengan orang lain.",
+     "dimensi": "O",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-14",
+     "teks": "Kebanyakan orang bisa disuap.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p1-A4"
+    },
+    {
+     "id": "kepribadian-1-15",
+     "teks": "Saya mempercayai apa yang dikatakan orang lain.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A4"
+    },
+    {
+     "id": "kepribadian-1-16",
+     "teks": "Kebanyakan orang akan menggambarkan saya sebagai seorang yang praktis.",
+     "dimensi": "O",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-17",
+     "teks": "Saya berhati-hati dalam bersikap di depan umum.",
+     "dimensi": "S",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-18",
+     "teks": "Saya terbuka terhadap keadaan diri saya kepada orang lain.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E7"
+    },
+    {
+     "id": "kepribadian-1-19",
+     "teks": "Jika saya mengatakan sesuatu yang memalukan, saya biasanya:",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p1-S3",
+     "opsi": [
+      "Segera melupakan hal itu",
+      "?",
+      "Mencemaskan anggapan orang lain terhadap saya"
+     ]
+    },
+    {
+     "id": "kepribadian-1-20",
+     "teks": "Dalam hati, saya adalah orang yang cukup konvensional.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p1-O3"
+    },
+    {
+     "id": "kepribadian-1-21",
+     "teks": "Saya jarang menggali makna yang lebih mendalam tentang sesuatu hal.",
+     "dimensi": "O",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-22",
+     "teks": "Saya suka dibiarkan sendirian.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E2"
+    },
+    {
+     "id": "kepribadian-1-23",
+     "teks": "Saya biasanya akan langsung mengerjakan tugas yang harus saya lakukan.",
+     "dimensi": "C",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-24",
+     "teks": "Saya menyukai ketertiban.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p1-C2"
+    },
+    {
+     "id": "kepribadian-1-25",
+     "teks": "Sebagian orang menggambarkan saya sebagai orang yang memiliki emosi yang tinggi.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S1"
+    },
+    {
+     "id": "kepribadian-1-26",
+     "teks": "Ada saat-saat di mana saya merasa iri terhadap nasib baik atau kesuksesan orang lain.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S5"
+    },
+    {
+     "id": "kepribadian-1-27",
+     "teks": "Orang memilih untuk menceritakan perasaan dan pemikiran pribadi mereka yang mendalam kepada saya.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A2"
+    },
+    {
+     "id": "kepribadian-1-28",
+     "teks": "Jika seseorang sedang sedih, biasanya saya merupakan salah satu orang yang pertama memberikan simpati.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A1"
+    },
+    {
+     "id": "kepribadian-1-29",
+     "teks": "Orang-orang mengatakan saya memiliki pemikiran yang amat analitis dan logis.",
+     "dimensi": "O",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-30",
+     "teks": "Saya mengalami sakit kepala:",
+     "dimensi": "S",
+     "arah": -1,
+     "opsi": [
+      "Cukup sering",
+      "Kadang-kadang",
+      "Hampir tidak pernah"
+     ]
+    },
+    {
+     "id": "kepribadian-1-31",
+     "teks": "Saya mendapatkan diri saya merasa lemah.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p1-S2",
+     "opsi": [
+      "Tidak pernah",
+      "Jarang",
+      "Kadang-kadang"
+     ]
+    },
+    {
+     "id": "kepribadian-1-32",
+     "teks": "Saya dikenal sebagai seseorang yang dominan.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E5"
+    },
+    {
+     "id": "kepribadian-1-33",
+     "teks": "Kebanyakan orang akan menggambarkan saya sebagai \"bintang pesta\".",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E1"
+    },
+    {
+     "id": "kepribadian-1-34",
+     "teks": "Saya dikenal sebagai orang yang riang, banyak bicara.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E9"
+    },
+    {
+     "id": "kepribadian-1-35",
+     "teks": "Saya menikmati membuat perencanaan yang detail.",
+     "dimensi": "C",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-36",
+     "teks": "Saya kadang-kadang merasa sedikit malu di depan umum.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E4"
+    },
+    {
+     "id": "kepribadian-1-37",
+     "teks": "Saya merasa mudah untuk memulai percakapan dengan orang yang tidak saya kenal.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E3"
+    },
+    {
+     "id": "kepribadian-1-38",
+     "teks": "Saya lebih suka membaca:",
+     "dimensi": "M",
+     "arah": 1,
+     "opsi": [
+      "Kisah nyata tentang kriminal",
+      "?",
+      "Novel, sejarah atau roman"
+     ]
+    },
+    {
+     "id": "kepribadian-1-39",
+     "teks": "Saya percaya bahwa orang lain memiliki intensi dan maksud yang baik.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A3"
+    },
+    {
+     "id": "kepribadian-1-40",
+     "teks": "Kebanyakan orang hanya memperhatikan diri mereka sendiri.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p1-A3"
+    },
+    {
+     "id": "kepribadian-1-41",
+     "teks": "Saya melakukan segala sesuatu sesuai aturan.",
+     "dimensi": "C",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-42",
+     "teks": "Sebelum saya mengatakan sesuatu, biasanya saya memikirkan dampaknya terhadap pendengar.",
+     "dimensi": "A",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-43",
+     "teks": "Saya terbuka terhadap perasaan saya.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E8"
+    },
+    {
+     "id": "kepribadian-1-44",
+     "teks": "Saya kadang-kadang merasa cemas bahwa saya mungkin telah mengatakan atau melakukan sesuatu yang menjengkelkan orang lain.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S3"
+    },
+    {
+     "id": "kepribadian-1-45",
+     "teks": "Saya lebih menyukai variasi daripada hal-hal yang rutin.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O3"
+    },
+    {
+     "id": "kepribadian-1-46",
+     "teks": "Saya tidak tertarik dengan diskusi-diskusi teoretis.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p1-O1"
+    },
+    {
+     "id": "kepribadian-1-47",
+     "teks": "Ketika bekerja dalam suatu proyek, saya lebih suka bekerja:",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E10",
+     "opsi": [
+      "Sendiri",
+      "?",
+      "Bersama tim / kelompok"
+     ]
+    },
+    {
+     "id": "kepribadian-1-48",
+     "teks": "Saya akan terus bekerja sampai semuanya sempurna.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p1-C3"
+    },
+    {
+     "id": "kepribadian-1-49",
+     "teks": "Saya tidak terganggu dengan ketidakteraturan.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p1-C2"
+    },
+    {
+     "id": "kepribadian-1-50",
+     "teks": "Saya jarang meninggikan suara saya atau berteriak.",
+     "dimensi": "S",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-51",
+     "teks": "Saya tidak pernah bergosip tentang orang lain.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-52",
+     "teks": "Saya tidak suka terlibat dengan masalah-masalah pribadi orang lain.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p1-A1"
+    },
+    {
+     "id": "kepribadian-1-53",
+     "teks": "Orang-orang akan menggambarkan saya sebagai orang yang sangat intelek.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O2"
+    },
+    {
+     "id": "kepribadian-1-54",
+     "teks": "Saya merasa sulit untuk mengikuti argumen-argumen yang kompleks.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p1-O2"
+    },
+    {
+     "id": "kepribadian-1-55",
+     "teks": "Tidur saya terganggu dengan mimpi-mimpi yang tidak menyenangkan.",
+     "dimensi": "S",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-56",
+     "teks": "Saya bisa bersikap keras dan tegas terhadap orang lain jika diperlukan.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E6"
+    },
+    {
+     "id": "kepribadian-1-57",
+     "teks": "Saya lebih suka menunggu dan membiarkan orang lain memimpin.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E5"
+    },
+    {
+     "id": "kepribadian-1-58",
+     "teks": "Saya lebih menyukai menghabiskan malam hari:",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E1",
+     "opsi": [
+      "Di rumah dengan tenang",
+      "?",
+      "Keluar bersama banyak orang"
+     ]
+    },
+    {
+     "id": "kepribadian-1-59",
+     "teks": "Saya tidak pernah bisa menemukan barang-barang ketika saya menginginkannya.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p1-C2"
+    },
+    {
+     "id": "kepribadian-1-60",
+     "teks": "Saya sangat sistematis dan teratur dalam bekerja.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p1-C1"
+    },
+    {
+     "id": "kepribadian-1-61",
+     "teks": "Saya akan menikmati tampil di atas panggung.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E4"
+    },
+    {
+     "id": "kepribadian-1-62",
+     "teks": "Saya lebih suka menjadi:",
+     "dimensi": "M",
+     "arah": 1,
+     "opsi": [
+      "Insinyur sipil",
+      "?",
+      "Interior desain"
+     ]
+    },
+    {
+     "id": "kepribadian-1-63",
+     "teks": "Ada saat-saat di mana saya menangis ketika menonton film yang sedih.",
+     "dimensi": "A",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-64",
+     "teks": "Saya merasa sulit untuk memaafkan orang lain.",
+     "dimensi": "A",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-65",
+     "teks": "Saya melakukan hal-hal yang mungkin dianggap aneh oleh orang lain.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O4"
+    },
+    {
+     "id": "kepribadian-1-66",
+     "teks": "Kadang-kadang orang mengatakan ide-ide saya tidak realistis.",
+     "dimensi": "O",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-67",
+     "teks": "Saya akan menunjukkan apa yang saya rasakan.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E8"
+    },
+    {
+     "id": "kepribadian-1-68",
+     "teks": "Saya mudah merasa kecil hati dengan komentar orang yang negatif.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S4"
+    },
+    {
+     "id": "kepribadian-1-69",
+     "teks": "Saya merasa cemas tentang masa depan.",
+     "dimensi": "S",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-70",
+     "teks": "Saya tidak tertarik dengan ide-ide abstrak.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p1-O1"
+    },
+    {
+     "id": "kepribadian-1-71",
+     "teks": "Saya senang menjadi bagian dari kelompok.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E2"
+    },
+    {
+     "id": "kepribadian-1-72",
+     "teks": "Saya tidak bisa sendirian untuk waktu yang lama.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E2"
+    },
+    {
+     "id": "kepribadian-1-73",
+     "teks": "Saya tidak pernah membiarkan kamar saya berantakan.",
+     "dimensi": "L",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-74",
+     "teks": "Saya tidak mudah tersinggung dibanding kebanyakan orang.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p1-S4"
+    },
+    {
+     "id": "kepribadian-1-75",
+     "teks": "Saya tidak dalam keadaan untuk mudah marah.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p1-S1"
+    },
+    {
+     "id": "kepribadian-1-76",
+     "teks": "Kadang-kadang tindakan saya dipengaruhi oleh rasa iri hati saya.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S5"
+    },
+    {
+     "id": "kepribadian-1-77",
+     "teks": "Saya dikenal sebagai orang yang hangat, mendukung, dan memperhatikan orang lain.",
+     "dimensi": "A",
+     "arah": 1,
+     "grup": "p1-A1"
+    },
+    {
+     "id": "kepribadian-1-78",
+     "teks": "Saya merasa sulit memahami kata-kata yang kompleks.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p1-O2"
+    },
+    {
+     "id": "kepribadian-1-79",
+     "teks": "Orang mengatakan bahwa saya memiliki perbendaharaan kata yang baik.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O2"
+    },
+    {
+     "id": "kepribadian-1-80",
+     "teks": "Saya kadang-kadang merasakan diri saya letih dan lesu tanpa sebab yang jelas.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S2"
+    },
+    {
+     "id": "kepribadian-1-81",
+     "teks": "Saya akan menyampaikan apa yang saya pikirkan.",
+     "dimensi": "E",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-1-82",
+     "teks": "Saya tidak takut untuk memberikan kritik.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E6"
+    },
+    {
+     "id": "kepribadian-1-83",
+     "teks": "Saya tidak menyukai acara-acara yang ramai.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E1"
+    },
+    {
+     "id": "kepribadian-1-84",
+     "teks": "Saya menyimpan barang-barang dengan teratur.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p1-C2"
+    },
+    {
+     "id": "kepribadian-1-85",
+     "teks": "Orang-orang menuduh saya sebagai orang yang tidak teratur.",
+     "dimensi": "C",
+     "arah": -1,
+     "grup": "p1-C1"
+    },
+    {
+     "id": "kepribadian-1-86",
+     "teks": "Sebagian orang mungkin menggambarkan saya sebagai orang yang agak pemalu.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E3"
+    },
+    {
+     "id": "kepribadian-1-87",
+     "teks": "Di bioskop, saya lebih suka menonton:",
+     "dimensi": "M",
+     "arah": 1,
+     "opsi": [
+      "Film aksi",
+      "?",
+      "Komedi yang romantis"
+     ]
+    },
+    {
+     "id": "kepribadian-1-88",
+     "teks": "Saya sangat menikmati pertunjukan kesenian (seperti balet, teater, dll.).",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O5"
+    },
+    {
+     "id": "kepribadian-1-89",
+     "teks": "Saya mencurigai maksud tersembunyi dari orang lain.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p1-A3"
+    },
+    {
+     "id": "kepribadian-1-90",
+     "teks": "Kadang-kadang saya kesulitan membayangkan sesuatu.",
+     "dimensi": "O",
+     "arah": -1
+    },
+    {
+     "id": "kepribadian-1-91",
+     "teks": "Saya sering melakukan hal-hal yang di luar dugaan.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O4"
+    },
+    {
+     "id": "kepribadian-1-92",
+     "teks": "Saya bersedia untuk membicarakan mengenai diri saya.",
+     "dimensi": "E",
+     "arah": 1,
+     "grup": "p1-E7"
+    },
+    {
+     "id": "kepribadian-1-93",
+     "teks": "Ada saat-saat di mana saya bertanya dalam hati apakah orang benar-benar menyukai saya.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S3"
+    },
+    {
+     "id": "kepribadian-1-94",
+     "teks": "Terkadang saya takut bahwa saya telah melakukan hal yang salah.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S3"
+    },
+    {
+     "id": "kepribadian-1-95",
+     "teks": "Pada dasarnya, saya adalah orang yang konservatif.",
+     "dimensi": "O",
+     "arah": -1,
+     "grup": "p1-O3"
+    },
+    {
+     "id": "kepribadian-1-96",
+     "teks": "Saya lebih suka bekerja sendiri; jauh dari gangguan orang lain.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E10"
+    },
+    {
+     "id": "kepribadian-1-97",
+     "teks": "Saya lebih suka sendiri dibandingkan bersama orang lain.",
+     "dimensi": "E",
+     "arah": -1,
+     "grup": "p1-E2"
+    },
+    {
+     "id": "kepribadian-1-98",
+     "teks": "Saya memiliki tuntutan yang tinggi dalam pekerjaan saya.",
+     "dimensi": "C",
+     "arah": 1,
+     "grup": "p1-C3"
+    },
+    {
+     "id": "kepribadian-1-99",
+     "teks": "Saya jarang menjadi marah.",
+     "dimensi": "S",
+     "arah": 1,
+     "grup": "p1-S1"
+    },
+    {
+     "id": "kepribadian-1-100",
+     "teks": "Saya memiliki reputasi sebagai orang yang penuh emosi.",
+     "dimensi": "S",
+     "arah": -1,
+     "grup": "p1-S1"
+    }
+   ]
+  },
+  {
+   "id": "kepribadian-2",
+   "nama": "Personality 3",
+   "jenis": "kepribadian",
+   "durasi_menit": 5,
+   "instruksi": "Pilih jawaban yang paling sesuai dengan pendapat atau kondisi diri Anda. Tidak ada jawaban benar atau salah.",
+   "skala": [
+    "Sangat setuju",
+    "Setuju",
+    "Netral",
+    "Kurang setuju",
+    "Tidak setuju"
+   ],
+   "nilai_skala": [
+    1,
+    0.5,
+    0,
+    -0.5,
+    -1
+   ],
+   "soal": [
+    {
+     "id": "kepribadian-2-1",
+     "teks": "Berkorban demi negara dan nasionalisme adalah kualitas-kualitas yang penting dari warga negara yang baik.",
+     "dimensi": "M",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-2",
+     "teks": "Saya berjuang untuk berprestasi dalam segala hal yang saya lakukan, apapun pengorbanan yang harus saya lakukan.",
+     "dimensi": "C",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-3",
+     "teks": "Saya ingin memiliki uang sekedar yang saya butuhkan agar bisa hidup nyaman.",
+     "dimensi": "M",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-4",
+     "teks": "Saya menyukai aksi-aksi petualangan dan penuh risiko meskipun menimbulkan bahaya.",
+     "dimensi": "E",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-5",
+     "teks": "Saya kurang memiliki rasa empati yang dibutuhkan untuk menjadi pekerja seperti perawat.",
+     "dimensi": "A",
+     "arah": -1,
+     "grup": "p1-A1"
+    },
+    {
+     "id": "kepribadian-2-6",
+     "teks": "Teman-teman saya sangat bernilai buat saya.",
+     "dimensi": "A",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-7",
+     "teks": "Saya bersedia untuk membayar pajak lebih tinggi untuk membantu orang-orang yang kesusahan.",
+     "dimensi": "A",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-8",
+     "teks": "Saya menghargai karya seni, musik, dan sastra yang terbaik.",
+     "dimensi": "O",
+     "arah": 1,
+     "grup": "p1-O5"
+    },
+    {
+     "id": "kepribadian-2-9",
+     "teks": "Kehidupan kita dikendalikan oleh kekuatan yang tidak bisa dijelaskan.",
+     "dimensi": "M",
+     "arah": 1
+    },
+    {
+     "id": "kepribadian-2-10",
+     "teks": "Di antara kebajikan-kebajikan paling penting dalam hidup adalah kejujuran dan integritas.",
+     "dimensi": "I",
+     "arah": 1
+    }
+   ]
+  }
+ ]
+}
