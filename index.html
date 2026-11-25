@@ -170,6 +170,46 @@
     .q-choices-default { grid-template-columns: 1fr; } .panel, .kartu { margin: 8px 0 0; }
     .q-text { font-size: 1.2rem; } .stim { text-align: left; } .info-area .meta { display: none; } .info-area { padding: .6rem 1rem; }
   }
+  /* ---------- satu layar tanpa scroll (laptop/desktop) ----------
+     Layar ujian = tinggi jendela. Gambar mengisi sisa ruang (object-fit), ukuran huruf/gambar figural mengikuti --fs
+     yang diturunkan JS (pasLayar) bila isi masih kepanjangan. HP tetap memakai scroll biasa. */
+  @media (min-width: 900px) and (min-height: 480px) {
+    body.ujian #app { height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+    body.ujian .info-area { flex: none; padding: .55rem 1rem; }
+    body.ujian .isi { --fs: 1; flex: 1; min-height: 0; width: 100%; display: grid; grid-template-rows: minmax(0, 1fr); align-items: stretch; gap: 24px; padding: .7rem 1.2rem .7rem 64px; }
+    body.ujian .isi.dua { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    body.ujian .isi.dua:has(> .kiri :is(img, svg)) { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); }  /* grafik/gambar dapat ruang lebih */
+    body.ujian .kiri, body.ujian .kanan { min-height: 0; overflow: auto; scrollbar-width: thin; }
+    body.ujian .kiri { position: static; max-height: none; display: flex; flex-direction: column; }
+    body.ujian .kiri .stim { flex: 1 1 auto; min-height: 0; margin: 0; overflow: auto; display: flex; flex-direction: column; font-size: max(13px, calc(16px * var(--fs))); line-height: calc(1.3 + .25 * var(--fs)); padding: calc(15px * var(--fs)); }
+    body.ujian .kiri .stim:has(img, svg) { overflow: hidden; }
+    body.ujian .kiri .stim img, body.ujian .kiri .stim svg { flex: 1 1 0; min-height: 0; width: 100%; max-width: 100% !important; height: auto; object-fit: contain; }
+    body.ujian .kiri .stim-html svg.chart { max-height: 100%; }
+    body.ujian .kanan { display: flex; flex-direction: column; }
+    body.ujian .nomor { flex: none; font-size: 14px; }
+    body.ujian .q-text { flex: none; font-size: max(15px, calc(1.6rem * var(--fs))); line-height: calc(1.25 + .15 * var(--fs)); margin: calc(.4rem * var(--fs)) 0 calc(.7rem * var(--fs)); }
+    body.ujian .q-img { flex: 1 1 0; min-height: 70px; width: 100%; height: 0; max-width: 100%; object-fit: contain; margin: 0 auto 6px; }
+    body.ujian .q-html, body.ujian .q-text-image, body.ujian .q-choices { flex: none; }
+    body.ujian .q-html .fig-row { margin: 0 0 6px; }
+    body.ujian .q-html .fig-row .fig, body.ujian .q-html .fig-q { width: calc(min(100px, 12.5vh) * var(--fs)); }
+    body.ujian .q-html .fig-grid { grid-template-columns: repeat(3, calc(min(92px, 11vh) * var(--fs))); margin: 0 auto 6px; }
+    body.ujian .q-text-image { margin: .4rem 0; }
+    body.ujian .q-text-image svg, body.ujian .tanya { width: calc(min(110px, 14vh) * var(--fs)); }
+    body.ujian .choice { margin: calc(.4rem * var(--fs)); padding: calc(.45rem * var(--fs)); }
+    body.ujian .q-choices-panjang .choice, body.ujian .q-choices-personality-new .choice { margin: calc(.35rem * var(--fs)) 0; }
+    body.ujian .choice-text { font-size: max(14px, calc(18px * var(--fs))); line-height: calc(1.25 + .25 * var(--fs)); }
+    /* pilihan panjang (mis. SJT) di layar lebar tanpa bacaan: dua kolom supaya tidak menumpuk ke bawah */
+    body.ujian .isi:not(.dua) .q-choices-panjang { display: grid; grid-template-columns: 1fr 1fr; column-gap: 14px; }
+    body.ujian .isi:not(.dua) .q-choices-panjang .choice:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    body.ujian .q-choices-personality-new .choice-text { font-size: calc(20px * var(--fs)); }
+    body.ujian .choice-bullet { width: calc(35px * var(--fs)); height: calc(35px * var(--fs)); font-size: calc(20px * var(--fs)); }
+    body.ujian .q-choices-image-original .choice-container { width: calc(min(166px, 20vh) * var(--fs)); height: calc(min(166px, 20vh) * var(--fs)); margin: .3rem .5rem; }
+    body.ujian .q-choices-image-original .choice-container svg { width: 72%; }
+    body.ujian .kanvas { width: min(100%, 480px, calc(100dvh - 250px)); }
+    body.ujian .nav { flex: none; margin-top: auto; padding-top: calc(.7rem * var(--fs)); }
+    body.ujian .nav .btn { padding-block: calc(9px * var(--fs)); }
+  }
+
   /* ---------- animasi ----------
      Token: ease-out lembut, mikro 160ms, perpindahan 280–450ms, stagger 50ms. Hanya transform + opacity (murah untuk GPU).
      fill-mode backwards: transform tidak tertinggal setelah animasi selesai, jadi sticky/fixed tetap normal. */
@@ -314,7 +354,7 @@ $dlg.addEventListener('cancel', () => selesaiDlg(false));  // tombol Esc
 
 async function beranda() {
   P = null;
-  document.body.classList.remove('putih');
+  document.body.classList.remove('putih', 'ujian');
   document.getElementById('sesi').innerHTML = '';
   const daftar = await Promise.all(PAKET.map(id => muat(id).catch(() => null)));
   $app.innerHTML = `<p class="sub">Pilih satu paket simulasi. Setiap bagian punya batas waktu sendiri, dan timer mulai setelah Anda menekan <b>Mulai</b> di halaman petunjuk.</p>
@@ -369,6 +409,7 @@ function tampil(anim) {
   clearInterval(tick);
   tutupDlg(); tutupZoom();  // layar berganti (mis. waktu habis): pop up lama tidak berlaku lagi
   document.body.classList.toggle('putih', S.fase === 'kerja');
+  document.body.classList.toggle('ujian', S.fase === 'kerja');
   document.getElementById('sesi').innerHTML = S.fase === 'instruksi' ? '<button class="btn garis" data-aksi="batal">Batalkan ujian</button>' : '';
   ({ instruksi: layarInstruksi, kerja: layarKerja, hasil: layarHasil })[S.fase]();
   if (S) animasi(anim);
@@ -473,7 +514,7 @@ function layarKerja() {
     </aside>
     <div class="isi ${stim ? 'dua' : ''}">
       ${stim ? `<div class="kiri">${stim}</div>` : ''}
-      <div>
+      <div class="kanan">
         <p class="nomor">Soal ${S.i + 1} dari ${n}</p>
         ${q.html ? `<div class="q-html">${q.html}</div>` : ''}
         <div class="q-text">${teks(q.teks)}</div>
@@ -496,7 +537,23 @@ function layarKerja() {
   };
   detak(); tick = setInterval(detak, 1000);
   if (b.jenis === 'gambar') pasangKanvas(q);
+  pasLayar();
 }
+
+// Turunkan --fs bertahap (1 → 0,6) sampai soal, gambar, dan pilihan muat satu layar tanpa scroll.
+// Hanya untuk layar lebar; jika masih tidak muat di 0,6, kolom boleh scroll sebagai jalan terakhir.
+function pasLayar() {
+  const isi = document.querySelector('body.ujian .isi');
+  if (!isi || !matchMedia('(min-width: 900px) and (min-height: 480px)').matches) return;
+  const kol = [...isi.querySelectorAll(':scope > .kiri, :scope > .kiri > .stim, :scope > .kanan')];
+  const lebih = () => kol.some(el => el.scrollHeight > el.clientHeight + 1);
+  let fs = 1;
+  isi.style.setProperty('--fs', fs);
+  while (lebih() && fs > .6) isi.style.setProperty('--fs', fs = +(fs - .05).toFixed(2));
+}
+let tundaPas;
+addEventListener('resize', () => { clearTimeout(tundaPas); tundaPas = setTimeout(pasLayar, 120); });
+document.fonts?.ready.then(() => pasLayar());
 
 function ke(i) {
   const n = P.bagian[S.b].soal.length;
