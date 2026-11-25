@@ -217,6 +217,20 @@
   dialog .isi-dlg { font-size: 15px; line-height: 1.6; }
   dialog .aksi { margin: 20px 0 12px; justify-content: flex-end; }
   dialog .btn.merah { background: var(--merah); }
+  /* perbesar gambar: ketuk gambar/grafik soal untuk membuka penampil layar penuh */
+  :is(.q-img, .stim img, .stim svg.chart, .q-html, .q-text-image) { cursor: zoom-in; }
+  #zoom { width: 100vw; height: 100dvh; max-width: none; max-height: none; padding: 0; border-radius: 0; background: rgba(4, 12, 32, .96); color: #fff; }
+  #zoom[open] { display: flex; flex-direction: column; }
+  .zoom-alat { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; flex-wrap: wrap; }
+  .zoom-alat button { min-width: 44px; height: 40px; border: 1px solid rgba(255, 255, 255, .35); border-radius: 9999px; background: rgba(255, 255, 255, .08); font-size: 18px; font-weight: 700; padding: 0 14px; }
+  .zoom-alat button:active { transform: scale(.94); }
+  .zoom-alat .tutup { margin-left: 12px; background: var(--merah); border-color: var(--merah); }
+  .zoom-alat output { min-width: 58px; text-align: center; font-variant-numeric: tabular-nums; }
+  .zoom-area { flex: 1; display: flex; overflow: auto; touch-action: none; cursor: grab; padding: 12px; }
+  .zoom-area:active { cursor: grabbing; }
+  .zoom-kanvas { position: relative; flex: none; margin: auto; background: #fff; border-radius: 6px; overflow: hidden; }
+  .zoom-kanvas > * { position: absolute; left: 0; top: 0; margin: 0 !important; max-width: none !important; transform-origin: 0 0; pointer-events: none; }
+  .zoom-tip { margin: 0; padding: 0 10px 10px; text-align: center; font-size: 12px; opacity: .7; }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after, ::backdrop { animation-duration: 1ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
   }
@@ -226,6 +240,12 @@
 <body>
 <header><div class="logo">Simulasi Psikotes</div><div id="sesi"></div></header>
 <main id="app">Memuat…</main>
+<dialog id="zoom" aria-label="Perbesar gambar">
+  <div class="zoom-alat"><button data-z="kecil" aria-label="Perkecil">−</button><output id="zoom-pct">100%</output>
+    <button data-z="besar" aria-label="Perbesar">+</button><button data-z="pas">Pas layar</button><button data-z="tutup" class="tutup" aria-label="Tutup">✕</button></div>
+  <div class="zoom-area"><div class="zoom-kanvas"></div></div>
+  <p class="zoom-tip">Geser untuk melihat bagian lain · cubit dua jari atau scroll mouse untuk zoom · Esc untuk menutup</p>
+</dialog>
 <dialog id="dlg" aria-labelledby="dlg-j"><form method="dialog">
   <h2 id="dlg-j"></h2><div class="isi-dlg" id="dlg-i"></div>
   <div class="aksi"><button class="btn abu" value="tidak" id="dlg-tidak">Batal</button><button class="btn" value="ya" id="dlg-ya">Ya</button></div>
@@ -347,7 +367,7 @@ async function mulaiPaket(id) {
 
 function tampil(anim) {
   clearInterval(tick);
-  tutupDlg();  // layar berganti (mis. waktu habis): pop up lama tidak berlaku lagi
+  tutupDlg(); tutupZoom();  // layar berganti (mis. waktu habis): pop up lama tidak berlaku lagi
   document.body.classList.toggle('putih', S.fase === 'kerja');
   document.getElementById('sesi').innerHTML = S.fase === 'instruksi' ? '<button class="btn garis" data-aksi="batal">Batalkan ujian</button>' : '';
   ({ instruksi: layarInstruksi, kerja: layarKerja, hasil: layarHasil })[S.fase]();
@@ -364,7 +384,7 @@ function layarInstruksi() {
       ${b.skala ? `<p>Pilihan jawaban: <b>${b.skala.map(esc).join(' / ')}</b></p>` : ''}
       <ul>
         <li>${b.jenis === 'gambar' ? 'Gambar langsung di kanvas dengan mouse, jari, atau stylus. Gambar tersimpan otomatis.' : 'Pilih jawaban dengan klik, atau tekan tombol huruf (A, B, …) / angka (1, 2, …).'} Panah kiri/kanan untuk pindah soal.</li>
-        <li>Daftar nomor soal ada di tombol ☰ di sisi kiri layar.</li>
+        <li>Daftar nomor soal ada di tombol ☰ di sisi kiri layar. Ketuk gambar, grafik, atau tabel bergambar untuk memperbesar.</li>
         ${b.jenis === 'kepribadian'
           ? '<li>Tidak ada jawaban benar atau salah. Jawab sesuai diri Anda. Setelah memilih, soal berikutnya muncul otomatis.</li>'
           : b.jenis === 'gambar' ? '<li>Tidak ada jawaban benar atau salah. Bagian ini tidak dinilai; hasil gambar ditampilkan di halaman hasil.</li>'
@@ -697,6 +717,69 @@ function hasilK() {
   scrollTo(0, 0);
 }
 
+// ---------- perbesar gambar ----------
+// Klon gambar/grafik ke penampil layar penuh. Gambar raster memakai ukuran aslinya (Paket 5 dirender 576 dpi),
+// SVG tetap vektor, jadi tajam di zoom berapa pun. Zoom = transform scale; kanvas ikut melebar supaya bisa di-scroll.
+const ZOOM = '.q-img, .stim img, .stim svg.chart, .q-html, .q-text-image';
+const $zoom = document.getElementById('zoom'), $za = $zoom.querySelector('.zoom-area'), $zk = $zoom.querySelector('.zoom-kanvas');
+let Z = null;
+function bukaZoom(src) {
+  const img = src.tagName === 'IMG', el = src.cloneNode(true);
+  const r = src.getBoundingClientRect(), w = img ? src.naturalWidth : r.width, h = img ? src.naturalHeight : r.height;  // SVG tidak punya offsetWidth
+  if (!w || !h) return;
+  el.style.width = w + 'px'; el.style.height = h + 'px';
+  $zk.replaceChildren(el);
+  $zoom.showModal();
+  const fit = Math.min(($za.clientWidth - 24) / w, ($za.clientHeight - 24) / h, img ? 1 : 3);
+  Z = { el, w, h, fit, z: fit };
+  skala(fit);
+}
+function skala(z, cx, cy) {  // cx, cy = titik layar yang tetap diam saat zoom (posisi kursor / tengah cubitan)
+  z = Math.min(Math.max(z, Z.fit * .5), Z.fit * 8);
+  const a = $za.getBoundingClientRect(), k = $zk.getBoundingClientRect();
+  cx ??= a.left + a.width / 2; cy ??= a.top + a.height / 2;
+  const ux = (cx - k.left) / Z.z, uy = (cy - k.top) / Z.z;
+  Z.z = z;
+  $zk.style.width = Z.w * z + 'px'; $zk.style.height = Z.h * z + 'px';
+  Z.el.style.transform = `scale(${z})`;
+  const k2 = $zk.getBoundingClientRect();
+  $za.scrollLeft += k2.left + ux * z - cx; $za.scrollTop += k2.top + uy * z - cy;
+  document.getElementById('zoom-pct').textContent = Math.round(z / Z.fit * 100) + '%';
+}
+const tutupZoom = () => { if ($zoom.open) $zoom.close(); };
+$zoom.addEventListener('click', e => {
+  const t = e.target.closest('[data-z]')?.dataset.z;
+  if (t === 'tutup') tutupZoom();
+  else if (t) skala(t === 'pas' ? Z.fit : Z.z * (t === 'besar' ? 1.4 : 1 / 1.4));
+});
+$zoom.addEventListener('keydown', e => {
+  if (e.key === '+' || e.key === '=') skala(Z.z * 1.4);
+  else if (e.key === '-') skala(Z.z / 1.4);
+  else if (e.key === '0') skala(Z.fit);
+});
+$za.addEventListener('wheel', e => { e.preventDefault(); skala(Z.z * Math.exp(-e.deltaY * .0015), e.clientX, e.clientY); }, { passive: false });
+$za.addEventListener('dblclick', e => skala(Z.z > Z.fit * 1.05 ? Z.fit : Z.fit * 2.5, e.clientX, e.clientY));
+// satu jari / mouse = geser, dua jari = cubit
+const jari = new Map();
+let cubit = null;
+const jarak = () => { const [p, q] = [...jari.values()]; return Math.hypot(p.clientX - q.clientX, p.clientY - q.clientY); };
+$za.addEventListener('pointerdown', e => {
+  jari.set(e.pointerId, e);
+  try { $za.setPointerCapture(e.pointerId); } catch {}  // tetap terlacak walau jari keluar area
+  cubit = jari.size === 2 ? { d: jarak(), z: Z.z } : null;  // patokan cubit = jarak saat jari kedua menyentuh
+});
+$za.addEventListener('pointermove', e => {
+  const lama = jari.get(e.pointerId);
+  if (!lama) return;
+  jari.set(e.pointerId, e);
+  const [p, q] = [...jari.values()];
+  if (jari.size === 1) { $za.scrollLeft -= e.clientX - lama.clientX; $za.scrollTop -= e.clientY - lama.clientY; return; }
+  if (cubit) skala(cubit.z * jarak() / cubit.d, (p.clientX + q.clientX) / 2, (p.clientY + q.clientY) / 2);
+});
+const lepas = e => { jari.delete(e.pointerId); cubit = null; };
+$za.addEventListener('pointerup', lepas);
+$za.addEventListener('pointercancel', lepas);
+
 // ---------- input ----------
 const aksi = {
   async mulai() {
@@ -720,7 +803,7 @@ const aksi = {
 
 document.addEventListener('click', e => {
   const t = e.target.closest('[data-aksi],[data-pilih],[data-nomor],[data-paket],[data-alat],[data-ukuran],[data-kmenit]');
-  if (!t) return;
+  if (!t) { const z = e.target.closest(ZOOM); if (z && !$zoom.open) bukaZoom(z); return; }
   if (t.dataset.kmenit) return mulaiKraepelin(+t.dataset.kmenit);
   if (t.dataset.alat) return alat(t.dataset.alat);
   if (t.dataset.ukuran) { pena.w = +t.dataset.ukuran; return tampil(); }
@@ -731,7 +814,7 @@ document.addEventListener('click', e => {
 });
 
 document.addEventListener('keydown', e => {
-  if (S?.fase !== 'kerja' || $dlg.open || e.ctrlKey || e.metaKey || e.altKey || e.key.length > 1 && !e.key.startsWith('Arrow')) return;
+  if (S?.fase !== 'kerja' || $dlg.open || $zoom.open || e.ctrlKey || e.metaKey || e.altKey || e.key.length > 1 && !e.key.startsWith('Arrow')) return;
   if (e.key === 'ArrowRight') return aksi.maju();
   if (e.key === 'ArrowLeft') return aksi.mundur();
   const k = e.key.toLowerCase(), i = '123456'.includes(k) ? '123456'.indexOf(k) : 'abcdef'.indexOf(k);
