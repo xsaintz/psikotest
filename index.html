@@ -170,12 +170,66 @@
     .q-choices-default { grid-template-columns: 1fr; } .panel, .kartu { margin: 8px 0 0; }
     .q-text { font-size: 1.2rem; } .stim { text-align: left; } .info-area .meta { display: none; } .info-area { padding: .6rem 1rem; }
   }
+  /* ---------- animasi ----------
+     Token: ease-out lembut, mikro 160ms, perpindahan 280–450ms, stagger 50ms. Hanya transform + opacity (murah untuk GPU).
+     fill-mode backwards: transform tidak tertinggal setelah animasi selesai, jadi sticky/fixed tetap normal. */
+  :root { --ease: cubic-bezier(.22, 1, .36, 1); --mikro: 160ms; --sedang: 280ms; --lambat: 450ms; }
+  @keyframes naik { from { opacity: 0; transform: translateY(16px); } }
+  @keyframes pudar { from { opacity: 0; } }
+  @keyframes dariKanan { from { opacity: 0; transform: translateX(28px); } }
+  @keyframes dariKiri { from { opacity: 0; transform: translateX(-28px); } }
+  @keyframes pop { 0% { transform: scale(.94); } 60% { transform: scale(1.04); } }
+  @keyframes tumbuh { from { transform: scaleX(0); } }
+  @keyframes denyut { 50% { transform: scale(1.08); } }
+  /* masuk layar: tiap blok naik bergantian (--i diisi JS) */
+  .masuk > * { animation: naik var(--lambat) var(--ease) backwards; animation-delay: calc(var(--i, 0) * 50ms); }
+  .geser-kanan .isi { animation: dariKanan var(--sedang) var(--ease) backwards; }
+  .geser-kiri .isi { animation: dariKiri var(--sedang) var(--ease) backwards; }
+  :is(.masuk, .geser-kanan, .geser-kiri) :is(.choice, .choice-container) { animation: naik var(--sedang) var(--ease) backwards; animation-delay: calc(var(--i, 0) * 40ms + 90ms); }
+  details[open] > .panel { animation: naik var(--sedang) var(--ease); }
+  /* umpan balik tombol dan pilihan */
+  .btn, .choice, .pill, .progress-nav, .kp-slot { transition: transform var(--mikro) var(--ease), box-shadow var(--mikro), filter var(--mikro), background-color var(--sedang), border-color var(--sedang); }
+  @media (hover: hover) {  /* di layar sentuh hover tidak "nyangkut" */
+    .btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(88, 80, 236, .35); }
+    .pill:hover { border-color: #fff; background-color: rgba(255, 255, 255, .06); }
+    .choice:hover { transform: translateY(-2px); }
+    .q-choices-image-original .choice-container:not(.chosen):hover { transform: translateY(-4px); }
+    .progress-nav:hover { transform: scale(1.12); }
+  }
+  .btn:active:not(:disabled), .choice:active, .pill:active { transform: scale(.97); }
+  .pop { animation: pop var(--sedang) var(--ease); }
+  .q-choices-image-original .choice-container.pop { animation: tumbuh-gbr var(--sedang) var(--ease); }
+  @keyframes tumbuh-gbr { from { transform: scale(1); } }
+  .waktu.kritis { display: inline-block; animation: denyut 1s ease-in-out infinite; }
+  .kp-slot.ok, .kp-slot.x { animation: pop 200ms var(--ease); }
+  .masuk-k .kp-kol { animation: naik var(--sedang) var(--ease) backwards; animation-delay: calc(var(--i, 0) * 30ms); }
+  .batang i { transform-origin: left; animation: tumbuh .9s var(--ease) .25s backwards; }
+  .pesan { animation: naik var(--sedang) var(--ease), pop var(--sedang) var(--ease) var(--sedang); }
+  /* pop up konfirmasi: <dialog> bawaan, animasi masuk dan keluar murni CSS */
+  dialog { width: min(92vw, 440px); padding: 22px 22px 6px; border: 0; border-radius: 16px; background: var(--panel); color: var(--navy);
+           box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .5); opacity: 0; transform: translateY(14px) scale(.96);
+           transition: opacity var(--sedang) var(--ease), transform var(--sedang) var(--ease), overlay var(--sedang) allow-discrete, display var(--sedang) allow-discrete; }
+  dialog[open] { opacity: 1; transform: none; }
+  dialog::backdrop { background: rgba(0, 10, 40, 0); backdrop-filter: blur(0); transition: all var(--sedang) allow-discrete; }
+  dialog[open]::backdrop { background: rgba(0, 10, 40, .55); backdrop-filter: blur(2px); }
+  @starting-style { dialog[open] { opacity: 0; transform: translateY(14px) scale(.96); } dialog[open]::backdrop { background: rgba(0, 10, 40, 0); backdrop-filter: blur(0); } }
+  dialog h2 { margin: 0 0 8px; font-size: 19px; }
+  dialog .isi-dlg { font-size: 15px; line-height: 1.6; }
+  dialog .aksi { margin: 20px 0 12px; justify-content: flex-end; }
+  dialog .btn.merah { background: var(--merah); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after, ::backdrop { animation-duration: 1ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
+  }
   @media print { .aksi, header button { display: none; } body { background: #fff; color: #000; } }
 </style>
 </head>
 <body>
 <header><div class="logo">Simulasi Psikotes</div><div id="sesi"></div></header>
 <main id="app">Memuat…</main>
+<dialog id="dlg" aria-labelledby="dlg-j"><form method="dialog">
+  <h2 id="dlg-j"></h2><div class="isi-dlg" id="dlg-i"></div>
+  <div class="aksi"><button class="btn abu" value="tidak" id="dlg-tidak">Batal</button><button class="btn" value="ya" id="dlg-ya">Ya</button></div>
+</form></dialog>
 <script src="render.js"></script>
 <script>
 // Aplikasi ujian. Buka lewat http server (fetch JSON tidak jalan dari file://). Sesi disimpan di localStorage.
@@ -208,6 +262,36 @@ const pct = (a, n) => n ? Math.round(a / n * 100) : 0;
 const mmss = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 const teks = s => esc(s).replace(/\n/g, '<br>');
 
+// Animasi layar: hapus kelas lama, lalu (jika diminta) pasang lagi supaya keyframe main ulang.
+// Render tanpa kelas (pilih jawaban, ragu) sengaja tidak beranimasi agar tidak berkedip.
+function animasi(kelas) {
+  $app.classList.remove('masuk', 'geser-kanan', 'geser-kiri');
+  if (!kelas) return;
+  [...$app.children].forEach((el, i) => el.style.setProperty('--i', Math.min(i, 10)));
+  void $app.offsetWidth;
+  $app.classList.add(kelas);
+}
+const popEl = sel => document.querySelector(sel)?.classList.add('pop');
+
+// Pop up konfirmasi. isi = HTML yang sudah di-escape pemanggil. Hasil true bila peserta menekan tombol "ya".
+const $dlg = document.getElementById('dlg');
+function tanya(judul, isi, { ya = 'Ya, mulai', tidak = 'Batal', bahaya = false } = {}) {
+  if ($dlg.open) return Promise.resolve(false);
+  document.getElementById('dlg-j').textContent = judul;
+  document.getElementById('dlg-i').innerHTML = isi;
+  const bYa = document.getElementById('dlg-ya'), bTidak = document.getElementById('dlg-tidak');
+  bYa.textContent = ya; bTidak.textContent = tidak; bYa.classList.toggle('merah', bahaya);
+  $dlg.showModal();
+  (bahaya ? bTidak : bYa).focus();  // aksi berbahaya: fokus awal di Batal
+  return new Promise(ok => jawabDlg = ok);
+}
+// ponytail: jawaban diambil dari submit/cancel (langsung), bukan event close yang bisa tertunda.
+let jawabDlg = null;
+const selesaiDlg = v => { const f = jawabDlg; jawabDlg = null; f?.(v); };
+const tutupDlg = () => { if ($dlg.open) { $dlg.close(); selesaiDlg(false); } };
+$dlg.querySelector('form').addEventListener('submit', e => selesaiDlg(e.submitter?.value === 'ya'));
+$dlg.addEventListener('cancel', () => selesaiDlg(false));  // tombol Esc
+
 async function beranda() {
   P = null;
   document.body.classList.remove('putih');
@@ -231,6 +315,7 @@ async function beranda() {
           angka baru muncul otomatis sampai waktu habis.</p>
         <p>Pilih durasi: ${[2, 5, 10].map(m => `<button class="btn" data-kmenit="${m}">${m} menit</button>`).join(' ')}</p>
       </div></details>`;
+  animasi('masuk');
 }
 
 function perBagian(daftar) {
@@ -251,16 +336,22 @@ function perBagian(daftar) {
 }
 
 async function mulaiPaket(id) {
-  P = await muat(id);
+  const p = await muat(id), soal = p.bagian.reduce((a, b) => a + b.soal.length, 0), menit = p.bagian.reduce((a, b) => a + b.durasi_menit, 0);
+  if (!await tanya(id.includes('#') ? 'Mulai latihan bagian ini?' : 'Mulai simulasi?',
+    `<b>${esc(p.judul)}</b><br>${p.bagian.length} bagian · ${soal} soal · ${menit} menit kerja.<br>
+     <span class="meta">Timer tiap bagian berjalan setelah Anda menekan Mulai di halaman petunjuk.</span>`)) return;
+  P = p;
   S = { paket: id, b: 0, i: 0, fase: 'instruksi', jawab: {}, ragu: {}, pakai: {} };
-  simpan(); tampil();
+  simpan(); tampil('masuk'); scrollTo(0, 0);
 }
 
-function tampil() {
+function tampil(anim) {
   clearInterval(tick);
+  tutupDlg();  // layar berganti (mis. waktu habis): pop up lama tidak berlaku lagi
   document.body.classList.toggle('putih', S.fase === 'kerja');
   document.getElementById('sesi').innerHTML = S.fase === 'instruksi' ? '<button class="btn garis" data-aksi="batal">Batalkan ujian</button>' : '';
   ({ instruksi: layarInstruksi, kerja: layarKerja, hasil: layarHasil })[S.fase]();
+  if (S) animasi(anim);
 }
 
 function layarInstruksi() {
@@ -289,12 +380,12 @@ const gambarOpsi = q => q.opsi_html || q.opsi_gambar?.map(frame);  // SVG jadi (
 function pilihan(b, q, j) {
   const g = gambarOpsi(q);
   if (g) return `<div class="q-choices q-choices-image-original">${g.map((f, k) =>
-    `<button class="choice-container ${j === k ? 'chosen' : ''}" data-pilih="${k}" aria-pressed="${j === k}">${f}<b>${q.opsi[k]}</b></button>`).join('')}</div>`;
+    `<button class="choice-container ${j === k ? 'chosen' : ''}" style="--i:${k}" data-pilih="${k}" aria-pressed="${j === k}">${f}<b>${q.opsi[k]}</b></button>`).join('')}</div>`;
   const opsi = opsiDari(b, q);
   const jenis = b.jenis === 'kepribadian' ? 'q-choices-personality-new' : q.img ? 'q-choices-default empat'
     : Math.max(...opsi.map(o => o.length)) > 28 ? 'q-choices-panjang' : 'q-choices-default';
   return `<div class="q-choices ${jenis}">${opsi.map((o, k) =>
-    `<button class="choice ${j === k ? 'chosen' : ''}" data-pilih="${k}" aria-pressed="${j === k}"><span class="choice-bullet">${HURUF[k]}</span><span class="choice-text">${esc(o)}</span></button>`).join('')}</div>`;
+    `<button class="choice ${j === k ? 'chosen' : ''}" style="--i:${k}" data-pilih="${k}" aria-pressed="${j === k}"><span class="choice-bullet">${HURUF[k]}</span><span class="choice-text">${esc(o)}</span></button>`).join('')}</div>`;
 }
 
 const pola = q => `<svg viewBox="0 0 400 400" aria-hidden="true"><path d="${esc(q.pola)}" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round"/></svg>`;
@@ -390,21 +481,25 @@ function layarKerja() {
 function ke(i) {
   const n = P.bagian[S.b].soal.length;
   if (i < 0 || i >= n) return;
-  S.i = i; simpan(); tampil(); scrollTo(0, 0);
+  const arah = i > S.i ? 'geser-kanan' : 'geser-kiri';
+  S.i = i; simpan(); tampil(arah); scrollTo(0, 0);
 }
 
 function pilih(k) {
   const b = P.bagian[S.b], q = b.soal[S.i];
   if (b.jenis === 'gambar' || k >= (q.opsi_gambar || opsiDari(b, q)).length) return;
   S.jawab[q.id] = k; simpan(); tampil();
+  popEl(`[data-pilih="${k}"]`); popEl(`[data-nomor="${S.i}"]`);
   if (b.jenis === 'kepribadian') setTimeout(() => { if (S.fase === 'kerja' && b.soal[S.i] === q) ke(S.i + 1); }, 200);
 }
 
-function selesaiBagian(habis) {
+async function selesaiBagian(habis) {
   const b = P.bagian[S.b];
   if (!habis) {
     const kosong = b.soal.filter(x => S.jawab[x.id] == null).length;
-    if (!confirm((kosong ? `Masih ada ${kosong} soal yang belum dijawab. ` : '') + 'Selesaikan bagian ini? Bagian yang sudah selesai tidak bisa dibuka lagi.')) return;
+    const ya = await tanya('Selesaikan bagian ini?', (kosong ? `<b class="waspada">Masih ada ${kosong} soal yang belum dijawab.</b><br>` : '')
+      + 'Bagian yang sudah selesai tidak bisa dibuka lagi.', { ya: 'Ya, selesai', tidak: 'Kembali' });
+    if (!ya || S?.fase !== 'kerja' || P.bagian[S.b] !== b) return;  // waktu bisa habis saat pop up terbuka
   }
   clearInterval(tick);
   const total = b.durasi_menit * 60;
@@ -412,7 +507,7 @@ function selesaiBagian(habis) {
   S.pesan = habis ? `Waktu bagian "${b.nama}" habis. Jawaban yang sudah diisi tetap tersimpan.` : '';
   S.b++; S.i = 0;
   S.fase = S.b < P.bagian.length ? 'instruksi' : 'hasil';
-  simpan(); tampil(); scrollTo(0, 0);
+  simpan(); tampil('masuk'); scrollTo(0, 0);
 }
 
 // ---------- hasil ----------
@@ -512,6 +607,11 @@ function layarHasil() {
 let K = null;
 const BARIS_K = 11;  // angka per kolom -> 10 jawaban per kolom
 
+async function mulaiKraepelin(menit) {
+  if (await tanya('Mulai tes Kraepelin?', `Durasi <b>${menit} menit</b>. Timer langsung berjalan setelah Anda menekan Ya.<br>
+    <span class="meta">Ketik digit terakhir hasil penjumlahan dua angka; tidak perlu klik.</span>`)) kraepelin(menit);
+}
+
 function kraepelin(menit) {
   K = { menit, mulai: Date.now(), akhir: Date.now() + menit * 60000, benar: 0, salah: 0, permenit: [], hal: 0 };
   halamanK();
@@ -524,10 +624,11 @@ function kraepelin(menit) {
     </div>
     <div class="kp-wrap"><p class="meta" id="khal"></p><div class="kp" id="kgrid"></div>
       <input id="kin" class="kp-in" inputmode="numeric" autocomplete="off" aria-label="Ketik jawaban"></div>`;
+  animasi('masuk');
   gridK();
   const inp = document.getElementById('kin');
   inp.oninput = () => { for (const ch of inp.value) if (ch >= '0' && ch <= '9') ketikK(+ch); inp.value = ''; };
-  inp.onblur = () => setTimeout(() => K && inp.isConnected && inp.focus());
+  inp.onblur = () => setTimeout(() => K && inp.isConnected && !$dlg.open && inp.focus());
   inp.focus();
   clearInterval(tick);
   const el = document.getElementById('waktu');
@@ -548,7 +649,9 @@ function halamanK() {
 
 function gridK() {
   document.getElementById('khal').textContent = `Halaman ${K.hal}`;
-  document.getElementById('kgrid').innerHTML = K.angka.map((a, c) => `<div class="kp-kol">
+  const g = document.getElementById('kgrid');
+  g.classList.remove('masuk-k'); void g.offsetWidth; g.classList.add('masuk-k');
+  g.innerHTML = K.angka.map((a, c) => `<div class="kp-kol" style="--i:${c}">
     <div class="kp-angka">${a.map(d => `<b>${d}</b>`).join('')}</div>
     <div class="kp-isi">${a.slice(1).map((_, r) => `<span class="kp-slot ${c === 0 && r === 0 ? 'kini' : ''}" id="k${c}-${r}"></span>`).join('')}</div></div>`).join('');
 }
@@ -570,6 +673,7 @@ function ketikK(d) {
 
 function hasilK() {
   clearInterval(tick);
+  tutupDlg();
   const k = K; K = null;
   document.body.classList.remove('putih');
   const n = k.benar + k.salah, menit = Math.max(1 / 60, (Math.min(Date.now(), k.akhir) - k.mulai) / 60000);
@@ -589,29 +693,35 @@ function hasilK() {
       ${per.map((x, i) => `<div class="dim"><span>Menit ${i + 1}</span><div class="batang"><i style="width:${x / maks * 100}%"></i></div><b>${x}</b></div>`).join('')}
     </div>
     <div class="aksi"><button class="btn abu" data-kmenit="${k.menit}">Ulangi ${k.menit} menit</button><button class="btn" data-aksi="kBeranda">Kembali ke beranda</button></div>`;
+  animasi('masuk');
   scrollTo(0, 0);
 }
 
 // ---------- input ----------
 const aksi = {
-  mulai() { S.fase = 'kerja'; S.i = 0; S.pesan = ''; S.akhir = Date.now() + P.bagian[S.b].durasi_menit * 60000; simpan(); tampil(); },
+  async mulai() {
+    const b = P.bagian[S.b];
+    if (!await tanya(`Mulai ${b.nama}?`, `${b.soal.length} soal · <b>${b.durasi_menit} menit</b>.<br>Timer langsung berjalan dan tidak bisa dijeda.`)
+      || S?.fase !== 'instruksi') return;
+    S.fase = 'kerja'; S.i = 0; S.pesan = ''; S.akhir = Date.now() + b.durasi_menit * 60000; simpan(); tampil('masuk');
+  },
   mundur() { ke(S.i - 1); },
   maju() { ke(S.i + 1); },
-  ragu() { const id = P.bagian[S.b].soal[S.i].id; S.ragu[id] = !S.ragu[id]; simpan(); tampil(); },
+  ragu() { const id = P.bagian[S.b].soal[S.i].id; S.ragu[id] = !S.ragu[id]; simpan(); tampil(); popEl('[data-aksi="ragu"]'); popEl(`[data-nomor="${S.i}"]`); },
   nav() { navBuka = !navBuka; document.querySelector('.progress-nav-container').classList.toggle('show', navBuka); },
   selesai() { selesaiBagian(false); },
-  batal() { if (confirm('Batalkan ujian? Semua jawaban akan dihapus.')) aksi.hapus(); },
-  beranda() { if (confirm('Kembali ke beranda? Hasil ini akan dihapus, jadi cetak atau simpan dulu jika perlu.')) aksi.hapus(); },
+  async batal() { if (await tanya('Batalkan ujian?', 'Semua jawaban akan dihapus.', { ya: 'Ya, batalkan', tidak: 'Lanjutkan ujian', bahaya: true })) aksi.hapus(); },
+  async beranda() { if (await tanya('Kembali ke beranda?', 'Hasil ini akan dihapus, jadi cetak atau simpan dulu jika perlu.', { ya: 'Ya, kembali', bahaya: true })) aksi.hapus(); },
   hapus() { clearInterval(tick); S = null; localStorage.removeItem(KEY); beranda(); },
   cetak() { document.querySelectorAll('details').forEach(d => d.open = true); print(); },
-  kSelesai() { if (confirm('Akhiri tes Kraepelin sekarang?')) hasilK(); },
+  async kSelesai() { if (await tanya('Akhiri tes Kraepelin sekarang?', 'Hitungan berhenti dan hasil langsung ditampilkan.', { ya: 'Ya, akhiri', tidak: 'Lanjutkan', bahaya: true }) && K) hasilK(); },
   kBeranda() { beranda(); },
 };
 
 document.addEventListener('click', e => {
   const t = e.target.closest('[data-aksi],[data-pilih],[data-nomor],[data-paket],[data-alat],[data-ukuran],[data-kmenit]');
   if (!t) return;
-  if (t.dataset.kmenit) return kraepelin(+t.dataset.kmenit);
+  if (t.dataset.kmenit) return mulaiKraepelin(+t.dataset.kmenit);
   if (t.dataset.alat) return alat(t.dataset.alat);
   if (t.dataset.ukuran) { pena.w = +t.dataset.ukuran; return tampil(); }
   if (t.dataset.paket) return mulaiPaket(t.dataset.paket);
@@ -621,14 +731,14 @@ document.addEventListener('click', e => {
 });
 
 document.addEventListener('keydown', e => {
-  if (S?.fase !== 'kerja' || e.ctrlKey || e.metaKey || e.altKey || e.key.length > 1 && !e.key.startsWith('Arrow')) return;
+  if (S?.fase !== 'kerja' || $dlg.open || e.ctrlKey || e.metaKey || e.altKey || e.key.length > 1 && !e.key.startsWith('Arrow')) return;
   if (e.key === 'ArrowRight') return aksi.maju();
   if (e.key === 'ArrowLeft') return aksi.mundur();
   const k = e.key.toLowerCase(), i = '123456'.includes(k) ? '123456'.indexOf(k) : 'abcdef'.indexOf(k);
   if (i >= 0) pilih(i);
 });
 
-if (S) muat(S.paket).then(p => { P = p; tampil(); }).catch(() => aksi.hapus());
+if (S) muat(S.paket).then(p => { P = p; tampil('masuk'); }).catch(() => aksi.hapus());
 else beranda();
 </script>
 </body>
