@@ -267,7 +267,7 @@
   dialog .aksi { margin: 20px 0 12px; justify-content: flex-end; }
   dialog .btn.merah { background: var(--merah); }
   /* perbesar gambar: ketuk gambar/grafik soal untuk membuka penampil layar penuh */
-  :is(.q-img, .stim img, .stim svg.chart, .q-html, .q-text-image) { cursor: zoom-in; }
+  :is(.q-img, .stim img, .stim svg, .q-html, .q-text-image) { cursor: zoom-in; }
   #zoom { width: 100vw; height: 100dvh; max-width: none; max-height: none; padding: 0; border-radius: 0; background: rgba(4, 12, 32, .96); color: #fff; }
   #zoom[open] { display: flex; flex-direction: column; }
   .zoom-alat { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; flex-wrap: wrap; }
@@ -439,7 +439,9 @@ function perBagian(daftar) {
 
 async function mulaiPaket(id, tombol) {
   tombol?.classList.add('memuat-btn');
-  const p = await muat(id).finally(() => tombol?.classList.remove('memuat-btn')), soal = p.bagian.reduce((a, b) => a + b.soal.length, 0), menit = p.bagian.reduce((a, b) => a + b.durasi_menit, 0);
+  const p = await muat(id).catch(() => null).finally(() => tombol?.classList.remove('memuat-btn'));
+  if (!p) return alert('Gagal memuat soal. Periksa koneksi internet lalu coba lagi.');
+  const soal = p.bagian.reduce((a, b) => a + b.soal.length, 0), menit = p.bagian.reduce((a, b) => a + b.durasi_menit, 0);
   if (!await tanya(id.includes('#') ? 'Mulai latihan bagian ini?' : 'Mulai simulasi?',
     `<b>${esc(p.judul)}</b><br>${p.bagian.length} bagian · ${soal} soal · ${menit} menit kerja.<br>
      <span class="meta">Timer tiap bagian berjalan setelah Anda menekan Mulai di halaman petunjuk.</span>`)) return;
@@ -580,7 +582,9 @@ function layarKerja() {
     el.classList.toggle('peringatan', sisa > 60 && sisa <= 300);
     if (!sisa) selesaiBagian(true);
   };
-  detak(); tick = setInterval(detak, 1000);
+  detak();
+  if (S.fase !== 'kerja') return;  // waktu habis tepat saat render: jangan pasang timer lama di layar berikutnya
+  tick = setInterval(detak, 1000);
   if (b.jenis === 'gambar') pasangKanvas(q);
   pasLayar();
 }
@@ -632,7 +636,7 @@ function pilih(k) {
   S.jawab[q.id] = k; simpan(); tampil();
   popEl(`[data-pilih="${k}"]`); popEl(`[data-nomor="${S.i}"]`);
   riak(k);
-  if (b.jenis === 'kepribadian') setTimeout(() => { if (S.fase === 'kerja' && b.soal[S.i] === q) ke(S.i + 1); }, 200);
+  if (b.jenis === 'kepribadian') setTimeout(() => { if (S?.fase === 'kerja' && b.soal[S.i] === q) ke(S.i + 1); }, 200);
 }
 
 async function selesaiBagian(habis) {
@@ -859,7 +863,7 @@ function hasilK() {
 // ---------- perbesar gambar ----------
 // Klon gambar/grafik ke penampil layar penuh. Gambar raster memakai ukuran aslinya (Paket 5 dirender 576 dpi),
 // SVG tetap vektor, jadi tajam di zoom berapa pun. Zoom = transform scale; kanvas ikut melebar supaya bisa di-scroll.
-const ZOOM = '.q-img, .stim img, .stim svg.chart, .q-html, .q-text-image';
+const ZOOM = '.q-img, .stim img, .stim svg, .q-html, .q-text-image';
 const $zoom = document.getElementById('zoom'), $za = $zoom.querySelector('.zoom-area'), $zk = $zoom.querySelector('.zoom-kanvas');
 let Z = null;
 function bukaZoom(src) {
@@ -967,7 +971,10 @@ document.addEventListener('keydown', e => {
   if (i >= 0) pilih(i);
 });
 
-if (S) muat(S.paket).then(p => { P = p; tampil('masuk'); }).catch(() => aksi.hapus());
+// Gagal jaringan (TypeError) jangan menghapus ujian yang sedang berjalan; paket tidak ada lagi (404) = hapus sesi.
+if (S) muat(S.paket).then(p => { P = p; tampil('masuk'); }).catch(e => e instanceof TypeError
+  ? $app.innerHTML = '<p class="memuat">Gagal memuat soal. Jawaban Anda tetap tersimpan.<br><br><button class="btn" onclick="location.reload()">Coba lagi</button></p>'
+  : aksi.hapus());
 else beranda();
 </script>
 </body>
