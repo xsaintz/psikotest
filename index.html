@@ -389,7 +389,9 @@ function tanya(judul, isi, { ya = 'Ya, mulai', tidak = 'Batal', bahaya = false }
 let jawabDlg = null;
 const selesaiDlg = v => { const f = jawabDlg; jawabDlg = null; f?.(v); };
 const tutupDlg = () => { if ($dlg.open) { $dlg.close(); selesaiDlg(false); } };
-$dlg.querySelector('form').addEventListener('submit', e => selesaiDlg(e.submitter?.value === 'ya'));
+// Tutup dulu, baru lanjutkan: layar berikutnya (mis. Kraepelin) harus bisa memfokuskan input, dan selama <dialog> modal masih
+// terbuka, elemen di luarnya tidak bisa difokus.
+$dlg.querySelector('form').addEventListener('submit', e => { e.preventDefault(); $dlg.close(); selesaiDlg(e.submitter?.value === 'ya'); });
 $dlg.addEventListener('cancel', () => selesaiDlg(false));  // tombol Esc
 
 async function beranda() {
@@ -777,13 +779,14 @@ function kraepelin(menit) {
       <div><b>Tes Kraepelin</b><br><span class="meta">Ketik digit terakhir hasil penjumlahan</span></div>
       <div class="info-kanan"><span class="waktu" id="waktu" aria-label="Sisa waktu"></span><button class="btn" data-aksi="kSelesai">Selesai</button></div>
     </div>
-    <div class="kp-wrap"><p class="meta" id="khal"></p><div class="kp" id="kgrid"></div>
+    <div class="kp-wrap" id="kwrap"><p class="meta" id="khal"></p><div class="kp" id="kgrid"></div>
       <input id="kin" class="kp-in" inputmode="numeric" autocomplete="off" aria-label="Ketik jawaban"></div>`;
   animasi('masuk');
   gridK();
   const inp = document.getElementById('kin');
   inp.oninput = () => { for (const ch of inp.value) if (ch >= '0' && ch <= '9') ketikK(+ch); inp.value = ''; };
   inp.onblur = () => setTimeout(() => K && inp.isConnected && !$dlg.open && inp.focus());
+  document.getElementById('kwrap').onclick = () => { inp.blur(); inp.focus(); };  // ketuk angka = keyboard HP muncul lagi
   inp.focus();
   clearInterval(tick);
   const el = document.getElementById('waktu');
@@ -955,6 +958,8 @@ document.addEventListener('click', e => {
 });
 
 document.addEventListener('keydown', e => {
+  // Kraepelin: angka tetap masuk walau fokus sempat lepas dari input tersembunyi
+  if (K && !$dlg.open && e.target.id !== 'kin' && /^[0-9]$/.test(e.key) && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); return ketikK(+e.key); }
   if (S?.fase !== 'kerja' || $dlg.open || $zoom.open || e.ctrlKey || e.metaKey || e.altKey || e.key.length > 1 && !e.key.startsWith('Arrow')) return;
   if (e.key === 'ArrowRight') return aksi.maju();
   if (e.key === 'ArrowLeft') return aksi.mundur();
