@@ -17,6 +17,7 @@
     --bayang: 3px 3px 2px #ccc;
   }
   * { box-sizing: border-box; }
+  html { scrollbar-gutter: stable; }  /* ruang scrollbar selalu disiapkan: buka/tutup paket tidak menggeser tata letak */
   body { margin: 0; min-height: 100vh; font: 16px/1.5 Montserrat, system-ui, sans-serif; color: #fff; background: linear-gradient(#021d4a, #000) fixed; }
   body.putih { background: #fff; color: #1a202c; }
   header { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; padding: 18px 16px 4px; }
@@ -174,6 +175,7 @@
      Layar ujian = tinggi jendela. Gambar mengisi sisa ruang (object-fit), ukuran huruf/gambar figural mengikuti --fs
      yang diturunkan JS (pasLayar) bila isi masih kepanjangan. HP tetap memakai scroll biasa. */
   @media (min-width: 900px) and (min-height: 480px) {
+    html:has(body.ujian) { scrollbar-gutter: auto; }  /* layar ujian satu layar tidak pernah scroll */
     body.ujian #app { height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
     body.ujian .info-area { flex: none; padding: .55rem 1rem; }
     body.ujian .isi { --fs: 1; flex: 1; min-height: 0; width: 100%; display: grid; grid-template-rows: minmax(0, 1fr); align-items: stretch; gap: 24px; padding: .7rem 1.2rem .7rem 64px; }
@@ -278,6 +280,37 @@
   .zoom-kanvas { position: relative; flex: none; margin: auto; background: #fff; border-radius: 6px; overflow: hidden; }
   .zoom-kanvas > * { position: absolute; left: 0; top: 0; margin: 0 !important; max-width: none !important; transform-origin: 0 0; pointer-events: none; }
   .zoom-tip { margin: 0; padding: 0 10px 10px; text-align: center; font-size: 12px; opacity: .7; }
+  /* --- animasi tambahan --- */
+  @keyframes putar { to { transform: rotate(360deg); } }
+  @keyframes kedip { 50% { opacity: .45; } }
+  @keyframes isiProgres { from { transform: scaleX(var(--dari)); } }
+  @keyframes riak { to { transform: scale(40); opacity: 0; } }
+  @keyframes melayang { 50% { transform: translate(4%, -3%) scale(1.06); } 100% { transform: translate(-3%, 3%) scale(1); } }
+  /* beranda: cahaya latar bergerak pelan, judul muncul, kilau saat tombol paket disorot */
+  body::before { content: ""; position: fixed; inset: -20%; z-index: -1; pointer-events: none;
+    background: radial-gradient(circle at 22% 28%, rgba(88, 80, 236, .28), transparent 38%), radial-gradient(circle at 78% 72%, rgba(118, 169, 250, .2), transparent 42%);
+    animation: melayang 22s ease-in-out infinite alternate; }
+  body.putih::before { display: none; }
+  header .logo { animation: naik var(--lambat) var(--ease) backwards; }
+  .pill { position: relative; overflow: hidden; }
+  .pill::before { content: ""; position: absolute; inset: 0; pointer-events: none; transform: translateX(-100%);
+    background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, .18) 50%, transparent 65%); }
+  @media (hover: hover) { .pill:hover::before { transform: translateX(100%); transition: transform .8s var(--ease); } }
+  /* memuat */
+  .memuat { text-align: center; margin: 30vh 0 0; }
+  .spinner { display: inline-block; width: 22px; height: 22px; margin-right: 10px; vertical-align: middle; border: 3px solid rgba(255, 255, 255, .3); border-top-color: #fbb83f; border-radius: 50%; animation: putar .8s linear infinite; }
+  .btn.memuat-btn { position: relative; pointer-events: none; opacity: .85; }
+  .btn.memuat-btn::after { content: ""; position: absolute; right: 6px; width: 13px; height: 13px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: putar .7s linear infinite; }
+  /* layar ujian: bar progres jawaban, riak klik, nomor soal ☰ muncul bergantian */
+  .info-area .progres { position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background-image: var(--grad); transform-origin: left;
+    transform: scaleX(var(--ke)); animation: isiProgres .6s var(--ease); }
+  .choice { position: relative; overflow: hidden; }
+  .riak { position: absolute; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; background: rgba(255, 255, 255, .55); pointer-events: none; animation: riak .65s ease-out forwards; }
+  .progress-nav-container.baru-buka .progress-nav { animation: pop var(--sedang) var(--ease) backwards; animation-delay: calc(var(--i, 0) * 12ms); }
+  /* timer: kuning berkedip di 5 menit terakhir, merah berdenyut di menit terakhir */
+  .waktu.peringatan { color: #c98a00; animation: kedip 1.6s ease-in-out infinite; }
+  /* hasil: baris tabel muncul bergantian (angka menghitung naik lewat JS) */
+  .masuk table.hasil tr { animation: naik var(--sedang) var(--ease) backwards; animation-delay: calc(var(--r, 0) * 70ms + 150ms); }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after, ::backdrop { animation-duration: 1ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
   }
@@ -286,7 +319,7 @@
 </head>
 <body>
 <header><div class="logo">Simulasi Psikotes</div><div id="sesi"></div></header>
-<main id="app">Memuat…</main>
+<main id="app"><p class="memuat"><span class="spinner"></span>Memuat…</p></main>
 <dialog id="zoom" aria-label="Perbesar gambar">
   <div class="zoom-alat"><button data-z="kecil" aria-label="Perkecil">−</button><output id="zoom-pct">100%</output>
     <button data-z="besar" aria-label="Perbesar">+</button><button data-z="pas">Pas layar</button><button data-z="tutup" class="tutup" aria-label="Tutup">✕</button></div>
@@ -402,8 +435,9 @@ function perBagian(daftar) {
     </div></details>`;
 }
 
-async function mulaiPaket(id) {
-  const p = await muat(id), soal = p.bagian.reduce((a, b) => a + b.soal.length, 0), menit = p.bagian.reduce((a, b) => a + b.durasi_menit, 0);
+async function mulaiPaket(id, tombol) {
+  tombol?.classList.add('memuat-btn');
+  const p = await muat(id).finally(() => tombol?.classList.remove('memuat-btn')), soal = p.bagian.reduce((a, b) => a + b.soal.length, 0), menit = p.bagian.reduce((a, b) => a + b.durasi_menit, 0);
   if (!await tanya(id.includes('#') ? 'Mulai latihan bagian ini?' : 'Mulai simulasi?',
     `<b>${esc(p.judul)}</b><br>${p.bagian.length} bagian · ${soal} soal · ${menit} menit kerja.<br>
      <span class="meta">Timer tiap bagian berjalan setelah Anda menekan Mulai di halaman petunjuk.</span>`)) return;
@@ -511,11 +545,12 @@ function layarKerja() {
   $app.innerHTML = `
     <div class="info-area">
       <div><b>${esc(b.nama)}</b><br><span class="meta">Bagian ${S.b + 1}/${P.bagian.length} · dijawab ${dijawab}/${n}</span></div>
+      <div class="progres" style="--dari:${progresDari(dijawab / n)};--ke:${dijawab / n}"></div>
       <div class="info-kanan"><span class="waktu" id="waktu" aria-label="Sisa waktu"></span><button class="btn" data-aksi="selesai">Selesai</button></div>
     </div>
     <aside class="progress-nav-container ${navBuka ? 'show' : ''}">
       <div class="btn-show-nav"><button data-aksi="nav" aria-label="Daftar nomor soal">☰</button></div>
-      <div class="progress-nav-area">${b.soal.map((x, k) => `<button data-nomor="${k}" class="progress-nav ${S.jawab[x.id] != null ? 'answered' : ''} ${S.ragu[x.id] ? 'ragu' : ''} ${k === S.i ? 'active' : ''}">${k + 1}</button>`).join('')}</div>
+      <div class="progress-nav-area">${b.soal.map((x, k) => `<button data-nomor="${k}" style="--i:${Math.min(k, 40)}" class="progress-nav ${S.jawab[x.id] != null ? 'answered' : ''} ${S.ragu[x.id] ? 'ragu' : ''} ${k === S.i ? 'active' : ''}">${k + 1}</button>`).join('')}</div>
       <p class="legend"><i style="background:#777"></i>kosong<i style="background-image:var(--grad)"></i>dijawab<i style="outline:2px solid var(--merah)"></i>ragu</p>
       <div class="nav-bawah"><button data-aksi="batal">Batalkan ujian</button></div>
     </aside>
@@ -540,6 +575,7 @@ function layarKerja() {
     const sisa = Math.max(0, Math.round((S.akhir - Date.now()) / 1000));
     el.textContent = '⏱ ' + mmss(sisa);
     el.classList.toggle('kritis', sisa <= 60);
+    el.classList.toggle('peringatan', sisa > 60 && sisa <= 300);
     if (!sisa) selesaiBagian(true);
   };
   detak(); tick = setInterval(detak, 1000);
@@ -558,6 +594,25 @@ function pasLayar() {
   isi.style.setProperty('--fs', fs);
   while (lebih() && fs > .6) isi.style.setProperty('--fs', fs = +(fs - .05).toFixed(2));
 }
+// Bar progres: animasi dari nilai sebelumnya di bagian yang sama (masuk bagian baru = dari 0).
+let progresLama = {};
+function progresDari(v) {
+  const kunci = S.paket + '|' + S.b, dari = progresLama.kunci === kunci ? progresLama.v : 0;
+  progresLama = { kunci, v };
+  return dari;
+}
+
+// Riak dari titik klik (atau dari bulatan huruf bila memilih lewat keyboard). Dipasang setelah render ulang.
+let klik = null;
+document.addEventListener('pointerdown', e => { klik = { x: e.clientX, y: e.clientY, pilih: e.target.closest('[data-pilih]')?.dataset.pilih, t: performance.now() }; }, true);
+function riak(k) {
+  const btn = document.querySelector(`.choice[data-pilih="${k}"]`);
+  if (!btn) return;
+  const r = btn.getBoundingClientRect();
+  const p = klik && klik.pilih === String(k) && performance.now() - klik.t < 1500 ? klik : { x: r.left + 26, y: r.top + r.height / 2 };
+  btn.insertAdjacentHTML('beforeend', `<span class="riak" style="left:${p.x - r.left}px;top:${p.y - r.top}px"></span>`);
+}
+
 let tundaPas;
 addEventListener('resize', () => { clearTimeout(tundaPas); tundaPas = setTimeout(pasLayar, 120); });
 document.fonts?.ready.then(() => pasLayar());
@@ -574,6 +629,7 @@ function pilih(k) {
   if (b.jenis === 'gambar' || k >= (q.opsi_gambar || opsiDari(b, q)).length) return;
   S.jawab[q.id] = k; simpan(); tampil();
   popEl(`[data-pilih="${k}"]`); popEl(`[data-nomor="${S.i}"]`);
+  riak(k);
   if (b.jenis === 'kepribadian') setTimeout(() => { if (S.fase === 'kerja' && b.soal[S.i] === q) ke(S.i + 1); }, 200);
 }
 
@@ -621,7 +677,7 @@ function profil() {
   for (const d of data) if (!'LM'.includes(d.q.dimensi)) (per[d.q.dimensi] ||= []).push(d.v);
   const dims = Object.keys(per).map(d => {
     const s = Math.round((per[d].reduce((a, x) => a + x, 0) / per[d].length + 1) * 50);
-    return `<div class="dim"><span>${esc(nama(d))}</span><div class="batang"><i style="width:${s}%"></i></div><b>${s}</b></div>`;
+    return `<div class="dim"><span>${esc(nama(d))}</span><div class="batang"><i style="width:${s}%"></i></div><b class="hitung">${s}</b></div>`;
   }).join('');
 
   // Konsistensi: grup dengan >= 2 butir terjawab; tidak konsisten jika selisih nilai >= 1,5.
@@ -642,7 +698,7 @@ function profil() {
     <div class="panel">
       ${indeks == null ? '<p>Belum cukup butir terjawab untuk menilai konsistensi.</p>' : `
       <div class="meta">Indeks konsistensi</div>
-      <div class="indeks ${kat}">${indeks}% <span style="font-size:18px">${{ baik: 'baik', cukup: 'cukup', waspada: 'perlu diwaspadai' }[kat]}</span></div>
+      <div class="indeks ${kat}"><span class="hitung">${indeks}%</span> <span style="font-size:18px">${{ baik: 'baik', cukup: 'cukup', waspada: 'perlu diwaspadai' }[kat]}</span></div>
       <p class="meta">${dinilai.length - tidak.length} dari ${dinilai.length} kelompok pernyataan serupa dijawab searah. ≥ 85% baik, 70–84% cukup, &lt; 70% perlu diwaspadai.</p>`}
       ${tanda.length ? `<ul class="waspada">${tanda.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '<p class="baik">Tidak ada tanda menjawab ideal berlebihan atau terlalu banyak jawaban netral.</p>'}
       <h3>Profil dimensi (0–100)</h3>${dims}
@@ -673,7 +729,7 @@ function ulasan(b) {
 function layarHasil() {
   const baris = P.bagian.map(b => {
     const n = b.soal.length, dijawab = b.soal.filter(q => S.jawab[q.id] != null).length;
-    return `<tr><td>${esc(b.nama)}</td><td>${b.jenis === 'kepribadian' ? 'lihat di bawah' : b.jenis === 'gambar' ? 'tidak dinilai, lihat gambar di bawah' : nilaiKognitif(b)}</td><td>${dijawab}/${n}</td><td>${mmss(S.pakai[b.id] || 0)} / ${mmss(b.durasi_menit * 60)}</td></tr>`;
+    return `<tr><td>${esc(b.nama)}</td><td>${b.jenis === 'kepribadian' ? 'lihat di bawah' : b.jenis === 'gambar' ? 'tidak dinilai, lihat gambar di bawah' : `<span class="hitung">${nilaiKognitif(b)}</span>`}</td><td class="hitung">${dijawab}/${n}</td><td>${mmss(S.pakai[b.id] || 0)} / ${mmss(b.durasi_menit * 60)}</td></tr>`;
   }).join('');
   const total = Object.values(S.pakai).reduce((a, x) => a + x, 0);
   $app.innerHTML = `<h1>Hasil: ${esc(P.judul)}</h1>
@@ -684,6 +740,21 @@ function layarHasil() {
     <p class="meta">Hijau = kunci, merah = jawaban Anda yang salah. Di bawah setiap pilihan ada alasan kenapa pilihan itu salah.</p>
     ${P.bagian.filter(b => b.jenis !== 'kepribadian').map(b => b.jenis === 'gambar' ? galeri(b) : ulasan(b)).join('')}
     <div class="aksi"><button class="btn abu" data-aksi="cetak">Cetak / simpan PDF</button><button class="btn" data-aksi="beranda">Kembali ke beranda</button></div>`;
+  hitungNaik();
+}
+
+// Setiap angka di elemen .hitung naik dari 0 ke nilai aslinya (1 detik, melambat di akhir).
+// .hitung hanya dipasang di elemen berisi teks saja, karena textContent ditimpa selama animasi.
+function hitungNaik() {
+  document.querySelectorAll('table.hasil tr').forEach((tr, i) => tr.style.setProperty('--r', Math.min(i, 12)));
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const el = [...document.querySelectorAll('.hitung')].map(x => [x, x.textContent]), t0 = performance.now();
+  const langkah = now => {
+    const t = Math.min(1, (now - t0) / 1000), e = 1 - (1 - t) ** 3;
+    for (const [x, asli] of el) if (x.isConnected) x.textContent = asli.replace(/(\/?)(\d+)/g, (m, garis, d) => garis ? m : Math.round(d * e));  // penyebut "/20" tetap
+    if (t < 1) requestAnimationFrame(langkah);
+  };
+  requestAnimationFrame(langkah);
 }
 
 // ---------- Kraepelin ----------
@@ -766,18 +837,19 @@ function hasilK() {
     <p class="sub meta">Durasi ${k.menit} menit · ${k.hal} halaman</p>
     <div class="panel">
       <table class="hasil">
-        <tr><th>Benar</th><td><b class="baik">${k.benar}</b></td></tr>
-        <tr><th>Salah</th><td><b class="waspada">${k.salah}</b></td></tr>
-        <tr><th>Total dikerjakan</th><td>${n}</td></tr>
-        <tr><th>Ketelitian</th><td>${pct(k.benar, n)}%</td></tr>
-        <tr><th>Kecepatan rata-rata</th><td>${(n / menit).toFixed(1)} jawaban per menit</td></tr>
+        <tr><th>Benar</th><td><b class="baik hitung">${k.benar}</b></td></tr>
+        <tr><th>Salah</th><td><b class="waspada hitung">${k.salah}</b></td></tr>
+        <tr><th>Total dikerjakan</th><td class="hitung">${n}</td></tr>
+        <tr><th>Ketelitian</th><td class="hitung">${pct(k.benar, n)}%</td></tr>
+        <tr><th>Kecepatan rata-rata</th><td class="hitung">${(n / menit).toFixed(1)} jawaban per menit</td></tr>
       </table>
       <h3>Jumlah jawaban per menit</h3>
       <p class="meta">Grafik yang rata menandakan kerja yang stabil; yang turun tajam di akhir menandakan cepat lelah.</p>
-      ${per.map((x, i) => `<div class="dim"><span>Menit ${i + 1}</span><div class="batang"><i style="width:${x / maks * 100}%"></i></div><b>${x}</b></div>`).join('')}
+      ${per.map((x, i) => `<div class="dim"><span>Menit ${i + 1}</span><div class="batang"><i style="width:${x / maks * 100}%"></i></div><b class="hitung">${x}</b></div>`).join('')}
     </div>
     <div class="aksi"><button class="btn abu" data-kmenit="${k.menit}">Ulangi ${k.menit} menit</button><button class="btn" data-aksi="kBeranda">Kembali ke beranda</button></div>`;
   animasi('masuk');
+  hitungNaik();
   scrollTo(0, 0);
 }
 
@@ -855,7 +927,12 @@ const aksi = {
   mundur() { ke(S.i - 1); },
   maju() { ke(S.i + 1); },
   ragu() { const id = P.bagian[S.b].soal[S.i].id; S.ragu[id] = !S.ragu[id]; simpan(); tampil(); popEl('[data-aksi="ragu"]'); popEl(`[data-nomor="${S.i}"]`); },
-  nav() { navBuka = !navBuka; document.querySelector('.progress-nav-container').classList.toggle('show', navBuka); },
+  nav() {
+    navBuka = !navBuka;
+    const c = document.querySelector('.progress-nav-container');
+    c.classList.toggle('show', navBuka); c.classList.remove('baru-buka');
+    if (navBuka) { void c.offsetWidth; c.classList.add('baru-buka'); }
+  },
   selesai() { selesaiBagian(false); },
   async batal() { if (await tanya('Batalkan ujian?', 'Semua jawaban akan dihapus.', { ya: 'Ya, batalkan', tidak: 'Lanjutkan ujian', bahaya: true })) aksi.hapus(); },
   async beranda() { if (await tanya('Kembali ke beranda?', 'Hasil ini akan dihapus, jadi cetak atau simpan dulu jika perlu.', { ya: 'Ya, kembali', bahaya: true })) aksi.hapus(); },
@@ -871,7 +948,7 @@ document.addEventListener('click', e => {
   if (t.dataset.kmenit) return mulaiKraepelin(+t.dataset.kmenit);
   if (t.dataset.alat) return alat(t.dataset.alat);
   if (t.dataset.ukuran) { pena.w = +t.dataset.ukuran; return tampil(); }
-  if (t.dataset.paket) return mulaiPaket(t.dataset.paket);
+  if (t.dataset.paket) return mulaiPaket(t.dataset.paket, t);
   if (t.dataset.pilih != null) return pilih(+t.dataset.pilih);
   if (t.dataset.nomor != null) return ke(+t.dataset.nomor);
   aksi[t.dataset.aksi]();
